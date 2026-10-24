@@ -66,6 +66,6 @@ Credit line: **"Style Library by David Jiménez Pérez, content-autopilot.de, CC
 
 ## Deutsch, kurz
 
-Die **freie Hälfte** der Stil-Bibliothek: 106 Stil-Karten in 19 Familien, Stil-Katalog, Effekt-Vokabular, Kartenfilter, Bauablauf, Glossar, Fehlerkatalog und Vorlagen. Lizenz: Creative Commons Namensnennung 4.0 ([LICENSE](LICENSE), deutsche Fassung in [LIZENZ.md](LIZENZ.md)). Einstieg: `stilbibliothek/katalog/KATALOG.html` oder `stilbibliothek/FAMILIEN.md`, dann eine Karte, dann `ABLAUF.md`. Für KI-Agenten: `stilbibliothek/SKILL.md`. Gesamtübersicht beider Hälften: `UEBERSICHT_GESAMTPAKET.md`.
+Die **freie Hälfte** der Stil-Bibliothek: 106 Stil-Karten in 19 Familien, Stil-Katalog, Effekt-Vokabular, Kartenfilter, Bauablauf, Glossar, Fehlerkatalog und Vorlagen. Lizenz: Creative Commons Namensnennung 4.0 ([LICENSE](LICENSE) (full legal text) and [NOTICE.md](NOTICE.md) (attribution), deutsche Fassung in [LIZENZ.md](LIZENZ.md)). Einstieg: `stilbibliothek/katalog/KATALOG.html` oder `stilbibliothek/FAMILIEN.md`, dann eine Karte, dann `ABLAUF.md`. Für KI-Agenten: `stilbibliothek/SKILL.md`. Gesamtübersicht beider Hälften: `UEBERSICHT_GESAMTPAKET.md`.
 
 Der **Werkzeugkasten** (Remotion-Starter mit 28 Bausteinen, Prüf-System, Messwerkzeuge) ist ein bezahlter Zusatz und wird mit einem Befehl in diesen Ordner gelegt: https://content-autopilot.de
