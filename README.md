@@ -1,6 +1,6 @@
 # Style Library: 289 short-video styles for code engines
 
-**289 video styles in 24 families, written down precisely enough that a person or an AI agent can rebuild them in code.** Remotion, Canvas, SVG, After Effects, Blender: the cards do not care which engine you use. Version 1.6.2.
+**289 video styles in 24 families, written down precisely enough that a person or an AI agent can rebuild them in code.** Remotion, Canvas, SVG, After Effects, Blender: the cards do not care which engine you use. Version 1.6.3.
 
 Every card tells you what makes a look work, in numbers:
 
@@ -72,6 +72,6 @@ Credit line: **"Style Library by David Jiménez Pérez, content-autopilot.de, CC
 
 ## Deutsch, kurz
 
-Die **freie Hälfte** der Stil-Bibliothek, Fassung 1.6.2: 289 Stil-Karten in 24 Familien (115 gemessene Karten und 174 Karten der Zeichen-Motoren), Stil-Katalog, Effekt-Vokabular, Kartenfilter, Bauablauf, Glossar, Fehlerkatalog und Vorlagen. Lizenz: Creative Commons Namensnennung 4.0 ([LICENSE](LICENSE), Namensnennung in [NOTICE.md](NOTICE.md), deutsche Fassung in [LIZENZ.md](LIZENZ.md)). Einstieg: `stilbibliothek/katalog/KATALOG.html` oder `stilbibliothek/FAMILIEN.md`, dann eine Karte, dann `ABLAUF.md`. Für KI-Agenten: `stilbibliothek/SKILL.md`. Gesamtübersicht beider Hälften: `UEBERSICHT_GESAMTPAKET.md`.
+Die **freie Hälfte** der Stil-Bibliothek, Fassung 1.6.3: 289 Stil-Karten in 24 Familien (115 gemessene Karten und 174 Karten der Zeichen-Motoren), Stil-Katalog, Effekt-Vokabular, Kartenfilter, Bauablauf, Glossar, Fehlerkatalog und Vorlagen. Lizenz: Creative Commons Namensnennung 4.0 ([LICENSE](LICENSE), Namensnennung in [NOTICE.md](NOTICE.md), deutsche Fassung in [LIZENZ.md](LIZENZ.md)). Einstieg: `stilbibliothek/katalog/KATALOG.html` oder `stilbibliothek/FAMILIEN.md`, dann eine Karte, dann `ABLAUF.md`. Für KI-Agenten: `stilbibliothek/SKILL.md`. Gesamtübersicht beider Hälften: `UEBERSICHT_GESAMTPAKET.md`.
 
 Der **Werkzeugkasten** (Remotion-Starter mit 28 Bausteinen, zehn Motoren, Prüf-System, Messwerkzeuge) ist ein bezahlter Zusatz und wird mit einem Befehl in diesen Ordner gelegt: https://content-autopilot.de

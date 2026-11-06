@@ -1,6 +1,6 @@
 # Lizenz der freien Hälfte: Creative Commons Namensnennung 4.0 International (CC BY 4.0)
 
-Stil-Bibliothek, Version 1.6.2. Alle Dateien in diesem Ordner (Stil-Karten, Familien, Effekt-Vokabular, Anleitung, Ablauf, Glossar, Fehlerkatalog, Vorlagen, Kartenfilter) stehen unter der Lizenz **Creative Commons Attribution 4.0 International**.
+Stil-Bibliothek, Version 1.6.3. Alle Dateien in diesem Ordner (Stil-Karten, Familien, Effekt-Vokabular, Anleitung, Ablauf, Glossar, Fehlerkatalog, Vorlagen, Kartenfilter) stehen unter der Lizenz **Creative Commons Attribution 4.0 International**.
 
 **Du darfst:** teilen (kopieren und weiterverbreiten, in jedem Format), bearbeiten (verändern, übersetzen, darauf aufbauen), auch kommerziell.
 
@@ -17,4 +17,4 @@ Kurzfassung in Alltagssprache: https://creativecommons.org/licenses/by/4.0/
 
 # Licence of the free half: Creative Commons Attribution 4.0 International (CC BY 4.0)
 
-Style Library, version 1.6.2. All files in this folder are licensed under CC BY 4.0. You may share and adapt them, also commercially, as long as you give appropriate credit ("Style Library, content-autopilot.de"), link to the licence and indicate changes. Full text: https://creativecommons.org/licenses/by/4.0/legalcode. The toolkit (Remotion starter, checker system, measurement tools) is not part of this licence and not included in this folder.
+Style Library, version 1.6.3. All files in this folder are licensed under CC BY 4.0. You may share and adapt them, also commercially, as long as you give appropriate credit ("Style Library, content-autopilot.de"), link to the licence and indicate changes. Full text: https://creativecommons.org/licenses/by/4.0/legalcode. The toolkit (Remotion starter, checker system, measurement tools) is not part of this licence and not included in this folder.
