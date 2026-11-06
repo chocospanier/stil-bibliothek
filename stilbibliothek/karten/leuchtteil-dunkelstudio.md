@@ -32,12 +32,37 @@ ton: Dunkler elektronischer Beat um 124 BPM mit großer Dynamik (7.7 LU); lauter
 braucht: [produkt, fotos-figur, nur-typo]
 motor_aufwand: mittel
 einsatz: [produkt, trailer, hook, ganzes-kurzvideo]
+zweck: [produktwerbung, marke-image]
+branchen_passt: [technik, sport, werkstatt-auto]
+branchen_nie: [lebensmittel-feinkost, gastro]
 abnahme:
   shot_median_s: [0.19, 0.29]
   schnitte_pro_s: [1.8, 2.6]
   helligkeit: [0.08, 0.13]
   farbigkeit: [0.06, 0.10]
   lufs: [-15.4, -13.4]
+# Würfel-Felder (Etappe 0 Bauplan Würfelstile, 31.10.2026; karten_wuerfelfelder.py, Familien-Standard)
+creator: ja
+spielraum:
+  palette: akzent
+  schrift: klasse
+  blitzbild_bilder: [2, 4]
+  stottern_wiederholungen: [2, 3]
+  push_in_prozent: [2, 5]
+  wackeln_faktor: [0.4, 1.0]
+  korn: [0.045, 0.075]
+  vignette: [0.3, 0.5]
+  beat_versatz_16tel: [0, 1]
+  textgroesse_prozent: [-10, 10]
+  textlage: regel
+  musik: bausteine
+palettenrolle:
+  grund: schwarz
+  text: kaltlicht
+  akzent: mint_schatten
+  dunkel: schwarz
+  hell: kaltlicht
+  licht: leuchtmint
 quelle: Eigene Analyse einer öffentlichen Vorschau; nur der Look ist beschrieben, keine Motive, Texte oder Marken übernommen.
 ---
 
@@ -135,3 +160,10 @@ Bauplan für 20 s bei 124 BPM (165 Sechzehntel zu 0,121 s).
 - Weißblitze und Licht-Stottern hintereinander sind eine Epilepsie-Gefahr → höchstens drei Wechsel je Sekunde, nie länger als eine Sekunde am Stück.
 - Dunkle Gesichter verschwinden auf dem Handy → mindestens ein Auge und eine Wangenkante im Licht.
 - Ohne die Stille vor dem Aufbau wirkt das Ende flach → das Schwarz um 19 s nicht kürzen.
+- Code-Motor (31.10.): Schnitte zwischen dunklen Bildern und Licht an und aus zählt die Schnitterkennung (Schwelle 10) erst, wenn sich rund ein Drittel der Fläche deutlich ändert → Licht an hellt eine breite Rückwand in Studioblau mit auf, aufeinanderfolgende Einstellungen tragen ihr helles Feld an verschiedenen Stellen.
+- Großes Raumlicht als weich gezeichnete Ellipse wirkt auf dem Handy wie ein Bullauge mit schwarzen Ecken → radialer Verlauf, breiter als das Bild.
+- Schwarz per Farbschleier anheben lässt die Vignette als Ring auf Schwarz stehen (Atem, Schlusskarte) → Schwarz bleibt Schwarz, Helligkeit kommt aus Licht im Bild.
+- Licht an und aus direkt vor einem Weißblitz ergibt vier harte Wechsel in einer Sekunde → die Einstellung vor dem Blitz halten.
+- Schlusskarte aus dem Schnittmuster endet zufällig (1,7 s) → Schlusskarte fest 2,4 s, das Muster füllt die Zeit davor; ein ganz stilles Wort über 2 s meldet die Vorprüfung als Standbild → langsamer Push-in auf das Wort.
+- Eine liegende Figur unter der Lampe liest sich als Leiche → sitzende Figur im Lichtkreis.
+- Invertieren macht Mint zu Pink, eine zweite satte Farbe → nach dem Invertieren Farbton um 180 Grad drehen und entsättigen.

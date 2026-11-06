@@ -31,12 +31,38 @@ ton: Ruhiger, groovender Indie-Pop um 60 BPM (vermutlich 120 mit Halbtempo-Gefü
 braucht: [fotos-figur, nur-typo]
 motor_aufwand: mittel
 einsatz: [musikvideo, ganzes-kurzvideo, hook]
+zweck: [musik-lyric]
+branchen_passt: [musik-kultur]
+branchen_nie: [werkstatt-auto, handwerk, lebensmittel-feinkost, gastro, gesundheit, immobilien, finanzen]
 abnahme:
   shot_median_s: [0.40, 0.60]
   schnitte_pro_s: [0.9, 1.4]
   helligkeit: [0.19, 0.29]
   farbigkeit: [0.19, 0.29]
   lufs: [-15, -13]
+# Würfel-Felder (Etappe 0 Bauplan Würfelstile, 31.10.2026; karten_wuerfelfelder.py, Familien-Standard)
+creator: nein
+creator_grund: "4 Kennungen aus rahmen und sticker: bild-im-bild, split-screen, freisteller, text-hinter-figur"
+spielraum:
+  palette: nachbarn
+  schrift: klasse
+  blitzbild_bilder: [2, 4]
+  stottern_wiederholungen: [2, 3]
+  push_in_prozent: [3, 8]
+  wackeln_faktor: [0.4, 1.0]
+  korn: [0.045, 0.075]
+  vignette: [0.3, 0.5]
+  beat_versatz_16tel: [0, 1]
+  textgroesse_prozent: [-10, 10]
+  textlage: regel
+  musik: bausteine
+palettenrolle:
+  grund: grund_dunkel
+  text: text_hell
+  akzent: akzent_kreis
+  dunkel: grund_dunkel
+  hell: text_hell
+  licht: text_hell
 quelle: Eigene Analyse einer öffentlichen Vorschau; nur der Look ist beschrieben, keine Motive, Texte oder Marken übernommen.
 ---
 
@@ -127,3 +153,7 @@ Bauplan für 18 s bei 120 BPM mit Halbtempo-Gefühl (144 Sechzehntel zu je 0,125
 - Nur eine Schrift → verliert den Rhythmus. Fett-Versal und Kursiv-Serife im Wechsel.
 - Mehr als ein Akzent → wird bunt. Nur Magenta-Kreise.
 - Lange Wortzeilen → passen nicht. Je Bild ein Großwort und höchstens zwei Füllwörter.
+- Motor ViolettLyricDuoton (Welle D5): Ein Großwort hinter der Figur auf Kopfhöhe verschwindet fast ganz. Im Hochformat das Wort zweizeilig über den Kopf setzen und die Figur tiefer stellen.
+- Wörter, die kürzer als 0,5 s stehen, nicht zeigen; diese Einstellungen tragen nur Figur und Kreis.
+- Linienfigur, die sich durch waagerechtes Stauchen dreht, mit waagerechten Armen und Heiligenschein liest sich als Kreuz. Bewegung aus der Pose, nie gestaucht.
+- Grund je Schnitt im Wechsel Violett und Fast-Schwarz; sonst zählt die Schnittmessung die Wechsel nicht.

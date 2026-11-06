@@ -2,7 +2,7 @@ Creative Commons Attribution 4.0 International (CC BY 4.0)
 
 Copyright (c) 2026 David Jiménez Pérez, content-autopilot.de
 
-Style Library (Stil-Bibliothek), free half, version 1.4.
+Style Library (Stil-Bibliothek), free half, version 1.6.2.
 
 Unless stated otherwise, all files in this repository (style cards, families,
 effect vocabulary, catalogue and its images, instructions, build process,

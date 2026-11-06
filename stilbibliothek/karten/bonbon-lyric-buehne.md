@@ -32,12 +32,38 @@ ton: Fröhlicher, leicht gedämpfter Pop-Beat um 91 BPM, mittellaut (−15,1 LUF
 braucht: [fotos-figur, 3d, nur-typo]
 motor_aufwand: gross
 einsatz: [musikvideo, hook, ganzes-kurzvideo]
+zweck: [musik-lyric, event-teaser, kinder]
+branchen_passt: [musik-kultur, kinder-familie]
+branchen_nie: [werkstatt-auto, handwerk, gesundheit, immobilien, finanzen]
 abnahme:
   shot_median_s: [0.10, 0.25]
   schnitte_pro_s: [2.6, 4.0]
   helligkeit: [0.34, 0.46]
   farbigkeit: [0.24, 0.36]
   lufs: [-16, -14]
+# Würfel-Felder (Etappe 0 Bauplan Würfelstile, 31.10.2026; karten_wuerfelfelder.py, Familien-Standard)
+creator: eingeschraenkt
+creator_ohne: [freisteller, text-hinter-figur]
+spielraum:
+  palette: nachbarn
+  schrift: klasse
+  blitzbild_bilder: [2, 4]
+  stottern_wiederholungen: [2, 3]
+  push_in_prozent: [3, 8]
+  wackeln_faktor: [0.4, 1.0]
+  korn: [0.045, 0.075]
+  vignette: [0.3, 0.5]
+  beat_versatz_16tel: [0, 1]
+  textgroesse_prozent: [-10, 10]
+  textlage: regel
+  musik: bausteine
+palettenrolle:
+  grund: grund_all
+  text: bonbon_gelb
+  akzent: magenta
+  dunkel: grund_all
+  hell: hell
+  licht: hell
 quelle: Eigene Analyse einer öffentlichen Vorschau; nur der Look ist beschrieben, keine Motive, Texte oder Marken übernommen.
 ---
 
@@ -126,3 +152,8 @@ Bauplan für 16 s bei 91 BPM (96 Sechzehntel zu je 0,165 s).
 - Strobo in Volltonfarben schneller als drei Wechsel je Sekunde über mehr als eine Sekunde → Epilepsie-Gefahr. Für die Plattform: Warnhinweis oder Wechsel auf Achtel verlangsamen und Helligkeitsunterschied klein halten.
 - Zu viele Wörter gleichzeitig → unlesbar. Höchstens drei Bonbonwörter je Bild.
 - 3D-Welt ohne Glow → wirkt wie Spielegrafik von früher. Bloom auf alle Lichter.
+- Motor BonbonLyricBuehne (Welle D5): Farbwechsel bei gleicher Helligkeit zählt die Schnittmessung nicht, sie rechnet auf Helligkeit. Im Strobo springt deshalb mit jeder Farbe der Bildausschnitt (Totale, Nahe), die Tanzbewegung läuft durch, und die Figur trägt ein dunkles Oberteil, sonst verschwindet sie in den Neonwänden.
+- Bonbonwörter (Lilita One mit Kontur und Tiefe, Buchstaben gedreht und beim Aufbau überskaliert) brauchen rund 0,88 Schriftbreite je Zeichen und 0,08 em Abstand je Seite; enger meldet die Creator-Vorprüfung überlappende Buchstaben. Bei einem Ranschnitt das Wort nicht mitskalieren.
+- Geteilte Einstellung (Totale, dann Nahe derselben Szene): das Wort baut sich in der zweiten Hälfte nicht neu auf, sonst liest es sich als Fehler.
+- Strobo im Sechzehntel nur mit Farben gleicher Helligkeit (Blitzregel: harte Wechsel über 0,20 und WCAG messen); ohne das auf Achtel verlangsamen.
+- Die Basis lag bei Farbigkeit 0,26 knapp über der Untergrenze 0,24; blassere Würfelpaletten fielen heraus. Sättigung über dem ganzen Bild leicht anheben.

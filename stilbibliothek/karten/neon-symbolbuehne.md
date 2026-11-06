@@ -36,6 +36,9 @@ ton: Eine tiefe, langsame Erzählstimme (etwa 1,9 Wörter je Sekunde) über eine
 braucht: [illustrationen]
 motor_aufwand: mittel
 einsatz: [ganzes-kurzvideo, intro]
+zweck: [wissen, erklaeren, zitat]
+branchen_passt: [bildung, technik, gesundheit]
+branchen_nie: [werkstatt-auto, handwerk, lebensmittel-feinkost, gastro, mode-beauty, immobilien]
 abnahme:
   shot_median_s: [5, 45]
   schnitte_pro_s: [0.0, 0.12]
@@ -45,6 +48,29 @@ abnahme:
 abnahme_9x16:              # Runde 5 (18.10.2026): dunkle Differenz-Farbwelten im Hochformat, gemessen 0,26 bis 0,35
   helligkeit: [0.22, 0.39]
   farbigkeit: [0.25, 0.49]
+# Würfel-Felder (Etappe 0 Bauplan Würfelstile, 31.10.2026; karten_wuerfelfelder.py, Familien-Standard)
+creator: eingeschraenkt
+creator_ohne: [zeilenraster]
+spielraum:
+  palette: nachbarn
+  schrift: klasse
+  blitzbild_bilder: [2, 3]
+  stottern_wiederholungen: [2, 3]
+  push_in_prozent: [2, 5]
+  wackeln_faktor: [0.3, 0.7]
+  korn: [0.045, 0.075]
+  vignette: [0.3, 0.5]
+  beat_versatz_16tel: [0, 0]
+  textgroesse_prozent: [-10, 10]
+  textlage: regel
+  musik: bausteine
+palettenrolle:
+  grund: nachtblau
+  text: text
+  akzent: violett
+  dunkel: nachtblau
+  hell: text
+  licht: licht
 quelle: Eigene Analyse einer öffentlichen Vorschau; nur der Look ist beschrieben, keine Motive, Texte oder Marken übernommen.
 ---
 

@@ -33,12 +33,38 @@ ton: Gleichmäßig gemischtes Stück um 63 BPM, −14,2 LUFS bei nur 1,1 LU Span
 braucht: [illustrationen, fotos-figur, nur-typo]
 motor_aufwand: mittel
 einsatz: [intro, trailer, ganzes-kurzvideo, musikvideo]
+zweck: [musik-lyric, geschichte, zitat]
+branchen_passt: [musik-kultur, bildung]
+branchen_nie: [werkstatt-auto, gesundheit, sport, kinder-familie]
 abnahme:
   shot_median_s: [0.60, 0.90]
   schnitte_pro_s: [1.0, 1.5]
   helligkeit: [0.26, 0.39]
   farbigkeit: [0.08, 0.13]
   lufs: [-15.2, -13.2]
+# Würfel-Felder (Etappe 0 Bauplan Würfelstile, 31.10.2026; karten_wuerfelfelder.py, Familien-Standard)
+creator: eingeschraenkt
+creator_ohne: [text-hinter-figur, typo-raster]
+spielraum:
+  palette: nachbarn
+  schrift: klasse
+  blitzbild_bilder: [2, 4]
+  stottern_wiederholungen: [2, 3]
+  push_in_prozent: [2, 5]
+  wackeln_faktor: [0.3, 0.7]
+  korn: [0.03, 0.06]
+  vignette: [0.3, 0.5]
+  beat_versatz_16tel: [0, 1]
+  textgroesse_prozent: [-10, 10]
+  textlage: regel
+  musik: bausteine
+palettenrolle:
+  grund: papier
+  text: tusche
+  akzent: glut
+  dunkel: rauch_dunkel
+  hell: papier
+  licht: papier
 quelle: Eigene Analyse einer öffentlichen Vorschau; nur der Look ist beschrieben, keine Motive, Texte oder Marken übernommen.
 ---
 
@@ -133,3 +159,8 @@ Bauplan für 18 s bei 63 BPM (76 Sechzehntel zu 0,238 s, knapp fünf Takte). Hie
 - Echte Fotos bekannter Personen → Bildrechte und Persönlichkeitsrechte; nur eigene oder frei lizenzierte Fotos.
 - Malerei mit KI-Glanz → im Prompt sichtbaren Pinselstrich und Leinwand verlangen, Glanzlichter dämpfen.
 - Block-Glitch zu lang → stört die Ruhe; höchstens drei Frames.
+- Rauchschicht verschoben und driftend, Filterbereich nur so groß wie das Bild → Randstreifen ohne Rauch; Filterbereich mit Reserve für Versatz und Drift setzen.
+- Plakat-Satz bis tief ins Bild, Kopf der Figur mittig davor → der Kopf verdeckt das Schlusswort; Zeilen über dem Kopf enden lassen, die Figur schneidet nur den Fuß der letzten Zeile.
+- Raster-Wörter im Sechzehntel-Abstand bis zum Ende der Einstellung → das letzte Wort steht kürzer als 0,5 s; Wörter gleichmäßig über die Einstellung verteilen.
+- Ruhige Einzelfiguren unter großem Licht mit Wörtern wie Stille oder Bleiben → Abschieds-Lesart; Wörter aus dem Musikabend wählen.
+- Plakat-Zeile nur nach der Breite skaliert → kurze Wörter wachsen über den Rand oder in die Nachbarzeile, bei getauschten Schriften erst recht; Größe zusätzlich an die Zeilenhöhe binden.

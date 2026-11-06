@@ -30,12 +30,37 @@ ton: Langsamer, verträumter Gesang über einem weichen Beat um 110 BPM (Halbtem
 braucht: [fotos-figur, footage-ort]
 motor_aufwand: mittel
 einsatz: [musikvideo, hook, portrait]
+zweck: [musik-lyric, stimmung]
+branchen_passt: [musik-kultur]
+branchen_nie: [werkstatt-auto, handwerk, lebensmittel-feinkost, technik, gesundheit, bildung, immobilien, finanzen, kinder-familie]
 abnahme:
   shot_median_s: [2.0, 9.5]
   schnitte_pro_s: [0.05, 0.4]
   helligkeit: [0.16, 0.26]
   farbigkeit: [0.24, 0.36]
   lufs: [-15.2, -13.2]
+# Würfel-Felder (Etappe 0 Bauplan Würfelstile, 31.10.2026; karten_wuerfelfelder.py, Familien-Standard)
+creator: ja
+spielraum:
+  palette: nachbarn
+  schrift: klasse
+  blitzbild_bilder: [2, 4]
+  stottern_wiederholungen: [2, 3]
+  push_in_prozent: [2, 5]
+  wackeln_faktor: [0.3, 0.7]
+  korn: [0.05, 0.09]
+  vignette: [0.35, 0.6]
+  beat_versatz_16tel: [0, 1]
+  textgroesse_prozent: [-10, 10]
+  textlage: regel
+  musik: bausteine
+palettenrolle:
+  grund: grund
+  text: text
+  akzent: tiefe
+  dunkel: grund
+  hell: text
+  licht: licht_rot
 quelle: Eigene Analyse einer öffentlichen Vorschau; nur der Look ist beschrieben, keine Motive, Texte oder Marken übernommen.
 ---
 
@@ -114,3 +139,5 @@ Kein Beat-Schnitt: in Sekunden denken. Bauplan für 18 s, sechs Einstellungen, W
 - Zu viel Glow → Gesichter werden zu rosa Flecken. Glow nur auf Lichter über 70 % Helligkeit.
 - Ganze Zeile auf einmal eingeblendet → Karaoke-Optik geht verloren. Wort für Wort, im Silbentakt.
 - Reines Schwarz in den Schatten → wirkt digital. Schwarz auf einen dunklen Violettton anheben.
+- Einblendung schon auf der ersten Einstellung → Bild 0 ist schwarz und das Titelbild leer (Motor RotlichtCamcorder, 31.10.). Erste Einstellung steht ab Bild 0 voll.
+- Textlage je Einstellung (Nahaufnahme tiefer) mitten in einer stehenden Zeile gewechselt → die Zeile springt um ein Sechstel der Höhe. Lage gilt je Zeile ab ihrem Beginn, die Zeile wächst von links aus der Breite der fertigen Zeile.

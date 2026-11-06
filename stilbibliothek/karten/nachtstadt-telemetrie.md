@@ -33,12 +33,38 @@ ton: Ruhige, atmende Elektronik (−14,1 LUFS, 4,7 LU Spanne, Spitzen nur −5 d
 braucht: [footage-ort, nur-typo]
 motor_aufwand: mittel
 einsatz: [intro, trailer, ganzes-kurzvideo, uebergang]
+zweck: [event-teaser, stimmung, wissen]
+branchen_passt: [technik]
+branchen_nie: [werkstatt-auto, handwerk, lebensmittel-feinkost, gastro, gesundheit, kinder-familie]
 abnahme:
   shot_median_s: [0.54, 0.80]
   schnitte_pro_s: [1.0, 1.6]
   helligkeit: [0.08, 0.14]
   farbigkeit: [0.13, 0.19]
   lufs: [-15, -13]
+# Würfel-Felder (Etappe 0 Bauplan Würfelstile, 31.10.2026; karten_wuerfelfelder.py, Familien-Standard)
+creator: eingeschraenkt
+creator_ohne: [hud, tracking-etiketten]
+spielraum:
+  palette: nachbarn
+  schrift: klasse
+  blitzbild_bilder: [2, 4]
+  stottern_wiederholungen: [2, 3]
+  push_in_prozent: [2, 5]
+  wackeln_faktor: [0.3, 0.7]
+  korn: [0.045, 0.075]
+  vignette: [0.3, 0.5]
+  beat_versatz_16tel: [0, 1]
+  textgroesse_prozent: [-10, 10]
+  textlage: regel
+  musik: bausteine
+palettenrolle:
+  grund: nacht
+  text: hud_weiss
+  akzent: hud_rot
+  dunkel: nacht
+  hell: hud_weiss
+  licht: hud_weiss
 quelle: Eigene Analyse einer öffentlichen Vorschau; nur der Look ist beschrieben, keine Motive, Texte oder Marken übernommen.
 ---
 
@@ -129,3 +155,6 @@ Bauplan für 18 s bei 94 BPM (112 Sechzehntel zu 0,16 s). Ruhiger Stil: Einstell
 - Zu helles Material → Neon verliert Wirkung; vor dem Grading Belichtung senken.
 - Schrift auf 9:16 zu klein → mindestens 1,8 % der Bildhöhe im Hochformat.
 - Lesbarkeit in Fremdsprache als Deko → zweite Zeile nur, wenn sie zum Kanal passt.
+- Motor (Welle D, 05.11.): Dunkle, glatte Code-Nachtbilder bleiben unter der Schnittschwelle (etwa 10 % mittlere Bilddifferenz) → Nachbar-Einstellungen in Fläche und Farbton wechseln (Schein oben gegen Schein unten), Korn je Einstellung stehen lassen.
+- Motor: Die langen Halte wirken als Standbild, wenn nur feiner Regen arbeitet → Push-in von 8 bis 10 %, kräftigerer Regen und zitternde Spiegelung in der Pfütze.
+- Motor: Titelwort und Etikett kreuzen sich in der Titel-Einstellung → dort keine Etiketten, Titel gleitet in den letzten acht Bildern zur Kopfzeile und blendet aus.

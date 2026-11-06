@@ -32,12 +32,38 @@ ton: Erste Hälfte Sprechstimme allein mit Pausen, ab der Mitte Musik um 126 BPM
 braucht: [fotos-figur, footage-ort]
 motor_aufwand: gross
 einsatz: [ganzes-kurzvideo, portrait, hook]
+zweck: [person-vorstellen, zitat, marke-image]
+branchen_passt: [finanzen, immobilien, bildung]
+branchen_nie: [kinder-familie]
 abnahme:
   shot_median_s: [0.30, 0.45]
   schnitte_pro_s: [1.1, 1.7]
   helligkeit: [0.23, 0.35]
   farbigkeit: [0.07, 0.11]
   lufs: [-20.7, -18.7]
+# Würfel-Felder (Etappe 0 Bauplan Würfelstile, 31.10.2026; karten_wuerfelfelder.py, Familien-Standard)
+creator: eingeschraenkt
+creator_ohne: [text-hinter-figur]
+spielraum:
+  palette: nachbarn
+  schrift: klasse
+  blitzbild_bilder: [2, 4]
+  stottern_wiederholungen: [2, 3]
+  push_in_prozent: [3, 8]
+  wackeln_faktor: [0.4, 1.0]
+  korn: [0.045, 0.075]
+  vignette: [0.3, 0.5]
+  beat_versatz_16tel: [0, 1]
+  textgroesse_prozent: [-10, 10]
+  textlage: regel
+  musik: bausteine
+palettenrolle:
+  grund: tiefe
+  text: hemd
+  akzent: akzent
+  dunkel: tiefe
+  hell: hemd
+  licht: hemd
 quelle: Eigene Analyse einer öffentlichen Vorschau; nur der Look ist beschrieben, keine Motive, Texte oder Marken übernommen.
 ---
 
@@ -128,3 +154,8 @@ Bauplan für 20 s. Monolog in Sekunden, Montage im Raster von 126 BPM (Sechzehnt
 - Großwort-Füllung zu durchsichtig → weißen Grundton mindestens 70 % deckend lassen.
 - Die Vorlage ist leise gemischt (−19,7 LUFS) → für Plattformen auf −14 LUFS heben und die Abnahme dann bewusst anpassen.
 - Montage ohne Haltung (nur Gehen, nur Stehen) wird langweilig → in jedem Shot eine kleine Aktion oder ein Gesichtsausdruck.
+- Motor aus Code (AnzugMonolog, Welle D): Untertitel auf Mundhöhe oder im hellen Kragen gehen verloren → im Hochformat bei 79 % der Höhe auf dem dunklen Anzug, Großwort bei 66 % über der Brust, nie über dem Mund.
+- Flache Code-Szenen zählt die Schnittmessung nur, wenn sich Fläche und Helligkeit ändern → Montage abwechselnd helles Fensterbüro und dunkles Holz, Flackerpaar mit Versatz und Spiegelung.
+- Über die Schulter: Figur so groß setzen, dass der Rumpf unter den Bildrand läuft; Großwort auf die Figur mittig, damit die Vordergrund-Schulter nur den Rand des Worts deckt.
+- Totale und Schlusskarte bewegen sich (Push-in, Schlusswort wächst); zusammen 2,4 s Stillstand meldet die Creator-Prüfung als Standbild rot.
+- Die lange erste Monolog-Einstellung braucht sichtbare Bewegung: Push-in 8 %, sanftes Driften der Kamera (rund 1,4 %), leichte Kopfbewegung und eine Handgeste im Takt von rund 0,8 s; ein sprechender Mund und ein ruhiger Push-in gelten der Creator-Prüfung als Standbild.

@@ -31,12 +31,38 @@ ton: Lautes, gleichmäßiges Instrumental um 140 BPM (−12,9 LUFS, 0,7 LU), vie
 braucht: [fotos-figur, illustrationen, nur-typo]
 motor_aufwand: klein
 einsatz: [hook, intro, uebergang, musikvideo]
+zweck: [musik-lyric, mode-lookbook, event-teaser]
+branchen_passt: [musik-kultur, technik, mode-beauty]
+branchen_nie: [werkstatt-auto, handwerk, lebensmittel-feinkost, gesundheit, immobilien, finanzen]
 abnahme:
   shot_median_s: [0.14, 0.26]
   schnitte_pro_s: [1.6, 2.4]
   helligkeit: [0.55, 0.70]
   farbigkeit: [0.06, 0.10]
   lufs: [-14.5, -12.0]
+# Würfel-Felder (Etappe 0 Bauplan Würfelstile, 31.10.2026; karten_wuerfelfelder.py, Familien-Standard)
+creator: eingeschraenkt
+creator_ohne: [freisteller, ui-attrappe]
+spielraum:
+  palette: nachbarn
+  schrift: klasse
+  blitzbild_bilder: [2, 4]
+  stottern_wiederholungen: [2, 3]
+  push_in_prozent: [3, 8]
+  wackeln_faktor: [0.4, 1.0]
+  korn: [0.0, 0.03]
+  vignette: [0.0, 0.2]
+  beat_versatz_16tel: [0, 1]
+  textgroesse_prozent: [-10, 10]
+  textlage: regel
+  musik: bausteine
+palettenrolle:
+  grund: grund
+  text: tusche
+  akzent: gruen_tief
+  dunkel: tusche
+  hell: grund
+  licht: grund
 quelle: Eigene Analyse einer öffentlichen Vorschau; nur der Look ist beschrieben, keine Motive, Texte oder Marken übernommen.
 ---
 
@@ -142,3 +168,8 @@ Bei 12 fps sind 2 Sechzehntel 2,57 Bilder. Gerundet wird je Grenze, also wechsel
 - Sprung näher auf ein Fenster darf dessen Inhalt nicht weglassen, sonst liest er sich als gelöschter Verlauf → gleicher Inhalt, rund 30 % größer.
 - Tintenklecks mit Loch und zwei parallelen Spitzen ergibt ein Zufallsgesicht (gehörntes Wesen) → Spitzen in verschiedene Richtungen, kein Loch.
 - Digitale Stille direkt nach einem durchgehenden Bett kann wie ein Aussetzer klingen → in Pausen ein leiser Klick je Ladekreis-Schritt (rund 30 dB unter der Stimme).
+- (Motorbau) Zwei Shots auf weißem Grund hintereinander (Schild-Pose auf Weiß, dann Ladekreis auf Weiß) zählt die Schnitterkennung nicht als Schnitt; Median und Schnittdichte kippen → zwischen zwei weißen Bildern immer eines mit Fläche (graues Notenblatt, Tusche-Boden) oder einen Sprung näher setzen.
+- (Motorbau) Kurze Shots auf das Sechzehntel gerundet werden im 12-fps-Raster oft drei statt zwei Ticks (0,27 s statt 0,18 s) → kurze Shots direkt in Ticks planen, nur die Runde auf das Sechzehntel.
+- (Würfel) Ein Haus mit dunkler Hauspalette tauscht den weißen Grund gegen Schwarz; die Probe fällt dann immer auf die Kartenwerte zurück. Die Karte passt nur zu Häusern mit hellem Grund.
+- (Fremdtest 5, 01.11.2026, Erklärstück ohne Ton) Die Glanzkugel trägt kein Thema: ein Erklärstück mit Schild-Wörtern liest sich nur, wenn `figur` den Gegenstand zeigt (hier eine Schraube als Tusche-Silhouette aus Code). Ohne grüne Kugel fällt die Farbigkeit unter das Fenster (0,042 statt ≥ 0,06) → Gegenstand mit grüner Glanzfläche zeichnen.
+- (Fremdtest 5) Pointe im Ring war mit Höchstbreite 390 px bei einem Wort mit zehn Zeichen nur rund 75 px hoch, Schlusszeile in einer Zeile unter 50 px, Bühnen-Schild ragte im Sprung näher (1,25) in die unteren 15 % → Motor: Pointe 600 px Höchstbreite, Schlusszeile mit Zeilenwechsel bis 110 px, Schild der Bühne auf y 1380.

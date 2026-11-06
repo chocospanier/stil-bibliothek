@@ -35,12 +35,37 @@ ton: Eine schnelle Sprechstimme ohne Atempausen (etwa 3,5 Wörter je Sekunde) vo
 braucht: [illustrationen]
 motor_aufwand: klein
 einsatz: [ganzes-kurzvideo, hook]
+zweck: [erklaeren, wissen, kinder]
+branchen_passt: [bildung, kinder-familie, gesundheit]
+branchen_nie: [werkstatt-auto, lebensmittel-feinkost, mode-beauty, immobilien]
 abnahme:
   shot_median_s: [4, 40]
   schnitte_pro_s: [0.0, 0.15]
   helligkeit: [0.85, 0.97]
   farbigkeit: [0.07, 0.2]
   lufs: [-15, -13]
+# Würfel-Felder (Etappe 0 Bauplan Würfelstile, 31.10.2026; karten_wuerfelfelder.py, Familien-Standard)
+creator: ja
+spielraum:
+  palette: nachbarn
+  schrift: klasse
+  blitzbild_bilder: [2, 3]
+  stottern_wiederholungen: [2, 3]
+  push_in_prozent: [2, 5]
+  wackeln_faktor: [0.4, 1.0]
+  korn: [0.045, 0.075]
+  vignette: [0.3, 0.5]
+  beat_versatz_16tel: [0, 0]
+  textgroesse_prozent: [-10, 10]
+  textlage: regel
+  musik: bausteine
+palettenrolle:
+  grund: grund
+  text: zeichnung
+  akzent: akzent
+  dunkel: zeichnung
+  hell: text
+  licht: text
 quelle: Eigene Analyse einer öffentlichen Vorschau; nur der Look ist beschrieben, keine Motive, Texte oder Marken übernommen.
 ---
 

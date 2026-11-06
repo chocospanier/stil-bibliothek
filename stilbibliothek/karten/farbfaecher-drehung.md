@@ -39,12 +39,38 @@ ton: Ruhiges, gleichmäßiges Instrumental um 115 BPM (−14,6 LUFS), mehr Mitte
 braucht: [fotos-figur, nur-typo]
 motor_aufwand: mittel
 einsatz: [ganzes-kurzvideo, produkt, portrait]
+zweck: [mode-lookbook, produktwerbung]
+branchen_passt: [mode-beauty]
+branchen_nie: [werkstatt-auto, gesundheit, finanzen]
 abnahme:
   shot_median_s: [3.3, 4.9]
   schnitte_pro_s: [0.1, 0.4]
   helligkeit: [0.72, 0.88]
   farbigkeit: [0.14, 0.22]
   lufs: [-15.6, -13.6]
+# Würfel-Felder (Etappe 0 Bauplan Würfelstile, 31.10.2026; karten_wuerfelfelder.py, Familien-Standard)
+creator: eingeschraenkt
+creator_ohne: [farbmusterkarte, freisteller]
+spielraum:
+  palette: nachbarn
+  schrift: klasse
+  blitzbild_bilder: [2, 4]
+  stottern_wiederholungen: [2, 3]
+  push_in_prozent: [2, 5]
+  wackeln_faktor: [0.3, 0.7]
+  korn: [0.045, 0.075]
+  vignette: [0.3, 0.5]
+  beat_versatz_16tel: [0, 1]
+  textgroesse_prozent: [-10, 10]
+  textlage: regel
+  musik: bausteine
+palettenrolle:
+  grund: grund
+  text: text
+  akzent: p2_rot
+  dunkel: p1_dunkel
+  hell: grund
+  licht: grund
 quelle: Eigene Analyse einer öffentlichen Vorschau; nur der Look ist beschrieben, keine Motive, Texte oder Marken übernommen.
 ---
 
@@ -122,3 +148,7 @@ Bauplan für 12 s in Sekunden, eine Einstellung mit weichen Wechseln. Bei 120 BP
 - Outfitwechsel sichtbar von vorn → wirkt wie ein Schnittfehler. Immer in der Rückenansicht tauschen.
 - Echte Farbsystem-Namen und Nummernschemata von Herstellern → Rechtsrisiko. Eigene Namen und Codes.
 - Fächer zu dominant → zieht den Blick vom Outfit. Höchstens unteres Viertel nach dem Intro.
+- Ein harter Sprung näher um die Bildmitte schiebt die Füße unter den Rand → Sprung an den Füßen verankern und die Karten nach dem Sprung neu einfliegen lassen; ohne Sprung zählt die Messung nur die Fächerwechsel und fällt unter 0,1 Schnitte je Sekunde (Motor FarbfaecherDrehung, 04.11.).
+- Gespiegelte Musterkarten links laufen aus dem Bild → Kartenmitte mindestens 31 % vom Rand.
+- Schluss ohne Drehung springt von grau und hinten auf farbig und vorn → auch der Schluss dreht zur Kamera, die Farbe kommt mit der Drehung.
+- Ohne Musterkarten (Creator-Modus) trägt der Rundenwechsel keinen messbaren Schnitt (0 Schnitte im Zug) → Motor mit creator: false, im Creator-Modus nur als Handbau.

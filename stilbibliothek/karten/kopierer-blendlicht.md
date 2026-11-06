@@ -29,12 +29,39 @@ ton: Durchgehend lauter Beat um 88 BPM mit kleiner Lautheitsspanne; Stimme in de
 braucht: [fotos-figur, footage-ort, illustrationen, produkt, nur-typo]
 motor_aufwand: mittel
 einsatz: [trailer, hook, intro, produkt]
+zweck: [event-teaser, marke-image, produktwerbung]
+branchen_passt: [musik-kultur]
+branchen_nie: [lebensmittel-feinkost, gesundheit, kinder-familie]
 abnahme:
   shot_median_s: [0.14, 0.21]
   schnitte_pro_s: [3.0, 4.4]
   helligkeit: [0.32, 0.48]
   farbigkeit: [0.08, 0.14]
   lufs: [-15.2, -13.2]
+# Würfel-Felder (Etappe 0 Bauplan Würfelstile, 31.10.2026; karten_wuerfelfelder.py, Familien-Standard)
+creator: nein
+creator_grund: "Familie kopierer: Zweiton mit Raster und Stempel über die ganze Fläche: Dauer-Raster\
+  \ und Abzeichen"
+spielraum:
+  palette: akzent
+  schrift: fest
+  blitzbild_bilder: [2, 3]
+  stottern_wiederholungen: [2, 2]
+  push_in_prozent: [3, 8]
+  wackeln_faktor: [0.4, 1.0]
+  korn: [0.0, 0.0]
+  vignette: [0.0, 0.0]
+  beat_versatz_16tel: [0, 1]
+  textgroesse_prozent: [-10, 10]
+  textlage: regel
+  musik: bausteine
+palettenrolle:
+  grund: grund
+  text: tusche
+  akzent: akzent
+  dunkel: tusche
+  hell: grund
+  licht: grund
 quelle: Eigene Analyse einer öffentlichen Vorschau; nur der Look ist beschrieben, keine Motive, Texte oder Marken übernommen.
 ---
 
@@ -141,3 +168,6 @@ Bauplan für 19 s bei 88 BPM (112 Sechzehntel zu 0,17 s, sieben Takte). Inhalt a
 - Erlebt in Prüfrunde 1 (16.10.2026): In der Wortkolonne mit Umlaut (ZU SPÄT, jede zweite Zeile gespiegelt) stießen die Ä-Punkte bei Zeilenhöhe 0,92 der Schriftgröße ins U der Zeile darüber → für Wörter mit Umlaut Zeilenhöhe rund 10 % der Bildhöhe (192 px bei Schrift 160 px), dafür fünf statt sechs Zeilen.
 - Ein Bild, das „das Weltall ist groß“ zeigen soll, darf die Strecke nicht kurz machen und nicht „nicht maßstabsgetreu“ dazuschreiben → Sonne klein in die eine Ecke, Erde als Pünktchen in die andere, lange Bahn, die Figur kriecht.
 - Der Farbschlag nach dem Atem hat im Ton kaum Fallhöhe, wenn das Bett unter der Stimme geduckt bleibt → Bett im letzten Takt vor dem Atem 6 dB absenken, am Schlag drei Sechzehntel lang 12 dB anheben, Aufprall über die Stimme.
+- Motor (Code-Ersatz): Tusche-Leerbilder in echtem #151311 zählen in der Blitzregel doppelt (hinein und heraus) → je Leerbild eine Sekunde ohne weiteren harten Wechsel planen, Blitzlicht-Kette und Leerbild nicht in dieselbe Sekunde.
+- Platzhalter-Inhalt ohne Jenseits-Lesart: keine leuchtende Tür am Ende einer Flucht, keine selbstleuchtende Figur allein auf Schwarz, Schlusswort aus dem Alltag (Fehlerkatalog Ursache 5).
+- Augenbalken aus der Augenlage der Figur setzen, nicht fest verdrahten; ein Balken auf der Stirn liest sich als Motorfehler.

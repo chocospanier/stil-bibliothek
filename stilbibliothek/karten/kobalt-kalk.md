@@ -33,12 +33,37 @@ ton: Leises Intro, dann wechselhaft laut bis 16 s, danach ruhiger Ausklang um �
 braucht: [fotos-figur, footage-ort, illustrationen]
 motor_aufwand: mittel
 einsatz: [ganzes-kurzvideo, hook, portrait]
+zweck: [mode-lookbook, stimmung]
+branchen_passt: [tourismus, mode-beauty]
+branchen_nie: [werkstatt-auto, handwerk, technik, gesundheit, finanzen]
 abnahme:
   shot_median_s: [0.40, 0.60]
   schnitte_pro_s: [1.4, 2.0]
   helligkeit: [0.42, 0.60]
   farbigkeit: [0.15, 0.23]
   lufs: [-14.9, -12.9]
+# Würfel-Felder (Etappe 0 Bauplan Würfelstile, 31.10.2026; karten_wuerfelfelder.py, Familien-Standard)
+creator: ja
+spielraum:
+  palette: nachbarn
+  schrift: klasse
+  blitzbild_bilder: [2, 4]
+  stottern_wiederholungen: [2, 3]
+  push_in_prozent: [3, 8]
+  wackeln_faktor: [0.4, 1.0]
+  korn: [0.045, 0.075]
+  vignette: [0.3, 0.5]
+  beat_versatz_16tel: [0, 1]
+  textgroesse_prozent: [-10, 10]
+  textlage: regel
+  musik: bausteine
+palettenrolle:
+  grund: himmel
+  text: meer_tief
+  akzent: kobalt
+  dunkel: meer_tief
+  hell: kalk
+  licht: kalk
 quelle: Eigene Analyse einer öffentlichen Vorschau; nur der Look ist beschrieben, keine Motive, Texte oder Marken übernommen.
 ---
 
@@ -132,3 +157,5 @@ Bauplan für 18 s bei 75 BPM (90 Sechzehntel zu 0,2 s).
 - Eine markante Figur wird zur Karikatur, wenn jeder Shot das Gesicht zeigt → Hälfte der Figurenbilder als Rückenansicht oder Detail.
 - Nationalsymbole oder Fahnen machen es politisch → Stoff im Wind ohne Zeichen.
 - Kunstobjekt-Bilder mit KI-Fehlern im Muster → als Standbild prüfen, Gesicht darf nicht driften.
+- Code-Motor (Welle D): die Satzfarbe hängt am Grund unter der Satzzeile; Kobaltflächen (Laden, Kachel, Büste) enden über ihr oder der Satz steht weiß. Figuren und Häuser nie im offenen Meer, immer auf Mauer oder Hang.
+- Code-Motor: Schluss immer hell im Licht; Glitzer auf dem Meer als kurze scharfe Striche, weiche runde Punkte auf dunklem Wasser lesen sich als Schnee bei Nacht und kippen den Ton in Abschied.

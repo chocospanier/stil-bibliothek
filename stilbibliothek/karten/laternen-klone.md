@@ -33,12 +33,38 @@ ton: Sehr laut gemischter Beat um 91 BPM (−7.5 LUFS) mit großer Dynamik; leis
 braucht: [fotos-figur, footage-ort]
 motor_aufwand: mittel
 einsatz: [ganzes-kurzvideo, musikvideo, portrait]
+zweck: [musik-lyric, mode-lookbook]
+branchen_passt: [musik-kultur, mode-beauty]
+branchen_nie: [werkstatt-auto, handwerk, lebensmittel-feinkost, gesundheit, immobilien, finanzen, kinder-familie]
 abnahme:
   shot_median_s: [1.0, 1.5]
   schnitte_pro_s: [0.45, 0.70]
   helligkeit: [0.15, 0.22]
   farbigkeit: [0.10, 0.15]
   lufs: [-8.5, -6.5]
+# Würfel-Felder (Etappe 0 Bauplan Würfelstile, 31.10.2026; karten_wuerfelfelder.py, Familien-Standard)
+creator: nein
+creator_grund: "die Klone der Figur sind ausgeschnittene Kopien, ohne sie bleibt nur ein Nachtporträt"
+spielraum:
+  palette: nachbarn
+  schrift: klasse
+  blitzbild_bilder: [2, 4]
+  stottern_wiederholungen: [2, 3]
+  push_in_prozent: [3, 8]
+  wackeln_faktor: [0.4, 1.0]
+  korn: [0.045, 0.075]
+  vignette: [0.3, 0.5]
+  beat_versatz_16tel: [0, 1]
+  textgroesse_prozent: [-10, 10]
+  textlage: regel
+  musik: bausteine
+palettenrolle:
+  grund: nacht
+  text: laterne
+  akzent: gruenlicht
+  dunkel: nacht
+  hell: laterne
+  licht: laternengruen
 quelle: Eigene Analyse einer öffentlichen Vorschau; nur der Look ist beschrieben, keine Motive, Texte oder Marken übernommen.
 ---
 
@@ -133,3 +159,5 @@ Bauplan für 20 s bei 91 BPM in Sekunden (ein Schlag 0,66 s).
 - Rauchen im Bild ist auf manchen Kanälen heikel → durch Atem in kalter Luft oder Wunderkerze ersetzen.
 - −7,5 LUFS mit Spitzen über 0 dB (Vorlage clippt) → Limiter bei −1 dBTP.
 - Das fremde Detail (Tier) ohne Bezug wirkt zufällig → eines, das zur Figur passt, und nur einmal.
+- Code-Motor (Welle D): Klone auf eigenen Bahnen mit Abstand über einer Figurbreite, nie zwei übereinander (vier Arme, vier Beine); im Kreis um eine Sitzende nach Tiefe zeichnen, hintere vor ihr, vordere nach ihr.
+- Code-Motor: die Brille ist das Gesicht dieser Figur; ohne sie bleibt ein leeres Hautoval. Glitzer nur auf Schmuck, nie auf den Wangen (liest sich als Träne).

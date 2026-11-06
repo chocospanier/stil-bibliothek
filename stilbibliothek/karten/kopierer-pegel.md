@@ -29,12 +29,39 @@ ton: Laut und dicht, −14 LUFS mit Spitzen bis über 0 dBFS, Raster 0,25 s (gem
 braucht: [fotos-figur, footage-ort, illustrationen, produkt, nur-typo]
 motor_aufwand: mittel
 einsatz: [trailer, hook, intro, produkt, musikvideo]
+zweck: [event-teaser, wissen, angebot, produktwerbung]
+branchen_passt: [musik-kultur, technik]
+branchen_nie: [lebensmittel-feinkost, gesundheit, kinder-familie]
 abnahme:
   shot_median_s: [0.20, 0.30]
   schnitte_pro_s: [3.0, 4.6]
   helligkeit: [0.29, 0.43]
   farbigkeit: [0.09, 0.15]
   lufs: [-15.2, -13.2]
+# Würfel-Felder (Etappe 0 Bauplan Würfelstile, 31.10.2026; karten_wuerfelfelder.py, Familien-Standard)
+creator: nein
+creator_grund: "Familie kopierer: Zweiton mit Raster und Stempel über die ganze Fläche: Dauer-Raster\
+  \ und Abzeichen"
+spielraum:
+  palette: akzent
+  schrift: fest
+  blitzbild_bilder: [2, 3]
+  stottern_wiederholungen: [2, 2]
+  push_in_prozent: [3, 8]
+  wackeln_faktor: [0.4, 1.0]
+  korn: [0.0, 0.0]
+  vignette: [0.0, 0.0]
+  beat_versatz_16tel: [0, 1]
+  textgroesse_prozent: [-10, 10]
+  textlage: regel
+  musik: bausteine
+palettenrolle:
+  grund: grund
+  text: tusche
+  akzent: akzent
+  dunkel: tusche
+  hell: grund
+  licht: grund
 quelle: Eigene Analyse einer öffentlichen Vorschau; nur der Look ist beschrieben, keine Motive, Texte oder Marken übernommen.
 ---
 

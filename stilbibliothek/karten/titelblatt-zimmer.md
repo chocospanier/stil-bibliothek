@@ -31,12 +31,39 @@ ton: Gleichmäßiges Instrumental um −14,5 LUFS mit deutlicher Betonung alle z
 braucht: [fotos-figur, illustrationen]
 motor_aufwand: klein
 einsatz: [ganzes-kurzvideo, hook, produkt, portrait]
+zweck: [mode-lookbook]
+branchen_passt: [mode-beauty]
+branchen_nie: [werkstatt-auto, handwerk, gesundheit, immobilien, finanzen]
 abnahme:
   shot_median_s: [8.0, 16.0]
   schnitte_pro_s: [0.0, 0.2]
   helligkeit: [0.48, 0.64]
   farbigkeit: [0.09, 0.14]
   lufs: [-15.5, -13.5]
+# Würfel-Felder (Etappe 0 Bauplan Würfelstile, 31.10.2026; karten_wuerfelfelder.py, Familien-Standard)
+creator: nein
+creator_grund: "4 Kennungen aus rahmen und sticker: zeitungsdruck, bild-im-bild, magazin-layout,\
+  \ freisteller"
+spielraum:
+  palette: nachbarn
+  schrift: klasse
+  blitzbild_bilder: [2, 4]
+  stottern_wiederholungen: [2, 3]
+  push_in_prozent: [2, 5]
+  wackeln_faktor: [0.3, 0.7]
+  korn: [0.045, 0.075]
+  vignette: [0.3, 0.5]
+  beat_versatz_16tel: [0, 1]
+  textgroesse_prozent: [-10, 10]
+  textlage: regel
+  musik: bausteine
+palettenrolle:
+  grund: zeitung_hell
+  text: druckschwarz
+  akzent: titelrot
+  dunkel: druckschwarz
+  hell: zeitung_hell
+  licht: zeitung_hell
 quelle: Eigene Analyse einer öffentlichen Vorschau; nur der Look ist beschrieben, keine Motive, Texte oder Marken übernommen.
 ---
 
@@ -120,3 +147,5 @@ Bauplan für 16 s in Sekunden, eine einzige Einstellung. Bei 120 BPM ist ein Tak
 - Farbige Zeitungsfotos → die Figur hebt sich nicht mehr ab. Alles im Raum entsättigen.
 - Lesbare echte Zeitungsköpfe oder Schlagzeilen → Rechtsrisiko. Eigene Fantasietitel setzen.
 - Titelblatt zeigt das aktuelle statt das vorige Outfit → der Sammel-Effekt verpufft.
+- Code-Motor (Welle D): die Didone-Kopfzeile auf die Breite des Titelblatts einpassen (gemessen mit der gewürfelten Schrift), sonst fällt der letzte Buchstabe weg. Jedes Titelblatt bekommt einen festen freien Platz.
+- Code-Motor: Schritte nur, solange die Figur sich verschiebt; angekommen steht sie und atmet.

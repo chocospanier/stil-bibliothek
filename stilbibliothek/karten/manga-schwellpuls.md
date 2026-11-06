@@ -29,12 +29,37 @@ ton: Sehr laut gemischt (−9,5 LUFS), Beat um 115 BPM, Spitzen an 0 dBFS; Stimm
 braucht: [illustrationen]
 motor_aufwand: klein
 einsatz: [hook, intro, musikvideo, portrait, uebergang]
+zweck: [musik-lyric, event-teaser]
+branchen_passt: [musik-kultur]
+branchen_nie: [werkstatt-auto, handwerk, lebensmittel-feinkost, gastro, gesundheit, immobilien, finanzen]
 abnahme:
   shot_median_s: [0.18, 0.28]
   schnitte_pro_s: [4.6, 7.0]
   helligkeit: [0.33, 0.49]
   farbigkeit: [0.00, 0.02]
   lufs: [-10.5, -8.5]
+# Würfel-Felder (Etappe 0 Bauplan Würfelstile, 31.10.2026; karten_wuerfelfelder.py, Familien-Standard)
+creator: eingeschraenkt
+creator_ohne: [dither]
+spielraum:
+  palette: nachbarn
+  schrift: klasse
+  blitzbild_bilder: [2, 3]
+  stottern_wiederholungen: [2, 2]
+  push_in_prozent: [3, 8]
+  wackeln_faktor: [0.4, 1.0]
+  korn: [0.0, 0.04]
+  vignette: [0.0, 0.3]
+  beat_versatz_16tel: [0, 1]
+  textgroesse_prozent: [-10, 10]
+  textlage: regel
+  musik: bausteine
+palettenrolle:
+  grund: weiss
+  text: tusche
+  dunkel: tusche
+  hell: weiss
+  licht: weiss
 quelle: Eigene Analyse einer öffentlichen Vorschau; nur der Look ist beschrieben, keine Motive, Texte oder Marken übernommen.
 ---
 
@@ -142,3 +167,12 @@ Bauplan für 16,7 s bei 115 BPM (128 Sechzehntel zu 0,13 s, acht Takte). Inhalt 
 - Linearer Ausblendverlauf unter einem Brustbild wird von der Schwelle zur linealgeraden Schnittkante → Alpha-Maske mit zerrissener Tuschekante oder Kante unter ein Band legen
 - Hell-Dunkel-Wechsel auf Gamma-Mittelwerten zählen unterschätzt: auf linearer Luminanz mit Sprung über 0,20 messen; Leerbilder in schnellen Läufen sparen, Zoom-Schlag lieber weiterlaufen lassen
 - Ein reiner Umriss eines Alltagsgegenstands liest sich nicht als Gegenstand → dunkle Fläche mit hellen Kennzeichen (Papier im Schacht) und weißem Gegenlicht-Rand
+- Motorbau (31.10.): Die Figur als SVG in Bildgröße plus Versatz oder Pull-out im Stottern zeigt die Kante der Zeichnung → SVG mit `overflow: visible`, Gründe und Material 20 bis 40 % größer als das Bild zeichnen.
+- Motorbau (31.10.): Der Ausschnitt eines `feDisplacementMap`-Filters mit Region in Prozent schneidet den Klecks linealgerade ab → `filterUnits="userSpaceOnUse"` mit Rand.
+- Motorbau (31.10.): Die Schnittdichte springt am Median zwischen 0,13 und 0,23 s, weil Shots auf dem Raster nur 4 oder 8 Bilder lang sind → Stotter-Teile zu 1,5 Sechzehnteln (6 Bilder).
+- Motorbau (31.10.): Stotter-Teile mit nur neuer Schwelle erkennt die Schnittmessung nicht → Zoomstufe von 15 % und 4 bis 9 % Versatz je Wiederholung.
+- Motorbau (31.10.): Ein weißer Leerbild-Blitz kostet immer zwei harte Wechsel, mehrere in einer Sekunde brechen die Blitzregel → nur in eine ruhige Sekunde setzen, den Helligkeitsverlauf nach dem Render messen statt aus einer Tabelle schätzen.
+- Motorbau (04.11.): Profil auf schwarzem Grund: schwarzes Haar, Hinterkopf und Hals verschwinden, übrig bleibt ein weißer Gesichtskeil → denselben Umriss breit in Weiß dahinter legen (Lichtkante), Hals im Halbschatten mit heller Kehlkante.
+- Motorbau (04.11.): Ganzkörper als Kasten mit waagerechtem Saum und Bretterbeinen wirkt wie ein Pappaufsteller → Hals, abfallende Schultern, zerrissener Saum, Beine in Schrittstellung; das Wort ins freie Feld neben der Figur.
+- Motorbau (04.11.): Ganzkörper nahe am Rand wird im Stotter-Zoom (bis 1,18) angeschnitten → Figur so setzen, dass sie auch bei 1,2-facher Vergrößerung 40 px vom Rand bleibt.
+- Würfel (04.11.): Der Würfel tauscht Weiß als Rollenfarbe grund; in einem dunklen Haus kippt die Schwelle das ganze Bild → nur in hellen Häusern würfeln (Eintrag grund: hell).

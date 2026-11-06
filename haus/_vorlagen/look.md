@@ -11,6 +11,10 @@
 - Lauftext und Untertitel: [zum Beispiel Inter]
 - Logo: [Dateiname im Ordner haus/, SVG oder PNG mit transparentem Grund]
 
+## Branche und Zwecke (aus stilbibliothek/ZWECKE.md)
+- branche: [ein Wert, zum Beispiel werkstatt-auto]
+- zwecke: [ein bis vier Hauptzwecke des Kanals, zum Beispiel produktwerbung, angebot, erklaeren]
+
 ## Stil-Familien (aus stilbibliothek/FAMILIEN.md)
 - passen: [drei Familien, zum Beispiel kinetik-typo, noir, vorspann]
 - nie: [drei Familien, zum Beispiel zeichentrick, glitch, kopierer]

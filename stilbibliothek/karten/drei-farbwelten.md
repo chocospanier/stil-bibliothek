@@ -34,12 +34,38 @@ ton: Durchgehend sehr laut (−8,1 LUFS), um 115 BPM, ab 8 s noch einmal 4 dB la
 braucht: [fotos-figur, footage-ort, nur-typo]
 motor_aufwand: mittel
 einsatz: [ganzes-kurzvideo, portrait, hook]
+zweck: [mode-lookbook]
+branchen_passt: [mode-beauty, tourismus]
+branchen_nie: [werkstatt-auto, handwerk, gesundheit, finanzen]
 abnahme:
   shot_median_s: [0.45, 0.70]
   schnitte_pro_s: [0.9, 1.3]
   helligkeit: [0.34, 0.50]
   farbigkeit: [0.15, 0.23]
   lufs: [-9, -7]
+# Würfel-Felder (Etappe 0 Bauplan Würfelstile, 31.10.2026; karten_wuerfelfelder.py, Familien-Standard)
+creator: eingeschraenkt
+creator_ohne: [bild-im-bild, raster-collage, pixelschrift]
+spielraum:
+  palette: nachbarn
+  schrift: klasse
+  blitzbild_bilder: [2, 4]
+  stottern_wiederholungen: [2, 3]
+  push_in_prozent: [3, 8]
+  wackeln_faktor: [0.4, 1.0]
+  korn: [0.045, 0.075]
+  vignette: [0.3, 0.5]
+  beat_versatz_16tel: [0, 1]
+  textgroesse_prozent: [-10, 10]
+  textlage: regel
+  musik: bausteine
+palettenrolle:
+  grund: tiefe
+  text: weissraum
+  akzent: sonne
+  dunkel: tiefe
+  hell: weissraum
+  licht: sonne
 quelle: Eigene Analyse einer öffentlichen Vorschau; nur der Look ist beschrieben, keine Motive, Texte oder Marken übernommen.
 ---
 
@@ -130,3 +156,8 @@ Bauplan für 16,7 s bei 115 BPM (128 Sechzehntel zu 0,13 s).
 - Pixelschrift ohne Verlauf wirkt nach Spiel statt Mode → Farbverlauf und Sperrung sind Pflicht.
 - −8 LUFS ohne Dynamik ermüdet über 20 s → Stück kurz halten oder leiser mischen und die Abnahme bewusst anpassen.
 - Blauer Tunnel zu dunkel für das Handy → Haut im Blau mit Maske um 15 % aufhellen.
+- Kacheln über dem Vollbild zählt die Schnittmessung im Hochformat nicht (zu klein) → mit der ersten Kachel springt das Bild hart näher, so liegen Median und Schnitte im Fenster; im Creator-Modus bleibt nur dieser Sprung (Motor DreiFarbwelten, 04.11.).
+- Silkscreen 700 macht das W zum Block → Pixelschrift in 400.
+- Geschlossene Augen in allen Porträts und Wörter wie Nacht, Stille, Höher lesen sich als Jenseits → Augen offen, Lachen mit offenem Mund, Etiketten neutral (Farbe und Ort).
+- Eck-Kacheln in 9:16 decken den Kopf → Kacheln 34 % der Breite, Figur im Gang auf 58 % der Höhe.
+- Im Creator-Modus fehlen die Kacheln, und der Sprung näher allein zählt nicht sicher als Schnitt (Median fiel auf 1,03 s) → dort springt das Bild gespiegelt näher.

@@ -31,12 +31,37 @@ ton: Gleichmäßiger dunkler Puls bei 60 BPM, ein gedämpfter Schlag etwa alle v
 braucht: [fotos-figur, footage-ort]
 motor_aufwand: mittel
 einsatz: [trailer, intro, hook, portrait]
+zweck: [person-vorstellen, event-teaser, stimmung]
+branchen_passt: [musik-kultur]
+branchen_nie: [lebensmittel-feinkost, gastro, gesundheit, kinder-familie]
 abnahme:
   shot_median_s: [0.28, 0.42]
   schnitte_pro_s: [1.6, 2.4]
   helligkeit: [0.15, 0.23]
   farbigkeit: [0.00, 0.01]
   lufs: [-15, -13]
+# Würfel-Felder (Etappe 0 Bauplan Würfelstile, 31.10.2026; karten_wuerfelfelder.py, Familien-Standard)
+creator: eingeschraenkt
+creator_ohne: [raster-collage, bild-im-bild, zensurbalken]
+spielraum:
+  palette: akzent
+  schrift: klasse
+  blitzbild_bilder: [2, 4]
+  stottern_wiederholungen: [2, 3]
+  push_in_prozent: [2, 5]
+  wackeln_faktor: [0.3, 0.7]
+  korn: [0.05, 0.08]
+  vignette: [0.3, 0.5]
+  beat_versatz_16tel: [0, 1]
+  textgroesse_prozent: [-10, 10]
+  textlage: regel
+  musik: bausteine
+palettenrolle:
+  grund: grund
+  text: gegenlicht
+  dunkel: grund
+  hell: gegenlicht
+  licht: licht
 quelle: Eigene Analyse einer öffentlichen Vorschau; nur der Look ist beschrieben, keine Motive, Texte oder Marken übernommen.
 ---
 
@@ -139,3 +164,4 @@ Bauplan für 16 s bei 60 BPM (Sechzehntel = 0,25 s, vier Takte, 64 Sechzehntel).
 - Rauschblatt mit lesbarem Text → lenkt ab. Balken bleiben unlesbar, höchstens eine echte Zeile.
 - Zu helles Grading → Schwarzbilder verschwinden im Bild. Ruhebilder dunkel halten, damit Schwarz wie ein Punkt wirkt.
 - Bei 20 fps sind zwei Frames 0,1 s; bei 30 fps entsprechen drei Frames demselben Gewicht. Frames nicht stur übernehmen, sondern auf Zeit umrechnen.
+- Motor (Code-Ersatz): Korn, das in jedem Bild wechselt, verdeckt Schnitte in der Messung → Korn jedes zweite Bild wechseln.

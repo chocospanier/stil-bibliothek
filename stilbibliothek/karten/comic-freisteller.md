@@ -32,12 +32,38 @@ ton: Instrumental wirkender Beat, gemessen 66 BPM (vermutlich Halbtempo eines St
 braucht: [fotos-figur, produkt, nur-typo]
 motor_aufwand: mittel
 einsatz: [hook, intro, portrait, produkt, ganzes-kurzvideo]
+zweck: [produktwerbung, erklaeren, person-vorstellen]
+branchen_passt: [kinder-familie, bildung, technik]
+branchen_nie: [gesundheit, finanzen]
 abnahme:
   shot_median_s: [0.18, 0.28]
   schnitte_pro_s: [2.2, 3.4]
   helligkeit: [0.52, 0.70]
   farbigkeit: [0.16, 0.24]
   lufs: [-15.5, -13.5]
+# Würfel-Felder (Etappe 0 Bauplan Würfelstile, 31.10.2026; karten_wuerfelfelder.py, Familien-Standard)
+creator: nein
+creator_grund: "Freisteller mit Kontur und Panels tragen den Stil"
+spielraum:
+  palette: nachbarn
+  schrift: klasse
+  blitzbild_bilder: [2, 4]
+  stottern_wiederholungen: [2, 3]
+  push_in_prozent: [3, 8]
+  wackeln_faktor: [0.4, 1.0]
+  korn: [0.0, 0.04]
+  vignette: [0.0, 0.3]
+  beat_versatz_16tel: [0, 1]
+  textgroesse_prozent: [-10, 10]
+  textlage: regel
+  musik: bausteine
+palettenrolle:
+  grund: papier
+  text: tusche
+  akzent: cyan
+  dunkel: tusche
+  hell: papier
+  licht: papier
 quelle: Eigene Analyse einer öffentlichen Vorschau; nur der Look ist beschrieben, keine Motive, Texte oder Marken übernommen.
 ---
 
@@ -149,3 +175,10 @@ Bauplan für 18 s bei 66 BPM (80 Sechzehntel zu 0,227 s, fünf Takte). Inhalt au
 - Eine nur gesprochene Pointe trägt stumm nicht → den Rückgriff als Etikett an dieselbe Stelle wie den Aufbau setzen.
 - Eine handschriftliche 4 liest sich in Pinselschrift wie ein y → Zahlwörter ausschreiben oder eine geschlossene Ziffer nehmen.
 - „Musik dünner“ als Tiefpass unter 400 Hz ist auf Handylautsprechern Stille → Band 140 Hz bis 2,4 kHz, dann bleibt ein hörbarer Rest.
+- Motorbau (04.11.): Etiketten auf Einstellungen von einem Sechzehntel stehen nur 0,2 s und sind nicht lesbar → eigene Etiketten-Spur, jedes Etikett mindestens 16 Bilder über die Posenwechsel hinweg, das nächste erst danach.
+- Motorbau (04.11.): Posen mit geneigtem Rumpf drehen ein getrennt gezeichnetes Gesicht nicht mit, Auge und Mund hängen neben dem Kopf → Gesicht in dieselbe Drehung legen wie Rumpf und Kopf.
+- Motorbau (04.11.): Ein Lichtfilter auf dem Rohmaterial-Ersatz liest sich als weiterer Effekt und macht den Grund grau → dieselbe flache Figur ohne Kontur auf reinem Weiß, ganz im Bild, mit Lidschlag und leichtem Atmen.
+- Motorbau (04.11.): Posenwechsel derselben Figur auf hellem Papier zählt die Schnittmessung oft nicht (Wert unter 10) → je Sprung Lage und Größe um 10 bis 15 % ändern, Schnittdichte am Render nachmessen.
+- Motorbau (04.11.): Eine Schlusskarte mit stehendem Wort über 2,3 s meldet die Vorprüfung als Standbild → das Pinselwort rückt langsam näher (8 %) und dreht 2°.
+- Motorbau (04.11.): Das Riesenwort in kursiver Comic-Schrift mit Kontur ragt bei 76 % Breite an den Rand → auf 66 % der Bildbreite rechnen und so hoch setzen, dass die Figur höchstens einen Buchstaben deckt.
+- Würfel (04.11.): Die Karte lebt vom Papier; in einem dunklen Haus wird der Grund dunkel → nur in hellen Häusern würfeln (Eintrag grund: hell).

@@ -31,12 +31,38 @@ ton: Spärlicher dunkler Beat um 140 BPM mit einem schweren Treffer etwa alle dr
 braucht: [fotos-figur, footage-ort]
 motor_aufwand: klein
 einsatz: [hook, intro, portrait, musikvideo]
+zweck: [musik-lyric, person-vorstellen, stimmung]
+branchen_passt: [musik-kultur]
+branchen_nie: [werkstatt-auto, handwerk, lebensmittel-feinkost, gastro, gesundheit, bildung, immobilien, finanzen, kinder-familie, tourismus]
 abnahme:
   shot_median_s: [0.50, 0.75]
   schnitte_pro_s: [1.2, 1.9]
   helligkeit: [0.18, 0.28]
   farbigkeit: [0.06, 0.10]
   lufs: [-15.1, -13.1]
+# Würfel-Felder (Etappe 0 Bauplan Würfelstile, 31.10.2026; karten_wuerfelfelder.py, Familien-Standard)
+creator: eingeschraenkt
+creator_ohne: [kreisfenster]
+spielraum:
+  palette: nachbarn
+  schrift: klasse
+  blitzbild_bilder: [2, 4]
+  stottern_wiederholungen: [2, 3]
+  push_in_prozent: [3, 8]
+  wackeln_faktor: [0.4, 1.0]
+  korn: [0.045, 0.075]
+  vignette: [0.3, 0.5]
+  beat_versatz_16tel: [0, 1]
+  textgroesse_prozent: [-10, 10]
+  textlage: regel
+  musik: bausteine
+palettenrolle:
+  grund: grund
+  text: roentgen
+  akzent: rot
+  dunkel: grund
+  hell: licht
+  licht: laterne
 quelle: Eigene Analyse einer öffentlichen Vorschau; nur der Look ist beschrieben, keine Motive, Texte oder Marken übernommen.
 ---
 
@@ -131,3 +157,8 @@ Bauplan für 13 s bei 140 BPM (Sechzehntel = 0,107 s, Viertel = 0,43 s; 120 Sech
 - Augenbalken zu breit → wird zur Zensur-Grafik. Schmal, nur die Augenpartie.
 - Drop zu früh → kein Sog. Die leisen Strecken zwischen den Treffern aushalten.
 - Serifenwort animiert oder mit Schatten → verliert die Härte. Hart einsetzen, flach, ohne Effekt.
+- Motor aus Code (AugenbalkenGruennacht, Welle D): Code-Nacht wird schnell zu dunkel (erste Fassung 0,16) → Laternenlicht als großer weicher Verlauf, Nachtbilder rund 14 % heller zeichnen.
+- 1-Bit über CSS-Kontrast lässt Graustufen stehen → harte Schwelle als SVG-Filter (discrete) bei 45 %.
+- Standardwörter wie NICHT HIER NICHT JETZT mit einsamer Figur vor heller Tür lesen sich als Jenseits → neutrale Wörter, Tür nicht reinweiß, letztes Wort mindestens 1,3 s stehen lassen.
+- Negativ und 1-Bit kehren Gesichter um (Kern der Karte, Fehlerkatalog verbietet es für Avatare); mit echten Figuren aus den Props entscheidet der Mensch.
+- Im Creator-Modus ersetzt die Figur im Gegenlicht der Laternen das Schlüsselloch; ein Push-in auf denselben Rücken zählt die Schnittmessung nicht (Schnittrate fiel auf 1,08).

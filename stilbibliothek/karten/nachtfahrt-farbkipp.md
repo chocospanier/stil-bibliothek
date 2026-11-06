@@ -31,12 +31,38 @@ ton: Dünnes Intro ohne Bass, auf 2,5 s setzt der volle Beat mit Bass ein, danac
 braucht: [footage-ort, fotos-figur]
 motor_aufwand: mittel
 einsatz: [intro, hook, trailer, musikvideo]
+zweck: [event-teaser, musik-lyric, marke-image]
+branchen_passt: [werkstatt-auto, musik-kultur]
+branchen_nie: [lebensmittel-feinkost, gesundheit, kinder-familie]
 abnahme:
   shot_median_s: [0.27, 0.40]
   schnitte_pro_s: [1.8, 2.7]
   helligkeit: [0.12, 0.18]
   farbigkeit: [0.12, 0.19]
   lufs: [-13, -11]
+# Würfel-Felder (Etappe 0 Bauplan Würfelstile, 31.10.2026; karten_wuerfelfelder.py, Familien-Standard)
+creator: eingeschraenkt
+creator_ohne: [split-screen, bild-im-bild, hud]
+spielraum:
+  palette: nachbarn
+  schrift: klasse
+  blitzbild_bilder: [2, 4]
+  stottern_wiederholungen: [2, 3]
+  push_in_prozent: [3, 8]
+  wackeln_faktor: [0.4, 1.0]
+  korn: [0.045, 0.075]
+  vignette: [0.3, 0.5]
+  beat_versatz_16tel: [0, 1]
+  textgroesse_prozent: [-10, 10]
+  textlage: regel
+  musik: bausteine
+palettenrolle:
+  grund: grund
+  text: licht
+  akzent: ruecklicht
+  dunkel: grund
+  hell: licht
+  licht: licht
 quelle: Eigene Analyse einer öffentlichen Vorschau; nur der Look ist beschrieben, keine Motive, Texte oder Marken übernommen.
 ---
 
@@ -134,3 +160,7 @@ Bauplan für 18 s bei gefühlten 90 BPM (Sechzehntel = 0,167 s; die Kopfwerte st
 - Rücklichter ohne Glow wirken wie Aufkleber → Lichter herauslösen und überstrahlen lassen.
 - Zu viele Weißblitze sind eine Epilepsie-Gefahr → höchstens drei je Sekunde und fünf bis sieben im ganzen Stück.
 - Schwarz am Ende ohne Ton wirkt wie ein Abbruch → Tiefbass-Schlag oder Nachhall darüberlegen.
+- Code-Motor, Schnittmessung: scdet zählt nur Sprünge der Bildhelligkeit; zwei Code-Einstellungen gleicher Helligkeit nacheinander gelten als ein Shot → benachbarte Einstellungen in der Belichtung im Wechsel um 15 bis 35 % versetzen (`belichtung()` in `gemeinsam_d6.tsx`), unter 0,2 Sprung bleibt die Blitzregel frei.
+- Code-Motor, Front von vorn: zwei runde Scheinwerfer über einer dunklen Öffnung lesen sich am Handy als Gesicht → flache, kantige Leuchten, breiter tiefer Einlass, Räder und Spiegel sichtbar (`AutoFront` in `gemeinsam_d6.tsx`).
+- Helle Schwarzweiß-Köpfe direkt neben Schwarz und Weißblitz brechen die Blitzregel → Köpfe mittelgrau, Belichtungswechsel im Schwarzweiß-Teil sanft (12 %), im Farbteil kräftig.
+- Büsten, deren Schultern über Schwarz enden, wirken wie Pappaufsteller → Schultern über den unteren Bildrand laufen lassen.

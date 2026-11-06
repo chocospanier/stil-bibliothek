@@ -30,12 +30,39 @@ ton: Ein durchgehend lautes Musikbett um 91 BPM ohne Pegelsprünge, Fotos landen
 braucht: [fotos-figur, footage-ort]
 motor_aufwand: klein
 einsatz: [ganzes-kurzvideo, portrait, intro]
+zweck: [geschichte, stimmung, person-vorstellen]
+branchen_passt: [kinder-familie, tourismus]
+branchen_nie: [finanzen]
 abnahme:
   shot_median_s: [0.75, 1.15]
   schnitte_pro_s: [0.55, 0.9]
   helligkeit: [0.65, 0.85]
   farbigkeit: [0.05, 0.12]
   lufs: [-13.5, -11.5]
+# Würfel-Felder (Etappe 0 Bauplan Würfelstile, 31.10.2026; karten_wuerfelfelder.py, Familien-Standard)
+creator: nein
+creator_grund: "Familie scrapbook: Handarbeit über Material: Papierränder, Sticker, Klebeband, Collage\
+  \ sind der Kern"
+spielraum:
+  palette: nachbarn
+  schrift: klasse
+  blitzbild_bilder: [2, 4]
+  stottern_wiederholungen: [2, 3]
+  push_in_prozent: [2, 5]
+  wackeln_faktor: [0.3, 0.7]
+  korn: [0.045, 0.075]
+  vignette: [0.3, 0.5]
+  beat_versatz_16tel: [0, 1]
+  textgroesse_prozent: [-10, 10]
+  textlage: regel
+  musik: bausteine
+palettenrolle:
+  grund: grund
+  text: schatten_foto
+  akzent: text
+  dunkel: schatten_foto
+  hell: grund
+  licht: grund
 quelle: Eigene Analyse einer öffentlichen Vorschau; nur der Look ist beschrieben, keine Motive, Texte oder Marken übernommen.
 ---
 
@@ -133,3 +160,6 @@ Bauplan für 18,5 s bei 91 BPM (112 Sechzehntel, ein Sechzehntel = 0,165 s). Mus
 - Datumsstempel aus der Kamera-Datenrückwand trägt bei Alltagsserien die Erzählung (Uhrzeit je Foto); auf hellen Stellen verschwindet er wie echt, also Stempelecke dunkel wählen, wo die Zeit wichtig ist.
 - Nach der Pointe nicht nachlaufen lassen (erlebt in der Prüfrunde): Pointenfoto 2 s, Leerseite 0,5 s, Schwarz 0,4 s; 4,4 s ohne neue Information kosten Durchsehrate und verzögern den Loop.
 - Lesbarkeit ohne Kontur: die Zeilenzone im Foto weich nachbelichten (Faktor 0,66 bis 0,8, Feder 30 bis 40 px), gelbe Lichter darin nach Orange und dunkler drehen; das sieht aus wie ungleich verteiltes Blitzlicht, nicht wie ein Kasten.
+- Fotos, die auf leeres Weiß landen, zählt die Schnittmessung erst ab rund 12 % Bildfläche mit dunklem Inhalt; Fächerfotos über ihren Vorgängern und ein Einzelfoto nach dem anderen bleiben unter Schwelle 10 → der Median wird zu lang. Im Motor halten Schritte von 6 Sechzehnteln den Median bei 1,0 s, die Fächerfotos 2 bis 4 dürfen unerkannt bleiben (erlebt beim Motorbau, 04.11.2026).
+- Nachtfotos als leere dunkle Räume mit einer Einzelfigur und eine Zeile in der Vergangenheit → das Stück liest sich wie die Erinnerung an einen Toten. Lichterkette, Gruppen, harter Blitzschatten an der Wand und eine Zeile über Feste (erlebt beim Motorbau, 04.11.2026).
+- Bild im Bild mittig im Scanfoto deckt dessen Figur → nur Schuhe schauen heraus. Die Figur des großen Fotos an den Rand legen (erlebt beim Motorbau, 04.11.2026).

@@ -30,12 +30,38 @@ ton: Leise gemischter Song (−17,3 LUFS, 6,1 LU Spanne), gemessen 64 BPM, Fenst
 braucht: [fotos-figur, footage-ort]
 motor_aufwand: klein
 einsatz: [musikvideo, portrait, uebergang, ganzes-kurzvideo]
+zweck: [musik-lyric, stimmung]
+branchen_passt: [musik-kultur]
+branchen_nie: [gesundheit, immobilien, finanzen]
 abnahme:
   shot_median_s: [8, 16]
   schnitte_pro_s: [0.0, 0.3]
   helligkeit: [0.07, 0.12]
   farbigkeit: [0.08, 0.12]
   lufs: [-15, -13]   # Vorlage −17,3; für Kanäle bewusst auf −14
+# Würfel-Felder (Etappe 0 Bauplan Würfelstile, 31.10.2026; karten_wuerfelfelder.py, Familien-Standard)
+creator: eingeschraenkt
+creator_ohne: [bild-im-bild, fenster-tanz]
+spielraum:
+  palette: nachbarn
+  schrift: klasse
+  blitzbild_bilder: [2, 4]
+  stottern_wiederholungen: [2, 3]
+  push_in_prozent: [2, 5]
+  wackeln_faktor: [0.3, 0.7]
+  korn: [0.045, 0.075]
+  vignette: [0.3, 0.5]
+  beat_versatz_16tel: [0, 1]
+  textgroesse_prozent: [-10, 10]
+  textlage: regel
+  musik: bausteine
+palettenrolle:
+  grund: flaeche
+  text: haut_licht
+  akzent: zweiter_ort
+  dunkel: flaeche
+  hell: haut_licht
+  licht: haut_licht
 quelle: Eigene Analyse einer öffentlichen Vorschau; nur der Look ist beschrieben, keine Motive, Texte oder Marken übernommen.
 ---
 
@@ -121,3 +147,7 @@ Hier gibt es kaum Schnitte; der Bauplan beschreibt die Fensterbewegung in Schlä
 - Figur gerät beim schmalen Fenster aus dem Bild → Clip vorher so beschneiden, dass das Gesicht mittig liegt.
 - Leise Vorlage übernehmen → auf Kanälen untergeht; Master auf −14 LUFS.
 - Echte Gesichter fremder Personen → nur eigene Aufnahmen mit Einwilligung.
+- Breite Fensterform genau 100 % der Bildbreite → jeder Wechsel dorthin verweilt mit schmalem dunklem Saum an der Kante (Vorprüfung rand_streifen rot); breite Form auf rund 106 % setzen, so ragt sie über die Kante und der Saum huscht durch.
+- Länge 18 s ohne erkannten Schnitt → Shot-Median 18 s über der Grenze 16; 15 s Länge hält mit null oder einem erkannten Schnitt (der Median nimmt bei zwei Shots den längeren).
+- Creator-Fassung ganzflächig ohne schwarze Fläche → Helligkeit springt über die Karte; dunklen Schleier aus reinem Schwarz darüberlegen (Schwarz dreht beim Würfeln nicht mit).
+- Formwechsel ab dem Bild nach dem Schlag gerechnet → jeder Sprung liegt ein Bild zu spät; die Bewegung schon auf dem Schlagbild beginnen.

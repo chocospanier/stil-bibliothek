@@ -32,12 +32,38 @@ ton: Ein dumpfer Schlag mit langem Nachhall auf jedem Taktanfang bei 94 BPM, daz
 braucht: [fotos-figur, footage-ort, nur-typo]
 motor_aufwand: klein
 einsatz: [trailer, intro, ganzes-kurzvideo, portrait]
+zweck: [zitat, marke-image, person-vorstellen]
+branchen_passt: [sport, bildung]
+branchen_nie: [lebensmittel-feinkost, gastro, kinder-familie]
 abnahme:
   shot_median_s: [0.55, 0.80]
   schnitte_pro_s: [1.1, 1.7]
   helligkeit: [0.13, 0.19]
   farbigkeit: [0.04, 0.09]
   lufs: [-14.5, -12.5]
+# Würfel-Felder (Etappe 0 Bauplan Würfelstile, 31.10.2026; karten_wuerfelfelder.py, Familien-Standard)
+creator: eingeschraenkt
+creator_ohne: [split-screen, kinobalken, text-hinter-figur]
+spielraum:
+  palette: akzent
+  schrift: klasse
+  blitzbild_bilder: [2, 4]
+  stottern_wiederholungen: [2, 3]
+  push_in_prozent: [3, 8]
+  wackeln_faktor: [0.4, 1.0]
+  korn: [0.05, 0.08]
+  vignette: [0.3, 0.5]
+  beat_versatz_16tel: [0, 1]
+  textgroesse_prozent: [-10, 10]
+  textlage: regel
+  musik: bausteine
+palettenrolle:
+  grund: grund
+  text: licht
+  akzent: akzent_gelb
+  dunkel: grund
+  hell: licht
+  licht: licht
 quelle: Eigene Analyse einer öffentlichen Vorschau; nur der Look ist beschrieben, keine Motive, Texte oder Marken übernommen.
 ---
 
@@ -141,3 +167,8 @@ Erlebt beim Bau (16.10.2026):
 - Prüfrunde 1: Z-Image malte zu „climbing ropes tied up under the ceiling“ ein Seil mit Schlinge in die leere Halle; mit Einsamkeit und Dunkelheit im Text liest sich das als Galgenstrick → jedes generierte Bild vor dem Schnitt auf Schlingen, Waffen und Menschen an Kanten prüfen, hängende Seile gar nicht erst bestellen, Gefundenes per Inpainting entfernen.
 - Ganzkörper-Silhouetten aus Avatar-Posen lesen sich klein als Kind (großer Kopf, kurze Beine) → Kopf mit Hals rund 0,88, Beine rund 1,2 strecken (Kopf etwa 1/7,5 der Höhe), kleine Figuren in Bewegung (von hinten im Schritt, steigend) statt immer derselben frontalen Standpose.
 - Ein leeres Feld im geteilten Bild ist zweideutig → das Schlussbild sichtbar aus genau diesem Feld wachsen lassen.
+- Figuren aus Code mit Kinderproportionen (Kopf 1/5 der Höhe) und hartem weißem Saum lesen sich als Piktogramm → Kopf rund 1/7,5, breite Schultern, weicher schmaler Saum, mindestens vier Posen (steht, geht, steigt, Arme hoch).
+- Füße der Figur über der Serif-Zeile halten (Fußpunkt höchstens 70 % der Höhe), sonst schneidet die Zeile die Beine.
+- Farbschlüssel der Sonne als runde Fläche über der grauen Szene, nie als Ausschnitt mit Schatten (das gab ein orange getöntes Rechteck).
+- Die Farbigkeit liegt nah an der Untergrenze 0,04; mit nur vier getönten Shots hielt die Würfelprobe den Abstand nicht (Rückfall). Sechs getönte Shots (Kobalt, Glut) geben Luft.
+- Creator-Modus ohne Kinobalken: es fehlen rund 36 % Schwarz, die Helligkeit steigt über das Fenster (0,25); Abdunkeln (Schwarz oder Kobalt) senkt dann Farbigkeit und Schnittmessung unter die Abnahme. Der Motor SiegerMantra steht darum mit creator: false in motoren.json; eine Creator-Fassung dieser Karte ist ein Handbau ohne Balken mit eigener Messung.

@@ -31,12 +31,37 @@ ton: Ein getragenes Stück um 106 BPM mit spürbarem Viertel, mittellaut mit Dyn
 braucht: [fotos-figur, footage-ort]
 motor_aufwand: mittel
 einsatz: [portrait, trailer, intro, ganzes-kurzvideo]
+zweck: [person-vorstellen, geschichte, stimmung]
+branchen_passt: [musik-kultur]
+branchen_nie: [werkstatt-auto, lebensmittel-feinkost, technik, gesundheit, finanzen, sport, kinder-familie]
 abnahme:
   shot_median_s: [0.47, 0.70]
   schnitte_pro_s: [0.45, 0.75]
   helligkeit: [0.09, 0.16]
   farbigkeit: [0.05, 0.10]
   lufs: [-15, -13]
+# Würfel-Felder (Etappe 0 Bauplan Würfelstile, 31.10.2026; karten_wuerfelfelder.py, Familien-Standard)
+creator: ja
+spielraum:
+  palette: nachbarn
+  schrift: klasse
+  blitzbild_bilder: [2, 4]
+  stottern_wiederholungen: [2, 3]
+  push_in_prozent: [2, 5]
+  wackeln_faktor: [0.3, 0.7]
+  korn: [0.05, 0.09]
+  vignette: [0.35, 0.6]
+  beat_versatz_16tel: [0, 1]
+  textgroesse_prozent: [-10, 10]
+  textlage: regel
+  musik: bausteine
+palettenrolle:
+  grund: grund
+  text: lampe
+  akzent: haut
+  dunkel: grund
+  hell: lampe
+  licht: licht_gruen
 quelle: Eigene Analyse einer öffentlichen Vorschau; nur der Look ist beschrieben, keine Motive, Texte oder Marken übernommen.
 ---
 
@@ -123,3 +148,8 @@ Bauplan für 19 s bei 106 BPM (128 Sechzehntel, ein Sechzehntel = 0,142 s). Der 
 - Reigen mit wechselnden Figuren → zerfällt in eine Collage. Eine Figur, viele Lagen.
 - Eröffnung mit Schnitt → die Geduld ist weg, der Reigen verliert seine Wucht. Ein durchgehender Shot.
 - Schnitte nur ungefähr im Takt → bei dieser Präzision sieht man jede Abweichung. Raster am fertigen Musikbett messen.
+- Code-Figur mit Hals als Fläche über dem Mantel → endet mit gerader Kante auf der Brust wie aufgeklebt. Hals hinter den Mantel legen und mit Stehkragen schließen.
+- Requisit ohne Hand vor dem Mantel (Glas, Feuer) → liest sich als Abzeichen oder schwebt. Requisiten nur mit Hand zeigen oder weglassen.
+- Breitkrempiger Hut mit runder Krone → Lesart Ranger oder Polizei. Weicher Filzhut mit eingedrückter Krone und schmalerer Krempe.
+- Lichtsaum im Gegenlicht unter dem Kinn weitergezogen → wirkt wie ein Kinnriemen. Saum am Kiefer enden lassen.
+- Rolle licht exakt in Wänden und Hintergründen gezeichnet → eine dunklere Nachbarpalette drückt dunkle Schnitte unter die Schnitt-Schwelle 10 und bricht shot_median_s. Licht in Bildflächen knapp neben der Rollenfarbe zeichnen und jeden Schnitt in der Basis deutlich über 11 halten.

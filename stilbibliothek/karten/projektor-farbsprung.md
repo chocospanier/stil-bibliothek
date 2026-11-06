@@ -33,12 +33,39 @@ ton: Extrem laut gemischt (−7,9 LUFS, Spitzen über 0 dBFS), Raster um 91 BPM,
 braucht: [fotos-figur, footage-ort, nur-typo]
 motor_aufwand: mittel
 einsatz: [hook, trailer, intro]
+zweck: [event-teaser, wissen]
+branchen_passt: [technik]
+branchen_nie: [lebensmittel-feinkost, gastro, gesundheit, kinder-familie]
 abnahme:
   shot_median_s: [0.08, 0.13]
   schnitte_pro_s: [3.9, 5.9]
   helligkeit: [0.19, 0.29]
   farbigkeit: [0.09, 0.14]
   lufs: [-8.9, -6.9]
+# Würfel-Felder (Etappe 0 Bauplan Würfelstile, 31.10.2026; karten_wuerfelfelder.py, Familien-Standard)
+creator: nein
+creator_grund: "5 Kennungen aus rahmen und sticker: bild-im-bild, rahmen-rund, freisteller, ausschnitt-kante,\
+  \ text-hinter-figur"
+spielraum:
+  palette: nachbarn
+  schrift: klasse
+  blitzbild_bilder: [2, 3]
+  stottern_wiederholungen: [2, 2]
+  push_in_prozent: [3, 8]
+  wackeln_faktor: [0.4, 1.0]
+  korn: [0.045, 0.075]
+  vignette: [0.3, 0.5]
+  beat_versatz_16tel: [0, 1]
+  textgroesse_prozent: [-10, 10]
+  textlage: regel
+  musik: bausteine
+palettenrolle:
+  grund: schwarz
+  text: hell
+  akzent: tuerkis
+  dunkel: schwarz
+  hell: hell
+  licht: hell
 quelle: Eigene Analyse einer öffentlichen Vorschau; nur der Look ist beschrieben, keine Motive, Texte oder Marken übernommen.
 ---
 
@@ -132,3 +159,7 @@ Bauplan für 15 s in Sekunden, weil der Stil auf Worte schneidet: Wortanfänge d
 - Echte Personen, Firmennamen und Logos → nur eigene Aufnahmen oder Figuren, Namen nur mit Rechten.
 - Tönung als halbtransparenter Farbfilter → wirkt matschig; erst entsättigen, dann Tabelle.
 - Wörter auf den Beat statt aufs Wort → passt nicht zur Stimme; hier entscheidet die Sprache.
+- Motor (Welle D, 05.11.): Eine Farbtabelle aus Schwarz, Schwarz, Ton, Hell lässt dunkle Motive fast schwarz; Nachbar-Einstellungen unterscheiden sich dann kaum (Schnitte 3,4 statt 3,9, Farbigkeit 0,08) → Mitteltöne schon getönt (Ton bei 80 % Helligkeit).
+- Motor: Publikum aus abgerundeten Stäben liest sich als Patronen oder Grabsteine → runder Kopf auf breiter Schulterkuppe.
+- Motor: Die kleine Schlusszeile verschwindet im hellen Rauch → Rauch oben und unten halten und vom Zeilenband wegdriften lassen, Zeile mit dunklem Schein.
+- Motor (Würfelzüge): Blassere Nachbarpaletten drücken die Farbigkeit unter 0,09, ein Haus mit warmem Gelb als Textfarbe hebt sie über 0,17 (Rückfall) → Tönung mit saturate 1,18, Mischung mit gedeckter Hausfarbe (Kaltweiß, Graupetrol) würfeln. Hellere Mitteltöne heben die Farbigkeit kaum, verletzen aber die Blitzregel im Hook.

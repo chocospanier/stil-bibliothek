@@ -34,12 +34,39 @@ ton: Bassschweres, gedämpftes Instrumental um 69 BPM (Doppeltempo 138 möglich)
 braucht: [fotos-figur, nur-typo]
 motor_aufwand: mittel
 einsatz: [intro, hook, musikvideo, ganzes-kurzvideo]
+zweck: [musik-lyric, event-teaser, stimmung]
+branchen_passt: [musik-kultur, mode-beauty]
+branchen_nie: [gesundheit, finanzen]
 abnahme:
   shot_median_s: [0.65, 1.0]
   schnitte_pro_s: [1.1, 1.8]
   helligkeit: [0.42, 0.58]
   farbigkeit: [0.15, 0.22]
   lufs: [-16.6, -14.6]
+# Würfel-Felder (Etappe 0 Bauplan Würfelstile, 31.10.2026; karten_wuerfelfelder.py, Familien-Standard)
+creator: nein
+creator_grund: "Familie scrapbook: Handarbeit über Material: Papierränder, Sticker, Klebeband, Collage\
+  \ sind der Kern"
+spielraum:
+  palette: nachbarn
+  schrift: klasse
+  blitzbild_bilder: [2, 4]
+  stottern_wiederholungen: [2, 3]
+  push_in_prozent: [3, 8]
+  wackeln_faktor: [0.4, 1.0]
+  korn: [0.045, 0.075]
+  vignette: [0.3, 0.5]
+  beat_versatz_16tel: [0, 1]
+  textgroesse_prozent: [-10, 10]
+  textlage: regel
+  musik: bausteine
+palettenrolle:
+  grund: papier
+  text: tusche
+  akzent: magenta
+  dunkel: tusche
+  hell: papier
+  licht: papier
 quelle: Eigene Analyse einer öffentlichen Vorschau; nur der Look ist beschrieben, keine Motive, Texte oder Marken übernommen.
 ---
 
@@ -129,3 +156,8 @@ Bauplan für 16 s bei 69 BPM (Sechzehntel 0,217 s, 74 Sechzehntel). Seiten im Vi
 - Staub als statisches Bild → wirkt wie ein Filter. Je Sechzehntel neu würfeln.
 - Mosaik länger als drei Bilder → sieht nach Fehler aus. Kurz halten und auf einen Schlag legen.
 - Zu viele Reißschwenks hintereinander → schwammig. Nach jedem Schwenk mindestens eine scharfe Seite stehen lassen.
+- Reißschwenk läuft weich aus → nur der Eingang zählt als Schnitt, die Schnittrate fällt unter 1,1. Die Seite im vierten Bild aus rund 17 % Versatz hart einrasten lassen (erlebt beim Motorbau, 04.11.2026).
+- Mosaik der nächsten Seite in deren eigener Farbe → der Ausgang zählt nicht als Schnitt. Mosaik im Gegen-Duoton tönen und höchstens 3 Bilder stehen lassen (erlebt beim Motorbau, 04.11.2026).
+- Volle Druckfarben auf ganzer Fläche (Vollbild-Magenta, Kobalt, Balkenseiten) → Farbigkeit über 0,25. Farben als Bänder und Felder auf Papier und leicht ausgeblichen (Sättigung 0,84) drucken (erlebt beim Motorbau, 04.11.2026).
+- Schreibschrift-Initiale nur nach der Feldhöhe gesetzt → der Kursiv-Überhang läuft in die Fuge. Größe auch nach 70 % der Feldbreite begrenzen (erlebt beim Motorbau, 04.11.2026).
+- Freisteller-Seiten mit derselben Dreiergruppe hintereinander → Diashow aus Clipart. Höchstens zwei Freisteller-Seiten, je Seite Pose, Größe und Spiegelung neu, Etikett nie auf Kopfhöhe (erlebt beim Motorbau, 04.11.2026).

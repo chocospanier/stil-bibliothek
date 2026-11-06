@@ -32,12 +32,38 @@ ton: Ruhiges, atmosphärisches Stück um 78 BPM (gemessen 157, Doppeltempo), mit
 braucht: [illustrationen, nur-typo]
 motor_aufwand: mittel
 einsatz: [ganzes-kurzvideo, intro, trailer]
+zweck: [zitat, geschichte, wissen]
+branchen_passt: [bildung, musik-kultur, tourismus]
+branchen_nie: [werkstatt-auto, technik, sport, kinder-familie]
 abnahme:
   shot_median_s: [1.3, 2.0]
   schnitte_pro_s: [0.35, 0.6]
   helligkeit: [0.22, 0.34]
   farbigkeit: [0.10, 0.16]
   lufs: [-15, -13]
+# Würfel-Felder (Etappe 0 Bauplan Würfelstile, 31.10.2026; karten_wuerfelfelder.py, Familien-Standard)
+creator: eingeschraenkt
+creator_ohne: [text-hinter-figur, kapitel-zaehler, typo-raster]
+spielraum:
+  palette: nachbarn
+  schrift: klasse
+  blitzbild_bilder: [2, 4]
+  stottern_wiederholungen: [2, 3]
+  push_in_prozent: [2, 5]
+  wackeln_faktor: [0.3, 0.7]
+  korn: [0.03, 0.06]
+  vignette: [0.3, 0.5]
+  beat_versatz_16tel: [0, 1]
+  textgroesse_prozent: [-10, 10]
+  textlage: regel
+  musik: bausteine
+palettenrolle:
+  grund: grund_sepia
+  text: wort_creme
+  akzent: wort_rot
+  dunkel: tiefe
+  hell: papier
+  licht: papier
 quelle: Eigene Analyse einer öffentlichen Vorschau; nur der Look ist beschrieben, keine Motive, Texte oder Marken übernommen.
 ---
 
@@ -136,3 +162,21 @@ Kein Beat-Schnitt: in Sekunden denken, Wechsel auf Phrasen des Zitats. Bauplan f
 - Starker Ausschnitt mit Parallaxe verschiebt das Großwort mit (bei Skala 1,45 rutschte es um 160 px nach oben) → bei engen Ausschnitten das Wort ohne Parallaxe setzen.
 - Radierungen haben unten oft eine Plattenkante mit Pseudo-Signatur → beim Ausschnitt die Unterkante prüfen.
 - Ein Mönch in Kutte unter „KAISER“ kippt den Hook → Figuren mit eindeutigen Zeichen ihres Standes malen lassen (Mantel mit Fibel, keine Kapuze).
+- Motor (31.10.): Umlautpunkte ragen über die Versalhöhe; ein Wort mit Ä, Ö oder Ü an derselben Oberkante legt die Punkte auf die Ecken-Beschriftung → solche Wörter um 12 % der Schriftgröße tiefer setzen.
+- Motor (31.10.): Der Kopf deckt die Unterkante des Worts; bei E wird daraus F (BLEIBT las sich BLFIBT) → bei großen Köpfen nur 10 % der Worthöhe verdecken (`ueberlappung`).
+- Motor (31.10.): Ein Wort, das knapp vor dem Bildrand endet, liest die Vorprüfung als dunklen Randstreifen → Großwörter klar über den Rand laufen lassen (Breite 110 %) oder deutlich schmaler.
+- Motor (31.10.): Zwei Sepia-Werke mit gleicher Helligkeit hintereinander zählt die Schnitterkennung nicht als Schnitt (Wert 9 unter Schwelle 10), der Shot-Median kippt → aufeinanderfolgende Werke in der Helligkeit klar trennen (helles Fenster, dunkler Grund).
+- Motor (31.10.): Farbigkeit erreicht die Untergrenze 0,10 nur mit kräftigem Bernstein-Duoton (`#3A1400` zu `#FFAA40`), satt rotem Kapitel und leicht warmem Papier und Grau; Papier, Grau und Schlusskarte ziehen den Mittelwert sonst unter 0,09.
+- Motor (31.10.): Ohne Stimme stehen Wörter am Satzende zu kurz vor einem Glitch → Atempausen über `pausen` einschieben (vor dem Glitch 0,7 s), J-Schnitt über `vor` negativ.
+- Motor (31.10.): Papier aus festen Warmtönen glühte nach dem Würfel als fremdes Gelb auf → Papier nur aus Rollenfarben (hell, text, grund) bauen, den Verlauf als halbdurchsichtige Schicht darüber.
+- Motor (01.11.): Ein geschlossener Haarkranz um ein leeres Gesichtsoval liest sich als Kapuze, mit großem Kopf und zerfallendem Wort als Sensenmann → Haar als Kappe über Stirn und Hinterkopf, Gesicht mit Licht- und Schattenseite, angedeuteten Augenhöhlen und Nase, heller Kragen.
+- Motor (01.11.): Helle Pinselstriche auf dem Mantel lesen sich als Arme ohne Ansatz → Ärmel als eigene Form ab der Schulter mit Händen, Striche im Mantel unter 12 % Deckung.
+- Motor (01.11.): Ein Stillleben mit leerer oberer Hälfte und Gläsern als bloße Ellipsen liest sich als Stangen in Ringen → Vorhang, Rahmen und Flasche bis in die obere Hälfte, Kelchgläser mit Kelch, Stiel, Fuß und Wein.
+- Motor (01.11.): Ein kräftigeres Sepia-Duoton drückte den Schnitt Stillleben auf Paar unter die Schwelle (Wert 9,6 statt 10) und den Shot-Median auf 2,33 s → das Stillleben mit hellem Tuch klar heller als das Paar halten (Wert über 12).
+- Motor (04.11.): Die helle Ärmelkante im nahen Brustbild liest sich als Stab vor dem Körper, im dunklen Schlussbild mit zerfallendem Wort als Sense → im Studienkopf ohne Ärmelkante (`armKante` 0) und mit einem Fenster voll Tageslicht hinter dem Kopf.
+- Motor (04.11.): Mit Überlappung 0 berührt der große Kopf das Wort nicht, es schwebt nur darüber → im Studienkopf 8 % der Worthöhe verdecken, dann bleibt das E noch ein E.
+- Ton (05.11.): Mit Stimme (ElevenLabs v4, [calm], rund 1,9 Wörter je s) wurden die Shots zu lang, Shot-Median 2,47 s statt höchstens 2,0 → je Satz zwei Werke (Wortbezug „bei“ auf ein früheres Wort des Satzes), Halt nach dem letzten Wort kürzer.
+- Prüfer (05.11.): Das Stillleben zeigt immer Weinflasche, Weingläser und Trauben; zur Stimme „dampft Tee“ passt es nicht → bei anderem Inhalt kein `detail`, sondern ein Innenraum mit dem Großwort.
+- Prüfer (05.11.): Großwörter mit 110 % Breite liest man am Handy als abgeschnitten („SCHNE“, „ZWE“, „MORGE“), Bild 0 hat dann keinen lesbaren Titel → über `text` je Seite zwei geschützte Leerzeichen (U+00A0) setzen, dann steht das Wort ganz im Bild.
+- Prüfer (05.11.): Ein zerfallendes Wort „Morgen“ auf dunkler Kopfstudie am Schluss las sich als „kein Morgen“ (Abschied) → bei offenen oder hoffnungsvollen Pointen kein Zerfall, das letzte Werk hell (Innenraum mit Fenster), Pointe mindestens 2,3 s stehen lassen (`halt` 2,0).
+- Ton (05.11.): Der Motor nimmt nur eine Spur (`ton`) → Musik und Stimme vorher mischen (Muster: Projekt 2026-11-05_erster-schnee, `projekte/ton_mischen.py`), Wortzeiten der Stimme als `woerter`, `pausen` auf [] setzen (sonst greifen die Pausen des Beispieltexts).

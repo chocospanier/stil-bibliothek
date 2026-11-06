@@ -33,12 +33,37 @@ ton: Gleichmäßig treibender Song um 127 BPM, Lautheitsspanne 1,7 LU, keine Sti
 braucht: [fotos-figur, footage-ort, produkt]
 motor_aufwand: mittel
 einsatz: [trailer, ganzes-kurzvideo, hook]
+zweck: [event-teaser, marke-image, geschichte]
+branchen_passt: [werkstatt-auto, mode-beauty, tourismus]
+branchen_nie: [gesundheit, bildung, kinder-familie]
 abnahme:
   shot_median_s: [0.32, 0.48]
   schnitte_pro_s: [2.3, 3.5]
   helligkeit: [0.28, 0.42]
   farbigkeit: [0.10, 0.16]
   lufs: [-13.4, -11.4]
+# Würfel-Felder (Etappe 0 Bauplan Würfelstile, 31.10.2026; karten_wuerfelfelder.py, Familien-Standard)
+creator: ja
+spielraum:
+  palette: nachbarn
+  schrift: klasse
+  blitzbild_bilder: [2, 3]
+  stottern_wiederholungen: [2, 2]
+  push_in_prozent: [3, 8]
+  wackeln_faktor: [0.4, 1.0]
+  korn: [0.045, 0.075]
+  vignette: [0.3, 0.5]
+  beat_versatz_16tel: [0, 1]
+  textgroesse_prozent: [-10, 10]
+  textlage: regel
+  musik: bausteine
+palettenrolle:
+  grund: tiefe
+  text: creme
+  akzent: weinrot
+  dunkel: tiefe
+  hell: creme
+  licht: creme
 quelle: Eigene Analyse einer öffentlichen Vorschau; nur der Look ist beschrieben, keine Motive, Texte oder Marken übernommen.
 ---
 
@@ -136,3 +161,7 @@ Bauplan für 18 s bei 127 BPM (152 Sechzehntel zu 0,118 s). Gruppen von zwei bis
 - Zu viele Flackerbilder bei schnellen Schnitten werden unruhig → höchstens eines je Takt.
 - Schwarzweiß-Fassung zu weich wirkt wie ein Fehler → hart und kontrastreich.
 - Die Vorlage übersteuert leicht → Limiter bei −1 dBTP.
+- Code-Motor, Schnittmessung: scdet zählt nur Sprünge der Bildhelligkeit; zwei Code-Einstellungen gleicher Helligkeit nacheinander gelten als ein Shot → benachbarte Einstellungen in der Belichtung im Wechsel um 15 bis 35 % versetzen (`belichtung()` in `gemeinsam_d6.tsx`), unter 0,2 Sprung bleibt die Blitzregel frei.
+- Code-Motor, Front von vorn: zwei runde Scheinwerfer über einer dunklen Öffnung lesen sich am Handy als Gesicht → flache, kantige Leuchten, breiter tiefer Einlass, Räder und Spiegel sichtbar (`AutoFront` in `gemeinsam_d6.tsx`).
+- Einfarbig rote Fahne über erhobenem Arm liest sich als Protest oder Parteisymbol → karierte Zielflagge.
+- Sprung in den Pool von vorn mit runden Füßen liest sich anzüglich → Kopfsprung, die Figur taucht hinter der Wasserkante ein.

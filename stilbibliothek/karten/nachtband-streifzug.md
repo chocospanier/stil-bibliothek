@@ -33,12 +33,38 @@ ton: Gleichmäßiger, ruhiger Beat (gemessen 64 BPM, vermutlich 98), Lautheitssp
 braucht: [fotos-figur, footage-ort]
 motor_aufwand: klein
 einsatz: [musikvideo, hook, uebergang, ganzes-kurzvideo]
+zweck: [musik-lyric, stimmung]
+branchen_passt: [musik-kultur]
+branchen_nie: [werkstatt-auto, handwerk, lebensmittel-feinkost, gesundheit, immobilien, finanzen, kinder-familie]
 abnahme:
   shot_median_s: [0.45, 0.75]
   schnitte_pro_s: [1.2, 2.0]
   helligkeit: [0.05, 0.09]
   farbigkeit: [0.05, 0.09]
   lufs: [-15.2, -13.2]
+# Würfel-Felder (Etappe 0 Bauplan Würfelstile, 31.10.2026; karten_wuerfelfelder.py, Familien-Standard)
+creator: eingeschraenkt
+creator_ohne: [querband]
+spielraum:
+  palette: nachbarn
+  schrift: klasse
+  blitzbild_bilder: [2, 4]
+  stottern_wiederholungen: [2, 3]
+  push_in_prozent: [3, 8]
+  wackeln_faktor: [0.4, 1.0]
+  korn: [0.05, 0.09]
+  vignette: [0.35, 0.6]
+  beat_versatz_16tel: [0, 1]
+  textgroesse_prozent: [-10, 10]
+  textlage: regel
+  musik: bausteine
+palettenrolle:
+  grund: schwarz
+  text: abendrot
+  akzent: neon_haar
+  dunkel: schwarz
+  hell: abendrot
+  licht: abendrot
 quelle: Eigene Analyse einer öffentlichen Vorschau; nur der Look ist beschrieben, keine Motive, Texte oder Marken übernommen.
 ---
 
@@ -130,3 +156,6 @@ Bauplan für 18 s in Sekunden, zwei Durchläufe zu je 9 s. Schnittpunkte auf den
 - Gesichter scharf und frontal brechen das Geheimnis → Figur meist von hinten, im Profil oder unscharf.
 - Schockbild-Pegel blendet auf dem Handy → Helligkeit des Schockbilds höchstens 0,6.
 - Fantasie-Merkmale der Figur (Ohren, Farben) als Wiedererkennung nur einsetzen, wenn es die eigene Kanalfigur ist.
+- Schnitte zwischen zwei fast schwarzen Nachtbildern sieht die Schnitterkennung (Schwelle 10) nicht → Lichtwisch als Fensterlichter auf versetzten Zeilen (vor dem Schnitt die Zeilen, danach die Lücken), nie als heller Block auf einer Bildhälfte.
+- Zwei eng stehende rote Punkte im Dunkeln lesen sich als Augen, unter einer V-förmigen Lampenkette als Gesicht → Rücklicht als ein Streif mit Reflex, Flucht außermittig.
+- Regenbogen-Lichtleck innerhalb der Farbtabelle des Schockbilds wird einfarbig orange → Lichtleck über dem Grade legen.

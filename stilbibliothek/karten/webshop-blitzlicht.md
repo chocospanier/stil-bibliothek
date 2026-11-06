@@ -33,12 +33,38 @@ ton: Warmes, gedämpftes Instrumental um 98 BPM mit viel Bass und fast ohne Höh
 braucht: [fotos-figur, nur-typo]
 motor_aufwand: mittel
 einsatz: [intro, hook, produkt, ganzes-kurzvideo]
+zweck: [produktwerbung, angebot, mode-lookbook]
+branchen_passt: [mode-beauty]
+branchen_nie: [werkstatt-auto, handwerk, gesundheit, immobilien, finanzen]
 abnahme:
   shot_median_s: [1.9, 2.9]
   schnitte_pro_s: [0.25, 0.45]
   helligkeit: [0.45, 0.60]
   farbigkeit: [0.08, 0.13]
   lufs: [-16.2, -14.2]
+# Würfel-Felder (Etappe 0 Bauplan Würfelstile, 31.10.2026; karten_wuerfelfelder.py, Familien-Standard)
+creator: eingeschraenkt
+creator_ohne: [bild-im-bild, raster-collage, ausschnitt-kante, ui-attrappe]
+spielraum:
+  palette: nachbarn
+  schrift: klasse
+  blitzbild_bilder: [2, 4]
+  stottern_wiederholungen: [2, 3]
+  push_in_prozent: [2, 5]
+  wackeln_faktor: [0.3, 0.7]
+  korn: [0.0, 0.03]
+  vignette: [0.0, 0.2]
+  beat_versatz_16tel: [0, 1]
+  textgroesse_prozent: [-10, 10]
+  textlage: regel
+  musik: bausteine
+palettenrolle:
+  grund: grund
+  text: pille
+  akzent: knopf
+  dunkel: panel
+  hell: haut_blitz
+  licht: haut_blitz
 quelle: Eigene Analyse einer öffentlichen Vorschau; nur der Look ist beschrieben, keine Motive, Texte oder Marken übernommen.
 ---
 
@@ -129,3 +155,6 @@ Bauplan für 18 s bei 98 BPM (117 Sechzehntel zu 0,153 s). Der Webseiten-Teil we
 - Blitzfotos ohne Schleier → der Übergang vom Shop ins Echte verpufft. Glow und weiße Vignette sind Pflicht.
 - Seitenwechsel als harte Schnitte → die Illusion einer echten Oberfläche bricht. Immer scrollen, zoomen, schieben oder einblenden.
 - Echte Marken- oder Shop-Logos → rechtliches Risiko. Eigenes Kurzlogo bauen.
+- Code-Motor, Schnittmessung: scdet zählt nur Sprünge der Bildhelligkeit; zwei Code-Einstellungen gleicher Helligkeit nacheinander gelten als ein Shot → benachbarte Einstellungen in der Belichtung im Wechsel um 15 bis 35 % versetzen (`belichtung()` in `gemeinsam_d6.tsx`), unter 0,2 Sprung bleibt die Blitzregel frei.
+- Kahle Köpfe mit Sonnenbrille lesen sich als Bodyguards oder Puppen → Gesicht mit Augen und Lächeln, langes Haar, Körper in Kleidungsfarbe.
+- Blitzfoto-Teil auf hellem Grund hebt die Helligkeit über das Fenster der Karte → dunkler, farbiger Raum, nur Gesichter hell angeblitzt.

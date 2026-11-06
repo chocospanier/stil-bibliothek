@@ -34,12 +34,38 @@ ton: Ruhiger Auftakt um −17 dB bis 8 s, Drop bei 8,5 s, kurzer Einbruch um 14,
 braucht: [fotos-figur, footage-ort, produkt, nur-typo]
 motor_aufwand: mittel
 einsatz: [trailer, hook, ganzes-kurzvideo, produkt]
+zweck: [marke-image, produktwerbung, event-teaser]
+branchen_passt: [werkstatt-auto, sport, mode-beauty]
+branchen_nie: [lebensmittel-feinkost, gesundheit, kinder-familie]
 abnahme:
   shot_median_s: [0.43, 0.65]
   schnitte_pro_s: [1.3, 1.9]
   helligkeit: [0.20, 0.29]
   farbigkeit: [0.11, 0.17]
   lufs: [-15.1, -13.1]
+# Würfel-Felder (Etappe 0 Bauplan Würfelstile, 31.10.2026; karten_wuerfelfelder.py, Familien-Standard)
+creator: eingeschraenkt
+creator_ohne: [text-hinter-figur]
+spielraum:
+  palette: nachbarn
+  schrift: klasse
+  blitzbild_bilder: [2, 4]
+  stottern_wiederholungen: [2, 3]
+  push_in_prozent: [3, 8]
+  wackeln_faktor: [0.4, 1.0]
+  korn: [0.045, 0.075]
+  vignette: [0.3, 0.5]
+  beat_versatz_16tel: [0, 1]
+  textgroesse_prozent: [-10, 10]
+  textlage: regel
+  musik: bausteine
+palettenrolle:
+  grund: asphalt
+  text: gold
+  akzent: ruecklicht
+  dunkel: tiefe
+  hell: gold
+  licht: gold
 quelle: Eigene Analyse einer öffentlichen Vorschau; nur der Look ist beschrieben, keine Motive, Texte oder Marken übernommen.
 ---
 
@@ -134,3 +160,11 @@ Bauplan für 19,6 s bei 116 BPM in Vierteln (0,52 s). Ein Wort je Slot im Auftak
 - Zu langer Auftakt verliert den Zuschauer → höchstens 8 s bis zum Drop, das erste Wort spätestens bei 0,3 s.
 - Riesenwort verdeckt das Gesicht → Augen bleiben frei, das Wort sitzt über der Stirn oder hinter dem Kopf.
 - Invertierte und weiße Blitze nacheinander → höchstens zwei je Stück.
+- Code-Motor, Schnittmessung: scdet zählt nur Sprünge der Bildhelligkeit; zwei Code-Einstellungen gleicher Helligkeit nacheinander gelten als ein Shot → benachbarte Einstellungen in der Belichtung im Wechsel um 15 bis 35 % versetzen (`belichtung()` in `gemeinsam_d6.tsx`), unter 0,2 Sprung bleibt die Blitzregel frei.
+- Code-Motor, Front von vorn: zwei runde Scheinwerfer über einer dunklen Öffnung lesen sich am Handy als Gesicht → flache, kantige Leuchten, breiter tiefer Einlass, Räder und Spiegel sichtbar (`AutoFront` in `gemeinsam_d6.tsx`).
+- Helm unter dem Arm als Kugel auf Schritthöhe ist eine anzügliche Lesart → Helm in der Hand auf Brusthöhe neben dem Körper.
+- Schlusskarte unter 2,3 s und Slogan in zwei Fassungen → Schluss 18 Sechzehntel, Schlusszeilen wörtlich wie der aufgebaute Satz.
+- Ton (05.11.): Einzelne Wörter als eigene Zeilen in stimme.py (eleven_v4) kamen abgeschnitten oder falsch zurück (Whisper: „Wer“ als „W…“, „fährt“ als „Fett!“, „die“ stumm) → alle Auftaktwörter in einer Aufnahme als eigene Sätze sprechen lassen („Wer. Zuerst. Zuhört. Fährt. Die.“), an den Pausenmitten schneiden und je Wort 0,25 s nach dem Erscheinen legen (Muster: Projekt 2026-11-05_bessere-linie, `ton/stimme_legen.py`).
+- Ton (05.11.): Der Drop der Musik aus musik.py lag bei 8,3 s, der Drop des Motors (50 Sechzehntel) bei 6,76 s → die Musik vorn um ganze Sechzehntel kürzen (hier 12, also 1,55 s), dann liegen Raster und Drop gleich. takt.py mit Band voll maß 128 statt 116 BPM (10 %) → `--band hoch`.
+- Ton (05.11.): Die Schlusskarte steht im Motor still (`STEHT`); der ganze Satz als Stimme nach dem Treffer braucht über 3 s Karte, die Vorprüfung meldet dann Standbild rot → den Satz vor dem Atem sprechen lassen, nach dem Treffer nur die kurze dritte Zeile, Karte rund 2,35 s.
+- Prüfer (05.11.): Bild 0 im Kartenbauplan (Figur klein vor der Tribüne hinter dem Zaun, erstes Wort 6 % hoch) ist kein Titelbild und liest sich als Käfig → `folge` mit „gegenlicht“ beginnen (große Figur, Wort darüber).

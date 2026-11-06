@@ -33,12 +33,39 @@ ton: Bassbetontes, verspieltes Instrumental, gleichmäßig um −15 LUFS bei nur
 braucht: [footage-ort, fotos-figur, illustrationen]
 motor_aufwand: mittel
 einsatz: [hook, intro, uebergang, ganzes-kurzvideo]
+zweck: [stimmung, kinder, event-teaser]
+branchen_passt: [kinder-familie]
+branchen_nie: [werkstatt-auto, technik, gesundheit, immobilien, finanzen]
 abnahme:
   shot_median_s: [0.14, 0.21]
   schnitte_pro_s: [4.3, 6.5]
   helligkeit: [0.45, 0.62]
   farbigkeit: [0.15, 0.22]
   lufs: [-15.8, -13.8]
+# Würfel-Felder (Etappe 0 Bauplan Würfelstile, 31.10.2026; karten_wuerfelfelder.py, Familien-Standard)
+creator: nein
+creator_grund: "Familie scrapbook: Handarbeit über Material: Papierränder, Sticker, Klebeband, Collage\
+  \ sind der Kern"
+spielraum:
+  palette: nachbarn
+  schrift: klasse
+  blitzbild_bilder: [2, 4]
+  stottern_wiederholungen: [2, 3]
+  push_in_prozent: [3, 8]
+  wackeln_faktor: [0.4, 1.0]
+  korn: [0.045, 0.075]
+  vignette: [0.3, 0.5]
+  beat_versatz_16tel: [0, 1]
+  textgroesse_prozent: [-10, 10]
+  textlage: regel
+  musik: bausteine
+palettenrolle:
+  grund: papierweiss
+  text: tiefe
+  akzent: flieder
+  dunkel: tiefe
+  hell: papierweiss
+  licht: papierweiss
 quelle: Eigene Analyse einer öffentlichen Vorschau; nur der Look ist beschrieben, keine Motive, Texte oder Marken übernommen.
 ---
 
@@ -124,3 +151,7 @@ Bauplan für 13 s bei 30 fps in Bildern, weil der Stil einem festen Bildtakt fol
 - Freistellung sauber per KI ohne Kante → wirkt wie ein Hintergrund-Tausch. Kante dick und unruhig machen.
 - Behandlungen live filtern → Render wird langsam und flackert unkontrolliert. Varianten vorrendern und umschalten.
 - Gleiche Folge zweimal abspielen wie die Vorlage → Zuschauer merken die Schleife. Zweite Runde mit neuen Posen.
+- Wechsel Farbe zu Schwarzweiß allein bleibt unter Schwelle 10 → zu wenige Schnitte. Mit jedem Wechsel springt das Bild minimal (Zoom 106 oder 122 %, Versatz bis 2,7 %, der Zoom deckt den Versatz immer ab), dazu Ein-Bild-Blitze aus Musterpapier mit gleicher Helligkeit (erlebt beim Motorbau, 04.11.2026).
+- Musterpapier deutlich heller als das Footage → Helligkeitssprünge bei jedem Musterwechsel, Flimmergefahr. Muster auf Footage-Helligkeit ziehen, Karo und Papierweiß dunkler als im Rezept (erlebt beim Motorbau, 04.11.2026).
+- Ring über dem Scheitel zusammen mit „damals“ und Schlusswort in der Vergangenheit → Gedenkvideo-Lesart. Spirale oder „?!“ neben dem Kopf, Wörter in der Gegenwart (erlebt beim Motorbau, 04.11.2026).
+- Zweite Runde mit denselben Posen → der Zuschauer merkt die Schleife. Runde 2 mit neuen Posen und gespiegelter Anordnung (variante: 2) (erlebt beim Motorbau, 04.11.2026).

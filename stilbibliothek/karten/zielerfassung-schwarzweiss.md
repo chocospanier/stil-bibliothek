@@ -31,12 +31,38 @@ ton: Dichter Beat, gemessen 69 BPM (Achtel-Raster etwa 0,22 s, vermutlich Doppel
 braucht: [fotos-figur, nur-typo]
 motor_aufwand: mittel
 einsatz: [hook, portrait, produkt, intro]
+zweck: [person-vorstellen, event-teaser, produktwerbung]
+branchen_passt: [technik, musik-kultur, sport]
+branchen_nie: [lebensmittel-feinkost, gastro, gesundheit, immobilien, finanzen, kinder-familie]
 abnahme:
   shot_median_s: [0.16, 0.24]
   schnitte_pro_s: [3.7, 5.5]
   helligkeit: [0.34, 0.50]
   farbigkeit: [0.00, 0.03]
   lufs: [-15, -13]
+# Würfel-Felder (Etappe 0 Bauplan Würfelstile, 31.10.2026; karten_wuerfelfelder.py, Familien-Standard)
+creator: eingeschraenkt
+creator_ohne: [raster-collage, klone, freisteller, hud]
+spielraum:
+  palette: nachbarn
+  schrift: klasse
+  blitzbild_bilder: [2, 3]
+  stottern_wiederholungen: [2, 2]
+  push_in_prozent: [3, 8]
+  wackeln_faktor: [0.4, 1.0]
+  korn: [0.045, 0.075]
+  vignette: [0.3, 0.5]
+  beat_versatz_16tel: [0, 1]
+  textgroesse_prozent: [-10, 10]
+  textlage: regel
+  musik: bausteine
+palettenrolle:
+  grund: schwarz
+  text: weiss
+  akzent: akzent_gruen
+  dunkel: schwarz
+  hell: weiss
+  licht: weiss
 quelle: Eigene Analyse einer öffentlichen Vorschau; nur der Look ist beschrieben, keine Motive, Texte oder Marken übernommen.
 ---
 
@@ -143,3 +169,8 @@ Bauplan für 15 s auf einem Achtel-Raster von 0,22 s (68 Achtel; bei 138 BPM sin
 - Musikmodell hält das Tempo, aber nicht die Zeitmarken im Prompt → Drop und Schlusstreffer im Schnitt setzen (Take verschieben, Intro in ganzen Takten schleifen, Treffer nach 0,12 s nur noch Bass).
 - Zahlenreihen, die über den Rand laufen, zeigen im Ruckzoom halbe Werte und ein einzelnes Minus wie einen Gedankenstrich → feste Zahl ganzer Werte plus „…“, 60 px Rand, Zoom so begrenzen, dass Bild und Werte drin bleiben; zwei Reihen nie deckungsgleich übereinander, sondern halb deckend und eine halbe Zeile versetzt.
 - Blinzeln aus einer anderen Pose übernimmt deren Brauen (doppelte Brauen) → Lider gezeichnet nur in der Augenöffnung, halb, zu, zu, halb.
+- Motor (Welle D, 05.11.): Die Blitzregel (höchstens 3 harte Helligkeitswechsel je Sekunde) und 3,7 Schnitte je Sekunde gehen nur zusammen, wenn helle und dunkle Bilder in Blöcken stehen und innerhalb eines Blocks dieselbe Bildart in Varianten wechselt.
+- Motor: Der Schal der Figur als spitzer Keil liest sich in 1-Bit-Silhouetten als Messer → weicher Kragen mit rundem Band.
+- Motor: Schrei mit geschlossenen Augen wirkt im Negativ wie eine Totenmaske → Augen offen, Mund weit offen.
+- Motor (Würfelzüge): Bei 11 s lagen die Schnitte mit 3,73 knapp über 3,7, Hauspaletten kosteten einen Schnitt → 10 s Länge (4,0 je Sekunde); mehr kurze Einstellungen bei gleicher Länge brechen dagegen die Blitzregel. Dunkle Bilder in Blöcken halten (Kragen vor die weißen Silhouetten).
+- Motor (Creator-Modus): Ohne Kachelraster und Raster-Silhouetten sinken die Schnitte unter 3,7 je Sekunde (3,45 bis 3,64, auch mit Augen in wechselnder Größe) → Motor creator: false, im Creator-Modus nur als Handbau.

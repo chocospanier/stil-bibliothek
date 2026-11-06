@@ -36,12 +36,38 @@ ton: Eine klare Erzählstimme (etwa 2,9 Wörter je Sekunde) mit gesetzten Pausen
 braucht: [3d, nur-typo]
 motor_aufwand: mittel
 einsatz: [ganzes-kurzvideo, hook, trailer]
+zweck: [wissen, erklaeren]
+branchen_passt: [gesundheit, technik, bildung]
+branchen_nie: [lebensmittel-feinkost, gastro, mode-beauty, kinder-familie]
 abnahme:
   shot_median_s: [4, 10]
   schnitte_pro_s: [0.05, 0.25]
   helligkeit: [0.09, 0.21]
   farbigkeit: [0.03, 0.11]
   lufs: [-15, -13]
+# Würfel-Felder (Etappe 0 Bauplan Würfelstile, 31.10.2026; karten_wuerfelfelder.py, Familien-Standard)
+creator: eingeschraenkt
+creator_ohne: [akten-karte, hud, tracking-etiketten, schaubild, stempel]
+spielraum:
+  palette: nachbarn
+  schrift: klasse
+  blitzbild_bilder: [2, 3]
+  stottern_wiederholungen: [2, 3]
+  push_in_prozent: [2, 5]
+  wackeln_faktor: [0.4, 1.0]
+  korn: [0.045, 0.075]
+  vignette: [0.3, 0.5]
+  beat_versatz_16tel: [0, 0]
+  textgroesse_prozent: [-10, 10]
+  textlage: regel
+  musik: bausteine
+palettenrolle:
+  grund: grund
+  text: text
+  akzent: akzent
+  dunkel: grund
+  hell: text
+  licht: text
 quelle: Eigene Analyse einer öffentlichen Vorschau; nur der Look ist beschrieben, keine Motive, Texte oder Marken übernommen.
 ---
 

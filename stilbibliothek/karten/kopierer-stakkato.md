@@ -29,12 +29,39 @@ ton: Instrumentaler, schwerer Beat um 80 BPM mit Halbtempo-Gefühl, durchgehend 
 braucht: [fotos-figur, illustrationen, nur-typo]
 motor_aufwand: mittel
 einsatz: [trailer, hook, intro]
+zweck: [event-teaser, marke-image, zitat, angebot, produktwerbung]
+branchen_passt: [musik-kultur]
+branchen_nie: [gesundheit, kinder-familie]
 abnahme:
   shot_median_s: [0.15, 0.25]
   schnitte_pro_s: [3.0, 5.0]
   helligkeit: [0.35, 0.50]
   farbigkeit: [0.08, 0.18]
   lufs: [-15, -13]
+# Würfel-Felder (Etappe 0 Bauplan Würfelstile, 31.10.2026; karten_wuerfelfelder.py, Familien-Standard)
+creator: nein
+creator_grund: "Familie kopierer: Zweiton mit Raster und Stempel über die ganze Fläche: Dauer-Raster\
+  \ und Abzeichen"
+spielraum:
+  palette: akzent
+  schrift: fest
+  blitzbild_bilder: [2, 3]
+  stottern_wiederholungen: [2, 2]
+  push_in_prozent: [3, 8]
+  wackeln_faktor: [0.4, 1.0]
+  korn: [0.0, 0.0]
+  vignette: [0.0, 0.0]
+  beat_versatz_16tel: [0, 1]
+  textgroesse_prozent: [-10, 10]
+  textlage: regel
+  musik: bausteine
+palettenrolle:
+  grund: grund
+  text: zeichnung
+  akzent: akzent
+  dunkel: zeichnung
+  hell: grund
+  licht: grund
 quelle: Eigene Analyse einer öffentlichen Vorschau; nur der Look ist beschrieben, keine Motive, Texte oder Marken übernommen.
 ---
 
@@ -130,3 +157,4 @@ Bauplan für 18 s bei 80 BPM (96 Sechzehntel, sechs Takte). Inhalt austauschbar,
 - Stempelrand ohne Rauschmaske sieht nach Vektorgrafik aus → Rand aufrauen und Deckung brechen.
 - Helle Kleidung verschwindet auf Papiergrund → solche Figuren auf Tusche-Grund setzen oder mit Rasterpunkt-Schatten absetzen.
 - Gesprochene Zeile länger als der Takt → nicht das Bild ans Wort biegen, sondern den Takt um ganze Sechzehntel verlängern.
+- Motor (Code-Ersatz): Graue Vignette bricht den Zweiton → deckenden Kopierrand nehmen. Rot trägt nur über Objekt, Kritzel, Kolonne und ein Blitzbild; mit einem Objekt von 50 % der Bildhöhe lag die Farbigkeit bei 0,08 und kippte im Würfelzug auf 0,079. Hauptobjekt mit 58 % der Bildhöhe und breitem roten Rand: 0,088.

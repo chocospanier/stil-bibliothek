@@ -31,12 +31,37 @@ ton: Getragene, anschwellende Hymne um 83 BPM mit gleichmäßigem Pegel; die Sch
 braucht: [fotos-figur, footage-ort]
 motor_aufwand: mittel
 einsatz: [trailer, produkt, hook, ganzes-kurzvideo]
+zweck: [marke-image, produktwerbung, event-teaser]
+branchen_passt: [sport, mode-beauty]
+branchen_nie: [immobilien, finanzen]
 abnahme:
   shot_median_s: [0.19, 0.29]
   schnitte_pro_s: [2.2, 3.2]
   helligkeit: [0.30, 0.42]
   farbigkeit: [0.13, 0.21]
   lufs: [-15, -13]
+# Würfel-Felder (Etappe 0 Bauplan Würfelstile, 31.10.2026; karten_wuerfelfelder.py, Familien-Standard)
+creator: ja
+spielraum:
+  palette: nachbarn
+  schrift: klasse
+  blitzbild_bilder: [2, 4]
+  stottern_wiederholungen: [2, 3]
+  push_in_prozent: [3, 8]
+  wackeln_faktor: [0.4, 1.0]
+  korn: [0.05, 0.09]
+  vignette: [0.35, 0.6]
+  beat_versatz_16tel: [0, 1]
+  textgroesse_prozent: [-10, 10]
+  textlage: regel
+  musik: bausteine
+palettenrolle:
+  grund: schatten_petrol
+  text: licht_gold
+  akzent: sonne
+  dunkel: schatten_petrol
+  hell: licht_gold
+  licht: licht_gold
 quelle: Eigene Analyse einer öffentlichen Vorschau; nur der Look ist beschrieben, keine Motive, Texte oder Marken übernommen.
 ---
 
@@ -130,3 +155,8 @@ Bauplan für 18 s bei 83 BPM (100 Sechzehntel zu je 0,18 s).
 - Mittagslicht ohne Gegenlicht → kein Gold. Material in der goldenen Stunde oder mit Gegenlicht prompten.
 - Schwarzweiß-Blitze zu häufig → Flimmern. Höchstens drei je Sekunde und nur im Höhepunkt gehäuft.
 - Lichtreflex auf jedem Shot → Kitsch. Höchstens jeder vierte.
+- Code-Hände ohne Unterarm, Handschlag als zwei Balken → lesen sich als Fäustlinge oder gekreuzte Knochen. Unterarme aus dem Bildrand führen, Finger und Daumen einzeln zeichnen.
+- Boot mit Querpaddel von oben im Lichtfleck, Einzelfigur knietief im Meer vor der Sonne und Schwarztafel am Schluss → Abschieds-Lesart. Paddel schräg mit zwei Blättern, Figur mit Gerät auf einen Steg, Claim mit Morgenglut.
+- Claim im kurzen Ausklang (Schluss 1,75 s, halbe Länge) → unter 2,3 s Lesezeit. Schluss 3,1 s mit Claim-Anteil 0,78, dafür mehr Doppelschläge, sonst fällt die Schnittdichte unter 2,2.
+- Einzelner scharfer Tropfen an einer Linie im Bokeh → liest sich als Auge unter einer Braue. Nur reines Bokeh in zwei Tiefen.
+- Claim auf dunkler Tafel länger als 2 s → vorpruefung meldet Standbild rot, ein leichter Zoom reicht auf glatter Fläche nicht. Aufgehende Sonne am unteren Rand und aufsteigender Lichtstaub (rund 8 px je Bild) geben messbare Bewegung.

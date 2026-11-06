@@ -32,12 +32,38 @@ ton: Treibender Pop-Rap-Beat um 90 BPM (gemessen 179, also Doppeltempo), laut un
 braucht: [fotos-figur, footage-ort, nur-typo]
 motor_aufwand: gross
 einsatz: [musikvideo, hook, trailer]
+zweck: [musik-lyric]
+branchen_passt: [musik-kultur]
+branchen_nie: [werkstatt-auto, handwerk, lebensmittel-feinkost, gastro, gesundheit, bildung, immobilien, finanzen]
 abnahme:
   shot_median_s: [0.30, 0.46]
   schnitte_pro_s: [2.2, 3.3]
   helligkeit: [0.25, 0.37]
   farbigkeit: [0.13, 0.21]
   lufs: [-13.5, -11.5]
+# Würfel-Felder (Etappe 0 Bauplan Würfelstile, 31.10.2026; karten_wuerfelfelder.py, Familien-Standard)
+creator: eingeschraenkt
+creator_ohne: [hud]
+spielraum:
+  palette: nachbarn
+  schrift: klasse
+  blitzbild_bilder: [2, 3]
+  stottern_wiederholungen: [2, 2]
+  push_in_prozent: [3, 8]
+  wackeln_faktor: [0.4, 1.0]
+  korn: [0.045, 0.075]
+  vignette: [0.3, 0.5]
+  beat_versatz_16tel: [0, 1]
+  textgroesse_prozent: [-10, 10]
+  textlage: regel
+  musik: bausteine
+palettenrolle:
+  grund: grund
+  text: wort_rot
+  akzent: kritzel_orange
+  dunkel: grund
+  hell: mauve
+  licht: mauve
 quelle: Eigene Analyse einer öffentlichen Vorschau; nur der Look ist beschrieben, keine Motive, Texte oder Marken übernommen.
 ---
 
@@ -132,3 +158,9 @@ Bauplan für 15 s bei 90 BPM gezählt (88 Sechzehntel zu je 0,167 s; die Vorlage
 - Zoom-Explosion länger als zwei Bilder → wird übel. Ein bis zwei Bilder, dann Schnitt.
 - Schnitte nach der gemessenen 179-BPM-Zahl gesetzt → wird hektisch. Im halben Tempo denken.
 - Tracking-Rahmen zu dick → sieht nach Software aus. 1 px, Rot, wenig Deckung.
+- Motor IdolEffektgewitter (Welle D5): 1-Bit-Ganzfigur mit schwarzem Haar und schwarzem Kleid liest sich als Verschleierung. 1-Bit als Porträt (Haar schwarz, Gesicht papierweiß, Züge schwarz), Rahmen um Augen, Mund und Kinn.
+- Unscharfe Riesenhand vor dem Gesicht wirkt wie ein Renderfehler. Geste klein am Rand, nie über Gesicht oder Brust.
+- Lider als Rechtecke in Hautfarbe ergeben helle Flicken über den Augen. Lider als Linse im Auge, Licht und Schatten über das ganze Gesicht legen.
+- Stottern und Zoom-Explosion zeigen fast dasselbe Bild und zählen in der Schnittmessung kaum. Zustände in Größe und Grund deutlich trennen, Zoom-Kopien stärker gestaffelt.
+- Schlagbild Strahlenkranz: das Bühnenrund mindestens 30 % der Bildhöhe, sonst ist das Schlagbild das kleinste Motiv des Stücks.
+- Gedrehte Einzelbuchstaben ohne Abstand überlappen mit der Ersatzschrift des Hauses (Creator-Vorprüfung rot). 0,05 em Abstand je Seite.

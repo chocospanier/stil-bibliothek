@@ -30,12 +30,38 @@ ton: Lauter, druckvoller Beat (−11,4 LUFS, kaum Dynamik) mit 60 BPM als Grundp
 braucht: [fotos-figur, footage-ort]
 motor_aufwand: mittel
 einsatz: [hook, trailer, portrait, uebergang]
+zweck: [person-vorstellen, musik-lyric, stimmung]
+branchen_passt: [musik-kultur, mode-beauty]
+branchen_nie: [werkstatt-auto, handwerk, lebensmittel-feinkost, gastro, gesundheit, immobilien, finanzen, kinder-familie]
 abnahme:
   shot_median_s: [0.10, 0.17]
   schnitte_pro_s: [4.2, 6.4]
   helligkeit: [0.26, 0.38]
   farbigkeit: [0.05, 0.10]
   lufs: [-12.5, -10.5]
+# Würfel-Felder (Etappe 0 Bauplan Würfelstile, 31.10.2026; karten_wuerfelfelder.py, Familien-Standard)
+creator: eingeschraenkt
+creator_ohne: [bild-im-bild, querband]
+spielraum:
+  palette: nachbarn
+  schrift: klasse
+  blitzbild_bilder: [2, 3]
+  stottern_wiederholungen: [2, 2]
+  push_in_prozent: [3, 8]
+  wackeln_faktor: [0.4, 1.0]
+  korn: [0.05, 0.09]
+  vignette: [0.35, 0.6]
+  beat_versatz_16tel: [0, 1]
+  textgroesse_prozent: [-10, 10]
+  textlage: regel
+  musik: bausteine
+palettenrolle:
+  grund: grund
+  text: licht
+  akzent: negativ
+  dunkel: grund
+  hell: licht
+  licht: licht
 quelle: Eigene Analyse einer öffentlichen Vorschau; nur der Look ist beschrieben, keine Motive, Texte oder Marken übernommen.
 ---
 
@@ -127,3 +153,10 @@ Bauplan für 16 s bei 120 BPM gezählt (128 Sechzehntel zu je 0,125 s; bei 60 BP
 - Negativ ohne Farbziehung → Gesicht wird Cyan statt Lachs. Nach dem Invertieren auf Rosa ziehen.
 - Jeder Shot ein neues Motiv → das Auge findet keinen Halt. Einstellungen wiederkehren lassen und stottern.
 - Fotostreifen gerade gelegt → wirkt wie ein Layout. Immer schräg, mit weißem Rand.
+- Negativ als Filter-Umkehrung über Material → echte Gesichter würden invertiert (Hausregel verbietet das); Material bekommt im Negativ eine Lachs-Farbtabelle in normaler Tonrichtung, nur der Code-Ersatz malt die Umkehrung als Fläche.
+- Code-Einstellungen mit mittiger Figur und gleicher Hell-Dunkel-Verteilung → die Schnitt-Messung (Schwelle 10) findet nur zwei Drittel der Schnitte; Figur aus der Mitte setzen, jede zweite Einstellung spiegeln und den Szenenkontrast auf rund 0,25 heben.
+- Streifenmaske und Fotostreifen sind Fenster auf Schwarz → im Creator-Modus als enger Ausschnitt und als schräg gekipptes Vollbild ohne Rand bauen.
+- Code-Figur mit dunklen Augenhöhlen, Nasenloch und kalkweißer Haut, dazu Krawatte mit flacher Kante und Stäbe im Hintergrund → liest als Totenkopf vor Gittern; Augen als Lidbogen mit Iris und Brauen, Nase als Flankenschatten, Krawatte spitz, Hintergrund als ungleiche weiche Vorhangfalten.
+- Korn nur als overlay → verschwindet über Schwarz und bleibt in glatten Flächen bei rund 2 %; zwei Kornebenen plus eine helle Kornebene im Modus screen legen, damit es auch auf Schwarz und am Handy sichtbar bleibt.
+- Ganzkörper mit Sohlen über 90 % der Höhe → Füße liegen unter den Plattform-Knöpfen; Figur so setzen, dass die Sohlen bei höchstens 84 % stehen.
+- Creator-Fotostreifen im Wechsel aus dunklem Detail und hellem Porträt → vier harte Hell-Dunkel-Wechsel je Sekunde (Vorprüfung rot); im Creator-Modus alle Streifen aus demselben Porträt schneiden und den Schnitt über Kippung und Ausschnitt geben.

@@ -31,12 +31,37 @@ ton: Leise gemischte Spannungsmusik um 88 BPM mit Puls auf jeder Zählzeit, eine
 braucht: [fotos-figur, footage-ort, 3d]
 motor_aufwand: klein
 einsatz: [trailer, intro, portrait]
+zweck: [person-vorstellen, event-teaser]
+branchen_passt: [musik-kultur]
+branchen_nie: [lebensmittel-feinkost, gesundheit, kinder-familie]
 abnahme:
   shot_median_s: [0.50, 0.76]
   schnitte_pro_s: [1.4, 2.1]
   helligkeit: [0.07, 0.13]
   farbigkeit: [0.06, 0.10]
   lufs: [-18.2, -16.2]
+# Würfel-Felder (Etappe 0 Bauplan Würfelstile, 31.10.2026; karten_wuerfelfelder.py, Familien-Standard)
+creator: ja
+spielraum:
+  palette: akzent
+  schrift: klasse
+  blitzbild_bilder: [2, 4]
+  stottern_wiederholungen: [2, 3]
+  push_in_prozent: [3, 8]
+  wackeln_faktor: [0.4, 1.0]
+  korn: [0.05, 0.08]
+  vignette: [0.3, 0.5]
+  beat_versatz_16tel: [0, 1]
+  textgroesse_prozent: [-10, 10]
+  textlage: regel
+  musik: bausteine
+palettenrolle:
+  grund: grund
+  text: bernstein
+  akzent: rot
+  dunkel: grund
+  hell: bernstein
+  licht: bernstein
 quelle: Eigene Analyse einer öffentlichen Vorschau; nur der Look ist beschrieben, keine Motive, Texte oder Marken übernommen.
 ---
 
@@ -139,3 +164,6 @@ Bauplan für 15 s bei 88 BPM (Sechzehntel = 0,17 s, Viertel = 0,68 s; 88 Sechzeh
 - Pointe „der Erzähler spricht für die Figur“ trägt stumm nur, wenn das Bild des Sprechers (Mikrofon) genau auf dem Wort „mich“ steht und das Etikett eine Rolle nennt (ERZÄHLER), nie einen internen Stimmnamen.
 - Text-Polster (dunkler Fleck hinter Schrift) wird über hellen Bildern zum Balken → enger Textschatten plus 1-px-Kontur; höchstens vier Akten-Zeilen, groß (rund 2,6 % der Bildhöhe), über der Caption-Zone, je nur über dem passenden Bild.
 - Randlicht rundum um eine Figur wirkt wie ein Aufkleber → nur auf der Lampenseite, 3 px in der Tuschelinie, unteres Drittel und innere Löcher ohne Rand.
+- Bei kartentreuer Helligkeit (0,07 bis 0,13) erkennt die Schnitt-Messung mit Schwelle 10 in Code-Szenen nur rund die Hälfte der Schnitte; mit Schwelle 5 alle (Motor NeonoirSteckbrief: 11 gegen 24 Schnitte). Für Code-Motoren dieser Karte gilt die Gegenprobe abnahme.py --schwelle 5; nie aufhellen, um die Messung zu treffen (helle Bernstein-Flächen wirkten im Prüfer wie Werbung).
+- Namenskarte an die Breite binden: lange Namen liefen mit fester Schriftgröße links und rechts aus dem Bild.
+- Steckbrief-Zeile in Mono braucht mindestens 2,6 % der Höhe und muss als ganze Zeile in 86 % der Breite passen; die Pointe nicht größer, sondern schneller tippen.

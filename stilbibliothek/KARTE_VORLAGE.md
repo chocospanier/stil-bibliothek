@@ -35,6 +35,30 @@ abnahme:                  # Zielwerte für den eigenen Render im Format der Quel
 abnahme_9x16:             # optional: eigene Werte fürs Hochformat, wenn format_quelle nicht 9:16 ist; fehlt der Block, gilt abnahme mit +0,03 auf die obere Grenze von Helligkeit und Farbigkeit
   helligkeit: [<min>, <max>]
   farbigkeit: [<min>, <max>]
+# Würfel-Felder (Bauplan Würfelstile, Etappe 0): füllt karten_wuerfelfelder.py aus Familie, Energie, Effekten, Kern und Palette; von Hand nur ändern, was die Regel falsch trifft
+creator: <ja | eingeschraenkt | nein>   # darf der Würfel die Karte im TikTok-Creator-Modus ziehen? Klassen der Kennungen in EFFEKT_VOKABULAR.md
+creator_ohne: [<Kennungen, die im Creator-Modus wegfallen; nur bei eingeschraenkt>]
+creator_grund: "<warum gesperrt; nur bei nein>"
+spielraum:                # Fenster je Würfel-Achse, innerhalb derer die Abnahme der Karte hält (Standard der Familie, FAMILIEN.md)
+  palette: <nachbarn | akzent | fest>
+  schrift: <klasse | fest>
+  blitzbild_bilder: [<min>, <max>]
+  stottern_wiederholungen: [<min>, <max>]
+  push_in_prozent: [<min>, <max>]
+  wackeln_faktor: [<min>, <max>]
+  korn: [<min>, <max>]
+  vignette: [<min>, <max>]
+  beat_versatz_16tel: [<min>, <max>]
+  textgroesse_prozent: [<min>, <max>]
+  textlage: regel
+  musik: <bausteine | fest>
+palettenrolle:            # welcher Schlüssel der Palette welche Rolle hat (Regel aus starter/STILSTANDBILD.md, Abschnitt Palette)
+  grund: <schlüssel>
+  text: <schlüssel>
+  akzent: <schlüssel>
+  dunkel: <schlüssel>
+  hell: <schlüssel>
+  licht: <schlüssel>
 quelle: Eigene Analyse einer öffentlichen Vorschau; nur der Look ist beschrieben, keine Motive, Texte oder Marken übernommen.
 ---
 

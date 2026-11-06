@@ -33,12 +33,37 @@ ton: Gleichmäßig lauter, weicher Song-Teppich um 80 BPM (gemessen 157, Doppelt
 braucht: [fotos-figur, footage-ort]
 motor_aufwand: klein
 einsatz: [ganzes-kurzvideo, portrait, uebergang]
+zweck: [stimmung, mode-lookbook, geschichte]
+branchen_passt: [tourismus, mode-beauty, immobilien]
+branchen_nie: [werkstatt-auto, handwerk, technik]
 abnahme:
   shot_median_s: [1.45, 2.20]
   schnitte_pro_s: [0.45, 0.70]
   helligkeit: [0.19, 0.29]
   farbigkeit: [0.13, 0.19]
   lufs: [-10.6, -8.6]
+# Würfel-Felder (Etappe 0 Bauplan Würfelstile, 31.10.2026; karten_wuerfelfelder.py, Familien-Standard)
+creator: ja
+spielraum:
+  palette: nachbarn
+  schrift: klasse
+  blitzbild_bilder: [2, 4]
+  stottern_wiederholungen: [2, 3]
+  push_in_prozent: [2, 5]
+  wackeln_faktor: [0.3, 0.7]
+  korn: [0.045, 0.075]
+  vignette: [0.3, 0.5]
+  beat_versatz_16tel: [0, 1]
+  textgroesse_prozent: [-10, 10]
+  textlage: regel
+  musik: bausteine
+palettenrolle:
+  grund: tiefe
+  text: laterne
+  akzent: abendrot
+  dunkel: tiefe
+  hell: pastell
+  licht: laterne
 quelle: Eigene Analyse einer öffentlichen Vorschau; nur der Look ist beschrieben, keine Motive, Texte oder Marken übernommen.
 ---
 
@@ -123,3 +148,9 @@ Bauplan für 18 s in Sekunden (der Stil schneidet ruhig; Schnittpunkte auf den n
 - Wahrzeichen zu groß und zu oft → höchstens ein Ortsbild mit Wahrzeichen.
 - Laute Musik ohne Dynamik (−9,6 LUFS) ermüdet über 30 s → für längere Stücke auf −13 LUFS mischen und die Abnahme bewusst anpassen.
 - Volle Nacht macht die Fenster zu hellen Löchern → Aufnahme in der blauen Stunde oder Himmel im Grade anheben.
+- Code-Ersatz mit gleich starker Unschärfe über allem wirkt wie Milchglas, Bokeh liest sich nicht → Unschärfe nach Ebenen: Grund weich (1 bis 1,8 vh), Figur fast scharf (0,2 bis 0,35 vh).
+- Dunkle, weiche Nachbarbilder (Figur vor Himmel, danach Ort) unterschreiten die Schnitterkennung → Helligkeit anders verteilen: steht die Figur vor hellem Himmel, ist der Ort danach oben dunkel oder bildfüllend warm.
+- Ruhige Fahrten auf weichen Verläufen meldet die Vorprüfung als Standbild → Lichter auf Wasser und Bokeh leise funkeln lassen, statt die Kamera schneller zu machen.
+- „Schwarz auf“ im ersten Slot macht Bild 0 schwarz → erste Einstellung ab Bild 0 voll zeigen, nur am Schluss ausblenden.
+- Architektur, die das Bild von Rand zu Rand umschließt (Bogen, Fensterrahmen), liest sich im Creator-Modus als Rahmen → Öffnungen nie bildfüllend zentrieren, Schaufenster über die ganze Breite.
+- Soft-Light-Schleier mit hellen Farben hebt die Helligkeit mit → für mehr Farbigkeit oben dunkles Blau, unten Bernstein mischen (Motor BlaueStundeFlanieren, 31.10.).

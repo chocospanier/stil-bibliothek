@@ -32,12 +32,38 @@ ton: Acht Sekunden leiser, dünner Vorlauf ohne Bass, dann ein voller Beat um 14
 braucht: [fotos-figur, footage-ort, nur-typo]
 motor_aufwand: klein
 einsatz: [portrait, hook, ganzes-kurzvideo]
+zweck: [person-vorstellen, zitat]
+branchen_passt: []
+branchen_nie: [gesundheit, finanzen]
 abnahme:
   shot_median_s: [0.34, 0.50]
   schnitte_pro_s: [1.3, 2.0]
   helligkeit: [0.31, 0.47]
   farbigkeit: [0.10, 0.16]
   lufs: [-16.5, -14.5]
+# Würfel-Felder (Etappe 0 Bauplan Würfelstile, 31.10.2026; karten_wuerfelfelder.py, Familien-Standard)
+creator: eingeschraenkt
+creator_ohne: [bild-im-bild, freisteller]
+spielraum:
+  palette: nachbarn
+  schrift: klasse
+  blitzbild_bilder: [2, 4]
+  stottern_wiederholungen: [2, 3]
+  push_in_prozent: [3, 8]
+  wackeln_faktor: [0.4, 1.0]
+  korn: [0.045, 0.075]
+  vignette: [0.3, 0.5]
+  beat_versatz_16tel: [0, 1]
+  textgroesse_prozent: [-10, 10]
+  textlage: regel
+  musik: bausteine
+palettenrolle:
+  grund: himmel
+  text: tiefe
+  akzent: haut
+  dunkel: tiefe
+  hell: schrift
+  licht: schrift
 quelle: Eigene Analyse einer öffentlichen Vorschau; nur der Look ist beschrieben, keine Motive, Texte oder Marken übernommen.
 ---
 
@@ -143,3 +169,6 @@ Bauplan für 16 s bei 140 BPM (Sechzehntel = 0,107 s, Viertel = 0,43 s, Halbe = 
 - (erlebt beim Bau, Urteil des Auftraggebers) Avatar-Posen nie perspektivisch verzerren, strecken oder stauchen: „Die Figur ist wie zusammengequetscht und ihr Gesicht oben wie platt.“ Posen nur gleichmäßig skalieren, keine Trapez- oder Orbit-Transformation auf der Figur. Die Froschperspektive entsteht allein aus Kulisse und Bildaufbau (tiefer Horizont, Figur groß und tief im Bild, Himmel darüber). In Nahaufnahmen Luft über dem Kopf lassen oder klar unter dem Scheitel anschneiden, nie knapp am Scheitel (wirkt platt).
 - (erlebt in der Prüfrunde) Z-Image malt bei „plain white canvas sneaker“ die Chucks-Form (Gummikappe, Rautenmuster, Sohlenstreifen) → „plain smooth white leather low-top sneaker, minimal seamless shoe, clean flat white sole, rounded smooth toe“; jeden Schuh auf markentypische Formen prüfen.
 - (erlebt in der Prüfrunde) Pointe nach dem Schlussschlag mindestens 2,3 s stehen lassen, in Satzgröße auf dunklem Grund (Hose der Figur), nicht klein unter dem Titel.
+- (Prüfrunde) Verschränkte Arme als ein Querband ohne Unterarme und Hände lesen sich als Zwangsjacke → Unterarme und Hände sichtbar zeichnen.
+- (Prüfrunde) Hauptwort nie über dem Gesicht: auf die Hose oder den Rasen setzen; Zeilenhöhe der schrägen Anton mindestens 1,1, sonst stoßen Umlautpunkte in die Zeile darüber.
+- (Prüfrunde) Freisteller auf Schwarz und Flackerbild nicht in derselben Sekunde (Blitzregel), ein reiner Rasen-Beat ohne Figur oder Gegenstand ist leer.

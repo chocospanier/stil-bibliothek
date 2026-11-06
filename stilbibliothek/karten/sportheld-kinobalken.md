@@ -31,12 +31,38 @@ ton: Treibender Rap- oder Phonk-Beat um 90 BPM (gemessen 179, Doppeltempo), mitt
 braucht: [fotos-figur, footage-ort]
 motor_aufwand: mittel
 einsatz: [hook, trailer, portrait, ganzes-kurzvideo]
+zweck: [person-vorstellen, event-teaser]
+branchen_passt: [sport]
+branchen_nie: [lebensmittel-feinkost, gastro, mode-beauty, immobilien, finanzen]
 abnahme:
   shot_median_s: [0.28, 0.42]
   schnitte_pro_s: [1.6, 2.4]
   helligkeit: [0.12, 0.20]
   farbigkeit: [0.05, 0.10]
   lufs: [-15.2, -13.2]
+# Würfel-Felder (Etappe 0 Bauplan Würfelstile, 31.10.2026; karten_wuerfelfelder.py, Familien-Standard)
+creator: eingeschraenkt
+creator_ohne: [kinobalken, hud]
+spielraum:
+  palette: nachbarn
+  schrift: klasse
+  blitzbild_bilder: [2, 4]
+  stottern_wiederholungen: [2, 3]
+  push_in_prozent: [3, 8]
+  wackeln_faktor: [0.4, 1.0]
+  korn: [0.045, 0.075]
+  vignette: [0.3, 0.5]
+  beat_versatz_16tel: [0, 1]
+  textgroesse_prozent: [-10, 10]
+  textlage: regel
+  musik: bausteine
+palettenrolle:
+  grund: balken
+  text: funkel
+  akzent: petrol
+  dunkel: balken
+  hell: funkel
+  licht: licht
 quelle: Eigene Analyse einer öffentlichen Vorschau; nur der Look ist beschrieben, keine Motive, Texte oder Marken übernommen.
 ---
 
@@ -133,3 +159,8 @@ Bauplan für 16 s bei 90 BPM (96 Sechzehntel zu je 0,167 s; die Vorlage zählt d
 - Zu bunt → wirkt wie Fernsehübertragung. Sättigung wirklich halbieren.
 - Kein Atem → alles gleich laut. Mindestens ein dunkles Zwischenbild.
 - Koordinaten zu groß → lenken ab. Höchstens 1 % der Bildhöhe.
+- Motor aus Code (SportheldKinobalken, Welle D): Torwart flach am Boden, danach Weißblitz und Sterne liest sich als Tod → Hechtsprung vor sichtbarem Tor, letzten Weißblitz auf den Jubel legen.
+- Tracking-Koordinaten im Bildschirmraum mit fester Größe (1 % der Höhe), nie im gezoomten Bild, sonst wachsen sie und laufen über den Rand.
+- Code-Spielszenen mit demselben Rasen zählt die Schnittmessung nicht → Kamerastandort je Einstellung wechseln (Horizont, Winkel, Streifenbreite), Jubel abwechselnd vor Flutlicht und dunkler Kurve.
+- Hochformat: Kinobalken 4 % je Seite; im Creator-Modus ohne Balken und ohne Koordinaten.
+- Das Porträt am Anfang steht 2,5 s; ohne sichtbaren Push-in (rund 9 %) und leichtes Atmen meldet die Creator-Prüfung ohne Balken ein Standbild rot.

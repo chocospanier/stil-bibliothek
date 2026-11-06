@@ -34,12 +34,38 @@ ton: Gleichmäßiger Beat um 106 BPM (oder doppelt), kurzes leises Intro, ein d�
 braucht: [fotos-figur, footage-ort]
 motor_aufwand: mittel
 einsatz: [ganzes-kurzvideo, hook, portrait]
+zweck: [mode-lookbook]
+branchen_passt: [mode-beauty]
+branchen_nie: [werkstatt-auto, handwerk, lebensmittel-feinkost, gesundheit, immobilien, finanzen]
 abnahme:
   shot_median_s: [0.50, 0.76]
   schnitte_pro_s: [1.4, 2.0]
   helligkeit: [0.24, 0.36]
   farbigkeit: [0.09, 0.14]
   lufs: [-15.1, -13.1]
+# Würfel-Felder (Etappe 0 Bauplan Würfelstile, 31.10.2026; karten_wuerfelfelder.py, Familien-Standard)
+creator: eingeschraenkt
+creator_ohne: [split-screen, bild-im-bild, hud]
+spielraum:
+  palette: nachbarn
+  schrift: klasse
+  blitzbild_bilder: [2, 4]
+  stottern_wiederholungen: [2, 3]
+  push_in_prozent: [3, 8]
+  wackeln_faktor: [0.4, 1.0]
+  korn: [0.045, 0.075]
+  vignette: [0.3, 0.5]
+  beat_versatz_16tel: [0, 1]
+  textgroesse_prozent: [-10, 10]
+  textlage: regel
+  musik: bausteine
+palettenrolle:
+  grund: wand
+  text: guckloch_grund
+  akzent: streifen_linie
+  dunkel: guckloch_grund
+  hell: wand
+  licht: wand
 quelle: Eigene Analyse einer öffentlichen Vorschau; nur der Look ist beschrieben, keine Motive, Texte oder Marken übernommen.
 ---
 
@@ -132,3 +158,6 @@ Bauplan für 15 s bei 106 BPM (106 Sechzehntel zu 0,142 s).
 - KI-Fischauge verbiegt Hände zu Krallen → Hände nur unscharf groß, Finger zählen.
 - Zu viele Grafik-Elemente gleichzeitig (Streifen, Sucher, Kreis) → je Bild höchstens eines.
 - Text zu klein (Vorlage rund 1,1 %) → 1,6 % der Bildhöhe.
+- Gleichmäßige Kreisringe um eine Figur mit Fadenkreuz lesen sich als Zielscheibe → Treppenauge als Spirale mit Stufenkanten, kein Fadenkreuz, Arme seitlich offen statt hoch (Motor GucklochWeinstreifen, 04.11.).
+- Schluss von oben in einen schwarzen Schacht liest sich als Sturz → Schluss im hellen Treppenhaus, Figur zur Kamera.
+- Split mit Gesicht im oberen Feld: der Streifen liegt quer über dem Gesicht → oben eine Ganzkörperpose, Streifen genau auf der Kante.

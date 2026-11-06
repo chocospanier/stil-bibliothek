@@ -36,12 +36,37 @@ ton: Eine schnelle Sprechstimme in Ich-Form von Bild 0 bis kurz vor Schluss, run
 braucht: [illustrationen, nur-typo]
 motor_aufwand: mittel
 einsatz: [ganzes-kurzvideo, hook, intro]
+zweck: [zitat, wissen, erklaeren]
+branchen_passt: [bildung]
+branchen_nie: [lebensmittel-feinkost, mode-beauty, immobilien]
 abnahme:
   shot_median_s: [2.5, 4.5]
   schnitte_pro_s: [0.18, 0.4]
   helligkeit: [0.25, 0.42]
   farbigkeit: [0.30, 0.50]
   lufs: [-15, -13]
+# Würfel-Felder (Etappe 0 Bauplan Würfelstile, 31.10.2026; karten_wuerfelfelder.py, Familien-Standard)
+creator: ja
+spielraum:
+  palette: nachbarn
+  schrift: klasse
+  blitzbild_bilder: [2, 4]
+  stottern_wiederholungen: [2, 3]
+  push_in_prozent: [3, 8]
+  wackeln_faktor: [0.4, 1.0]
+  korn: [0.045, 0.075]
+  vignette: [0.3, 0.5]
+  beat_versatz_16tel: [0, 1]
+  textgroesse_prozent: [-5, 5]
+  textlage: regel
+  musik: bausteine
+palettenrolle:
+  grund: nachtviolett
+  text: text
+  akzent: magenta
+  dunkel: tiefnacht
+  hell: text
+  licht: text
 quelle: Eigene Analyse einer öffentlichen Vorschau; nur der Look ist beschrieben, keine Motive, Texte oder Marken übernommen.
 ---
 

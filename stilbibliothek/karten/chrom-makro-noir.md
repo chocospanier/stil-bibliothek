@@ -31,12 +31,37 @@ ton: Stiller Anfang auf Papierweiß, dann ein tiefer Sub-Bass-Schlag; gefühlte 
 braucht: [fotos-figur, produkt, 3d]
 motor_aufwand: mittel
 einsatz: [trailer, intro, produkt, portrait]
+zweck: [produktwerbung, marke-image, mode-lookbook]
+branchen_passt: [mode-beauty, technik]
+branchen_nie: [lebensmittel-feinkost, gastro, kinder-familie]
 abnahme:
   shot_median_s: [0.27, 0.40]
   schnitte_pro_s: [1.4, 2.2]
   helligkeit: [0.13, 0.20]
   farbigkeit: [0.01, 0.05]
   lufs: [-14.7, -12.7]
+# Würfel-Felder (Etappe 0 Bauplan Würfelstile, 31.10.2026; karten_wuerfelfelder.py, Familien-Standard)
+creator: ja
+spielraum:
+  palette: akzent
+  schrift: klasse
+  blitzbild_bilder: [2, 4]
+  stottern_wiederholungen: [2, 3]
+  push_in_prozent: [3, 8]
+  wackeln_faktor: [0.4, 1.0]
+  korn: [0.05, 0.08]
+  vignette: [0.3, 0.5]
+  beat_versatz_16tel: [0, 1]
+  textgroesse_prozent: [-10, 10]
+  textlage: regel
+  musik: bausteine
+palettenrolle:
+  grund: grund
+  text: papier
+  akzent: akzent
+  dunkel: grund
+  hell: papier
+  licht: licht
 quelle: Eigene Analyse einer öffentlichen Vorschau; nur der Look ist beschrieben, keine Motive, Texte oder Marken übernommen.
 ---
 
@@ -133,3 +158,4 @@ Bauplan für 18 s bei gefühlten 90 BPM (Sechzehntel = 0,167 s; die Kopfwerte st
 - Zeilenriss länger als sechs Frames → wirkt wie Abspielfehler.
 - Stille am Anfang zu lang (über 1 s) → Absprung. Eine halbe bis eine Sekunde reicht.
 - Papierblitze in Folge über einer Sekunde sind eine Epilepsie-Gefahr → höchstens drei je Sekunde.
+- Motor (Code-Ersatz): Makros zwischen zwei dunklen Code-Bildern mit gleichem Aufbau erkennt die Schnittmessung nicht → je Einstellung Ausschnitt oder Lichtlage ändern, sonst fällt die Schnittdichte unter das Abnahme-Fenster.

@@ -32,12 +32,37 @@ ton: Sehr lauter, druckvoller Dance-Pop (−10,3 LUFS, kaum Dynamik), gemessen 6
 braucht: [fotos-figur, footage-ort]
 motor_aufwand: mittel
 einsatz: [musikvideo, hook, trailer]
+zweck: [musik-lyric, event-teaser]
+branchen_passt: [musik-kultur, sport]
+branchen_nie: [werkstatt-auto, handwerk, lebensmittel-feinkost, gesundheit, immobilien, finanzen]
 abnahme:
   shot_median_s: [0.22, 0.34]
   schnitte_pro_s: [3.3, 4.9]
   helligkeit: [0.34, 0.46]
   farbigkeit: [0.22, 0.34]
   lufs: [-11.3, -9.3]
+# Würfel-Felder (Etappe 0 Bauplan Würfelstile, 31.10.2026; karten_wuerfelfelder.py, Familien-Standard)
+creator: ja
+spielraum:
+  palette: nachbarn
+  schrift: klasse
+  blitzbild_bilder: [2, 3]
+  stottern_wiederholungen: [2, 2]
+  push_in_prozent: [3, 8]
+  wackeln_faktor: [0.4, 1.0]
+  korn: [0.045, 0.075]
+  vignette: [0.3, 0.5]
+  beat_versatz_16tel: [0, 1]
+  textgroesse_prozent: [-10, 10]
+  textlage: regel
+  musik: bausteine
+palettenrolle:
+  grund: nachtblau
+  text: hell
+  akzent: weinrot
+  dunkel: nachtblau
+  hell: hell
+  licht: hell
 quelle: Eigene Analyse einer öffentlichen Vorschau; nur der Look ist beschrieben, keine Motive, Texte oder Marken übernommen.
 ---
 
@@ -129,3 +154,8 @@ Bauplan für 16 s, gezählt in Sechzehnteln von 69 BPM (0,217 s, gefühlt Achtel
 - Schnitte im gemessenen 69-BPM-Sechzehntel sind gefühlt Achtel; wer im Doppeltempo-Sechzehntel schneidet, erzeugt Flimmern.
 - Tanz nicht synchron zwischen Kulissen → wirkt chaotisch. Choreografie in jeder Kulisse gleich, Schnitt auf passende Bewegung.
 - KI-Material mit verformten Händen in Formationen → nur Einstellungen mit klaren Silhouetten nehmen.
+- Sechzehntel bei 69 BPM und 30 fps sind 6,5 Bilder; reines Runden gibt halb 6, halb 7 Bilder und drückt den Shot-Median auf 0,20 → Schnitt nach einem Einzel-Sechzehntel aufrunden (höchstens ein Bild hinter dem Raster), dann 7 Bilder als Median.
+- Kulissen hell und dunkel im Wechsel (Studio neben Neonbühne) ergeben bei vier Schnitten je Sekunde mehr als drei Helligkeitssprünge und fallen in der Vorprüfung als Blitze durch → Farbton bei jedem Schnitt wechseln, Helligkeit in kleinen Stufen hinab und hinauf führen.
+- Fünf Liegende im Kreis von oben bilden einen Stern (Pentagramm-Lesart) → Draufsicht mit vier Mitgliedern nebeneinander, ohne Drehung um die Mitte.
+- Weichzeichnung über die ganze gemalte Ebene zieht am Rand Grund herein, am ersten Bild jedes Schnitts blitzt ein dunkler Rahmen → Ebene mit 4 % Überstand malen, dann weichzeichnen.
+- Eine eigene Kulissen-Reihe in den Props überstimmt die gestufte Standardreihe und kann Helligkeitssprünge bringen → in den Props dieselbe gestufte Reihe nehmen (Motor GruppentanzKulissen, 31.10.).

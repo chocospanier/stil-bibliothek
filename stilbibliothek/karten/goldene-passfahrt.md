@@ -32,12 +32,38 @@ ton: Gleichmäßiger, satter Groove um 80 BPM ohne Stimme, kaum Dynamik (Lauthei
 braucht: [footage-ort, produkt]
 motor_aufwand: mittel
 einsatz: [ganzes-kurzvideo, produkt, intro]
+zweck: [produktwerbung, marke-image]
+branchen_passt: [werkstatt-auto, tourismus, technik, sport]
+branchen_nie: [gesundheit]
 abnahme:
   shot_median_s: [0.55, 0.80]
   schnitte_pro_s: [1.4, 2.0]
   helligkeit: [0.21, 0.32]
   farbigkeit: [0.10, 0.16]
   lufs: [-16.5, -14.5]
+# Würfel-Felder (Etappe 0 Bauplan Würfelstile, 31.10.2026; karten_wuerfelfelder.py, Familien-Standard)
+creator: eingeschraenkt
+creator_ohne: [split-screen]
+spielraum:
+  palette: nachbarn
+  schrift: klasse
+  blitzbild_bilder: [2, 4]
+  stottern_wiederholungen: [2, 3]
+  push_in_prozent: [3, 8]
+  wackeln_faktor: [0.4, 1.0]
+  korn: [0.045, 0.075]
+  vignette: [0.3, 0.5]
+  beat_versatz_16tel: [0, 1]
+  textgroesse_prozent: [-10, 10]
+  textlage: regel
+  musik: bausteine
+palettenrolle:
+  grund: himmel
+  text: schatten
+  akzent: lack
+  dunkel: schatten
+  hell: himmel
+  licht: leuchte
 quelle: Eigene Analyse einer öffentlichen Vorschau; nur der Look ist beschrieben, keine Motive, Texte oder Marken übernommen.
 ---
 
@@ -133,3 +159,7 @@ Bauplan für 15,75 s bei 80 BPM (84 Sechzehntel, 21 Viertel). Ein Sechzehntel is
 - Split-Screen 50 zu 50 wirkt wie ein Vergleichsvideo → immer ein Drittel zu zwei Dritteln.
 - Innenaufnahmen ohne Hand wirken wie Katalogfotos → in jeder Haptik-Einstellung bewegt eine Hand etwas.
 - Sonne und Gegenlicht brennen aus → Lichter in der Korrektur bei 95 % weich begrenzen.
+- Code-Motor, Schnittmessung: scdet zählt nur Sprünge der Bildhelligkeit; zwei Code-Einstellungen gleicher Helligkeit nacheinander gelten als ein Shot → benachbarte Einstellungen in der Belichtung im Wechsel um 15 bis 35 % versetzen (`belichtung()` in `gemeinsam_d6.tsx`), unter 0,2 Sprung bleibt die Blitzregel frei.
+- Code-Motor, Front von vorn: zwei runde Scheinwerfer über einer dunklen Öffnung lesen sich am Handy als Gesicht → flache, kantige Leuchten, breiter tiefer Einlass, Räder und Spiegel sichtbar (`AutoFront` in `gemeinsam_d6.tsx`).
+- Herbstlaub als orange-gelbe Blockstreifen liest sich als brennender Wald → Stämme mit runden Laubkronen, wenige Blätter.
+- Zwei Hautflächen um einen Knopf lesen sich anzüglich → eine Hand aus einem Stück, Knopf von oben mit umlaufenden Rillen.

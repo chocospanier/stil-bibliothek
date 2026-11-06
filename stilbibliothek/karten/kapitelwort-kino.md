@@ -33,12 +33,38 @@ ton: Filmische Musik um 78 BPM, −11,2 LUFS mit Spitzen weit über 0 dBFS; nach
 braucht: [fotos-figur, footage-ort, nur-typo]
 motor_aufwand: klein
 einsatz: [trailer, intro, ganzes-kurzvideo, musikvideo]
+zweck: [geschichte, zitat, marke-image]
+branchen_passt: [sport, bildung]
+branchen_nie: [lebensmittel-feinkost, gastro, kinder-familie]
 abnahme:
   shot_median_s: [1.3, 1.9]
   schnitte_pro_s: [0.5, 0.7]
   helligkeit: [0.13, 0.20]
   farbigkeit: [0.05, 0.09]
   lufs: [-12.2, -10.2]
+# Würfel-Felder (Etappe 0 Bauplan Würfelstile, 31.10.2026; karten_wuerfelfelder.py, Familien-Standard)
+creator: eingeschraenkt
+creator_ohne: [hud, sucher-ecken]
+spielraum:
+  palette: nachbarn
+  schrift: klasse
+  blitzbild_bilder: [2, 4]
+  stottern_wiederholungen: [2, 3]
+  push_in_prozent: [3, 8]
+  wackeln_faktor: [0.4, 1.0]
+  korn: [0.05, 0.09]
+  vignette: [0.35, 0.6]
+  beat_versatz_16tel: [0, 1]
+  textgroesse_prozent: [-10, 10]
+  textlage: regel
+  musik: bausteine
+palettenrolle:
+  grund: nacht
+  text: licht
+  akzent: morgen_gold
+  dunkel: nacht
+  hell: licht
+  licht: licht
 quelle: Eigene Analyse einer öffentlichen Vorschau; nur der Look ist beschrieben, keine Motive, Texte oder Marken übernommen.
 ---
 
@@ -133,3 +159,6 @@ Bauplan für 20 s in Sekunden (ruhiger Stil, Wechsel auf Taktanfänge bei 78 BPM
 - (16.10.2026) Mit Comic-Gesichtern liegt die Helligkeit schnell bei 0,25 und die Farbigkeit über 0,11 → je Shot `brightness` 0,75 bis 0,8 und `saturate` 0,65 bis 0,8 nur auf den Bildebenen (Wort bleibt weiß), Vignette 0,4 auf Gesichtern.
 - (16.10.2026) Brustbild-Pose von hinten, die im Bild ausläuft (Dunst, Dunkel), wirkt wie ein schwebender Oberkörper → Rückenfigur als Über-die-Schulter-Bild mit Unterkante unter dem Bildrand; kleine Figur im Weitwinkel nur mit echtem Ganzkörper.
 - (16.10.2026) Posen nur gleichmäßig skalieren; Kopf verkleinern oder Strecken für erwachsene Proportionen ist verboten (Hausregel).
+- Dunkle Nachtszenen aus Code liegen in der Schnitt-Messung nah beieinander (Werte 7 bis 10 bei Schwelle 10) → benachbarte Einstellungen in der Fläche gegeneinander setzen (hell oben gegen hell unten, Fenster gegen Fläche), nicht nur im Motiv (Motor KapitelwortKino, 31.10.).
+- Rollen text und licht teilen sich #E2DDD6; würfelt der Zug licht dunkel, werden alle Lichter mit dieser Farbe dunkel und knappe Schnitte fallen weg → Lichter im Motor in einem eigenen hellen Ton außerhalb der Rollen zeichnen (Motor: hell #EDE8E0).
+- Treppe ins Licht, Stillstand im Dunkel, dann Licht und ATMEN liest sich als Jenseits → Treppenhaus mit Fenster und Etage, der Stillstand draußen mit Boden, der Morgen mit Geländer oder Becher am selben Ort (Prüfrunde Motor, 31.10.).

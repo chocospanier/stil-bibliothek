@@ -31,12 +31,38 @@ ton: Zweieinhalb Sekunden leises Raumgemurmel, dann ein sehr lauter, stampfender
 braucht: [fotos-figur, footage-ort]
 motor_aufwand: klein
 einsatz: [ganzes-kurzvideo, trailer, portrait]
+zweck: [person-vorstellen, geschichte]
+branchen_passt: [musik-kultur]
+branchen_nie: [gesundheit]
 abnahme:
   shot_median_s: [0.54, 0.80]
   schnitte_pro_s: [0.8, 1.2]
   helligkeit: [0.28, 0.42]
   farbigkeit: [0.10, 0.15]
   lufs: [-10.2, -8.2]
+# Würfel-Felder (Etappe 0 Bauplan Würfelstile, 31.10.2026; karten_wuerfelfelder.py, Familien-Standard)
+creator: eingeschraenkt
+creator_ohne: [freisteller]
+spielraum:
+  palette: nachbarn
+  schrift: klasse
+  blitzbild_bilder: [2, 4]
+  stottern_wiederholungen: [2, 3]
+  push_in_prozent: [3, 8]
+  wackeln_faktor: [0.4, 1.0]
+  korn: [0.05, 0.09]
+  vignette: [0.35, 0.6]
+  beat_versatz_16tel: [0, 1]
+  textgroesse_prozent: [-10, 10]
+  textlage: regel
+  musik: bausteine
+palettenrolle:
+  grund: tiefe
+  text: licht
+  akzent: haut
+  dunkel: tiefe
+  hell: licht
+  licht: licht
 quelle: Eigene Analyse einer öffentlichen Vorschau; nur der Look ist beschrieben, keine Motive, Texte oder Marken übernommen.
 ---
 
@@ -128,3 +154,6 @@ Bauplan für 20 s bei 78 BPM (Sechzehntel = 0,19 s, Viertel = 0,77 s; 104 Sechze
 - Figur sauber und modern gerendert, Hintergrund im Filmlook → Bruch. Figur durch denselben Grade, dasselbe Korn, dieselbe Unschärfe.
 - Übersteuerte Musik (True Peak über 0 dB) → auf Plattformen verzerrt. Laut, aber mit Limiter bei −1 dB.
 - Zu viele Effekte → zerstört die Filmillusion. Höchstens ein Freisteller-Blitz und eine Doppelbelichtung.
+- Komik-Detail in Draufsicht lässt das Requisit quer über den Körper fallen → landet scheinbar an der Hüfte; das Requisit über dem Mund groß ins Bild setzen und auf Mundgröße schrumpfen lassen (Fall weg von der Kamera).
+- Schlussbild 4,6 s nur mit 1 % Pull-out → wirkt als Standbild; im Code-Ersatz Glanz auf dem Wasser, ziehende Wolken, Vögel und eine Geste der Figur mitlaufen lassen, Pull-out um 3 % je Sekunde.
+- Gegenlicht-Silhouette mit hellen Kanten an jedem Teil → Doppellinien an Gelenken; Silhouette ohne Kontur, das Licht kommt nur vom Hof dahinter.

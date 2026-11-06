@@ -4,7 +4,7 @@ Die Begriffe, die in Karten, Fehlerkatalog und Prüfer-Definition vorkommen. Kur
 
 | Begriff | Bedeutung |
 |---|---|
-| **Familie** | Eine Gruppe von Stilen mit gleicher Wirkung und gleichen Reglern (zum Beispiel noir, lookbook, musikvideo). 19 Familien, Einstieg über `FAMILIEN.md`. |
+| **Familie** | Eine Gruppe von Stilen mit gleicher Wirkung und gleichen Reglern (zum Beispiel noir, lookbook, musikvideo). 24 Familien, Einstieg über `FAMILIEN.md`. |
 | **Karte** | Eine Datei je Stil: Kopfblock (YAML, maschinenlesbar) plus Text mit Erkennung, Bildtypen, Dramaturgie, Schnittmuster, Rezept, Material, Reglern, Abnahme und Fallen. |
 | **Kern** | Die drei Merkmale einer Karte, ohne die es nicht der Stil ist. Nicht verhandelbar. |
 | **Regler** | Alles an einem Stil, das sich ändern lässt, ohne dass er kippt (Farbe, Tempo, Figurenzahl, Textanteil). |
@@ -41,3 +41,18 @@ Die Begriffe, die in Karten, Fehlerkatalog und Prüfer-Definition vorkommen. Kur
 | **Effekt-Kennung** | Ein fester Name für eine Technik (`harter-schnitt`, `blitzbild`, `push-in`, `duoton`), Liste in `EFFEKT_VOKABULAR.md`; neue Kennungen als `neu:kennung`. |
 | **Motor** | Das Programm, das aus Code Bilder rendert: Remotion, Canvas, SVG, After Effects, Blender. Eine Karte beschreibt, der Motor baut. |
 | **Baustein** | Ein wiederverwendbares Element im Motor (Blitzbild, Stottern, Wischer, Bauchbinde, Zahl-Walze). Rund 28 Bausteine tragen fast alle Stile; der Starter liefert sie für Remotion (`starter/src/bausteine/`, Liste in `starter/BAUSTEINE.md`). |
+| **Motor (im Würfel)** | Eine fertige Remotion-Komposition, die eine Karte baut; Liste in `starter/src/wuerfel/motoren.json`. Mit `inhalt: props` kommt ihr Inhalt ganz über Props, der Würfel rendert sie sofort. Mit `inhalt: code` (Code-Motor) steht der Inhalt fest im Code; sie ist ein Beispielstück und Vorlage für einen Handbau, eigener Inhalt nur per Kopie. Stand 05.11.2026: alle 110 Karten haben eine Komposition, sechs davon nur als Code-Motor (neon-symbolbuehne, strichfigur-erklaerer, glasroentgen-akte, titelblatt-noir, kopierer-pegel, umkehrwort-monolog). |
+| **Handbau** | Eine Karte ohne Motor für eigenen Inhalt: Claude baut das Stück nach der Karte aus den Bausteinen, oder kopiert die Vorlage (`vorlage` in `stil.json`) und stellt sie auf Props um, und macht es danach mit `wuerfeln.py motor --props <datei>` zum Motor. |
+| **Würfel** | Das System, das jedes Video eines Kanals leicht anders aussehen lässt: Grundstil, Palette, Schriftpaar und Werte wie Korn oder Tempo, alles innerhalb des Spielraums der Karte. Befehl `starter/werkzeuge/wuerfeln.py`. |
+| **Mischung** | Die gewürfelte Auswahl eines Kanals: welche Karten er ziehen darf und wie oft (`haus/mischung.json`). Der Kunde wählt nichts, `wuerfeln.py mischung` legt sie aus `haus/look.md` an. |
+| **Zug** | Ein Wurf für ein Video: `wuerfeln.py zug` schreibt `stil.json` ins Projekt. Zwei Züge nacheinander haben nie denselben Grundstil. |
+| **Grundstil** | Die Karte, auf der ein Zug beruht. |
+| **Achse** | Eine der Größen, die der Würfel dreht: Grundstil, Palette, Schrift, Bewegung, Textur, Ton, Schnitt. |
+| **Spielraum** | Feld im Kopfblock jeder Karte: wie weit der Würfel jede Achse drehen darf, ohne dass der Stil kippt. |
+| **Abdruck** | Was das Register von einem Video speichert: Bild-Hashes von zwölf Standbildern, Lage der Textkästen, ein Tonabdruck, im Creator-Modus die festen Ecken. Daraus lässt sich das Video nicht zurückholen. |
+| **Register** | Die Liste aller Abdrücke eines Kanals (`haus/register.db`). Vor dem Liefern gleicht `handy.py` jedes neue Video damit ab. |
+| **Ampel** | Ergebnis des Abgleichs. Grün: liefern. Gelb: liefern, der nächste Zug meidet den Grundstil. Rot: nicht hochladen, mit anderem Inhalt neu bauen. |
+| **Zentraler Abgleich** | Abgleich gegen die Abdrücke aller Kunden auf dem Register-Server; braucht den Register-Schlüssel aus dem Kauf, abschaltbar. |
+| **Kanal-Pseudonym** | Die Kennung des Kanals als Hash mit eigenem Salz (`haus/register.json`). Das Register sieht nie den echten Kanalnamen. |
+| **Creator-Modus** | Schalter in `haus/praeferenzen.md` für Kanäle im TikTok-Creator-Programm: der Würfel meidet Collage-Look, harte Freisteller, Bild im Bild und viele Blitze, `vorpruefung.py --creator` prüft jedes Stück. |
+| **Exklusives Overlay** | Korn, Lichtleck, Staub oder Scanlines, die nur ein Kanal hat: aus dem Vorrat zugeteilt (`vergabe.py`) oder aus Code für den Kanal gebaut (`overlays.py`). Kacheln ebenso (`texturen.py --seed kanal`). |

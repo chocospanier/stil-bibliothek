@@ -8,6 +8,8 @@ stand: <Datum, abgenommen vom Auftraggeber ja/nein>
 
 # Stil: <Name>
 
+> Seit 31.10.2026 ist der Hausstil eines Kanals eine **Mischung** aus mehreren Karten (`haus/mischung.json`, gewürfelt mit `wuerfeln.py mischung`), kein Einzelstil. Diese Vorlage braucht es nur noch für einen eigenen Stil, der als neue Karte in die Bibliothek soll.
+>
 > Eine Datei je Stil. Ein Stil = Erkennung + Rezept + Fallen. Zwei Quellen: eine Referenz (per `video_schauen.py` seziert) oder ein eigenes, abgenommenes Werk. Vorlage vom 15.10.2026.
 
 ## Erkennung (was man sieht, hört, messen kann)

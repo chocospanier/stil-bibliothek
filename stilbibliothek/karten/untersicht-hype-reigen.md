@@ -32,12 +32,37 @@ ton: Rap-Beat um 64 BPM gefühlt (gemessen 127, Doppeltempo), mit Dynamik (Lauth
 braucht: [fotos-figur, footage-ort]
 motor_aufwand: mittel
 einsatz: [musikvideo, hook, trailer, intro]
+zweck: [musik-lyric, event-teaser]
+branchen_passt: [musik-kultur, sport]
+branchen_nie: [werkstatt-auto, handwerk, lebensmittel-feinkost, gastro, gesundheit, bildung, immobilien, finanzen, kinder-familie]
 abnahme:
   shot_median_s: [0.14, 0.25]
   schnitte_pro_s: [1.8, 2.8]
   helligkeit: [0.27, 0.39]
   farbigkeit: [0.11, 0.17]
   lufs: [-14.7, -12.7]
+# Würfel-Felder (Etappe 0 Bauplan Würfelstile, 31.10.2026; karten_wuerfelfelder.py, Familien-Standard)
+creator: ja
+spielraum:
+  palette: nachbarn
+  schrift: klasse
+  blitzbild_bilder: [2, 4]
+  stottern_wiederholungen: [2, 3]
+  push_in_prozent: [3, 8]
+  wackeln_faktor: [0.4, 1.0]
+  korn: [0.045, 0.075]
+  vignette: [0.3, 0.5]
+  beat_versatz_16tel: [0, 1]
+  textgroesse_prozent: [-10, 10]
+  textlage: regel
+  musik: bausteine
+palettenrolle:
+  grund: nachtblau
+  text: licht_creme
+  akzent: welt_rot
+  dunkel: schwarz
+  hell: licht_creme
+  licht: licht_creme
 quelle: Eigene Analyse einer öffentlichen Vorschau; nur der Look ist beschrieben, keine Motive, Texte oder Marken übernommen.
 ---
 
@@ -129,3 +154,7 @@ Bauplan für 20 s bei 64 BPM gefühlt, gezählt in Sechzehnteln von 127 BPM (0,1
 - Sechzehntel-Eröffnung mit ähnlichen Bildern → flimmert ohne Sinn. Jede Person anders gekleidet, jede Welt anders.
 - Schwarzbilder zu lang ohne Ton → wirkt wie ein Fehler. Bass muss weiterlaufen.
 - Vignette als harter Kreis → Spielzeug-Effekt. Weich, rund, mit Randunschärfe.
+- Motor UntersichtHypeReigen (Welle D5): Eine Standfigur perspektivisch gekippt wirkt frontal auf Augenhöhe. Eigene Untersicht-Figur zeichnen: Hüfte nah und breit unten, Rumpf verjüngt nach oben, kleiner Kopf mit Kinn-Unterseite, Arme oben aus dem Bild.
+- Eröffnung mit zwölf verschiedenen Personen (Kleidung, Haut, Haar oder Mütze, Armhaltung); umgefärbte Klone sind die Falle der Karte. Kleidung in mittleren Helligkeiten, sonst brechen zwölf Wechsel in 1,4 s die Blitzregel.
+- Tunnel mit Licht am Ende und Porträt im runden Rahmen lesen sich als Jenseits und Grabbild. Eckige Unterführung ohne helles Ende, Gesicht über dem Rand der Röhre.
+- Lange Einstellungen (Fischauge, Stadt, Tunnel, Porträt, Röhre) in Weit und Nah teilen, sonst zählt die Schnittmessung zu wenige Schnitte; die lange Strophe bleibt eine Einstellung.

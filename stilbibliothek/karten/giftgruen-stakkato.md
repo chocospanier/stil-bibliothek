@@ -31,12 +31,38 @@ ton: Dunkler, dichter Beat um 140 BPM (−14,2 LUFS, 1,9 LU Spanne), davor 1,4 s
 braucht: [fotos-figur, footage-ort, illustrationen, nur-typo]
 motor_aufwand: mittel
 einsatz: [hook, intro, trailer, portrait]
+zweck: [person-vorstellen, event-teaser, musik-lyric]
+branchen_passt: [musik-kultur, sport]
+branchen_nie: [handwerk, lebensmittel-feinkost, gastro, gesundheit, bildung, immobilien, finanzen, kinder-familie, tourismus]
 abnahme:
   shot_median_s: [0.09, 0.14]
   schnitte_pro_s: [4.0, 6.0]
   helligkeit: [0.21, 0.31]
   farbigkeit: [0.10, 0.16]
   lufs: [-15.2, -13.2]
+# Würfel-Felder (Etappe 0 Bauplan Würfelstile, 31.10.2026; karten_wuerfelfelder.py, Familien-Standard)
+creator: eingeschraenkt
+creator_ohne: [split-screen, bild-im-bild, filmstreifen, hud, tracking-linien]
+spielraum:
+  palette: nachbarn
+  schrift: klasse
+  blitzbild_bilder: [2, 3]
+  stottern_wiederholungen: [2, 2]
+  push_in_prozent: [3, 8]
+  wackeln_faktor: [0.4, 1.0]
+  korn: [0.045, 0.075]
+  vignette: [0.3, 0.5]
+  beat_versatz_16tel: [0, 1]
+  textgroesse_prozent: [-10, 10]
+  textlage: regel
+  musik: bausteine
+palettenrolle:
+  grund: schwarz
+  text: blassgruen
+  akzent: titel_neon
+  dunkel: schwarz
+  hell: blassgruen
+  licht: blassgruen
 quelle: Eigene Analyse einer öffentlichen Vorschau; nur der Look ist beschrieben, keine Motive, Texte oder Marken übernommen.
 ---
 
@@ -131,3 +157,8 @@ Bauplan für 15,4 s bei 140 BPM (144 Sechzehntel zu 0,107 s, neun Takte). Inhalt
 - Tracking-Linien ohne Bezug zum Bild → wirken zufällig; Punkte an Gelenke, Hände, Kopf legen.
 - Zu viele verschiedene Motive → die Figur geht unter; jedes dritte Bild zeigt die Figur.
 - Titelwort zu dünn → Glühen frisst die Buchstaben; schwere Schrift, Glow höchstens 2 %.
+- Motor aus Code (GiftgruenStakkato, Welle D): Sechzehntel-Wechsel über Lage, Ausschnitt und Spiegelung bauen, nicht über die mittlere Helligkeit (Blitzregel); Druckplakat in mittleren Grüntönen statt Schwarz auf Weiß, Textblock in der Gegenfarbe auf der Figur.
+- Figur im Weitwinkel nie kopfüber (höchstens 30 Grad), sonst Sturz-Lesart; Tracking-Punkte aus der Pose und in derselben Drehung wie die Figur.
+- Flamme oder Kerze auf Schwarz liest sich als Grablicht; neutrale Gegenstände wählen.
+- Der Motor rendert mit 24 fps (Karte). Die stille Eröffnung darf nicht ganz schwarz sein (Bild 0 und Creator-Prüfung): die Röhre wirft einen schwachen grünen Schein. Details mit Versatz überskalieren, sonst meldet die Prüfung einen dunklen Randstreifen. Im Creator-Modus wechselt die Kette im Vollbild zwischen Figur und Detail, sonst fällt die Schnittrate unter 4.
+- Plakatwand und gedrehte Kacheln über den Bildrand ziehen; ein Spalt am Rand gilt der Creator-Prüfung als Randstreifen (rot). Die Eröffnung braucht sichtbaren Schein (lineare Helligkeit über 0,01), sonst ist Bild 0 schwarz.

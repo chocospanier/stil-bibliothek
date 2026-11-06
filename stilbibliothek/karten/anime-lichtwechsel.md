@@ -32,12 +32,37 @@ ton: Laut gemischter Song um 71 BPM (oder 142 im Doppeltempo), −10,6 LUFS, Lau
 braucht: [illustrationen]
 motor_aufwand: klein
 einsatz: [musikvideo, portrait, hook, intro]
+zweck: [musik-lyric]
+branchen_passt: [musik-kultur]
+branchen_nie: [werkstatt-auto, handwerk, lebensmittel-feinkost, immobilien, finanzen, gesundheit]
 abnahme:
   shot_median_s: [0.32, 0.48]
   schnitte_pro_s: [1.7, 2.5]
   helligkeit: [0.20, 0.30]
   farbigkeit: [0.11, 0.17]
   lufs: [-11.6, -9.6]
+# Würfel-Felder (Etappe 0 Bauplan Würfelstile, 31.10.2026; karten_wuerfelfelder.py, Familien-Standard)
+creator: ja
+spielraum:
+  palette: nachbarn
+  schrift: klasse
+  blitzbild_bilder: [2, 4]
+  stottern_wiederholungen: [2, 3]
+  push_in_prozent: [3, 8]
+  wackeln_faktor: [0.4, 1.0]
+  korn: [0.045, 0.075]
+  vignette: [0.3, 0.5]
+  beat_versatz_16tel: [0, 1]
+  textgroesse_prozent: [-10, 10]
+  textlage: regel
+  musik: bausteine
+palettenrolle:
+  grund: grund
+  text: tuerkislicht
+  akzent: rotlicht
+  dunkel: grund
+  hell: pink_mitte
+  licht: silberlicht
 quelle: Eigene Analyse einer öffentlichen Vorschau; nur der Look ist beschrieben, keine Motive, Texte oder Marken übernommen.
 ---
 
@@ -142,3 +167,7 @@ Bauplan für 17,7 s bei 71 BPM (84 Sechzehntel zu 0,21 s). Inhalt austauschbar, 
 - (erlebt in der Prüfrunde) Halb geschlossene dunkle Augen mit Brauen wirken wie eine Sonnenbrille → Pointe mit klarem Zwinkern: ein Auge offen mit Iris und Pupille, eins als Bogen.
 - (erlebt in der Prüfrunde) Titelbild mit kleiner Figur im Ganzkörper (15 % der Höhe) → Einstieg mit Grundzoom 1,3, Figur mindestens 30 % der Bildhöhe, weniger leerer Boden.
 - (erlebt beim Bau) Nachts und mittags teilen sich viele Helfer die GPU, ein LTX-Lauf blockiert sie 30 bis 80 Minuten → Bühnen früh bestellen und Ersatz aus vorhandenen Z-Image-Bildern ableiten (Spiegeln, Farbrampe, Ausschnitt, Malfilter), LTX nur, wenn die GPU frei ist.
+- (Motorbau) Lichtwechsel zwischen zwei dunklen Vorderlicht-Bildern zählt die Schnittmessung oft nicht → in der Zündung Gegenlicht-Wände (helle Lichtfarbe, Figur schwarz) im Wechsel mit dunklen Einstellungen.
+- (Prüfrunde) Büste mit gerader Unterkante schwebt → Vordergrundreihe aus Publikumsköpfen davor; Silhouette mit Kontur innen an der Haarkante liest sich als Kapuze → Glühen nur außen, Augen und Lächeln als Lichtlinien.
+- (Prüfrunde) Geschlossene Augen bis zum Schluss plus Pointe über das Lied liest sich als Jenseits → Schluss hell im Spot mit Zwinkern.
+- (Motorbau) Mit dem Einstieg von 3,6 s und zwei Stotter-Einstellungen (die die Messung nicht als Schnitt zählt) lag die Schnittdichte bei 1,68 statt mindestens 1,7 → Einstieg 2,5 s, höchstens ein Stottern je Abschnitt.

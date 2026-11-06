@@ -32,12 +32,38 @@ ton: Viereinhalb Sekunden leiser, dünner Aufbau, dann ein gleichmäßig lauter 
 braucht: [fotos-figur, footage-ort, nur-typo]
 motor_aufwand: klein
 einsatz: [portrait, hook, intro, musikvideo]
+zweck: [musik-lyric, person-vorstellen, zitat]
+branchen_passt: [musik-kultur]
+branchen_nie: [werkstatt-auto, handwerk, lebensmittel-feinkost, gesundheit, immobilien, finanzen]
 abnahme:
   shot_median_s: [0.45, 0.70]
   schnitte_pro_s: [0.9, 1.4]
   helligkeit: [0.30, 0.45]
   farbigkeit: [0.22, 0.34]
   lufs: [-15.1, -13.1]
+# Würfel-Felder (Etappe 0 Bauplan Würfelstile, 31.10.2026; karten_wuerfelfelder.py, Familien-Standard)
+creator: eingeschraenkt
+creator_ohne: [text-hinter-figur, hud, scan-band]
+spielraum:
+  palette: nachbarn
+  schrift: klasse
+  blitzbild_bilder: [2, 4]
+  stottern_wiederholungen: [2, 3]
+  push_in_prozent: [2, 5]
+  wackeln_faktor: [0.3, 0.7]
+  korn: [0.045, 0.075]
+  vignette: [0.3, 0.5]
+  beat_versatz_16tel: [0, 1]
+  textgroesse_prozent: [-10, 10]
+  textlage: regel
+  musik: bausteine
+palettenrolle:
+  grund: sand
+  text: schatten
+  akzent: glut
+  dunkel: schatten
+  hell: himmel
+  licht: himmel
 quelle: Eigene Analyse einer öffentlichen Vorschau; nur der Look ist beschrieben, keine Motive, Texte oder Marken übernommen.
 ---
 
@@ -124,3 +150,7 @@ Bauplan für 16 s bei 121 BPM (Sechzehntel = 0,124 s; 129 Sechzehntel). Ein Bild
 - Drift zu schnell (mehr als 1 % je Sekunde) → wirkt wie Kamerafahrt statt Atmen.
 - Figur mit warmer Kleidung → kein Kontrast. Kühle Kleidung wählen oder per Maske kühlen.
 - Bild zu klein für die Drift → Ränder werden sichtbar. Ausgangsbild mit 20 % Reserve.
+- Motor aus Code (WortflankeGoldstunde, Welle D): Glutkipp nur auf Grund und Himmel legen, die Figur bleibt; sonst steht kurz eine andere Person im Bild.
+- Der kalte Scan-Streifen zählt im hellen Gold nur, wenn er dunkel ist (Negativ zieht Gold fast nach Schwarz), zwei Bilder lang oben und unten, und über dem Scheitel endet.
+- Wortpaar im Hochformat als zwei Zeilen über dem Kopf, der Kopf liegt über der unteren Zeile; Halt im Motor 30 Sechzehntel (3,7 s) statt 36, mit 36 fällt die Schnittrate unter 0,9.
+- Die Drehung des Würfels hält die Helligkeit in OKLab, nicht die Luma der Schnittmessung: im Goldbild fiel die Schnittrate in einem Zug von 1,14 auf 0,86 → Zyklus im Motor 18 Sechzehntel (Wortpaar 4, Scan 1+1, Daten 4, Glutkipp 4, Wortpaar 4), Basis deutlich über 0,9 halten.

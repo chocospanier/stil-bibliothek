@@ -35,12 +35,38 @@ ton: Druckvolles Instrumental um 167 BPM (eventuell Halbtempo 84), hohe Dynamik 
 braucht: [fotos-figur, footage-ort, illustrationen]
 motor_aufwand: mittel
 einsatz: [trailer, hook, intro, portrait, musikvideo]
+zweck: [musik-lyric, event-teaser]
+branchen_passt: [musik-kultur, technik]
+branchen_nie: [werkstatt-auto, handwerk, lebensmittel-feinkost, gastro, gesundheit, immobilien, finanzen, kinder-familie]
 abnahme:
   shot_median_s: [0.08, 0.14]
   schnitte_pro_s: [4.2, 6.4]
   helligkeit: [0.30, 0.45]
   farbigkeit: [0.10, 0.16]
   lufs: [-14.6, -12.6]
+# Würfel-Felder (Etappe 0 Bauplan Würfelstile, 31.10.2026; karten_wuerfelfelder.py, Familien-Standard)
+creator: eingeschraenkt
+creator_ohne: [klone, wireframe-scan, hud, pixelgrafik]
+spielraum:
+  palette: nachbarn
+  schrift: klasse
+  blitzbild_bilder: [2, 3]
+  stottern_wiederholungen: [2, 2]
+  push_in_prozent: [3, 8]
+  wackeln_faktor: [0.4, 1.0]
+  korn: [0.045, 0.075]
+  vignette: [0.3, 0.5]
+  beat_versatz_16tel: [0, 1]
+  textgroesse_prozent: [-10, 10]
+  textlage: regel
+  musik: bausteine
+palettenrolle:
+  grund: nachtgruen
+  text: negativweiss
+  akzent: glutorange
+  dunkel: tiefschwarz
+  hell: negativweiss
+  licht: negativweiss
 quelle: Eigene Analyse einer öffentlichen Vorschau; nur der Look ist beschrieben, keine Motive, Texte oder Marken übernommen.
 ---
 
@@ -139,3 +165,5 @@ Bauplan für 16 s bei 167 BPM (Sechzehntel 0,09 s, etwa 178 Sechzehntel). Ein Se
 - Behandlungen live im Render filtern → langsam und uneinheitlich. Varianten vorrechnen.
 - Lange Stille über Schwarz am Ende wie in der Vorlage → auf Plattformen verschenkte Sekunden. Höchstens 0,5 s Schwarz.
 - Gleiche Kaskadenfolge mehrmals → wirkt automatisch. Reihenfolge der Behandlungen je Kaskade mischen.
+- Motor (Welle D, 05.11.): Korn darf nicht in jedem Bild neu erscheinen, sonst flimmert die Fläche und die Schnittmessung zählt Korn als Bewegung → Korn je Einstellung stehen lassen.
+- Motor: Der Schal der Code-Figur als spitzer Keil liest sich in Silhouette und Graufassung als Klinge → weicher Kragen mit rund endendem Band (gemeinsam_d8).

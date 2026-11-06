@@ -4,16 +4,19 @@
 bibliothek_index.py  -  prueft und indiziert die Stil-Karten der Stil-Bibliothek. 0 Credits.
 
 Liest  <bib>/karten/*.md  (Kopfblock YAML + Text) und schreibt:
-  <bib>/index.json     alle Karten maschinenlesbar (Kopfblock + Pfad), dazu "zahlen": Karten, Familien, Bausteine,
+  <bib>/index.json     alle Karten maschinenlesbar (Kopfblock + Pfad), dazu "klassen" (Creator-Klassen der Kennungen aus
+                       EFFEKT_VOKABULAR.md), "creator" (Zaehlung ja/eingeschraenkt/nein) und "zahlen": Karten, Familien, Bausteine,
                        Beispiele und Helfer des Pakets; die eine Quelle für jede Zahl in den Texten
 Zahlen: Das Skript zählt Karten und Familien (karten/), Bausteine (starter/src/bausteine/index.ts, nummerierte Exporte),
 Beispiele (Kompositionen aus starter/src/beispiele/ in den Root-Dateien) und Helfer (starter/werkzeuge, ohne py.mjs) und
-sucht in allen Texten des Pakets Stellen wie „106 Stil-Karten“, „28 Bausteine“, „<n> Beispiele“. Weicht eine ab, steht sie
+sucht in allen Texten des Pakets Stellen wie „289 Stil-Karten“, „28 Bausteine“, „<n> Beispiele“. Weicht eine ab, steht sie
 unter "zahlen_widerspruch"; --zahlen-setzen schreibt die gezählten Werte hinein (Karten selbst, INDEX.md und Bauberichte
 bleiben unberührt).
   <bib>/INDEX.md       Uebersicht je Familie
   <bib>/EFFEKTE.md     Auszaehlung der Effekt-Kennungen ueber alle Karten (bekannt / neu)
-Prueft je Karte: Pflichtfelder, Effekt-Kennungen gegen EFFEKT_VOKABULAR.md, Gedankenstriche,
+Prueft je Karte: Pflichtfelder (seit 31.10.2026 auch creator, spielraum, palettenrolle; Werte von creator; bei bauweg animskill
+seit 06.11.2026 sollwerte, animskill.motor/stil/quelle und lizenz statt messung, eigene Abschnitte), Effekt-Kennungen
+gegen EFFEKT_VOKABULAR.md, Gedankenstriche, zweck/branchen_passt/branchen_nie gegen ZWECKE.md (seit 05.11.2026),
 und mit --leck <begriffe.txt> (ein Begriff je Zeile) ob gesperrte Namen in einer Karte stehen.
 Lautheit: Standard ist -14 LUFS; nennt eine Karte einen Bereich, gilt die Karte, solange er sich mit -14 +- 1
 ueberschneidet. Karten, deren abnahme.lufs ganz ausserhalb liegt, markiert INDEX.md (Messwerte bleiben, wie sie sind).
@@ -43,9 +46,17 @@ from pathlib import Path
 import yaml
 
 PFLICHT = ["id", "name", "familie", "kurz", "kern", "energie", "messung", "palette", "effekte", "kamera", "ton",
-           "braucht", "motor_aufwand", "einsatz", "abnahme"]
+           "braucht", "motor_aufwand", "einsatz", "abnahme",
+           # Wuerfel-Felder (Etappe 0 Bauplan Wuerfelstile, 31.10.2026; gefuellt von karten_wuerfelfelder.py)
+           "creator", "spielraum", "palettenrolle"]
+CREATOR_WERTE = {"ja", "eingeschraenkt", "nein"}
 ABSCHNITTE = ["## Kern", "## Erkennung", "## Bildtypen", "## Dramaturgie", "## Schnittmuster",
               "## Rezept", "## Material", "## Regler", "## Abnahme", "## Fallen"]
+# Karten mit bauweg animskill (Zeichen-Motoren, seit 06.11.2026, Vorlage KARTE_VORLAGE_MOTOR.md): statt messung die Sollwerte
+# fuer den eigenen Render, dazu Motor, Stil-Kennung im Motor und Lizenzhinweis; Schnittmuster und Rezept macht der Motor
+PFLICHT_MOTOR = [f for f in PFLICHT if f != "messung"] + ["sollwerte", "animskill", "lizenz"]
+ABSCHNITTE_MOTOR = ["## Kern", "## Erkennung", "## Bildtypen", "## Regler", "## Fallen", "## Ton", "## Bauweg", "## Abnahme"]
+ZEICHEN_MOTOREN = {"huashu", "anidoodle", "zeichnen", "handzeichnung", "manim", "pinsel", "jsanim", "kino3d"}  # kino3d: 3D-Kino seit 1.6
 # Woerter, die in Vorlagen-Namen vorkommen, aber auch normale Fachwoerter sind: nicht als Leck werten
 ALLTAG = {"edit", "vibe", "vibes", "style", "aesthetic", "montage", "look", "check", "cinematic", "film", "dark",
           "moody", "noir", "car", "comic", "star", "nocturne", "monochrome", "cartoon", "glitch", "scrapbook",
@@ -176,6 +187,19 @@ def vokabular(bib):
     return ids
 
 
+def klassen(bib):
+    """Klassen fuer den Creator-Modus aus EFFEKT_VOKABULAR.md (Abschnitt "Klassen fuer den Creator-Modus"): {klasse: [kennungen]}"""
+    t = (bib / "EFFEKT_VOKABULAR.md").read_text(encoding="utf-8")
+    m = re.search(r"^## Klassen für den Creator-Modus\s*$(.*?)(?=^## |\Z)", t, re.M | re.S)
+    kl = {}
+    if m:
+        for z in m.group(1).splitlines():
+            r = re.match(r"^\|\s*([a-z]+)\s*\|\s*(.*?)\s*\|", z)
+            if r and r.group(1) != "klasse":
+                kl[r.group(1)] = re.findall(r"`([^`]+)`", r.group(2))
+    return kl
+
+
 def leck_begriffe(datei):
     """Gesperrte Begriffe aus einer Textdatei, ein Begriff je Zeile (Namen fremder Vorlagen, Personen, Marken)."""
     if not datei:
@@ -185,18 +209,44 @@ def leck_begriffe(datei):
     return sorted(begriffe, key=len, reverse=True)
 
 
+def zweck_vokabular(bib):
+    """Feste Woerter aus ZWECKE.md: ({zwecke}, {branchen}); None, wenn die Datei fehlt (dann keine Pruefung)"""
+    p = bib / "ZWECKE.md"
+    if not p.exists():
+        return None
+    t = p.read_text(encoding="utf-8")
+    teile = {}
+    for name in ("Zwecke", "Branchen"):
+        m = re.search(rf"^## {name}\b.*?$(.*?)(?=^## |\Z)", t, re.M | re.S)
+        teile[name] = set(re.findall(r"^\|\s*`([^`]+)`\s*\|", m.group(1), re.M)) if m else set()
+    return teile["Zwecke"], teile["Branchen"]
+
+
+ZVOK = None
+
+
 def pruefe(p, kopf, text, vok, leck):
     probleme = []
     if kopf is None:
         return ["kein Kopfblock"], set()
     if "_yaml_fehler" in kopf:
         return [f"YAML-Fehler: {kopf['_yaml_fehler'][:120]}"], set()
-    for f in PFLICHT:
+    motor_karte = kopf.get("bauweg") == "animskill"
+    for f in (PFLICHT_MOTOR if motor_karte else PFLICHT):
         if f not in kopf or kopf[f] in (None, "", []):
             probleme.append(f"Feld fehlt: {f}")
+    if motor_karte:
+        a = kopf.get("animskill") if isinstance(kopf.get("animskill"), dict) else {}
+        if a.get("motor") not in ZEICHEN_MOTOREN:
+            probleme.append(f"animskill.motor unbekannt: {a.get('motor')} (erlaubt: {', '.join(sorted(ZEICHEN_MOTOREN))})")
+        for f in ("stil", "quelle"):
+            if not a.get(f):
+                probleme.append(f"animskill.{f} fehlt")
+    elif kopf.get("bauweg") not in (None, "motor", "handbau"):
+        probleme.append(f"bauweg unbekannt: {kopf.get('bauweg')}")
     if kopf.get("id") and kopf["id"] != p.stem:
         probleme.append(f"id '{kopf['id']}' passt nicht zum Dateinamen")
-    for a in ABSCHNITTE:
+    for a in (ABSCHNITTE_MOTOR if motor_karte else ABSCHNITTE):
         if a not in text:
             probleme.append(f"Abschnitt fehlt: {a}")
     neu = set()
@@ -206,6 +256,26 @@ def pruefe(p, kopf, text, vok, leck):
             neu.add(e[4:])
         elif e not in vok:
             probleme.append(f"unbekannter Effekt: {e}")
+    if kopf.get("creator") not in (None, *CREATOR_WERTE):
+        probleme.append(f"creator muss ja, eingeschraenkt oder nein sein: {kopf.get('creator')}")
+    if kopf.get("creator") == "eingeschraenkt" and not kopf.get("creator_ohne"):
+        probleme.append("creator eingeschraenkt ohne creator_ohne")
+    if kopf.get("creator") == "nein" and not kopf.get("creator_grund"):
+        probleme.append("creator nein ohne creator_grund")
+    if ZVOK:
+        for feld, erlaubt in (("zweck", ZVOK[0]), ("branchen_passt", ZVOK[1]), ("branchen_nie", ZVOK[1])):
+            if feld not in kopf:
+                probleme.append(f"Feld fehlt: {feld}")
+                continue
+            if not isinstance(kopf[feld], list):
+                probleme.append(f"{feld} muss eine Liste sein")
+                continue
+            for w in kopf[feld]:
+                if str(w) not in erlaubt:
+                    probleme.append(f"{feld}: unbekannter Wert {w} (ZWECKE.md)")
+        doppelt = set(map(str, kopf.get("branchen_passt") or [])) & set(map(str, kopf.get("branchen_nie") or []))
+        if doppelt:
+            probleme.append(f"Branche in passt und nie: {', '.join(sorted(doppelt))}")
     roh = p.read_text(encoding="utf-8")
     if "—" in roh or "–" in roh:
         probleme.append(f"Gedankenstriche: {roh.count(chr(0x2014)) + roh.count(chr(0x2013))}")
@@ -245,7 +315,7 @@ def zahlen_zaehlen(paket: Path, karten: list, familien: int) -> dict:
                 continue
             aus_beispielen |= {n.strip() for n in namen.split(",")}
         for k in re.findall(r"component=\{(\w+)\}", t):
-            if k in aus_beispielen and k not in ("Bausteinprobe", "Schriftmuster"):
+            if k in aus_beispielen and k not in ("Bausteinprobe", "Schriftmuster", "CreatorGegenprobe"):
                 beispiele.add(k)
     helfer = sorted(p.name for p in (st / "werkzeuge").glob("*") if p.suffix in (".py", ".mjs") and p.name != "py.mjs") if (st / "werkzeuge").exists() else []
     return {"karten": len(karten), "familien": familien, "bausteine": bausteine, "beispiele": len(beispiele),
@@ -300,6 +370,8 @@ def main():
     a = ap.parse_args()
     bib = Path(a.bib)
     vok = vokabular(bib)
+    global ZVOK
+    ZVOK = zweck_vokabular(bib)
     leck = leck_begriffe(a.leck)
     karten, alle_probleme = [], {}
     eff_zaehl, neu_zaehl = Counter(), Counter()
@@ -312,6 +384,8 @@ def main():
             k = dict(kopf)
             k["datei"] = f"karten/{p.name}"
             k["nur_code"] = nur_code(kopf)
+            if kopf.get("bauweg") == "animskill" and isinstance(kopf.get("animskill"), dict):
+                k["zeichen_motor"] = kopf["animskill"].get("motor")  # Filter: --filter zeichen_motor=huashu
             karten.append(k)
             for e in kopf.get("effekte") or []:
                 e = str(e)
@@ -339,7 +413,10 @@ def main():
         print(f"- SCHLAG {k['id']}: ton nennt alle {sek:g} s bei {bpm:g} BPM = {schl:g} Schlaege, kein ganzer Schlag ({stelle})")
     if a.nur_pruefen:
         return
-    (bib / "index.json").write_text(json.dumps({"anzahl": len(karten), "zahlen": zahlen, "karten": karten}, ensure_ascii=False, indent=1,
+    kl = klassen(bib)
+    creator_zaehl = dict(Counter(str(k.get("creator")) for k in karten))
+    (bib / "index.json").write_text(json.dumps({"anzahl": len(karten), "zahlen": zahlen, "klassen": kl, "creator": creator_zaehl, "karten": karten},
+                                               ensure_ascii=False, indent=1,
                                                default=str), encoding="utf-8")
     fam = defaultdict(list)
     for k in karten:
@@ -357,6 +434,10 @@ def main():
          "Filtern: `python -I werkzeuge/bibliothek_index.py --filter braucht=nur-typo motor_aufwand=klein einsatz=hook` gibt die passenden "
          "Karten als Tabelle aus. Nur mit Code baubar (braucht nur `nur-typo` oder `illustrationen`): `--filter nur_code=ja` oder "
          "`--filter braucht<=nur-typo,illustrationen`.",
+         "",
+         "✎ hinter einer Karte heißt: Ein Zeichen-Motor malt den Stil aus Code (`bauweg: animskill`, Motor-Kennung dahinter, Vorlage "
+         "`KARTE_VORLAGE_MOTOR.md`); die Karte hat Sollwerte statt einer Messung. Nur diese Karten: `--filter bauweg=animskill`, "
+         "je Motor `--filter zeichen_motor=huashu`.",
          ""]
     for f in sorted(fam, key=lambda x: (-len(fam[x]), x)):
         z += [f"## {f} ({len(fam[f])})", "", "| Karte | kurz | Energie | Aufwand | Einsatz |", "|---|---|---:|---|---|"]
@@ -364,6 +445,8 @@ def main():
             ein = ", ".join(map(str, k.get("einsatz") or []))
             lage = lufs_lage(k)
             marke = f" ⚠ LUFS {lage[0][0]:g} bis {lage[0][1]:g}" if lage and not lage[1] else ""
+            if k.get("zeichen_motor"):
+                marke += f" ✎ `{k['zeichen_motor']}`"
             z.append(f"| [{k.get('name')}]({k['datei']}){marke} | {k.get('kurz')} | {k.get('energie')} | {k.get('motor_aufwand')} | {ein} |")
         z.append("")
     abw = sorted((k for k in karten if lufs_lage(k) and not lufs_lage(k)[1]), key=lambda k: k["id"])

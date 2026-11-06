@@ -32,12 +32,38 @@ ton: Langsamer, dunkler Beat um 66 BPM (Doppeltempo 132), gleichmäßig laut, ku
 braucht: [fotos-figur, produkt]
 motor_aufwand: mittel
 einsatz: [hook, portrait, ganzes-kurzvideo, intro]
+zweck: [mode-lookbook, person-vorstellen]
+branchen_passt: [mode-beauty, musik-kultur]
+branchen_nie: [werkstatt-auto, lebensmittel-feinkost, gastro, gesundheit, immobilien, finanzen, kinder-familie]
 abnahme:
   shot_median_s: [0.18, 0.28]
   schnitte_pro_s: [2.2, 3.2]
   helligkeit: [0.10, 0.16]
   farbigkeit: [0.10, 0.16]
   lufs: [-13.9, -11.9]
+# Würfel-Felder (Etappe 0 Bauplan Würfelstile, 31.10.2026; karten_wuerfelfelder.py, Familien-Standard)
+creator: eingeschraenkt
+creator_ohne: [bild-im-bild, filmstreifen, papierriss]
+spielraum:
+  palette: nachbarn
+  schrift: klasse
+  blitzbild_bilder: [2, 4]
+  stottern_wiederholungen: [2, 3]
+  push_in_prozent: [3, 8]
+  wackeln_faktor: [0.4, 1.0]
+  korn: [0.045, 0.075]
+  vignette: [0.3, 0.5]
+  beat_versatz_16tel: [0, 1]
+  textgroesse_prozent: [-10, 10]
+  textlage: regel
+  musik: bausteine
+palettenrolle:
+  grund: tiefe
+  text: negativ
+  akzent: rotlicht
+  dunkel: tiefe
+  hell: negativ
+  licht: negativ
 quelle: Eigene Analyse einer öffentlichen Vorschau; nur der Look ist beschrieben, keine Motive, Texte oder Marken übernommen.
 ---
 
@@ -131,3 +157,7 @@ Bauplan für 15 s bei 66 BPM (66 Sechzehntel zu 0,227 s). „F“ bedeutet ein F
 - Abzüge mit glattem Rand wirken digital → Rand immer reißen und Schatten setzen.
 - Zu viel Papier hellt das Stück auf → Papierbilder nur ein bis zwei Sechzehntel.
 - Ein KI-Porträt mit zu glatter Haut passt nicht zum Filmkorn → Korn kräftig, Haut nicht weichzeichnen.
+- Weißblende, Negativ-Flackern und Negativ-Serie in einer Sekunde brechen die Blitzregel → vor der Serie höchstens eine Blende (Motor DunkelkammerAbzug, 04.11.).
+- Ein Kantenfilter über einem Verlauf erzeugt Ringe wie eine Zielscheibe → Kanten nur aus der Figur auf flachem Grund rechnen.
+- Zwei Hände vor dem Gürtel lesen sich als Handschellen, Formen mit gerader Kante mitten im Bild (Hosenbein, Unterarm, Hals) als abgetrennt → Arme seitlich mit Abstand zum Rumpf, Formen über den Bildrand führen.
+- Ohne Filmstreifen, Abzug und Papier (Creator-Modus) fehlen die Übergänge, die als Schnitte zählen; Median und Schnitte fallen aus der Abnahme, auch mit hellen Ersatzbildern → Motor mit creator: false, im Creator-Modus nur als Handbau mit eigenen harten Wechseln.

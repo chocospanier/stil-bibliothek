@@ -26,3 +26,13 @@ Einmal im Gespräch gefüllt, bei jeder Bestellung gelesen. Ändert sich etwas, 
 ## Freigaben
 - Was der Mensch vor dem Bau sieht: Skript mit Quelle, Look-Check (zwei Standbilder)
 - Was ohne Rückfrage gebaut werden darf: zweite Folge derselben Rubrik im selben Stil
+
+## Creator-Programm und Würfel
+- creator_modus: aus
+  (`tiktok`, wenn der Kanal im TikTok-Creator-Programm ist: dann würfelt `wuerfeln.py` nur Karten mit `creator: ja` oder `eingeschraenkt`, freie doppelt so oft; ausgeschnittene Figuren mit hartem Saum, Bild im Bild mit Rand und mehr als zwei Blitzbilder sind gesperrt; `vorpruefung.py --creator` prüft jedes Stück. Gesperrte Karten: `stilbibliothek/CREATOR_SPERRLISTE.md`.)
+- eigene_stimme: nein
+  (`ja`: Die Stimme kommt als eigene Aufnahme vom Handy, `stimme.py --eigene <datei> --text "…"`; im Creator-Modus empfohlen, weil ein menschlicher Anteil das Stück als Creator-Arbeit erkennbar macht. Ein eigenes Foto oder ein kurzer eigener Clip je Video hilft genauso.)
+- KI-Kennzeichnung: bleibt an, wo KI-Material im Stück ist. Nie verstecken.
+- register: zentral
+  (`zentral`: jedes Video wird zusätzlich gegen die Videos aller Kunden geprüft, braucht `AUTOPILOT_REGISTER_SCHLUESSEL` aus dem Kauf in der Umgebung; `lokal`: nur gegen die eigenen Videos, jede Ausgabe sagt das dann. Schalter technisch: `"zentral": "aus"` in `haus/register.json`.)
+- Mischung: `haus/mischung.json` (gewürfelt mit `wuerfeln.py mischung`, der Kunde wählt nichts); Verlauf der Videos `haus/verlauf.json`.

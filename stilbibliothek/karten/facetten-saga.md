@@ -31,12 +31,38 @@ ton: Gleichmäßig ruhig gemischte, epische Musik (−14 LUFS, 1,7 LU Spanne), 6
 braucht: [illustrationen, 3d, nur-typo]
 motor_aufwand: mittel
 einsatz: [intro, trailer, ganzes-kurzvideo, uebergang]
+zweck: [geschichte, event-teaser]
+branchen_passt: [musik-kultur, bildung]
+branchen_nie: [werkstatt-auto, lebensmittel-feinkost, gastro, mode-beauty, gesundheit, immobilien, finanzen, kinder-familie]
 abnahme:
   shot_median_s: [1.15, 1.70]
   schnitte_pro_s: [0.5, 0.8]
   helligkeit: [0.15, 0.23]
   farbigkeit: [0.03, 0.07]
   lufs: [-15, -13]
+# Würfel-Felder (Etappe 0 Bauplan Würfelstile, 31.10.2026; karten_wuerfelfelder.py, Familien-Standard)
+creator: eingeschraenkt
+creator_ohne: [kinobalken]
+spielraum:
+  palette: nachbarn
+  schrift: klasse
+  blitzbild_bilder: [2, 4]
+  stottern_wiederholungen: [2, 3]
+  push_in_prozent: [2, 5]
+  wackeln_faktor: [0.3, 0.7]
+  korn: [0.03, 0.06]
+  vignette: [0.3, 0.5]
+  beat_versatz_16tel: [0, 1]
+  textgroesse_prozent: [-10, 10]
+  textlage: regel
+  musik: bausteine
+palettenrolle:
+  grund: nacht
+  text: licht_stein
+  akzent: glut
+  dunkel: nacht
+  hell: licht_stein
+  licht: licht_stein
 quelle: Eigene Analyse einer öffentlichen Vorschau; nur der Look ist beschrieben, keine Motive, Texte oder Marken übernommen.
 ---
 
@@ -137,3 +163,5 @@ Inserts zählen in Kopfblock und Tabelle gleich: als 1 Sechzehntel (0,25 s). Dav
 - RauFilter oder `Gemalt` über Lichtverläufen → Ringe und Bänder; Verläufe in eine eigene, ungefilterte Ebene.
 - Zu viele Details → die Größe fehlt; viel dunkle Fläche lassen.
 - Inserts länger als 0,1 s → werden zu eigenen Einstellungen und stören den Takt.
+- Nachbarbilder mit gleicher Lichtlage (Spirale mit hellem Zentrum vor der Tafel mit heller Mitte, Insert in derselben Bildhälfte wie die Einstellung) → die Schnitterkennung (Schwelle 10) übersieht den Schnitt, Median und Dichte kippen; jede Einstellung legt ihr Licht in eine andere Bildzone als die vorige (oben, unten links, Mitte senkrecht, unten), im Motor FacettenSaga gemessen 12 bis 16 statt 6 bis 9.
+- Pinselzüge mit runden Enden in den Facetten → lesen sich als Kapseln und widersprechen „keine runden Formen“; Striche mit geraden Enden, breit und mit 5 bis 9 % Deckung.

@@ -33,12 +33,39 @@ ton: Laut und gleichmäßig (−12 LUFS, 0,8 LU), vermutlich bandartiges Instrum
 braucht: [footage-ort, fotos-figur, illustrationen, nur-typo]
 motor_aufwand: gross
 einsatz: [musikvideo, trailer, intro, ganzes-kurzvideo]
+zweck: [stimmung, event-teaser, musik-lyric]
+branchen_passt: [tourismus, musik-kultur, kinder-familie]
+branchen_nie: [werkstatt-auto, gesundheit, immobilien, finanzen]
 abnahme:
   shot_median_s: [0.07, 0.12]
   schnitte_pro_s: [3.3, 4.9]
   helligkeit: [0.38, 0.54]
   farbigkeit: [0.16, 0.24]
   lufs: [-13.1, -11.1]
+# Würfel-Felder (Etappe 0 Bauplan Würfelstile, 31.10.2026; karten_wuerfelfelder.py, Familien-Standard)
+creator: nein
+creator_grund: "Familie scrapbook: Handarbeit über Material: Papierränder, Sticker, Klebeband, Collage\
+  \ sind der Kern"
+spielraum:
+  palette: nachbarn
+  schrift: klasse
+  blitzbild_bilder: [2, 4]
+  stottern_wiederholungen: [2, 3]
+  push_in_prozent: [3, 8]
+  wackeln_faktor: [0.4, 1.0]
+  korn: [0.045, 0.075]
+  vignette: [0.3, 0.5]
+  beat_versatz_16tel: [0, 1]
+  textgroesse_prozent: [-10, 10]
+  textlage: regel
+  musik: bausteine
+palettenrolle:
+  grund: koralle
+  text: tinte
+  akzent: kobalt
+  dunkel: tinte
+  hell: zeitung
+  licht: zeitung
 quelle: Eigene Analyse einer öffentlichen Vorschau; nur der Look ist beschrieben, keine Motive, Texte oder Marken übernommen.
 ---
 
@@ -137,3 +164,9 @@ Bauplan für 15 s bei 115 BPM (Sechzehntel 0,13 s, 115 Sechzehntel). Innerhalb j
 - Kritzel deckt das Gesicht länger als 0,5 s → Zuschauer verliert die Figur. Danach sofort ein freies Gesicht.
 - Rotoskop ohne Schwellwert → grau und matschig. Harte Linien, Fläche mit Punktraster.
 - Zeitungsplatten mit lesbaren echten Schlagzeilen oder Marken → Rechtsrisiko. Unlesbar machen oder selbst setzen.
+- Kochende Linien und Kritzel allein zählt die Schnittmessung nicht (scdet unter 10) → Median und Schnittrate fallen aus dem Fenster. Eine ganze Platte auf Zweiern kochen lassen: Druckraster mit springender Phase oder Zeitungs- und Pinselplatte mit neuem Layout je Zustand (erlebt beim Motorbau, 04.11.2026).
+- Ein reines Weißbild direkt nach dem dunklen Pixelbild → drei harte Helligkeitswechsel in einer Sekunde, Blitzregel gebrochen. Das Weißbild als überstrahltes Footage mit rund 55 % Weiß setzen (erlebt beim Motorbau, 04.11.2026).
+- X-Augen, Balken über den Augen, Kreuze auf Gesichtern und Sätze in der Vergangenheit → das Stück liest sich als Nachruf. Herzen oder Sterne auf dem Klebestreifen, Kreuze mit Freizone um jedes Gesicht, Texte in der Gegenwart, Figuren lachen (erlebt beim Motorbau, 04.11.2026).
+- Erpresserbuchstaben in fester Größe → der Titel läuft im Hochformat aus dem Bild, und Bild 0 zeigt ein halbes Wort. Größe aus der längsten Zeile rechnen, Bild 0 mit ganzem Titel, ab Bild 1 neu legen (erlebt beim Motorbau, 04.11.2026).
+- Rotoskop als von Hand gezeichnetes Strichmännchen → wirkt kaputt (kein Hals, Doppelbeine). Linien per Kantenfilter aus der Figur ableiten und die Außenkontur dazunehmen (erlebt beim Motorbau, 04.11.2026).
+- Schlusszeile, die sich langsam schreibt → steht weniger als 2,3 s. In 0,3 s schreiben, Schlusskarte auf 18 Sechzehntel strecken (erlebt beim Motorbau, 04.11.2026).

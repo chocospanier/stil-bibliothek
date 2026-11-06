@@ -31,12 +31,38 @@ ton: Verträumter, langsamer Beat um 60 BPM, eher leise (−15,4 LUFS), gleichm�
 braucht: [fotos-figur, illustrationen]
 motor_aufwand: mittel
 einsatz: [musikvideo, portrait, hook, uebergang]
+zweck: [musik-lyric]
+branchen_passt: [musik-kultur, mode-beauty]
+branchen_nie: [werkstatt-auto, handwerk, technik, immobilien, finanzen, sport]
 abnahme:
   shot_median_s: [0.26, 0.40]
   schnitte_pro_s: [2.0, 3.0]
   helligkeit: [0.50, 0.65]
   farbigkeit: [0.10, 0.16]
   lufs: [-16.5, -14.5]
+# Würfel-Felder (Etappe 0 Bauplan Würfelstile, 31.10.2026; karten_wuerfelfelder.py, Familien-Standard)
+creator: eingeschraenkt
+creator_ohne: [ornament-rahmen]
+spielraum:
+  palette: nachbarn
+  schrift: klasse
+  blitzbild_bilder: [2, 4]
+  stottern_wiederholungen: [2, 3]
+  push_in_prozent: [3, 8]
+  wackeln_faktor: [0.4, 1.0]
+  korn: [0.045, 0.075]
+  vignette: [0.3, 0.5]
+  beat_versatz_16tel: [0, 1]
+  textgroesse_prozent: [-10, 10]
+  textlage: regel
+  musik: bausteine
+palettenrolle:
+  grund: lavendel
+  text: tiefblau
+  akzent: rosa
+  dunkel: tiefblau
+  hell: linie
+  licht: linie
 quelle: Eigene Analyse einer öffentlichen Vorschau; nur der Look ist beschrieben, keine Motive, Texte oder Marken übernommen.
 ---
 
@@ -125,3 +151,8 @@ Bauplan für 12 s bei 60 BPM (48 Sechzehntel zu je 0,25 s), zwei Durchläufe der
 - Weißblüte als harter Weißschnitt → zu grell. Zwei bis vier Bilder Rampe.
 - Ornament verdeckt Augen → das Gesicht verliert. Ornamente an die Ränder, über das Gesicht nur Notenlinien.
 - Schleife ohne Variation → wirkt wie ein Fehler. Ornamente im zweiten Durchlauf wechseln.
+- Motor PastellOrnamentschleife (Welle D5): Ein Sechzehntel bei 60 BPM ist 0,25 s und liegt unter der Untergrenze des Shot-Medians (0,26). Einzel-Sechzehntel als 1,2 Sechzehntel (0,3 s) bauen.
+- Pastell ohne Schwarz: Wechsel zwischen ähnlichen Lavendelbildern liegen in der Schnittmessung unter Schwelle 10. Jede zweite Einstellung eine Stufe tiefer im Lavendel, Nähe und Neigung im Wechsel, Bild aber immer mittig (seitlich versetzte Gesichter wirken leer); danach die Blitzregel nachmessen.
+- Weißblüte und angehobener Schwarzpunkt knapp neben den Rollenfarben zeichnen, sonst setzt der Würfel sie auf die Hausfarben und das Bild kippt hell oder dunkel.
+- Code-Figur und Nahaufnahme mit zwei Kopfformen lesen sich als zwei Personen. Derselbe Gesichtskopf für alle Bildtypen, schmaler Hals unter einem Kragen.
+- Blitzbild ist derselbe Ausschnitt wie der Ausgangsshot, nur die Belichtung blüht in wenigen Bildern auf; das folgende Bild braucht dann einen anderen Ausschnitt oder Grund, sonst zählt die Schnittmessung den Wechsel nicht.

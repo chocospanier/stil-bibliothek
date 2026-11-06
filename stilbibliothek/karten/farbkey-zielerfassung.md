@@ -32,12 +32,38 @@ ton: Harter, stark verdichteter Beat um 140 BPM (Halbtempo 70), leises Intro bis
 braucht: [produkt, footage-ort, nur-typo]
 motor_aufwand: mittel
 einsatz: [hook, trailer, produkt, ganzes-kurzvideo]
+zweck: [produktwerbung, event-teaser, marke-image]
+branchen_passt: [werkstatt-auto, technik, sport]
+branchen_nie: [lebensmittel-feinkost, gastro, gesundheit, kinder-familie]
 abnahme:
   shot_median_s: [0.50, 0.76]
   schnitte_pro_s: [1.9, 2.9]
   helligkeit: [0.22, 0.33]
   farbigkeit: [0.04, 0.08]
   lufs: [-15.2, -13.2]
+# Würfel-Felder (Etappe 0 Bauplan Würfelstile, 31.10.2026; karten_wuerfelfelder.py, Familien-Standard)
+creator: eingeschraenkt
+creator_ohne: [hud]
+spielraum:
+  palette: nachbarn
+  schrift: klasse
+  blitzbild_bilder: [2, 4]
+  stottern_wiederholungen: [2, 3]
+  push_in_prozent: [3, 8]
+  wackeln_faktor: [0.4, 1.0]
+  korn: [0.045, 0.075]
+  vignette: [0.3, 0.5]
+  beat_versatz_16tel: [0, 1]
+  textgroesse_prozent: [-10, 10]
+  textlage: regel
+  musik: bausteine
+palettenrolle:
+  grund: grund
+  text: hud
+  akzent: lack
+  dunkel: grund
+  hell: hud
+  licht: hud
 quelle: Eigene Analyse einer öffentlichen Vorschau; nur der Look ist beschrieben, keine Motive, Texte oder Marken übernommen.
 ---
 
@@ -132,3 +158,7 @@ Bauplan für 16 s bei 140 BPM (149 Sechzehntel). Ein Sechzehntel ist 0,107 s, al
 - Schräglage mit freien Ecken → immer mitskalieren.
 - Gestapelte Makros mit unterschiedlichem Ausschnitt wirken zufällig → identischer Ausschnitt in allen drei Streifen.
 - Monospace-Texte aus echten Daten (Koordinaten, Hexwerte) dürfen nicht nach Marke klingen → eigene neutrale Etiketten schreiben.
+- Code-Motor, Schnittmessung: scdet zählt nur Sprünge der Bildhelligkeit; zwei Code-Einstellungen gleicher Helligkeit nacheinander gelten als ein Shot → benachbarte Einstellungen in der Belichtung im Wechsel um 15 bis 35 % versetzen (`belichtung()` in `gemeinsam_d6.tsx`), unter 0,2 Sprung bleibt die Blitzregel frei.
+- Code-Motor, Front von vorn: zwei runde Scheinwerfer über einer dunklen Öffnung lesen sich am Handy als Gesicht → flache, kantige Leuchten, breiter tiefer Einlass, Räder und Spiegel sichtbar (`AutoFront` in `gemeinsam_d6.tsx`).
+- Ein-Bild-Blitze zählt die Schnittmessung nur einmal; volle Weißblitze neben einem hellen Stapel brechen die Blitzregel → Blitz als ausgebrannter Scheinwerfer auf einem Teil des Bilds, ausgebrannte Stapel nur halb hell.
+- Schräglage 25 Grad mit Skalierung 1,3 lässt Ecken frei → mindestens 1,75 skalieren.

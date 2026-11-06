@@ -32,12 +32,38 @@ ton: Langsamer, sehr lauter Beat um 66 BPM (−7,3 LUFS, fast ohne Dynamik), jed
 braucht: [fotos-figur, footage-ort]
 motor_aufwand: mittel
 einsatz: [musikvideo, hook, uebergang, portrait]
+zweck: [musik-lyric, stimmung]
+branchen_passt: [musik-kultur, technik]
+branchen_nie: [werkstatt-auto, handwerk, lebensmittel-feinkost, gastro, gesundheit, immobilien, finanzen, kinder-familie]
 abnahme:
   shot_median_s: [0.8, 1.05]
   schnitte_pro_s: [0.85, 1.2]
   helligkeit: [0.50, 0.68]
   farbigkeit: [0.03, 0.08]
   lufs: [-9, -7]
+# Würfel-Felder (Etappe 0 Bauplan Würfelstile, 31.10.2026; karten_wuerfelfelder.py, Familien-Standard)
+creator: eingeschraenkt
+creator_ohne: [farbfenster]
+spielraum:
+  palette: nachbarn
+  schrift: klasse
+  blitzbild_bilder: [2, 4]
+  stottern_wiederholungen: [2, 3]
+  push_in_prozent: [3, 8]
+  wackeln_faktor: [0.4, 1.0]
+  korn: [0.045, 0.075]
+  vignette: [0.3, 0.5]
+  beat_versatz_16tel: [0, 1]
+  textgroesse_prozent: [-10, 10]
+  textlage: regel
+  musik: bausteine
+palettenrolle:
+  grund: schwarz
+  text: nebel
+  akzent: fenster_haut
+  dunkel: schwarz
+  hell: nebel
+  licht: nebel
 quelle: Eigene Analyse einer öffentlichen Vorschau; nur der Look ist beschrieben, keine Motive, Texte oder Marken übernommen.
 ---
 
@@ -129,3 +155,6 @@ Bauplan für 16 s bei 66 BPM (68 Sechzehntel zu je 0,227 s, 17 Viertel), dann ei
 - Nah und fern vertauscht (nah weiß) → die Figur verschwindet im Nebel. Nah ist dunkel.
 - Zu viele Pixelflecken → wirkt wie Fehler statt Gestaltung. Höchstens acht je Shot.
 - Lautheit nachgemacht ohne Begrenzer → verzerrt. Für unsere Kanäle eher −10 LUFS anpeilen und die Abnahme dann anpassen.
+- Motor (Welle D, 05.11.): Ohne echte Tiefenkarte zeichnet der Code die Tiefe aus Ebenen (nah dunkel, fern hell); eine echte Tiefenkarte kommt über tiefeSrc je Szene.
+- Motor: Fenster müssen aus den Kopf-Koordinaten der Figur gerechnet werden (Gesicht, Augen), sonst sitzen sie auf dem Haarknoten oder zwischen den Augen; Farbflecken nur oben im Bild, im Schritt lesen sie sich als Zensurbalken.
+- Motor: Einstellungen von acht Sechzehnteln ohne Bewegung lesen sich als Standbild → auf jedem Viertel schneiden.

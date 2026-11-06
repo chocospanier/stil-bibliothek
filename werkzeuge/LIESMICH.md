@@ -10,4 +10,4 @@ python -I werkzeuge/bibliothek_index.py --bib stilbibliothek --nur-pruefen
 
 Listen-Felder treffen, wenn ein Element passt; Komma heißt „eins davon“; Zahlen auch mit `>=`, `<=`, `!=`.
 
-Die übrigen Werkzeuge (Video vermessen, Vorprüfung, Bewegungsstreifen, Kamerabewegung, Abnahme gegen die Karte, Takt messen, Musik aus Code) gehören zum Werkzeugkasten: https://content-autopilot.de
+Die übrigen Werkzeuge (Video vermessen, Vorprüfung, Bewegungsstreifen, Kamerabewegung, Abnahme gegen die Karte, Takt messen, Musik aus Code) gehören zum Werkzeugkasten: https://content-autopilot.de/stilbibliothek

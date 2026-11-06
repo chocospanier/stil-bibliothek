@@ -32,12 +32,38 @@ ton: "Vorlage ohne Tonspur; Musik frei wählbar, siehe Abschnitt Material."
 braucht: [3d, produkt]
 motor_aufwand: mittel
 einsatz: [uebergang, intro, produkt, hook]
+zweck: [produktwerbung, event-teaser]
+branchen_passt: [technik, werkstatt-auto, musik-kultur]
+branchen_nie: [lebensmittel-feinkost, gastro, gesundheit, kinder-familie]
 abnahme:
   shot_median_s: [4.5, 7.0]
   schnitte_pro_s: [0.0, 0.1]
   helligkeit: [0.16, 0.24]
   farbigkeit: [0.14, 0.21]
   lufs: []
+# Würfel-Felder (Etappe 0 Bauplan Würfelstile, 31.10.2026; karten_wuerfelfelder.py, Familien-Standard)
+creator: eingeschraenkt
+creator_ohne: [klebeband-sticker]
+spielraum:
+  palette: nachbarn
+  schrift: klasse
+  blitzbild_bilder: [2, 4]
+  stottern_wiederholungen: [2, 3]
+  push_in_prozent: [3, 8]
+  wackeln_faktor: [0.4, 1.0]
+  korn: [0.0, 0.04]
+  vignette: [0.3, 0.5]
+  beat_versatz_16tel: [0, 1]
+  textgroesse_prozent: [-10, 10]
+  textlage: regel
+  musik: bausteine
+palettenrolle:
+  grund: grund
+  text: chrom_licht
+  akzent: funke
+  dunkel: grund
+  hell: chrom_licht
+  licht: chrom_licht
 quelle: Eigene Analyse einer öffentlichen Vorschau; nur der Look ist beschrieben, keine Motive, Texte oder Marken übernommen.
 ---
 

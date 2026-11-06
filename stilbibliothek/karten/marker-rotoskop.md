@@ -33,12 +33,39 @@ ton: Sehr tiefes, leises Elektronik-Bett (89 % unter 250 Hz, −16,5 LUFS), die 
 braucht: [footage-ort, fotos-figur, illustrationen]
 motor_aufwand: mittel
 einsatz: [ganzes-kurzvideo, portrait, produkt, musikvideo]
+zweck: [mode-lookbook, produktwerbung]
+branchen_passt: [mode-beauty]
+branchen_nie: [werkstatt-auto, gesundheit, immobilien, finanzen]
 abnahme:
   shot_median_s: [0.40, 0.60]
   schnitte_pro_s: [0.9, 1.5]
   helligkeit: [0.40, 0.55]
   farbigkeit: [0.15, 0.22]
   lufs: [-17.5, -15.5]
+# Würfel-Felder (Etappe 0 Bauplan Würfelstile, 31.10.2026; karten_wuerfelfelder.py, Familien-Standard)
+creator: nein
+creator_grund: "Familie scrapbook: Handarbeit über Material: Papierränder, Sticker, Klebeband, Collage\
+  \ sind der Kern"
+spielraum:
+  palette: nachbarn
+  schrift: klasse
+  blitzbild_bilder: [2, 4]
+  stottern_wiederholungen: [2, 3]
+  push_in_prozent: [3, 8]
+  wackeln_faktor: [0.4, 1.0]
+  korn: [0.045, 0.075]
+  vignette: [0.3, 0.5]
+  beat_versatz_16tel: [0, 1]
+  textgroesse_prozent: [-10, 10]
+  textlage: regel
+  musik: bausteine
+palettenrolle:
+  grund: beton
+  text: tusche
+  akzent: duoton_rot
+  dunkel: tusche
+  hell: kreideweiss
+  licht: kreideweiss
 quelle: Eigene Analyse einer öffentlichen Vorschau; nur der Look ist beschrieben, keine Motive, Texte oder Marken übernommen.
 ---
 
@@ -135,3 +162,9 @@ Bauplan für 20 s in Sekunden, weil der Stil nicht auf den Beat schneidet. Zeich
 - Duoton zu lang → greift die Augen an. Höchstens 0,2 s und nicht öfter als einmal je zwei Sekunden.
 - Zu viele Einschübe → die Ruhe des Footage geht verloren. Collage nur in einer Strecke und als Blitz.
 - Etiketten mit langen Sätzen → lenken ab. Höchstens drei Wörter.
+- Code-Footage in Grautönen (bedeckter Himmel, Beton) → die Farbigkeit fällt an die Untergrenze 0,15. Denim, Sand und Grün im Ort tragen sie auf 0,17 (erlebt beim Motorbau, 04.11.2026).
+- Eine Papierkopf-Folge, in der nur der Grund hinter einer großen Figur wechselt → zählt kaum als Schnitt. Die Figur je Grund ein Stück springen lassen, helle und dunkle Gründe abwechseln, höchstens ein schwarzer Grund wegen der Blitzregel (erlebt beim Motorbau, 04.11.2026).
+- Drei Fotokarten an derselben Stelle auf gleichem Beton → die Wechsel zählen nicht als Schnitt. Je Karte Lage, Drehung und Betonhelligkeit ändern (erlebt beim Motorbau, 04.11.2026).
+- Ein Duoton mit weichem Kontrast über einem hellen Ort → fast alles wird Cyan, der Blitz zählt nicht als Schnitt. Den Kontrast vor der Farbtabelle auf 2,5 oder mehr heben, damit Rot und Cyan als Flächen stehen (erlebt beim Motorbau, 04.11.2026).
+- Eine Marker-Kontur als Rechteck um ein Accessoire → die Figurlinie streicht das Produkt durch. Die Kontur aus der erweiterten Maske von Figur und Accessoire zusammen bauen (feMorphology, Abstand 10 und 44 px) und das Accessoire in die Hand legen (erlebt beim Motorbau, 04.11.2026).
+- Ein Zoom-Durchflug von 2 s auf eine Figur mit 6 % Bildhöhe → leerer Beat mit Stillstand. Höchstens 0,5 s, Skala 1,0 auf 1,4 über die ganze Einstellung, Unschärfe in den ersten 6 Bildern, Figur am Ende rund 25 % hoch (erlebt beim Motorbau, 04.11.2026).

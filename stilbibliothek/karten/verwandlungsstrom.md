@@ -31,12 +31,37 @@ ton: Ruhiges Instrumentalbett um 63 BPM ohne Stimme, fast ohne Dynamik (LRA 1 LU
 braucht: [illustrationen, nur-typo]
 motor_aufwand: mittel
 einsatz: [ganzes-kurzvideo, hook]
+zweck: [zitat, marke-image, stimmung]
+branchen_passt: [bildung, musik-kultur]
+branchen_nie: []
 abnahme:
   shot_median_s: [2.0, 20.0]
   schnitte_pro_s: [0.0, 0.25]
   helligkeit: [0.10, 0.24]
   farbigkeit: [0.15, 0.35]
   lufs: [-15, -13]
+# Würfel-Felder (Etappe 0 Bauplan Würfelstile, 31.10.2026; karten_wuerfelfelder.py, Familien-Standard)
+creator: ja
+spielraum:
+  palette: nachbarn
+  schrift: klasse
+  blitzbild_bilder: [2, 4]
+  stottern_wiederholungen: [2, 3]
+  push_in_prozent: [2, 5]
+  wackeln_faktor: [0.3, 0.7]
+  korn: [0.03, 0.06]
+  vignette: [0.3, 0.5]
+  beat_versatz_16tel: [0, 1]
+  textgroesse_prozent: [-10, 10]
+  textlage: regel
+  musik: bausteine
+palettenrolle:
+  grund: grund
+  text: text
+  akzent: glut
+  dunkel: grund
+  hell: licht
+  licht: licht
 quelle: Eigene Analyse einer öffentlichen Vorschau; nur der Look ist beschrieben, keine Motive, Texte oder Marken übernommen.
 ---
 

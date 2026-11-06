@@ -32,12 +32,38 @@ ton: Gleichmäßiger, ruhiger Groove um 88 BPM ohne Stimme, kaum Dynamik (1,9 LU
 braucht: [fotos-figur, footage-ort]
 motor_aufwand: mittel
 einsatz: [ganzes-kurzvideo, intro, portrait]
+zweck: [mode-lookbook, marke-image, event-teaser]
+branchen_passt: [mode-beauty, tourismus, immobilien, gastro]
+branchen_nie: [handwerk, gesundheit, kinder-familie]
 abnahme:
   shot_median_s: [0.43, 0.65]
   schnitte_pro_s: [1.1, 1.7]
   helligkeit: [0.11, 0.17]
   farbigkeit: [0.08, 0.12]
   lufs: [-15.3, -13.3]
+# Würfel-Felder (Etappe 0 Bauplan Würfelstile, 31.10.2026; karten_wuerfelfelder.py, Familien-Standard)
+creator: eingeschraenkt
+creator_ohne: [bild-im-bild]
+spielraum:
+  palette: nachbarn
+  schrift: klasse
+  blitzbild_bilder: [2, 4]
+  stottern_wiederholungen: [2, 3]
+  push_in_prozent: [2, 5]
+  wackeln_faktor: [0.3, 0.7]
+  korn: [0.045, 0.075]
+  vignette: [0.3, 0.5]
+  beat_versatz_16tel: [0, 1]
+  textgroesse_prozent: [-10, 10]
+  textlage: regel
+  musik: bausteine
+palettenrolle:
+  grund: nacht
+  text: licht
+  akzent: gold
+  dunkel: nacht
+  hell: anzug
+  licht: licht
 quelle: Eigene Analyse einer öffentlichen Vorschau; nur der Look ist beschrieben, keine Motive, Texte oder Marken übernommen.
 ---
 
@@ -130,3 +156,6 @@ Bauplan für 16 s bei 88 BPM (94 Sechzehntel zu 0,17 s).
 - Wahrzeichen als Hauptmotiv macht daraus einen Reiseclip → Wahrzeichen klein, Figur groß.
 - Schwarz zu tief, Gesichter saufen ab → Gesichter mit Maske um 15 % aufhellen.
 - Zu viele Ein-Sechzehntel-Gruppen zerstören die Ruhe → höchstens drei je Stück.
+- Liedzeilen in der Bildmitte liegen auf Kopf und Arm → Zeilen bei 19 % der Höhe über den Köpfen, Standzeit mindestens 1,5 s (Motor GoldeneNacht, 04.11.).
+- Kuppel mit einzelner Spitze liest sich als Sakralbau → erfundene Skyline aus mehreren Türmen und einer Brücke.
+- Code-Nahaufnahme von Kinn und Fliege: ohne Hals im Hautton hinter dem Kinn und ohne Unterarm an den Händen wirkt die Figur zusammengesetzt → beides zeichnen oder enger schneiden.

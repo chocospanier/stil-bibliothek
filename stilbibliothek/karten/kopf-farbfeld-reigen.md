@@ -37,12 +37,38 @@ ton: Die Vorschau hat keinen Musiktrack, nur einen leisen Ton um 750 Hz im Absta
 braucht: [fotos-figur, illustrationen]
 motor_aufwand: klein
 einsatz: [hook, uebergang, intro, portrait]
+zweck: [event-teaser, stimmung]
+branchen_passt: [musik-kultur, mode-beauty]
+branchen_nie: [werkstatt-auto, handwerk, lebensmittel-feinkost, gastro, gesundheit, immobilien, finanzen, kinder-familie]
 abnahme:
   shot_median_s: [0.11, 0.16]
   schnitte_pro_s: [6.0, 8.5]
   helligkeit: [0.42, 0.58]
   farbigkeit: [0.42, 0.58]
   lufs: [-15, -13]
+# Würfel-Felder (Etappe 0 Bauplan Würfelstile, 31.10.2026; karten_wuerfelfelder.py, Familien-Standard)
+creator: eingeschraenkt
+creator_ohne: [freisteller]
+spielraum:
+  palette: nachbarn
+  schrift: klasse
+  blitzbild_bilder: [2, 3]
+  stottern_wiederholungen: [2, 2]
+  push_in_prozent: [3, 8]
+  wackeln_faktor: [0.4, 1.0]
+  korn: [0.045, 0.075]
+  vignette: [0.3, 0.5]
+  beat_versatz_16tel: [0, 1]
+  textgroesse_prozent: [-10, 10]
+  textlage: regel
+  musik: bausteine
+palettenrolle:
+  grund: himmelblau
+  text: kuehlweiss
+  akzent: magenta
+  dunkel: himmelblau
+  hell: kuehlweiss
+  licht: kuehlweiss
 quelle: Eigene Analyse einer öffentlichen Vorschau; nur der Look ist beschrieben, keine Motive, Texte oder Marken übernommen.
 ---
 
@@ -124,3 +150,6 @@ Bauplan für 12 s bei 30 fps in Bildern (ein Kopf = 4 Bilder = 0,133 s). Mit Mus
 - Anhängsel ohne Schnittkante und Schatten → verschmelzen mit dem Haar. Feine weiße Kante setzen.
 - KI-Gesichter, die sich zu ähnlich sehen → Reigen wird eintönig. Unterschiedliche Frisuren und Kopfbedeckungen.
 - Bekannte Personen als Köpfe → Persönlichkeitsrecht. Nur eigene oder generierte Gesichter.
+- Motor (Welle D, 05.11.): Nachbarfarben ähnlicher Helligkeit (Giftgrün, Cyan, Rosa, Türkis) zählen bei gleichem Kopf nicht als Schnitt → schwacher Studiolicht-Fleck und Schatten tauschen je Bild die Ecke; die Mittelhelligkeit bleibt, die Blitzregel hält.
+- Motor: Der Kopf muss groß sitzen (Gesicht etwa die halbe Bildhöhe), sonst wirkt er klein und oben angeklebt; Farbigkeit sinkt dabei, Studiolicht nicht heller als 16 % Weiß.
+- Motor (Creator-Modus): Hals und Schultern in dunklem Oberteil drücken die Farbigkeit unter 0,42 → Oberteil in einer Kreisfarbe.

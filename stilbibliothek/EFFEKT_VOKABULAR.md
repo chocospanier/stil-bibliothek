@@ -216,3 +216,23 @@
 | `textwende` | Text kippt die Aussage auf dem Drop (Untertreibung, Frage, Behauptung) |
 | `welten-folge` | mehrere geschlossene Bildwelten nacheinander |
 | `requisit-faden` | derselbe farbige Gegenstand wandert durch die Montage |
+
+## Zeichen-Motoren (seit 06.11.2026)
+Kennungen für Karten mit `bauweg: animskill`, deren Bild ein Zeichen-Motor aus Code malt.
+
+| Kennung | Bedeutung |
+|---|---|
+| `strich-fuer-strich` | das Bild entsteht vor den Augen, Strich für Strich in der Reihenfolge des Mediums (Grund, Anlage, Fläche, Detail, Signatur) |
+| `formwandel` | eine Form verwandelt sich ohne Schnitt in die nächste (Begriff wird Begriff, Kontur wird Kontur) |
+| `diagramm-wachstum` | erst Achsen oder Rahmen, dann wachsen Balken, Linien oder Kästen auf das Stichwort, zuletzt eine Markierung |
+
+## Klassen für den Creator-Modus
+
+Diese Kennungen können auf TikTok als „zugeschnittene Rahmen, Logos, Symbole“ gelesen werden (Begründung einer Disqualifikation im Creator-Programm, 31.10.2026). Der Würfel liest die Klassen hier und sperrt oder beschränkt Karten im Creator-Modus (`creator` im Kopfblock, Liste in `CREATOR_SPERRLISTE.md`). Kennungen ohne Klasse sind frei. Eine Kennung gehört zu höchstens einer Klasse.
+
+| Klasse | Kennungen | Warum |
+|---|---|---|
+| rahmen | `bild-im-bild`, `kreisfenster`, `split-screen`, `raster-collage`, `foto-stapel`, `comic-panel`, `kinobalken`, `rahmen-rund`, `querband`, `fenster-tanz`, `magazin-layout`, `filmstreifen`, `ornament-rahmen`, `farbfenster`, `druckstueck`, `akten-karte`, `rahmen-ausbruch`, `zeitungsdruck`, `farbmusterkarte` | Fenster, Kasten, Balken oder Kachel: TikTok nennt „zugeschnittene Rahmen“ wörtlich |
+| sticker | `freisteller`, `ausschnitt-kante`, `klebeband-sticker`, `text-hinter-figur`, `klone`, `papierriss`, `erpresserbrief` | ausgeschnittene Figur mit Kante oder Saum, Collage-Teile: der Sticker-Look des disqualifizierten Videos |
+| abzeichen | `hud`, `tracking-etiketten`, `tracking-linien`, `sucher-ecken`, `kapitel-zaehler`, `bauchbinde`, `stempel`, `zensurbalken`, `pixelschrift`, `passermarken`, `testbild`, `ui-attrappe`, `comic-etikett`, `schaubild`, `scan-band`, `wireframe-scan` | Etiketten, Mess-Grafik, Stempel, Ecken: über viele Videos gleich, liest sich als Logo oder Symbol |
+| raster | `halbton`, `dither`, `zeilenraster`, `perspektivraster`, `pixelgrafik`, `typo-raster` | Punkt- oder Linienraster als Dauerfläche: Schablonen-Signal, wenn es den Grund trägt |

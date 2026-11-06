@@ -32,12 +32,39 @@ ton: Lautes, bassbetontes Instrumental um 85 BPM (−11,7 LUFS), halbe Sekunde l
 braucht: [fotos-figur, footage-ort]
 motor_aufwand: klein
 einsatz: [hook, ganzes-kurzvideo, produkt, portrait]
+zweck: [mode-lookbook, produktwerbung]
+branchen_passt: [mode-beauty]
+branchen_nie: [werkstatt-auto, handwerk, gesundheit, immobilien, finanzen]
 abnahme:
   shot_median_s: [0.38, 0.56]
   schnitte_pro_s: [2.0, 3.0]
   helligkeit: [0.48, 0.64]
   farbigkeit: [0.13, 0.19]
   lufs: [-12.7, -10.7]
+# Würfel-Felder (Etappe 0 Bauplan Würfelstile, 31.10.2026; karten_wuerfelfelder.py, Familien-Standard)
+creator: nein
+creator_grund: "Familie scrapbook: Handarbeit über Material: Papierränder, Sticker, Klebeband, Collage\
+  \ sind der Kern"
+spielraum:
+  palette: nachbarn
+  schrift: klasse
+  blitzbild_bilder: [2, 4]
+  stottern_wiederholungen: [2, 3]
+  push_in_prozent: [3, 8]
+  wackeln_faktor: [0.4, 1.0]
+  korn: [0.045, 0.075]
+  vignette: [0.3, 0.5]
+  beat_versatz_16tel: [0, 1]
+  textgroesse_prozent: [-10, 10]
+  textlage: regel
+  musik: bausteine
+palettenrolle:
+  grund: papierweiss
+  text: kuli_blau
+  akzent: akzentflaeche
+  dunkel: akzentflaeche
+  hell: papierweiss
+  licht: papierweiss
 quelle: Eigene Analyse einer öffentlichen Vorschau; nur der Look ist beschrieben, keine Motive, Texte oder Marken übernommen.
 ---
 
@@ -133,3 +160,8 @@ Bauplan für 16 s bei 85 BPM (Sechzehntel 0,176 s, 91 Sechzehntel), drei Outfits
 - Zu viel Handschrift → wirkt wie ein Arbeitsblatt. Je Bild höchstens ein Label und ein Zeichen.
 - Rahmen ohne Ausbruch → normaler Bilderrahmen. Die Maske muss über dem Rahmen liegen.
 - Unterschiedliche Kamerastandorte je Outfit → der Wechsel springt. Gleiche Stelle, gleiche Höhe, gleiches Licht.
+- Outfitwechsel vor derselben Wand zählt die Schnittmessung kaum, nur die Figur ändert sich → Schnittrate 1,4 statt 2,5. Jedes Foto mit eigenem Ausschnitt (Zoom 100 bis 138 %) und leicht anderer Lage der Person, Riss-Streifen außen aufgehellt (erlebt beim Motorbau, 04.11.2026).
+- Ausbruch-Ebene über dem Rahmen an fester Stelle, die Figur im Foto aber je Foto versetzt → die Person steht doppelt da. Beide Ebenen aus derselben Lage zeichnen (erlebt beim Motorbau, 04.11.2026).
+- clip-path über SVG-Figuren mit Verläufen (Riss-Streifen) → Chrome rendert die Verlaufsflächen schwarz. Den Streifen als Fenster mit overflow statt clip-path bauen (erlebt beim Motorbau, 04.11.2026).
+- Labels mit Stoffnamen, die das Bild nicht zeigt (Code-Ersatz ohne Stoffe) → wirken falsch. Wochentage oder Nummern, bis echte Fotos die Stoffe zeigen (erlebt beim Motorbau, 04.11.2026).
+- Roter Satz in einem Achtel-Shot → wird halb geschrieben weggeschnitten. Erst in der Schlussstrecke schreiben und 2,5 s stehen lassen (erlebt beim Motorbau, 04.11.2026).

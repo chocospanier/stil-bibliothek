@@ -31,12 +31,38 @@ ton: Extrem laut gemischter Beat (−5,7 LUFS, Spitzen über 0 dBFS) um 98 BPM; 
 braucht: [fotos-figur, nur-typo]
 motor_aufwand: mittel
 einsatz: [hook, portrait, produkt, ganzes-kurzvideo, musikvideo]
+zweck: [produktwerbung, marke-image, mode-lookbook]
+branchen_passt: [mode-beauty, sport]
+branchen_nie: []
 abnahme:
   shot_median_s: [0.34, 0.50]
   schnitte_pro_s: [0.9, 1.3]
   helligkeit: [0.68, 0.85]
   farbigkeit: [0.10, 0.16]
   lufs: [-9, -7]   # Vorlage −5,7; so laut nur mit Limiter, höchstens −1 dBTP
+# Würfel-Felder (Etappe 0 Bauplan Würfelstile, 31.10.2026; karten_wuerfelfelder.py, Familien-Standard)
+creator: eingeschraenkt
+creator_ohne: [klone, freisteller]
+spielraum:
+  palette: nachbarn
+  schrift: klasse
+  blitzbild_bilder: [2, 4]
+  stottern_wiederholungen: [2, 3]
+  push_in_prozent: [3, 8]
+  wackeln_faktor: [0.4, 1.0]
+  korn: [0.045, 0.075]
+  vignette: [0.3, 0.5]
+  beat_versatz_16tel: [0, 1]
+  textgroesse_prozent: [-10, 10]
+  textlage: regel
+  musik: bausteine
+palettenrolle:
+  grund: studio
+  text: kleidung_dunkel
+  akzent: akzent_rot
+  dunkel: kleidung_dunkel
+  hell: studio
+  licht: studio
 quelle: Eigene Analyse einer öffentlichen Vorschau; nur der Look ist beschrieben, keine Motive, Texte oder Marken übernommen.
 ---
 
@@ -137,3 +163,6 @@ Bauplan für 17,1 s bei 98 BPM (112 Sechzehntel zu 0,153 s, sieben Takte). Inhal
   - Prüfrunde 1: Spuren auf die Kamera zu verklumpen (Köpfe auf gleicher Höhe, Doppelkopf, Hände auf Nachbargesichtern, dritte Hand), weil nahe Klone größer werden und ihre Köpfe kaum höher stehen → Endbild jeder Spur rechnerisch prüfen (Überlappung je Paar höchstens ein Drittel, Gesichtsfeld frei, Köpfe mindestens 1,2 Kopfbreiten auseinander, Rand nach Zoom) und lieber sechs als acht Klone; ein Standbild mit dem Auge reicht nicht.
   - Posen aus einem Bild-Editor driften im Hautton (rosiger), in der Hose (Jeans statt Original) und in der Proportion (kleinerer Kopf) → vor dem Bau auf Hautton und Hose des Originals abgleichen und den Körper unterhalb des Kragens auf die Proportion der Stand-Pose bringen.
   - Stempel-Überschwinger 1,3 lässt eine breite Zeile im ersten Bild über den Rand laufen → Überschwinger je Zeile begrenzen.
+- (Motorbau) Weiß auf Weiß zählt die Schnittmessung kaum (Score 4 bis 10 bei Schwelle 10) → Salve im Wechsel aus Figur groß (dunkle Hose) und Kiste groß (Rot), Nahaufnahmen mit viel dunkler Fläche.
+- (Prüfrunde) Ohne laufende Figur wirkt die Spur wie eine Diaschau → der jüngste Klon läuft vom vorigen Platz in seine Pose (Gelenke überblenden), neue Klone im Achtel.
+- (Würfel) Ein Haus mit dunkler Hauspalette dunkelt das helle Studio unter die Abnahme; die Karte passt nur zu Häusern mit hellem Grund.

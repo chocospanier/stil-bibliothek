@@ -33,12 +33,38 @@ ton: Gleichmäßig lauter Beat um 170 BPM (Halbtempo 85), kurzes leises Intro vo
 braucht: [fotos-figur, footage-ort, nur-typo]
 motor_aufwand: mittel
 einsatz: [ganzes-kurzvideo, hook, portrait]
+zweck: [mode-lookbook]
+branchen_passt: [mode-beauty]
+branchen_nie: [werkstatt-auto, handwerk, lebensmittel-feinkost, gesundheit, immobilien, finanzen]
 abnahme:
   shot_median_s: [1.15, 1.75]
   schnitte_pro_s: [0.55, 0.85]
   helligkeit: [0.40, 0.58]
   farbigkeit: [0.12, 0.18]
   lufs: [-14.8, -12.8]
+# Würfel-Felder (Etappe 0 Bauplan Würfelstile, 31.10.2026; karten_wuerfelfelder.py, Familien-Standard)
+creator: nein
+creator_grund: "Sticker-Klone neben der Figur und Orte, die durch die Silhouette wechseln, sind Kern-Merkmale"
+spielraum:
+  palette: nachbarn
+  schrift: klasse
+  blitzbild_bilder: [2, 4]
+  stottern_wiederholungen: [2, 3]
+  push_in_prozent: [3, 8]
+  wackeln_faktor: [0.4, 1.0]
+  korn: [0.045, 0.075]
+  vignette: [0.3, 0.5]
+  beat_versatz_16tel: [0, 1]
+  textgroesse_prozent: [-10, 10]
+  textlage: regel
+  musik: bausteine
+palettenrolle:
+  grund: studio
+  text: titel_schwarz
+  akzent: titel_rot
+  dunkel: titel_schwarz
+  hell: titel_weiss
+  licht: titel_weiss
 quelle: Eigene Analyse einer öffentlichen Vorschau; nur der Look ist beschrieben, keine Motive, Texte oder Marken übernommen.
 ---
 
@@ -129,3 +155,7 @@ Bauplan für 15 s bei 170 BPM (Achtel 0,18 s). Wegen der weichen Wechsel in Acht
 - Silhouetten-Maske mit unruhigem Freisteller flackert → Alpha um 2 px weichzeichnen und einmal vorrechnen.
 - Getippte Wörter länger als die Bildbreite → höchstens zehn Zeichen je Zeile, sonst zweite Zeile.
 - Zu viele harte Schnitte zerstören das Fließen → zwischen Orten immer Maske oder Blende, hart nur auf Akzenten.
+- Ein clipPath aus einer Code-Figur bleibt in Chrome ohne Wirkung, sobald er Gruppen enthält; der Ortswechsel wird dann zum harten Schnitt → die Silhouette als Bild-Maske (data-URL) setzen, wie `figurMaske` in `gemeinsam_d1.tsx` (Motor AuswahlLookbook, 04.11.).
+- Echte Silhouetten-Masken zählt die Schnittmessung nicht, ohne genug harte Momente fallen die Schnitte unter 0,55 je Sekunde → Wechsel mischen: kurze Maske (drei Bilder in der Silhouette, dann voll), Geister-Blende und der Sprung bei der Wahl zählen, lange Masken und Überblendungen nicht; so bleibt der Median über einer Sekunde.
+- Sticker-Klone mit den Füßen am Bildrand kreuzen die Mono-Zeilen unten → Klone weiter hinten stellen, Füße über den Mono-Zeilen.
+- Hand an der Brille in einer engen Reihe ragt in die Nachbarfigur, ein schwarzer Brillenbalken liest sich als Augenbalken → in der Reihe nur stehende Posen, Code-Figur ohne Brille.

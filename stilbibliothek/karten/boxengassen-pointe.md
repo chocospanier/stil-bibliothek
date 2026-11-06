@@ -33,12 +33,37 @@ ton: Erst Dialog mit Raumton ohne Musik (−16 bis −22 dB), dann harter Musike
 braucht: [fotos-figur, footage-ort, produkt]
 motor_aufwand: mittel
 einsatz: [trailer, hook, ganzes-kurzvideo]
+zweck: [event-teaser, marke-image, geschichte]
+branchen_passt: [werkstatt-auto, sport]
+branchen_nie: [lebensmittel-feinkost, gesundheit, finanzen]
 abnahme:
   shot_median_s: [0.30, 0.46]
   schnitte_pro_s: [1.6, 2.4]
   helligkeit: [0.29, 0.43]
   farbigkeit: [0.09, 0.14]
   lufs: [-11.8, -9.8]
+# Würfel-Felder (Etappe 0 Bauplan Würfelstile, 31.10.2026; karten_wuerfelfelder.py, Familien-Standard)
+creator: ja
+spielraum:
+  palette: nachbarn
+  schrift: klasse
+  blitzbild_bilder: [2, 4]
+  stottern_wiederholungen: [2, 3]
+  push_in_prozent: [3, 8]
+  wackeln_faktor: [0.4, 1.0]
+  korn: [0.045, 0.075]
+  vignette: [0.3, 0.5]
+  beat_versatz_16tel: [0, 1]
+  textgroesse_prozent: [-10, 10]
+  textlage: regel
+  musik: bausteine
+palettenrolle:
+  grund: tiefe
+  text: wort_rot
+  akzent: wildleder
+  dunkel: tiefe
+  hell: licht
+  licht: licht
 quelle: Eigene Analyse einer öffentlichen Vorschau; nur der Look ist beschrieben, keine Motive, Texte oder Marken übernommen.
 ---
 
@@ -140,3 +165,6 @@ Bauplan für 17 s. Dialog in Sekunden, Rennteil bei 88 BPM (Sechzehntel 0,17 s).
 - Ohne Stimme gibt es keine Wortzeiten: Wörter auf einem Lesetakt (0,17 bis 0,2 s), Pointenwort mit kleiner Verzögerung in die Tonpause.
 - Erlebt in der Prüfrunde: Wackeln (Verschieben des ganzen Shots) zieht dunkle Randstreifen ins Bild, sobald der Grund nicht überskaliert ist → Grund um 1 + 2,2 × Wackeln / Breite vergrößern und Ränder messen (Spaltenmittel der äußeren 40 px), nicht nur ansehen.
 - Flicken auf Lack: Rand-Median gibt flache Rechtecke → Inpainting (OpenCV Telea); Kästen an einem Ausschnitt ohne Versatz ablesen und danach Vorher-Nachher prüfen.
+- (Motorbau) Gegenschuss in derselben Einstellung wie der nächste Satz derselben Figur ist kein Schnitt → Hörer nah mit unscharfem, dunklerem Grund.
+- (Motorbau) Übergänge, die in vier Bildern ins alte Bild fallen, erkennt die Schnittmessung nicht mehr → Band und Fenster in zwei Bildern.
+- (Prüfrunde) Jedes rote Wort mindestens 0,8 s ganz stehen lassen, die Pointe vor der Ampel mindestens 2,3 s; Nachtstart mit Wagen in derselben Richtung, nie Heck an Heck.

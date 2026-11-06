@@ -32,12 +32,39 @@ ton: Song um 69 BPM (vielleicht 138 im Doppeltempo), −11,4 LUFS mit 5,2 LU Spa
 braucht: [fotos-figur, footage-ort, illustrationen]
 motor_aufwand: mittel
 einsatz: [musikvideo, portrait, intro, ganzes-kurzvideo]
+zweck: [person-vorstellen, musik-lyric, stimmung]
+branchen_passt: [musik-kultur]
+branchen_nie: [gesundheit, immobilien, finanzen]
 abnahme:
   shot_median_s: [0.30, 0.46]
   schnitte_pro_s: [1.3, 1.9]
   helligkeit: [0.26, 0.38]
   farbigkeit: [0.08, 0.12]
   lufs: [-12.4, -10.4]
+# Würfel-Felder (Etappe 0 Bauplan Würfelstile, 31.10.2026; karten_wuerfelfelder.py, Familien-Standard)
+creator: nein
+creator_grund: "Familie scrapbook: Handarbeit über Material: Papierränder, Sticker, Klebeband, Collage\
+  \ sind der Kern"
+spielraum:
+  palette: nachbarn
+  schrift: klasse
+  blitzbild_bilder: [2, 4]
+  stottern_wiederholungen: [2, 3]
+  push_in_prozent: [3, 8]
+  wackeln_faktor: [0.4, 1.0]
+  korn: [0.045, 0.075]
+  vignette: [0.3, 0.5]
+  beat_versatz_16tel: [0, 1]
+  textgroesse_prozent: [-10, 10]
+  textlage: regel
+  musik: bausteine
+palettenrolle:
+  grund: papier
+  text: schatten
+  akzent: akzent_lila
+  dunkel: schatten
+  hell: kritzel
+  licht: kritzel
 quelle: Eigene Analyse einer öffentlichen Vorschau; nur der Look ist beschrieben, keine Motive, Texte oder Marken übernommen.
 ---
 
@@ -132,3 +159,8 @@ Bauplan für 18,2 s bei 69 BPM (84 Sechzehntel zu 0,217 s). Inhalt austauschbar,
 - Zu viele Farben im Material → Akzent verliert sich; Garderobe und Orte vorher auf eine Farbe abstimmen.
 - Wasserzeichen oder Logos fremder Kanäle übernehmen → eigene Signatur oder keine.
 - Grading zu braun → Haut wird matschig; Hauttöne nach dem Grading prüfen.
+- Gemalte Einschübe von einem Sechzehntel mit gleichem dunklem Radialgrund → die Schnittmessung erkennt sie nicht (Wert 5 bis 9). Die helle Fläche je Einschub woanders hinlegen (Schein oben, Fenster unten, Wand links), bei gleicher mittlerer Helligkeit wegen der Blitzregel (erlebt beim Motorbau, 04.11.2026).
+- Ein Schnittmuster mit vielen Zwei-Sechzehntel-Shots bei 69 BPM → der Median liegt mit 0,434 s fast an der Obergrenze, und jeder verschluckte Schnitt kippt ihn. Den Motor auf 75 BPM rechnen (0,40 s) und Nuller als halbes Sechzehntel setzen (erlebt beim Motorbau, 04.11.2026).
+- Eine schräge dunkle Linie über einer Treppe, die an Hals oder Schulter der Figur endet → wird im Schlussbild als Strick oder Spieß gelesen. Geländer nur parallel zur Stufenkante unter Hüfthöhe oder ganz weglassen (erlebt beim Motorbau, 04.11.2026).
+- Eine Menge im Gegenlicht von oben, die nur ins Licht schaut → Jenseits-Lesart. Licht seitlich setzen, Figuren tanzen lassen (Arme wechselnd hoch, versetztes Wippen), Funken schräg statt schwebend (erlebt beim Motorbau, 04.11.2026).
+- Ein Stern-Kritzel in einem Zug mit Kreuzungen allein auf Papier → liest sich als Pentagramm. Fünfzack als Umriss ohne innere Kreuzung in Weiß zeichnen (erlebt beim Motorbau, 04.11.2026).

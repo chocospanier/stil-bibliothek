@@ -10,7 +10,11 @@ Was soll das Video tun (Hook, Trailer, ganzes Kurzvideo, Lyric-Clip, Produkt), f
 ## 0a. Erzählform wählen
 In [GRAMMATIK.md](stilbibliothek/GRAMMATIK.md) eine der acht Kurzformen wählen (Chronologie mit Verwandlung, Auftrag mit Beat-Schnitten, fester Held, Katalog, Gegenüberstellung, Frage und Antwort, Vorher und nachher, Ablauf). Die Form entscheidet, ob das Stück schneidet, verwandelt oder fährt; erst danach die Karte. Den einen Satz aufschreiben, der das Stück trägt.
 
-## 1. Stil wählen
+## 1. Stil würfeln (seit 31.10.2026)
+- Normalweg: `python -I starter/werkzeuge/wuerfeln.py zug --haus haus --projekt <projektordner> --probe`. Der Zug wählt den Grundstil aus der Hausmischung des Kanals (`haus/mischung.json`), nie den des letzten Videos, dazu Palette, Schriftpaar und Werte im Spielraum der Karte. `stil.json` sagt, ob die Karte einen Motor für eigenen Inhalt hat (sofort rendern, immer mit `--props <inhalt.json>`) oder von Hand gebaut wird, bei `vorlage` als Kopie dieser Komposition mit ganz ersetztem Beispielinhalt (dann weiter mit Schritt 2; danach `wuerfeln.py motor` und `wuerfeln.py probe`, siehe [starter/LIESMICH.md](starter/LIESMICH.md), Abschnitt „Würfelstile“).
+- Die Bestellung hat einen Zweck ([ZWECKE.md](stilbibliothek/ZWECKE.md)). Er geht als `--zweck` in den Zug; Produktwerbung und Angebote laufen immer in den Markenfarben. Passt kein Grundstil der Hausmischung zum Zweck, zieht der Zug aus allen Karten des Zwecks und der Branche und schreibt das ins Protokoll; zeige dem Menschen dann drei Standbilder, bevor du baust.
+- Wünscht der Mensch einen bestimmten Stil, gilt sein Wunsch; der Zug liefert trotzdem Palette und Werte.
+- Die Wahl von Hand (unten) bleibt für neue Kanäle ohne Mischung und für Stile außerhalb der Mischung:
 - In [FAMILIEN.md](stilbibliothek/FAMILIEN.md) die Familie nach Wirkung und Einsatz wählen.
 - Nach `einsatz`, `energie`, `braucht` und `motor_aufwand` filtern: `python -I werkzeuge/bibliothek_index.py --filter braucht=nur-typo motor_aufwand=klein einsatz=hook` gibt die passenden Karten als Tabelle aus (mehrere Werte mit Komma, Zahlen auch mit `>=`, etwa `energie>=4`). Wer nur Code hat (keine Fotos, kein Footage, kein Produkt, kein 3D): `--filter nur_code=ja` oder `braucht<=nur-typo,illustrationen` („nur diese“); die Tabelle zeigt die Spalte „nur Code“. `braucht=nur-typo` allein reicht nicht, weil bei Listen ein Treffer genügt.
 - Höchstens drei Karten in die engere Wahl, eine empfehlen. Entscheidung festhalten.
@@ -37,10 +41,11 @@ In [GRAMMATIK.md](stilbibliothek/GRAMMATIK.md) eine der acht Kurzformen wählen 
 - Prompts nennen keine Gerätearten oder Produktformen, die Marken herbeirufen (Blickwinkel beschreiben statt „smartphone photo“, „plain smooth leather sneaker“ statt „canvas sneaker“), kein „hook“, keine hängenden Seile.
 - **Jedes generierte Bild in voller Größe ansehen, bevor es ins Stück kommt.** Suchen nach: Schlingen, Seilen, Haken, Waffen, Blut, Flaggen, Zeichen, Logos, markentypischen Formen, lesbarer oder Pseudo-Schrift, Gesichtern im Hintergrund.
 - Ein Produkt = ein Master-Packshot; alle Bühnen daraus freistellen, nicht je Bühne neu generieren.
+- Kundenmaterial (Produktfoto, Logo) über `starter/werkzeuge/freistellen.py`; das Prüfbild gehört zum Look-Check. Die Stimme bekommt je Zeile `text` (gesprochen) und `anzeige` (Untertitel), Zahlen und Kürzel schreibst du im `text` so aus, wie sie gesprochen werden.
 - Figuren (Avatare, Freisteller): nur verschieben, gleichmäßig skalieren, leicht drehen. Nie strecken, stauchen, scheren, invertieren, filtern. Neue Posen gegen das Original abgleichen.
 
 ## 5. Raster vom echten Ton
-**Musik und Stimme (Hausregel seit 18.10.2026):** Musik ist immer echte Musik: ElevenLabs Music über `starter/werkzeuge/musik.py` (Prompt aus dem Abschnitt `Material` der Karte, Länge aus der Bestellung, rund 900 Credits je Minute) oder eigene, lizenzierte Musik. Der Taktbauer ist keine Musikquelle; er setzt nur einzelne Schläge und Klicks über die Musik (`taktbauer.py --nur-schlaege`). Ohne Schlüssel: Stille mit Hinweis, nie ein Ersatzbett. Jedes Stück mit Text bekommt eine Vorlesestimme (`starter/werkzeuge/stimme.py`, ElevenLabs v4, Wortzeiten für `WortSpur`, Untertitel); „ohne Stimme“ nur auf ausdrückliche Bestellung. Schlüssel nur in der Umgebung (`ELEVENLABS_API_KEY` oder `ELEVENLABS_KEY_DATEI`), nie in einer Datei des Pakets.
+**Musik und Stimme (Hausregel seit 18.10.2026):** Musik ist immer echte Musik: ElevenLabs Music über `starter/werkzeuge/musik.py` (Prompt aus dem Abschnitt `Material` der Karte, Länge aus der Bestellung, rund 900 Credits je Minute) oder eigene, lizenzierte Musik. Der Taktbauer ist keine Musikquelle; er setzt nur einzelne Schläge und Klicks über die Musik (`taktbauer.py --nur-schlaege`). Ohne Schlüssel: Stille mit Hinweis, nie ein Ersatzbett. Jedes Stück mit Text bekommt eine Vorlesestimme (`starter/werkzeuge/stimme.py`, ElevenLabs v4, Wortzeiten für `WortSpur`, Untertitel); „ohne Stimme“ nur auf ausdrückliche Bestellung. Schlüssel nur in der Umgebung (`ELEVENLABS_API_KEY` oder `ELEVENLABS_KEY_DATEI`), nie in einer Datei des Pakets. **Seit 1.5 (Zeichen-Motoren):** Musik und Geräusche aus den Partitur-Motoren der Zeichen-Motoren (`animskill.py`, Weg `code`: modellierte Instrumente, Taktraster, Geräusche auf der Bildaktion) sind zugelassen. Sie werden immer nach dem Ton-Standard gemischt (`starter/werkzeuge/ton_standard.py`): Bett allein um −24 LUFS und unter der Stimme 3 dB tiefer, Stimme −16, Geräusche −20, Gesamt −14 LUFS, True Peak höchstens −1 dBTP. Geräusche und Stimme tragen den Pegel, die Musik liegt darunter. Kein dumpfer Schlag, Boom oder Impact am Ende; den Payoff hell setzen (Glocke, Akkord, Glanz), die Endprüfung des Mischers meldet einen tiefen Einschlag in den letzten 2,5 s.
 - Musik zuerst fertig machen, dann Tempo und ersten Schlag am fertigen Ton messen: `python -I starter/werkzeuge/takt.py <ton> --out takt.json` (Tempo mit einer Nachkommastelle, Phase, erster Schlag, Sechzehntel in Bildern). Die Sechzehntel des Schnittmusters auf dieses gemessene Raster umrechnen, nie auf die Zahl im Prompt. Musik: `python -I starter/werkzeuge/musik.py --karte <karte.md> --sekunden <länge> --aus <ordner>/musik.wav --takt <ordner>/takt.json` (ElevenLabs Music, Prompt aus der Karte, misst das Raster gleich mit) oder eigene, lizenzierte Musik. Den Schlag auf der Pointe legt `taktbauer.py --nur-schlaege --schlag <sechzehntel>` als eigene Spur darüber; die Musik ist davor stumm (Atem).
 - Bei eigener Fläche unter einem Bett (Bordun, Pad, Atmo): am Bett messen, nicht am fertigen Ton; die Fläche verschiebt sonst das gemessene Tempo. Meldet `takt.py` einen Rastertreffer unter 30 %, ist das Tempo unsicher: am Bett messen oder `--band hoch`. Bei langsamen Stücken (unter 80 BPM) meldet `takt.py` oft das Doppeltempo mit Halbtempo-Hinweis; dann mit `--min` und `--max` um das erwartete Tempo messen.
 - Sprechstimme: Wortzeiten aus einer Transkription mit Wortstempeln; Schnitte und Wörter auf die Silben. Höchstens 3,5 Wörter je Sekunde; jeder Beat beginnt rund 0,3 s nach dem Satzende.
@@ -71,11 +76,19 @@ Probe-Render und Vollrender sind derselbe Befehl (`npm run render -- <kompositio
 - Abnahme mit Auge und Ohr am Handy. Ton hört nur ein Mensch; keine Messung ersetzt das.
 - Jede neue Falle in die Karte unter `Fallen` eintragen. So wird die Bibliothek mit jedem Stück besser.
 
+## 8a. Register-Abgleich (seit 31.10.2026)
+- `handy.py` gleicht das fertige Video als Schritt 4 mit dem Register ab (`haus/register.db`, mit Register-Schlüssel auch zentral). Grün: liefern. Gelb: liefern, der nächste Zug meidet diesen Grundstil. Rot: nicht hochladen.
+- Ist das rote Gegenstück die eigene, nie gelieferte Vorfassung desselben Videos (Reparatur nach der Prüfrunde), ist es kein Rot: im selben `render/`-Ordner ersetzt `handy.py` den alten Eintrag selbst, sonst `--fassung-von`. Neu würfeln nur bei Rot gegen ein anderes Video.
+- Bei Rot gegen ein anderes Video: neu würfeln und mit **anderem Inhalt** neu bauen. Farbe und Schrift allein reichen nicht, das Register misst Helligkeit und Lage. Nach zwei roten Runden entscheidet der Mensch (`register.py freigeben <id> --grund "…"`).
+- Beim Liefern die Material-IDs mitgeben (`handy.py … --material id1,id2`), damit die Material-Suche weiß, was dieser Kanal schon genutzt hat.
+- Neuer Kanal: einmal `overlays.py --seed kanal` und `texturen.py ../haus/material --seed kanal`, damit Korn, Lichtlecks und Kacheln nur diesem Kanal gehören (`starter/LIESMICH.md`, Abschnitt „Eigene Grafik je Kanal“).
+
 ## Faustregeln, die alles überleben
 - Messung ist kein Urteil.
 - Ein Stück, das niemand in einem Klick ansehen kann, ist nicht geliefert.
 - Je Werk eine Prüfrunde und eine Reparatur, dann der Mensch.
 - Erst sehen, dann einbauen. Erst Storyboard, dann Render. Erst Prüfer, dann Vollrender.
+- Eigener Inhalt je Video. Den Beispieltext einer Komposition liefert nie jemand aus.
 
 ## Bildrate: zwei feste Werte, nie mischen (Hausregel)
 
@@ -124,3 +137,32 @@ Für die zwei Zitat-Karten gibt es den ganzen Weg oben als ein Werkzeug: aus ein
 Ohne Adapter gilt der **Handweg**: das Werkzeug schreibt jeden Auftrag mit Prompt, Seed und Zieldatei nach `auftraege_hand.md` und hält an; wer die Dateien unter diesen Namen ablegt (aus einem beliebigen Bild-, Video- oder Stimmen-Dienst), startet es erneut. Stimme und Musik übernimmt ohne Adapter ElevenLabs eingebaut (Schlüssel in der Umgebung); ohne Schlüssel ist die Musik Stille. Kosten entstehen nur in den Diensten, die der Adapter ruft; das Werkzeug selbst ruft keinen.
 
 **Was kein Werkzeug entscheidet:** ob ein Bild etwas Heikles zeigt, ob die Abfolge als Abschied gelesen werden kann, ob die Stimme trägt. Die Checkliste in `STAND.md` lässt diese Punkte offen, bis ein Mensch oder der frische Prüfer sie gesehen hat.
+
+## Zeichen-Motoren in einem Rutsch (`starter/werkzeuge/animskill.py`, seit 1.5)
+
+Für die Familien `strichzeichnung`, `malstil`, `erklaergrammatik`, `selbstzeichnend` und die Karte `whiteboard-hand` zeichnet ein Motor jedes Bild in Code (kein Bild- oder Videodienst, gleiches Ergebnis bei jedem Render). Einrichten einmal je Rechner: `python -I starter/werkzeuge/animskills/einrichten.py --pruefen` (holt die Motoren auf festem Stand, Windows-Fixes inklusive; Einzelheiten `starter/werkzeuge/animskills/LIESMICH.md`).
+
+| Motor | Was er kann | Rechenzeit je Filmsekunde | Ton aus Code |
+|---|---|---|---|
+| `huashu` | 53 Malstil-Rezepte (Höhlenwand bis Vaporwave) als Szenen-Code, 8 Erklär-Grammatiken als Clip aus JSON | Szenen 15 s, Grammatik 1,5 s | Musik und Geräusche |
+| `anidoodle` | 32 Strich-Stile, zeichnet in Handreihenfolge, Federschrift mit Umlauten | 3,5 s | Musik und Geräusche |
+| `handzeichnung` | Whiteboard, eine Hand zeichnet vor (Remotion `WhiteboardHand`, würfelbar) | siehe Karte | Geräusche |
+| `manim` | Formeln, Geometrie, Graphen | 1,4 s | nein |
+| `zeichnen` | 77 Malstile, ein Bild malt sich selbst | 11 s | nein |
+| `pinsel` | Aquarell-Figur mit Stimmungen (Startfigur Klecks) | 25 s | nein |
+| `jsanim` | Canvas-Szene mit Web-Audio in einer HTML-Datei | 2,7 s | Musik und Geräusche |
+| `bilddienst` | Papiercollage aus Bild- und Videodienst (Credits, Handweg) | Dienst | nein |
+| `kino3d` | 3D-Kino seit 1.6: Held im Kinolicht, vier Licht-Rezepte, Wörter im Raum (Karten der Familie 3d-objekt, Skill `kino3d`) | 5 bis 6 s auf starker Grafikkarte, Standbild 15 bis 20 s | Musik und Geräusche |
+
+**Weg:**
+1. Stil würfeln wie immer (`wuerfeln.py zug … --zweck erklaeren`). Beim ersten Mal braucht der Kanal seine Mischung (`wuerfeln.py mischung --haus haus`). Eine bestimmte Karte (auch eine Familie, die nicht in der Mischung liegt) bestellst du mit `--nur-karte <id>`; Palette und Werte würfelt der Zug trotzdem. Prüfe vor dem Bau, ob `haus/tabus.md` dem Kern der Karte widerspricht (etwa „keine Personen“ gegen eine Profilfigur), und frag dann den Menschen. Zieht der Zug eine Zeichen-Karte, steht in `stil.json` `bauweg: animskill`, der Motor, die Stil-Kennung und ein `motor_spec_entwurf` mit Palette und Schrift des Zugs.
+2. `python -I starter/werkzeuge/animskill.py --vorlage <projektordner> --motor <motor>` legt `bestellung.json` und `stimme_zeilen.json` an. `motor_spec` aus dem Entwurf übernehmen, Sprechtext in `stimme_zeilen.json`.
+3. `animskill.py <bestellung.json> --nur stimme`: Stimme mit Wortzeiten zuerst, die Länge ergibt sich aus der Stimme (`"dauer": "stimme"`).
+4. Die Datei schreiben, die der Motor erwartet (Film, Szene, Skript oder Szenen-JSON; Beispiel im Docstring des Motor-Moduls). Szenenwechsel auf Wortanfänge legen (`ton/stimme_woerter.json`). Ein Film, ein Stil, eine Palette.
+5. `animskill.py <bestellung.json> --nur look --zeiten 0,<mitte>,<ende>`: zwei bis vier Standbilder in Endgröße ansehen, Ja oder Nein (Look-Check). Bei `handzeichnung` gibt der Schritt die Warnungen des Zeitplans aus (Hand hinkt der Stimme nach, Zeichnen endet nach der Dauer); erst beheben, dann `--nur render`.
+6. `animskill.py <bestellung.json> --ab ton`: Musik und Geräusche (Weg `code` aus dem Motor, sonst `elevenlabs` mit Prompt), Mischung nach Ton-Standard, Film mit Untertiteln (Komposition `SkillClip`), Master und Handy-Fassung über `handy.py` (Reinigung, Register), Vorprüfung, Kontaktbogen, `STAND.md`.
+7. Frischer Prüfer auf Kontaktbogen und Streifen, eine Reparatur (`--neu render` oder `--neu ton`), dann der Mensch mit Auge und Ohr. Nach der Reparatur Bilder für Runde 2 in einen neuen Ordner legen (`storyboard_r2/`), im Projektordner wird nichts gelöscht. Nur Pausen oder Zeilenlagen ändern: `stimme.py --zeilen … --pruefen` ohne `--neu` nutzt die vorhandenen Aufnahmen (keine Kosten), `animskill.py --neu stimme` bestellt alle Zeilen neu.
+
+**Akzent und Kontrast:** Zieht der Würfel einen hellen Akzent auf hellem Grund (unter 3:1), Zahlen und Schlagwörter in Tinte setzen und den Akzent nur für Flächen und Linien nehmen; Abweichung in `STAND.md` notieren.
+
+**Fallen, die schon passiert sind:** Malstil-Szenen bewegen sich zu wenig (das Bewegungs-Tor von `huashu` meldet rot; je Szene eine schnelle Bewegung einplanen). Titel, die Buchstabe für Buchstabe erscheinen, zeigen halbe Wörter (bei `anidoodle` Option `wortweise`). Dünne Linien verschwinden am Handy (Mindeststrich setzen). Ein dumpfer Schlag am Ende stört (Endprüfung des Mischers). Bild 0 darf kein leeres Papier sein: bei `zeichnen` und `anidoodle` das Titelbild vorzeichnen oder die erste Szene mit stehendem Titel beginnen.

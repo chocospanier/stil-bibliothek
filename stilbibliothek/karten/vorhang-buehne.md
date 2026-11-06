@@ -33,12 +33,39 @@ ton: Lautes, bassschweres Instrumental um 140 BPM, −11 LUFS bei nur 0,9 LU Spa
 braucht: [fotos-figur, illustrationen]
 motor_aufwand: mittel
 einsatz: [intro, trailer, portrait, ganzes-kurzvideo]
+zweck: [geschichte, kinder, event-teaser]
+branchen_passt: [kinder-familie, musik-kultur]
+branchen_nie: [werkstatt-auto, technik, immobilien, finanzen, sport]
 abnahme:
   shot_median_s: [3.3, 4.9]
   schnitte_pro_s: [0.08, 0.2]
   helligkeit: [0.70, 0.85]
   farbigkeit: [0.09, 0.14]
   lufs: [-12, -10]
+# Würfel-Felder (Etappe 0 Bauplan Würfelstile, 31.10.2026; karten_wuerfelfelder.py, Familien-Standard)
+creator: nein
+creator_grund: "Familie scrapbook: Handarbeit über Material: Papierränder, Sticker, Klebeband, Collage\
+  \ sind der Kern"
+spielraum:
+  palette: nachbarn
+  schrift: klasse
+  blitzbild_bilder: [2, 4]
+  stottern_wiederholungen: [2, 3]
+  push_in_prozent: [2, 5]
+  wackeln_faktor: [0.3, 0.7]
+  korn: [0.045, 0.075]
+  vignette: [0.3, 0.5]
+  beat_versatz_16tel: [0, 1]
+  textgroesse_prozent: [-10, 10]
+  textlage: regel
+  musik: bausteine
+palettenrolle:
+  grund: papier
+  text: tinte
+  akzent: gold
+  dunkel: tinte
+  hell: papier
+  licht: papier
 quelle: Eigene Analyse einer öffentlichen Vorschau; nur der Look ist beschrieben, keine Motive, Texte oder Marken übernommen.
 ---
 
@@ -126,3 +153,9 @@ Bauplan für 17,5 s in Sekunden, weil der Stil Ereignisse statt Schnitte setzt. 
 - Sticker auf Einsern animiert → glatt und digital. Auf Zweiern oder Dreiern halten.
 - Zu laut gemischte Geräusche über einem ohnehin lauten Bett → matschig. Bett bei −11 LUFS lassen, Geräusche klein.
 - Fenster zu groß → der Theater-Effekt geht verloren. Höchstens 60 % der Bildbreite.
+- Tagebuch oder neue Bühne ohne die gerafften Vorhänge eingesetzt → die Vorhänge verschwinden in einem Bild, ein versteckter dritter Schnitt bricht den Kern. Vorhänge stehen lassen und die neue Seite darüber schieben (erlebt beim Motorbau, 04.11.2026).
+- Sticker, Blasen und Theaterzettel über dem Vorhang statt darunter → sie schweben auf dem zugezogenen Samt. Overlays gehören zur Szene, der Vorhang liegt immer obenauf, die Blase ploppt vor dem Zuziehen weg (erlebt beim Motorbau, 04.11.2026).
+- Vorhang aus einem regelmäßigen Faltenverlauf → liest sich als rosa Wellblech. Faltenbreite und Tiefe je Falte zufällig, Saum, Raffung und Samtkörnung zeichnen (erlebt beim Motorbau, 04.11.2026).
+- Vollbild-Vorhang öffnet mit schnellem Ease-out → das erste Bild verschiebt alle Falten auf einmal und zählt fast als Schnitt (Wert 8,7). Das Vollbild weich anlaufen lassen (18 Bilder), nur das kleine Fenster öffnet in 12 Bildern (erlebt beim Motorbau, 04.11.2026).
+- Zoom-Schlag mit gleichem Ausschnitt wie das Bild davor → scdet erkennt den gewollten harten Schnitt nicht. Das Porträt schon näher einsetzen und dann auf 115 % schlagen (erlebt beim Motorbau, 04.11.2026).
+- Die Gesamtlänge muss zu den zwei harten Schnitten passen (Ende rund 4,1 s nach dem Goldrahmen) → mit dem 17,5-s-Bauplan läge der Median bei 6 s. Der Motor rechnet 15,5 s (erlebt beim Motorbau, 04.11.2026).

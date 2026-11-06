@@ -32,12 +32,37 @@ ton: Trailer-Musik mit Riser in den ersten 3,5 s, frühem Schlag, fast stillem A
 braucht: [footage-ort, fotos-figur, produkt]
 motor_aufwand: gross
 einsatz: [trailer, hook, ganzes-kurzvideo, musikvideo]
+zweck: [event-teaser, marke-image]
+branchen_passt: [werkstatt-auto, sport]
+branchen_nie: [lebensmittel-feinkost, gastro, gesundheit, bildung, finanzen]
 abnahme:
   shot_median_s: [0.55, 0.82]
   schnitte_pro_s: [1.4, 2.2]
   helligkeit: [0.29, 0.43]
   farbigkeit: [0.18, 0.27]
   lufs: [-13, -11]
+# Würfel-Felder (Etappe 0 Bauplan Würfelstile, 31.10.2026; karten_wuerfelfelder.py, Familien-Standard)
+creator: ja
+spielraum:
+  palette: nachbarn
+  schrift: klasse
+  blitzbild_bilder: [2, 4]
+  stottern_wiederholungen: [2, 3]
+  push_in_prozent: [3, 8]
+  wackeln_faktor: [0.4, 1.0]
+  korn: [0.045, 0.075]
+  vignette: [0.3, 0.5]
+  beat_versatz_16tel: [0, 1]
+  textgroesse_prozent: [-10, 10]
+  textlage: regel
+  musik: bausteine
+palettenrolle:
+  grund: tiefe
+  text: sonne
+  akzent: glut
+  dunkel: tiefe
+  hell: sonne
+  licht: sonne
 quelle: Eigene Analyse einer öffentlichen Vorschau; nur der Look ist beschrieben, keine Motive, Texte oder Marken übernommen.
 ---
 
@@ -132,3 +157,8 @@ Bauplan für 20 s. Empfehlung: Musik mit 84 BPM wählen, dann ist ein Shot genau
 - Nur Orange ermüdet nach zehn Sekunden → die kalte Mitte ist Pflicht.
 - Gleichmäßiger Puls ohne Atem wirkt wie eine Diashow → einen Doppelshot im Dunkel vor den Drop setzen.
 - Viele weiße Blitze hintereinander sind eine Epilepsie-Gefahr → höchstens drei je Sekunde, nie zwei Sekunden am Stück.
+- Code-Motor, Schnittmessung: scdet zählt nur Sprünge der Bildhelligkeit; zwei Code-Einstellungen gleicher Helligkeit nacheinander gelten als ein Shot → benachbarte Einstellungen in der Belichtung im Wechsel um 15 bis 35 % versetzen (`belichtung()` in `gemeinsam_d6.tsx`), unter 0,2 Sprung bleibt die Blitzregel frei.
+- Code-Motor, Front von vorn: zwei runde Scheinwerfer über einer dunklen Öffnung lesen sich am Handy als Gesicht → flache, kantige Leuchten, breiter tiefer Einlass, Räder und Spiegel sichtbar (`AutoFront` in `gemeinsam_d6.tsx`).
+- Gesichtslose Köpfe tragen den Bildtyp „Gesicht im Extremgefühl“ nicht → Augen, Brauen und offener Mund (Büste mit `gesicht`), Körper im dunklen Anzug.
+- Lichtbogen auf der Brust liest sich als trauriger Mund, ein Ring auf Kopfhöhe als Heiligenschein → keine Lichtformen auf dem Rumpf.
+- Basis-Helligkeit knapp über der unteren Grenze (0,296 bei Soll ab 0,29) lässt jeden Farbtausch der Probe darunter fallen, alle Züge fallen zurück → Basis mit Abstand zur Grenze legen (Motor 0,324: Gesamtbelichtung 1,48, Sättigung 1,42).

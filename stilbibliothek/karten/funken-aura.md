@@ -32,12 +32,37 @@ ton: Laute, fast unveränderliche Wand um 127 BPM (Lautheitsspanne unter 2 LU), 
 braucht: [produkt, fotos-figur, footage-ort]
 motor_aufwand: mittel
 einsatz: [hook, trailer, produkt, uebergang]
+zweck: [marke-image, event-teaser, produktwerbung]
+branchen_passt: [sport, werkstatt-auto, musik-kultur]
+branchen_nie: [lebensmittel-feinkost, gastro, gesundheit, bildung, immobilien, finanzen, kinder-familie]
 abnahme:
   shot_median_s: [0.13, 0.20]
   schnitte_pro_s: [3.0, 4.6]
   helligkeit: [0.19, 0.28]
   farbigkeit: [0.11, 0.17]
   lufs: [-12.3, -10.3]
+# Würfel-Felder (Etappe 0 Bauplan Würfelstile, 31.10.2026; karten_wuerfelfelder.py, Familien-Standard)
+creator: ja
+spielraum:
+  palette: nachbarn
+  schrift: klasse
+  blitzbild_bilder: [2, 3]
+  stottern_wiederholungen: [2, 2]
+  push_in_prozent: [3, 8]
+  wackeln_faktor: [0.4, 1.0]
+  korn: [0.045, 0.075]
+  vignette: [0.3, 0.5]
+  beat_versatz_16tel: [0, 1]
+  textgroesse_prozent: [-10, 10]
+  textlage: regel
+  musik: bausteine
+palettenrolle:
+  grund: grund
+  text: eis
+  akzent: glut
+  dunkel: grund
+  hell: eis
+  licht: eis
 quelle: Eigene Analyse einer öffentlichen Vorschau; nur der Look ist beschrieben, keine Motive, Texte oder Marken übernommen.
 ---
 
@@ -138,3 +163,8 @@ Bauplan für 18 s bei 127 BPM (Sechzehntel = 0,118 s; 152 Sechzehntel, 9,5 Takte
 - Blitzstrahl länger als drei Frames → verliert das Zucken.
 - Salven ohne Halt dazwischen sind eine Epilepsie-Gefahr und ermüden → nach jeder Salve mindestens 0,7 s Ruhe; Eis-Cyan- und Weiß-Blitze höchstens dreimal je Sekunde.
 - Luxusmarken und Logos im Material → rechtliches Risiko. Generische Objekte verwenden.
+- Gleicher Bildtyp in Nachbarbildern (Fahrzeug auf Fahrzeug, Gesicht auf Gesicht) → die Schnitterkennung sieht die Schnitte nicht und die Dichte fällt unter 3 je Sekunde. Nachbarn wechseln Bildtyp oder Lage, Salvenbilder springen zwischen vier Stellungen.
+- Eis-Cyan-Blitzbild neben einem Glut-Einschlag → vier harte Hell-Dunkel-Wechsel in einer Sekunde. Blitzbilder nur auf Schnitte legen, um die 0,6 s davor bis 1,2 s danach keine Glut, kein 1-Bit und keine Salve liegt.
+- Funkenregen aus einer runden Form vor einem Gesicht → liest sich als Bombe mit Lunte. Funken nur aus Rädern und Metallkanten ausstoßen, auf Gesichter Blitze legen.
+- Glut nur in einer Zone der Dramaturgie → 15 s lang kein Temperatursprung, der Kern fehlt. Den Glut-Anteil über die ganze Länge nachführen (Ziel 12 bis 17 % der Zeit).
+- Schnittmuster der Karte ergibt bei 127 BPM nur 2,5 Schnitte je Sekunde → Einzel-Sechzehntel-Läufe als Zwei-Bild-Salven schneiden, 4 und 5 Sechzehntel als Treffer teilen (Motor FunkenAura, 31.10.).

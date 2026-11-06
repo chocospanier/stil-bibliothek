@@ -34,12 +34,39 @@ ton: Lautes, bassbetontes Instrumental um 127 BPM (−10,9 LUFS), leiser Einstie
 braucht: [fotos-figur, footage-ort, illustrationen]
 motor_aufwand: gross
 einsatz: [trailer, musikvideo, hook, ganzes-kurzvideo]
+zweck: [mode-lookbook, event-teaser]
+branchen_passt: [mode-beauty, musik-kultur]
+branchen_nie: [werkstatt-auto, handwerk, lebensmittel-feinkost, gesundheit, immobilien, finanzen]
 abnahme:
   shot_median_s: [0.35, 0.53]
   schnitte_pro_s: [1.7, 2.5]
   helligkeit: [0.38, 0.54]
   farbigkeit: [0.22, 0.32]
   lufs: [-11.9, -9.9]
+# Würfel-Felder (Etappe 0 Bauplan Würfelstile, 31.10.2026; karten_wuerfelfelder.py, Familien-Standard)
+creator: nein
+creator_grund: "7 Kennungen aus rahmen und sticker: raster-collage, split-screen, zeitungsdruck,\
+  \ klone, freisteller, ausschnitt-kante, klebeband-sticker"
+spielraum:
+  palette: nachbarn
+  schrift: klasse
+  blitzbild_bilder: [2, 4]
+  stottern_wiederholungen: [2, 3]
+  push_in_prozent: [3, 8]
+  wackeln_faktor: [0.4, 1.0]
+  korn: [0.045, 0.075]
+  vignette: [0.3, 0.5]
+  beat_versatz_16tel: [0, 1]
+  textgroesse_prozent: [-10, 10]
+  textlage: regel
+  musik: bausteine
+palettenrolle:
+  grund: creme
+  text: tusche
+  akzent: orange
+  dunkel: tusche
+  hell: creme
+  licht: sonnengelb
 quelle: Eigene Analyse einer öffentlichen Vorschau; nur der Look ist beschrieben, keine Motive, Texte oder Marken übernommen.
 ---
 
@@ -139,3 +166,6 @@ Bauplan für 18 s bei 127 BPM (Sechzehntel 0,118 s, 152 Sechzehntel). Wechsel au
 - Billiges Footage → Hochglanz fehlt, Stil kippt ins Basteln. Gute Studiofotos oder generierte Stills in hoher Auflösung.
 - Kaleidoskop und Raster zu lang → Schwindel. Höchstens vier Sechzehntel.
 - Bekannte Ikonen nachgebaut → Persönlichkeitsrecht. Eigene Figuren, keine Doubles echter Stars.
+- Motor (Welle D, 05.11.): Code-Flächen in voller Palette sind gesättigter als gedruckte Collage (Farbigkeit 0,40 statt höchstens 0,35) → Einstellungen leicht entsättigt (saturate 0,82), warmer Grade schwach.
+- Motor: Im Tunnel-Durchflug zeigt ein dunkler Grund zwischen den Ringen am Rand dunkle Streifen → Papier als Grund.
+- Motor: Code-Figuren in Kreis- und Spiegelfenstern rechnen in Video-Prozent, nicht in Fenster-Prozent → Lage umrechnen, sonst fehlt der Kopf.

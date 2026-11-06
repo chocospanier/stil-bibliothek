@@ -30,12 +30,36 @@ ton: Langsamer, dunkler Beat um 73 BPM mit viel Raum, mittellaut; nach dem letzt
 braucht: [fotos-figur, footage-ort]
 motor_aufwand: mittel
 einsatz: [hook, trailer, intro, musikvideo]
+zweck: [musik-lyric, event-teaser]
+branchen_passt: [musik-kultur]
+branchen_nie: [werkstatt-auto, handwerk, lebensmittel-feinkost, gastro, gesundheit, bildung, immobilien, finanzen, kinder-familie, tourismus]
 abnahme:
   shot_median_s: [0.7, 1.05]
   schnitte_pro_s: [0.45, 0.75]
   helligkeit: [0.10, 0.18]
   farbigkeit: [0.0, 0.03]
   lufs: [-17, -15]
+# Würfel-Felder (Etappe 0 Bauplan Würfelstile, 31.10.2026; karten_wuerfelfelder.py, Familien-Standard)
+creator: ja
+spielraum:
+  palette: akzent
+  schrift: klasse
+  blitzbild_bilder: [2, 4]
+  stottern_wiederholungen: [2, 3]
+  push_in_prozent: [3, 8]
+  wackeln_faktor: [0.4, 1.0]
+  korn: [0.05, 0.08]
+  vignette: [0.3, 0.5]
+  beat_versatz_16tel: [0, 1]
+  textgroesse_prozent: [-10, 10]
+  textlage: regel
+  musik: bausteine
+palettenrolle:
+  grund: grund
+  text: spitze
+  dunkel: grund
+  hell: spitze
+  licht: licht
 quelle: Eigene Analyse einer öffentlichen Vorschau; nur der Look ist beschrieben, keine Motive, Texte oder Marken übernommen.
 ---
 
@@ -123,3 +147,5 @@ Bauplan für 18 s bei 73 BPM (88 Sechzehntel, ein Sechzehntel = 0,205 s), danach
 - Weißbilder öfter als dreimal je Sekunde → Flimmer- und Epilepsie-Gefahr. Höchstens drei Wechsel je Sekunde.
 - Das Schwarzbild am Ende ohne Ton → wirkt wie ein Exportfehler. Musik muss sichtbar weiterklingen.
 - Weitwinkel nur als Zoom → ohne Krümmung fehlt die Nähe. Barrel-Verzerrung oder echtes Fisheye-Material.
+- Motor (Code-Annäherung): Echtes Datamoshing einer Videodatei geht in Remotion nicht; der Motor verschiebt Blöcke aus einem früheren Bild über das neue (Blockverschiebung). Trägt den Kern sichtbar, ist aber kein Codec-Fehler.
+- Motor (Code-Ersatz): Der Schnitt vom Tunnel ins Streiflicht wird auf zwei dunklen Bildern nicht gemessen → das erste Streiflicht deutlich heller und breiter setzen, sonst liegt die Schnittdichte bei 0,44 statt 0,45.

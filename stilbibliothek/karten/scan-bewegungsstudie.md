@@ -32,12 +32,38 @@ ton: Laut und dicht (−11,3 LUFS, 3,3 LU Spanne) um 106 BPM; nach den Bildern v
 braucht: [fotos-figur, produkt, 3d, nur-typo]
 motor_aufwand: gross
 einsatz: [portrait, produkt, trailer, intro]
+zweck: [produktwerbung, person-vorstellen, wissen]
+branchen_passt: [sport, technik, mode-beauty]
+branchen_nie: [lebensmittel-feinkost, gastro, kinder-familie]
 abnahme:
   shot_median_s: [0.10, 0.16]
   schnitte_pro_s: [1.9, 2.9]
   helligkeit: [0.13, 0.20]
   farbigkeit: [0.06, 0.10]
   lufs: [-12.3, -10.3]
+# Würfel-Felder (Etappe 0 Bauplan Würfelstile, 31.10.2026; karten_wuerfelfelder.py, Familien-Standard)
+creator: eingeschraenkt
+creator_ohne: [split-screen, wireframe-scan, hud, schaubild]
+spielraum:
+  palette: nachbarn
+  schrift: klasse
+  blitzbild_bilder: [2, 4]
+  stottern_wiederholungen: [2, 3]
+  push_in_prozent: [3, 8]
+  wackeln_faktor: [0.4, 1.0]
+  korn: [0.045, 0.075]
+  vignette: [0.3, 0.5]
+  beat_versatz_16tel: [0, 1]
+  textgroesse_prozent: [-10, 10]
+  textlage: regel
+  musik: bausteine
+palettenrolle:
+  grund: schwarz
+  text: schrift_grau
+  akzent: gold
+  dunkel: schwarz
+  hell: studio_weiss
+  licht: studio_weiss
 quelle: Eigene Analyse einer öffentlichen Vorschau; nur der Look ist beschrieben, keine Motive, Texte oder Marken übernommen.
 ---
 
@@ -136,3 +162,8 @@ Bauplan für 19,3 s bei 106 BPM (136 Sechzehntel zu 0,142 s). Inhalt austauschba
 - Schwarz-Weiß-Wechsel im Einzelbild über Sekunden ist eine Epilepsie-Gefahr → Salven kürzer als 1,5 s, danach Studie.
 - Partikelfigur ohne Spur wirkt wie Rauschen → Spur und Boden machen die Bewegung lesbar.
 - Marken, Vereinswappen und Namen auf Trikots oder Produkten → neutralisieren oder eigene verwenden.
+- Motor (Welle D, 05.11.): Silhouetten auf Schwarz und Produkte auf Weiß unterscheiden sich in der Salve zu wenig für die Schnittmessung (Werte 5 bis 9) → je Bild wandernder Lichtkegel hinter der Silhouette, Hohlkehle wechselt zwischen heller Wand oben und unten, schwacher warmer Laborlicht-Fleck je Einstellung in anderer Ecke.
+- Motor: Drei Schrägstreifen am Schuh sind eine Markenform → Ösenpunkte und Naht.
+- Motor: Der Scan-Kopf wirkt bei dünnem Zeilenraster fast schwarz und steht → Zeilen decken etwa zwei Drittel, Kopf mittelgrau, Drehung als schmaler werdender Kopf mit wandernder Scanlinie.
+- Motor: Namenskarte über 2 s gilt als Standbild → ganzes Bild mit 12 % Push, Lichtstreif und wandernder Schein.
+- Motor (Creator-Modus): Ohne Schaubild und HUD hebt ein Produkt auf Weiß die Helligkeit über die Abnahme; als dunkles Produkt zählen die Salven nicht mehr als Schnitte (1,83 je Sekunde) → Motor creator: false, im Creator-Modus nur als Handbau.

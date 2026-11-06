@@ -33,12 +33,37 @@ ton: Leises Intro bis 3,5 s, dann gleichmäßig um −11 dB, am Ende Ausblende u
 braucht: [fotos-figur, footage-ort, nur-typo]
 motor_aufwand: mittel
 einsatz: [ganzes-kurzvideo, trailer, hook]
+zweck: [mode-lookbook, marke-image]
+branchen_passt: [mode-beauty, sport]
+branchen_nie: [werkstatt-auto, handwerk, lebensmittel-feinkost, gesundheit]
 abnahme:
   shot_median_s: [0.28, 0.42]
   schnitte_pro_s: [1.4, 2.2]
   helligkeit: [0.11, 0.17]
   farbigkeit: [0.07, 0.11]
   lufs: [-15.1, -13.1]
+# Würfel-Felder (Etappe 0 Bauplan Würfelstile, 31.10.2026; karten_wuerfelfelder.py, Familien-Standard)
+creator: ja
+spielraum:
+  palette: nachbarn
+  schrift: klasse
+  blitzbild_bilder: [2, 4]
+  stottern_wiederholungen: [2, 3]
+  push_in_prozent: [3, 8]
+  wackeln_faktor: [0.4, 1.0]
+  korn: [0.045, 0.075]
+  vignette: [0.3, 0.5]
+  beat_versatz_16tel: [0, 1]
+  textgroesse_prozent: [-10, 10]
+  textlage: regel
+  musik: bausteine
+palettenrolle:
+  grund: schwarz
+  text: betonweiss
+  akzent: brillengelb
+  dunkel: schwarz
+  hell: betonweiss
+  licht: lichtstreif_magenta
 quelle: Eigene Analyse einer öffentlichen Vorschau; nur der Look ist beschrieben, keine Motive, Texte oder Marken übernommen.
 ---
 
@@ -135,3 +160,6 @@ Bauplan für 20 s in Sekunden (Tempo der Vorlage unsicher; Schnitte auf den näc
 - Weiß-Schwarz-Stotterfolgen sind eine Epilepsie-Gefahr → höchstens eine Folge von vier Frames je zwei Sekunden.
 - Zu sauberer Digital-Look verrät das Jahrzehnt nicht → Korn, harter Schwarzpunkt und gesättigtes Rot sind Pflicht.
 - Titelkarte mit 2 % Höhe ist auf dem Handy unlesbar → mindestens 2,5 %.
+- Code-Motor (Welle D): die Stotterfolge Weiß, Bild, Weiß, Schwarz der Vorlage bricht im Video die Blitzregel; höchstens ein Weiß- oder Gelbblitz je Sekunde, im Creator-Modus nur die zwei weißen.
+- Code-Motor: dunkel auf dunkel zählt die Schnitt-Messung oft nicht. Spot kräftig, Sprungrichtung von Schnitt zu Schnitt wechseln, Schwarzbilder ganz schwarz; dann hält die Basis 1,4 Schnitte je Sekunde.
+- Code-Motor: kein einzelner erhobener Finger vor dem Gesicht (Lesart); die Brille schieben zwei geschlossene Finger an der Brücke.

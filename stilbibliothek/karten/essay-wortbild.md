@@ -33,12 +33,38 @@ ton: Eine Sprechstimme von Anfang bis Ende (etwa 3,5 Wörter je Sekunde), darunt
 braucht: [footage-ort, fotos-figur, nur-typo]
 motor_aufwand: mittel
 einsatz: [ganzes-kurzvideo, intro, trailer, portrait]
+zweck: [zitat, geschichte, person-vorstellen, marke-image]
+branchen_passt: [bildung, musik-kultur]
+branchen_nie: [kinder-familie]
 abnahme:
   shot_median_s: [1.25, 1.9]
   schnitte_pro_s: [0.45, 0.75]
   helligkeit: [0.24, 0.36]
   farbigkeit: [0.17, 0.25]
   lufs: [-12.5, -10.5]
+# Würfel-Felder (Etappe 0 Bauplan Würfelstile, 31.10.2026; karten_wuerfelfelder.py, Familien-Standard)
+creator: eingeschraenkt
+creator_ohne: [text-hinter-figur]
+spielraum:
+  palette: nachbarn
+  schrift: klasse
+  blitzbild_bilder: [2, 4]
+  stottern_wiederholungen: [2, 3]
+  push_in_prozent: [3, 8]
+  wackeln_faktor: [0.4, 1.0]
+  korn: [0.045, 0.075]
+  vignette: [0.3, 0.5]
+  beat_versatz_16tel: [0, 1]
+  textgroesse_prozent: [-5, 5]
+  textlage: regel
+  musik: bausteine
+palettenrolle:
+  grund: nachtschwarz
+  text: schriftweiss
+  akzent: bernstein
+  dunkel: nachtschwarz
+  hell: schriftweiss
+  licht: leuchtrot
 quelle: Eigene Analyse einer öffentlichen Vorschau; nur der Look ist beschrieben, keine Motive, Texte oder Marken übernommen.
 ---
 
@@ -137,3 +163,5 @@ Bauplan für 30 s in Sekunden, weil der Schnitt den Sätzen folgt. Je Satz eine 
 - Schmale Plakatschriften setzen Umlautpunkte hoch über die Versalhöhe. Bei engem Zeilenabstand stoßen sie in die Zeile darüber (Ö-Punkte im P). Zeilenabstand mindestens 1,2, sobald die untere Zeile einen Umlaut hat.
 - Ein Plakat aus zwei Wörtern, das am ersten Wort hängt, steht vor dem zweiten Wort fertig im Bild und nimmt dem Schlag die Pointe. Jedes Wort bekommt seinen eigenen Einsatz auf seiner Silbe.
 - Eine stehende Nahaufnahme mit offenem Mund unter einer Off-Stimme wirkt wie eingefrorene Lippen. Für Off-Text Bilder mit geschlossenem Mund oder abgewandtem Gesicht nehmen.
+- Helle Studio-Gründe über lange Strecken heben die Helligkeit über das Fenster und drücken die Farbigkeit; kühles Tuch ist arm an Farbe → warme und kühle Gründe gesättigt (Motor: saturate 1,45 und 2,3), helles Studio sparsam.
+- Zwei Einstellungen mit demselben Grund hintereinander zählt die Schnitt-Messung nicht; die Gründe abwechseln (warm, kalt, schwarz). Ein Reißschwenk verschmiert den Schnitt über vier Bilder und fällt dann aus der Zählung.

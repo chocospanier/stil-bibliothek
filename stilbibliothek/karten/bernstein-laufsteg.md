@@ -31,12 +31,37 @@ ton: Getragener, spannungsvoller Beat um 91 BPM mit großer Dynamik (Lautheitssp
 braucht: [produkt, fotos-figur, footage-ort, nur-typo]
 motor_aufwand: mittel
 einsatz: [produkt, trailer, ganzes-kurzvideo]
+zweck: [produktwerbung, marke-image, mode-lookbook]
+branchen_passt: [mode-beauty]
+branchen_nie: [werkstatt-auto, handwerk, kinder-familie, bildung, finanzen]
 abnahme:
   shot_median_s: [0.43, 0.65]
   schnitte_pro_s: [1.0, 1.6]
   helligkeit: [0.11, 0.17]
   farbigkeit: [0.05, 0.10]
   lufs: [-15, -13]
+# Würfel-Felder (Etappe 0 Bauplan Würfelstile, 31.10.2026; karten_wuerfelfelder.py, Familien-Standard)
+creator: ja
+spielraum:
+  palette: akzent
+  schrift: klasse
+  blitzbild_bilder: [2, 4]
+  stottern_wiederholungen: [2, 3]
+  push_in_prozent: [2, 5]
+  wackeln_faktor: [0.4, 1.0]
+  korn: [0.045, 0.075]
+  vignette: [0.3, 0.5]
+  beat_versatz_16tel: [0, 1]
+  textgroesse_prozent: [-10, 10]
+  textlage: regel
+  musik: bausteine
+palettenrolle:
+  grund: grund
+  text: blitz
+  akzent: bernstein
+  dunkel: grund
+  hell: blitz
+  licht: blitz
 quelle: Eigene Analyse einer öffentlichen Vorschau; nur der Look ist beschrieben, keine Motive, Texte oder Marken übernommen.
 ---
 
@@ -129,3 +154,6 @@ Bauplan für 20 s bei 91 BPM (120 Sechzehntel, ein Sechzehntel = 0,165 s). Inhal
 - Schlusskarte zu kurz → kein Luxus. Mindestens drei Sekunden stehen lassen.
 - Schrift zu groß → wirkt wie Discounter. Markenname höchstens 4 % der Bildhöhe.
 - Mehr als vier Weißblitze in zwei Sekunden → Flimmergefahr. Höchstens drei Wechsel je Sekunde.
+- Motor aus Code (BernsteinLaufsteg, Welle D): Ein Sechzehntel Schwarz zwischen dunklen Bildern zählt die Schnittmessung nicht → Nachbarbilder mit klarer heller Fläche (Bokeh, Mond, Licht im Korridor) bauen, Produkt- und Modebilder drei bis fünf Sechzehntel, sonst steigt der Median über 0,65.
+- Silhouette im Regen ohne Gesichtszüge, nur Fläche und Lichtsaum; Schlusskarte im Hochformat bei 78 % der Höhe (die unteren 15 % gehören den Knöpfen) mit langsamem Push-in.
+- Bild 0 ist das Flüssigkeits-Makro (Titelbild), das Schwarz der Vorlage entfällt im Motor.

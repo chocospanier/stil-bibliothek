@@ -31,12 +31,38 @@ ton: Eine laute Musikwand bei 110 BPM ohne jede Pause, Lautheitsspanne unter 1 L
 braucht: [footage-ort, fotos-figur]
 motor_aufwand: mittel
 einsatz: [trailer, hook, intro, uebergang]
+zweck: [event-teaser, marke-image]
+branchen_passt: [sport, tourismus]
+branchen_nie: [handwerk, lebensmittel-feinkost, gastro, gesundheit, bildung, immobilien, finanzen, kinder-familie]
 abnahme:
   shot_median_s: [0.17, 0.25]
   schnitte_pro_s: [2.6, 3.9]
   helligkeit: [0.30, 0.44]
   farbigkeit: [0.06, 0.11]
   lufs: [-15, -13]
+# Würfel-Felder (Etappe 0 Bauplan Würfelstile, 31.10.2026; karten_wuerfelfelder.py, Familien-Standard)
+creator: eingeschraenkt
+creator_ohne: [split-screen]
+spielraum:
+  palette: akzent
+  schrift: klasse
+  blitzbild_bilder: [2, 3]
+  stottern_wiederholungen: [2, 2]
+  push_in_prozent: [3, 8]
+  wackeln_faktor: [0.4, 1.0]
+  korn: [0.05, 0.08]
+  vignette: [0.3, 0.5]
+  beat_versatz_16tel: [0, 1]
+  textgroesse_prozent: [-10, 10]
+  textlage: regel
+  musik: bausteine
+palettenrolle:
+  grund: grund
+  text: tiefe
+  akzent: rot
+  dunkel: tiefe
+  hell: grund
+  licht: grund
 quelle: Eigene Analyse einer öffentlichen Vorschau; nur der Look ist beschrieben, keine Motive, Texte oder Marken übernommen.
 ---
 
@@ -133,3 +159,4 @@ Bauplan für 17,5 s bei 110 BPM (Sechzehntel = 0,136 s, acht Takte, 128 Sechzehn
 - Flackern ohne Haltepunkte über drei Sekunden ist eine Epilepsie-Gefahr und ermüdet → höchstens sechs Flackerbilder am Stück, dann Halt.
 - Musik mit Pausen oder Drops → bricht die Wand. Durchgehend laut, Spannung nur über den Filter.
 - Weiß als #FFFFFF → kalt und digital. Leicht warmes Schnee-Weiß.
+- Motor (Code-Ersatz): Bei drei bis vier Schnitten je Sekunde müssen alle Bilder in einem Helligkeitsband liegen; ein einzelnes Hochweiß zwischen dunklen Bildern zählt doppelt in der Blitzregel (hinein und heraus).

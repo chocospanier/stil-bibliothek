@@ -32,12 +32,37 @@ ton: Ruhiger, groovender Jazz- oder Spionage-Ton um 115 BPM, gleichmäßig (Laut
 braucht: [illustrationen, nur-typo]
 motor_aufwand: mittel
 einsatz: [intro, trailer, ganzes-kurzvideo, musikvideo]
+zweck: [event-teaser, zitat, geschichte]
+branchen_passt: [musik-kultur]
+branchen_nie: [gesundheit, sport]
 abnahme:
   shot_median_s: [0.85, 1.3]
   schnitte_pro_s: [0.45, 0.7]
   helligkeit: [0.12, 0.22]
   farbigkeit: [0.12, 0.20]
   lufs: [-15, -13]
+# Würfel-Felder (Etappe 0 Bauplan Würfelstile, 31.10.2026; karten_wuerfelfelder.py, Familien-Standard)
+creator: ja
+spielraum:
+  palette: nachbarn
+  schrift: klasse
+  blitzbild_bilder: [2, 4]
+  stottern_wiederholungen: [2, 3]
+  push_in_prozent: [2, 5]
+  wackeln_faktor: [0.3, 0.7]
+  korn: [0.045, 0.075]
+  vignette: [0.3, 0.5]
+  beat_versatz_16tel: [0, 1]
+  textgroesse_prozent: [-10, 10]
+  textlage: regel
+  musik: bausteine
+palettenrolle:
+  grund: nachtblau
+  text: creme
+  akzent: orange
+  dunkel: schwarz
+  hell: creme
+  licht: creme
 quelle: Eigene Analyse einer öffentlichen Vorschau; nur der Look ist beschrieben, keine Motive, Texte oder Marken übernommen.
 ---
 
@@ -136,3 +161,21 @@ Bauplan für 16 s bei 115 BPM (123 Sechzehntel zu je 0,13 s). Kopfblock = gemess
 - Schraffur oder Muster auf Mundhöhe neben einem Profil liest sich als Rufen oder Sprechen → Muster nur im leeren Grund über oder hinter dem Kopf.
 - Die Bewegung der Karte (1 bis 2 % der Breite je Sekunde) reicht einer automatischen Standbild-Prüfung oft nicht → Haltebilder über 1,5 s zusätzlich heranfahren (mindestens 2 % je Sekunde) oder die Lettern je Schlag weiter tanzen lassen.
 - Weiße Fehlstellen sieht man auf Creme nicht → auf hellen Grundfarben zusätzlich dunkles Druckkorn (multipliziert, rund 35 %).
+- Motorbau (31.10.): Hook-Streuung über das ganze Bild legt Lettern auf die Kopfkante → Schädel als Ellipse sperren: Lettern ganz darin oder ganz daneben über den Schultern.
+- Motorbau (31.10.): Streufeld nur über dem Kopf ist für zehn und mehr Lettern zu eng, der Wortfilter weicht aus und es entstehen Kürzel (LDS) → großes Feld mit Kopfsperre statt kleinem Feld.
+- Motorbau (31.10.): Wechselndes dunkles Korn auf Creme flimmert wie Schnee → Fleckstruktur auf hellen Gründen mit festem Seed, Papierkorn schwach (0,18).
+- Motorbau (31.10.): Dunkles Korn des Druckbilds greift nur auf vollflächig hellem Grund; Creme-Keile auf dunklem Grund bleiben glatt → helle Formen bekommen eine eigene, auf die Form beschnittene Fleckstruktur.
+- Motorbau (31.10.): Verläufe (Lichtstreif, Schein) im Kantenfilter des Druckbilds geben dunkle Randstreifen → Streif und Schein in eine ungefilterte Ebene darüber.
+- Motorbau (31.10.): Feine Strichelringe unter dem Kantenfilter zerfallen zu Pseudo-Schrift → Striche mindestens 2 % der Breite lang.
+- Motorbau (31.10.): Druckbild als Dauerfläche bricht die Creator-Prüfung (Druckraster 100 %) → im Creator-Modus Grund plus Korn und feste Flecken statt Druckraster.
+- Motorbau (31.10.): Kleine Silhouetten-PNGs zeigen auf dem 200-%-Kopf (Orange) Treppenkanten → Material mindestens 2000 px hoch.
+- Motorbau (31.10.): Lange einzeilige Titel (zwölf Lettern) werden vom Breiten-Wächter auf rund 9 % verkleinert → lieber zweizeilig teilen.
+- Motorbau (01.11.): Der Auftakt zeigt nur Tiefblau und ein Profil, Bild 0 hat keinen Titel → den geordneten Titel schon im Auftakt stehen lassen; im Hook fällt er auseinander und ordnet sich neu.
+- Motorbau (01.11.): Der Wortfilter prüft nur waagerecht, untereinander gestreute Lettern lesen sich senkrecht als Wort (DIE über dem Kopf) → in derselben Spalte nie zwei Lettern dicht untereinander, dazu Mindestabstand rund 1,25 Lettergrößen in jede Richtung.
+- Motorbau (01.11.): Ein box-shadow als Glow fehlt unter den durchsichtigen Enden des Lichtstreifs und gibt dunkle Kappen und Randstreifen → Glow als weich gezeichnete Kopie unter dem Streif, Schein als Ellipse, die zu allen Seiten ausläuft.
+- Motorbau (01.11.): Eine Spirale mit 14 Grad je Sekunde liest sich als Standbild → rund 30 Grad je Sekunde drehen und 10 % heranfahren.
+- Ton (05.11.): Der Motor ist stumm und nimmt genau eine Spur (`ton`) → Musik, Stimme und Schlag vorher zu einer Spur mischen (Muster: Projekt 2026-11-05_kalte-spur, `projekte/ton_mischen.py`), Zeiten der Gedichtzeilen aus dem Text-Protokoll eines stummen Probe-Renders lesen und die Stimme mit `ab` dahinter legen.
+- Ton (05.11.): Die Gedichtzeilen erscheinen im Abstand von rund 0,5 s und stehen nur bis zum Ende des Spiegel-Slots (bei 17,4 s Länge 6,97 bis 9,80 s); drei Zeilen mit zwölf Wörtern spricht keine Stimme in dieser Zeit → mit Stimme höchstens zwei kurze Zeilen (rund sechs Wörter).
+- Ton (05.11.): `ersterSchlag` über 0 lässt Bild 0 schwarz (die Folge beginnt erst am ersten Schlag; Vorprüfung rot „Bild 0 ist schwarz“) → `ersterSchlag: 0` setzen, wenn der erste Schlag der Musik unter einem Bild liegt.
+- Ton (05.11.): takt.py mit Band voll traf das Raster nur zu 8 % (112 statt 115 BPM) → `--band hoch` (115,1 BPM, 49 %).
+- Ton (05.11.): Mehrwortige Stimm-Tags (`[low, calm, slightly mysterious]`) landen in stimme.py als Wörter in den Wortzeiten → ein Wort je Tag (`[calm]`). Ein Titel wie „Fährte“ hörte Whisper als „Pferde“ (Treffer unter 0,86) → Titelwörter wählen, die eindeutig klingen. Gleiche Zeilen-Kennung mit neuem Text nimmt ohne `--neu` stumm die alte Aufnahme.

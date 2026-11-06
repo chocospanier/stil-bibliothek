@@ -31,12 +31,38 @@ ton: Druckvolles, bassschweres Instrumental um 148 BPM mit großer Dynamik (5,5 
 braucht: [fotos-figur, produkt, nur-typo]
 motor_aufwand: mittel
 einsatz: [produkt, trailer, hook, ganzes-kurzvideo]
+zweck: [produktwerbung, angebot, marke-image, mode-lookbook]
+branchen_passt: [mode-beauty, sport]
+branchen_nie: []
 abnahme:
   shot_median_s: [0.46, 0.70]
   schnitte_pro_s: [1.2, 1.8]
   helligkeit: [0.44, 0.60]
   farbigkeit: [0.23, 0.35]
   lufs: [-17.5, -15.5]
+# Würfel-Felder (Etappe 0 Bauplan Würfelstile, 31.10.2026; karten_wuerfelfelder.py, Familien-Standard)
+creator: nein
+creator_grund: "Freisteller mit weißem Stickerrand ist Kern-Merkmal"
+spielraum:
+  palette: nachbarn
+  schrift: klasse
+  blitzbild_bilder: [2, 4]
+  stottern_wiederholungen: [2, 3]
+  push_in_prozent: [3, 8]
+  wackeln_faktor: [0.4, 1.0]
+  korn: [0.045, 0.075]
+  vignette: [0.3, 0.5]
+  beat_versatz_16tel: [0, 1]
+  textgroesse_prozent: [-10, 10]
+  textlage: regel
+  musik: bausteine
+palettenrolle:
+  grund: creme
+  text: tusche
+  akzent: signalrot
+  dunkel: tusche
+  hell: creme
+  licht: creme
 quelle: Eigene Analyse einer öffentlichen Vorschau; nur der Look ist beschrieben, keine Motive, Texte oder Marken übernommen.
 ---
 
@@ -132,3 +158,5 @@ Bauplan für 15 s bei 148 BPM (Sechzehntel 0,101 s, 148 Sechzehntel). Raster am 
 - Stickerrand an jedem Foto → wirkt wie Bastelarbeit. Nur an Freistellern auf Farbflächen.
 - Zu viele Farben → Kampagne zerfällt. Je Bild eine Fläche, im ganzen Stück höchstens vier.
 - Echte Markenlogos auf Produkten → Rechtsrisiko. Logos entfernen oder eigene Produkte zeigen.
+- Code-Motor (Welle D): das Fischauge als Studio mit gebogenen Kanten zeichnen, nie konzentrische Ringe um eine Figur mit erhobenen Armen; das liest sich als Zielscheibe und „Hände hoch“.
+- Code-Motor: das Produkt im Slogan-Bild klein in eine Ecke setzen (24 % der Höhe), es verdeckt sonst die Wörter des Slogans.

@@ -30,12 +30,37 @@ ton: Sehr laut und übersteuert gemastert (−9,2 LUFS, True Peak über 0 dB), B
 braucht: [fotos-figur, footage-ort, produkt]
 motor_aufwand: klein
 einsatz: [trailer, hook, produkt, musikvideo]
+zweck: [event-teaser, produktwerbung, musik-lyric]
+branchen_passt: [mode-beauty, musik-kultur, sport]
+branchen_nie: [gesundheit, immobilien, finanzen]
 abnahme:
   shot_median_s: [0.26, 0.38]
   schnitte_pro_s: [2.2, 3.2]
   helligkeit: [0.17, 0.25]
   farbigkeit: [0.04, 0.08]
   lufs: [-10.2, -8.2]
+# Würfel-Felder (Etappe 0 Bauplan Würfelstile, 31.10.2026; karten_wuerfelfelder.py, Familien-Standard)
+creator: ja
+spielraum:
+  palette: akzent
+  schrift: klasse
+  blitzbild_bilder: [2, 3]
+  stottern_wiederholungen: [2, 2]
+  push_in_prozent: [3, 8]
+  wackeln_faktor: [0.4, 1.0]
+  korn: [0.05, 0.08]
+  vignette: [0.3, 0.5]
+  beat_versatz_16tel: [0, 1]
+  textgroesse_prozent: [-10, 10]
+  textlage: regel
+  musik: bausteine
+palettenrolle:
+  grund: grund
+  text: licht
+  akzent: rot
+  dunkel: grund
+  hell: licht
+  licht: licht
 quelle: Eigene Analyse einer öffentlichen Vorschau; nur der Look ist beschrieben, keine Motive, Texte oder Marken übernommen.
 ---
 
@@ -129,3 +154,4 @@ Bauplan für 18 s, gedacht in Frames bei 25 fps, weil der Schnitt Akzenten folgt
 - Schnitte im starren Raster → wirkt mechanisch. Gruppen schneller Bilder und kurze Halte mischen.
 - Übersteuertes Mastering (True Peak über 0 dB) → verzerrt nach Plattform-Umrechnung. Laut, aber mit Limiter bei −1 dB.
 - Flackergruppen über eine Sekunde mit starken Hell-Dunkel-Sprüngen sind eine Epilepsie-Gefahr → höchstens fünf Bilder unter vier Frames am Stück.
+- Motor (Code-Ersatz): Endet Haar oder Mütze knapp vor der Bildkante, meldet die Vorprüfung einen dunklen Randstreifen → Kopf mittig halten oder klar über die Kante ziehen.

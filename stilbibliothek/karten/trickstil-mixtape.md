@@ -32,12 +32,38 @@ ton: Sehr laut gemischter Song (−8,9 LUFS, Spitzen über 0 dBFS) um 127 BPM; d
 braucht: [illustrationen, 3d]
 motor_aufwand: mittel
 einsatz: [musikvideo, trailer, hook, ganzes-kurzvideo]
+zweck: [musik-lyric, kinder, event-teaser]
+branchen_passt: [kinder-familie, musik-kultur]
+branchen_nie: [werkstatt-auto, handwerk, lebensmittel-feinkost, gesundheit, immobilien, finanzen]
 abnahme:
   shot_median_s: [0.32, 0.48]
   schnitte_pro_s: [2.1, 3.1]
   helligkeit: [0.27, 0.41]
   farbigkeit: [0.16, 0.24]
   lufs: [-9.9, -7.9]
+# Würfel-Felder (Etappe 0 Bauplan Würfelstile, 31.10.2026; karten_wuerfelfelder.py, Familien-Standard)
+creator: eingeschraenkt
+creator_ohne: [bild-im-bild, text-hinter-figur]
+spielraum:
+  palette: nachbarn
+  schrift: klasse
+  blitzbild_bilder: [2, 4]
+  stottern_wiederholungen: [2, 3]
+  push_in_prozent: [3, 8]
+  wackeln_faktor: [0.4, 1.0]
+  korn: [0.0, 0.04]
+  vignette: [0.0, 0.3]
+  beat_versatz_16tel: [0, 1]
+  textgroesse_prozent: [-10, 10]
+  textlage: regel
+  musik: bausteine
+palettenrolle:
+  grund: grund_dunkel
+  text: gold
+  akzent: magenta
+  dunkel: grund_dunkel
+  hell: haut_licht
+  licht: haut_licht
 quelle: Eigene Analyse einer öffentlichen Vorschau; nur der Look ist beschrieben, keine Motive, Texte oder Marken übernommen.
 ---
 
@@ -133,3 +159,10 @@ Bauplan für 18 s bei 127 BPM (153 Sechzehntel zu 0,118 s). Weil der Schnitt den
 - Schnitte aufs starre Raster zwingen → wirkt mechanisch; hier entscheiden Worte.
 - Lautheit der Vorlage übernehmen → Master auf −11 bis −9 LUFS und höchstens −1 dBTP.
 - Zu viele Wörter → Karaoke statt Akzent; ein Wort alle ein bis zwei Sekunden.
+- Motorbau (04.11.): Eine Weißblende, die in Schritten von 0,3 zurückgeht, zählt als drei harte Wechsel und bricht mit dem nächsten Schnitt die Blitzregel → in Schritten von 0,15 zurückgehen.
+- Motorbau (04.11.): Ein großes Gesicht, das um die Mitte der Figur gedreht wird, schiebt die glühenden Augen neben den Kopf → Drehpunkt auf Augenhöhe, Leuchten aus denselben Koordinaten wie die Pupillen.
+- Motorbau (04.11.): Farbflecken im Knete-Grund neben dem Kopf lesen sich als Ohren → als Hügel an den Boden legen.
+- Motorbau (04.11.): Eine um 70° gedrehte Flugfigur schiebt den Kopf aus dem Bild → der Kopf führt bei rund 75 % der Bildbreite, angeschnitten werden die Füße.
+- Motorbau (04.11.): Die Faust als vergrößerte Ganzfigur ist ein unlesbares Rohr → eigene Großaufnahme der Faust (45 % der Bildhöhe), Lichtstern auf den Knöcheln, Haar angeschnitten als Wiedererkennung.
+- Motorbau (04.11.): Zwei Trickstile mit ähnlich dunklem Grund hintereinander zählt die Schnittmessung kaum (Wert unter 10) → helle und dunkle Stile abwechseln, aber höchstens drei harte Wechsel je Sekunde; nach jeder Umstellung die Blitzregel am Render messen.
+- Würfel (04.11.): Im Creator-Modus wird das Fenster zum Diagonal-Split; mit anderen Bildern als im Fenster ändert sich die Helligkeit, und mit den folgenden Schnitten entstehen vier harte Wechsel in einer Sekunde → der Split zeigt dieselben zwei Bilder wie das Fenster (Kraftpose, Kampf), Creator-Züge mit Blitzmessung prüfen.

@@ -31,12 +31,37 @@ ton: Sehr laut gemasterter elektronischer Beat um 128 BPM, ohne Stimme; in der T
 braucht: [produkt, 3d, nur-typo]
 motor_aufwand: mittel
 einsatz: [hook, intro, produkt, trailer]
+zweck: [produktwerbung, marke-image, event-teaser]
+branchen_passt: [werkstatt-auto, technik]
+branchen_nie: [lebensmittel-feinkost, gastro, gesundheit, kinder-familie]
 abnahme:
   shot_median_s: [0.23, 0.35]
   schnitte_pro_s: [1.5, 2.3]
   helligkeit: [0.06, 0.10]
   farbigkeit: [0.06, 0.11]
   lufs: [-9, -7]
+# Würfel-Felder (Etappe 0 Bauplan Würfelstile, 31.10.2026; karten_wuerfelfelder.py, Familien-Standard)
+creator: ja
+spielraum:
+  palette: nachbarn
+  schrift: klasse
+  blitzbild_bilder: [2, 4]
+  stottern_wiederholungen: [2, 3]
+  push_in_prozent: [3, 8]
+  wackeln_faktor: [0.4, 1.0]
+  korn: [0.045, 0.075]
+  vignette: [0.3, 0.5]
+  beat_versatz_16tel: [0, 1]
+  textgroesse_prozent: [-10, 10]
+  textlage: regel
+  musik: bausteine
+palettenrolle:
+  grund: grund
+  text: licht
+  akzent: lack
+  dunkel: grund
+  hell: licht
+  licht: licht
 quelle: Eigene Analyse einer öffentlichen Vorschau; nur der Look ist beschrieben, keine Motive, Texte oder Marken übernommen.
 ---
 
@@ -134,3 +159,8 @@ Bauplan für 15 s bei 128 BPM (128 Sechzehntel, acht Takte). Musik-Raster immer 
 - Lichtkante als harter Balken wirkt wie ein Ladebalken → Kanten weich, nur innerhalb der Karosserie-Maske sichtbar.
 - Zu viele Totale verwandeln es in einen Autohaus-Clip → höchstens zwei Bilder, die das ganze Fahrzeug zeigen.
 - Atempause ohne Bewegung wirkt wie ein Fehler → Titel blendet ein, und ein Hauch Rauch oder Korn bewegt sich.
+- Code-Ersatz im Dunkeln: Schnitte zwischen zwei dunklen Makros erkennt die Schnittmessung nicht (scdet braucht rund 10 % mittlere Bilddifferenz) → Einstellungen im Stakkato abwechselnd hell und dunkel belichten und helle Flächen nicht an dieselbe Stelle legen.
+- Lack per Helligkeitsfilter aufhellen kippt Rot ins Neon-Rosa → helle Einstellungen im Schatten-Lack malen und verdoppeln, Lichter in Weiß dazugeben.
+- Zwei getrennte Scheinwerfer über einem Grill lesen sich frontal als Gesicht → ein durchgehender Lichtbalken, kein Grill-Mund, keine Spiegelflecken darunter.
+- Ein Lichtstreif, der in einer kurzen Einstellung die ganze Flanke überquert, macht Bilddifferenz im Shot und schluckt den nächsten Schnitt → Fahrtgeschwindigkeit fest (24 Bilder je Fahrt), kurze Shots zeigen nur ein Stück.
+- Hell-Dunkel-Wechsel im Stakkato reißen die Blitz-Regel (höchstens drei harte Wechsel je Sekunde) → die Mitte jeder Dreierkette halb belichten (Motor LichtkanteStudio, 31.10.).

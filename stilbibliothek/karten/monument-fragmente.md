@@ -32,12 +32,38 @@ ton: Gleichmäßig gemischter Beat um 94 BPM (−14 LUFS, 2,6 LU Spanne), harter
 braucht: [3d, nur-typo]
 motor_aufwand: gross
 einsatz: [trailer, intro, produkt, ganzes-kurzvideo]
+zweck: [marke-image, event-teaser, produktwerbung]
+branchen_passt: [immobilien, musik-kultur, tourismus]
+branchen_nie: [werkstatt-auto, lebensmittel-feinkost, gastro, sport, kinder-familie]
 abnahme:
   shot_median_s: [0.14, 0.21]
   schnitte_pro_s: [2.7, 4.1]
   helligkeit: [0.37, 0.55]
   farbigkeit: [0.15, 0.23]
   lufs: [-15, -13]
+# Würfel-Felder (Etappe 0 Bauplan Würfelstile, 31.10.2026; karten_wuerfelfelder.py, Familien-Standard)
+creator: eingeschraenkt
+creator_ohne: [testbild]
+spielraum:
+  palette: nachbarn
+  schrift: klasse
+  blitzbild_bilder: [2, 4]
+  stottern_wiederholungen: [2, 3]
+  push_in_prozent: [3, 8]
+  wackeln_faktor: [0.4, 1.0]
+  korn: [0.0, 0.04]
+  vignette: [0.3, 0.5]
+  beat_versatz_16tel: [0, 1]
+  textgroesse_prozent: [-10, 10]
+  textlage: regel
+  musik: bausteine
+palettenrolle:
+  grund: creme
+  text: pflaume_tief
+  akzent: terrakotta
+  dunkel: pflaume_tief
+  hell: creme
+  licht: leuchtfuge
 quelle: Eigene Analyse einer öffentlichen Vorschau; nur der Look ist beschrieben, keine Motive, Texte oder Marken übernommen.
 ---
 
@@ -130,3 +156,7 @@ Bauplan für 20 s bei 94 BPM (125 Sechzehntel zu 0,16 s). Inhalt austauschbar, R
 - Zu viele Fugen → wird Neon-Kitsch; eine Fuge je Fragment höchstens.
 - Testbild mit Fremd-Logos oder Senderkennungen → nur neutrale Balken mit eigener Zahl.
 - Jedes Bild einzeln rendern dauert → je Fragment eine Szene, mehrere Kameras, einmal rendern, Ergebnisse cachen.
+- Schwellwert über Steinkorn → jedes Kornpixel kippt schwarz oder weiß und flackert als Schnee; im Schwarzweiß-Block das Korn weglassen und vor dem Schwellwert weichzeichnen.
+- Helligkeitssprünge zwischen Sechzehntel-Schnitten (heller Kopfblock auf viel Creme neben dunklen Säulen) → bis zu vier harte Wechsel je Sekunde; jede Einstellung um Helligkeit 0,45 bis 0,6 halten, den hellen Kleinblock selten setzen.
+- Zweiton-Silhouette in Schwarz auf Weiß → zu dunkel gegen die grauen Nachbarn, Blitzregel bricht; dunklen Ton als Dunkelgrau (um 0,34) setzen.
+- Das Schnittmuster hat nur knapp über die Hälfte Ein-Sechzehntel, unter Würfelpaletten kippt der Median auf 0,30 → drei Sechzehntel als zwei plus eins schneiden, mit einer anderen Ansicht desselben Fragments (Motor MonumentFragmente, 31.10.).

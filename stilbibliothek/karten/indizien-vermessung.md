@@ -31,12 +31,38 @@ ton: Gleichmäßige dunkle Spannungsfläche um 102 BPM, ab 10 s ein Anschwellen 
 braucht: [footage-ort, produkt, nur-typo]
 motor_aufwand: klein
 einsatz: [trailer, intro, ganzes-kurzvideo]
+zweck: [geschichte, produktwerbung, event-teaser, wissen]
+branchen_passt: [technik, bildung]
+branchen_nie: [sport, kinder-familie]
 abnahme:
   shot_median_s: [1.2, 1.9]
   schnitte_pro_s: [0.8, 1.2]
   helligkeit: [0.14, 0.22]
   farbigkeit: [0.04, 0.08]
   lufs: [-15.2, -13.2]
+# Würfel-Felder (Etappe 0 Bauplan Würfelstile, 31.10.2026; karten_wuerfelfelder.py, Familien-Standard)
+creator: eingeschraenkt
+creator_ohne: [bild-im-bild, rahmen-rund, hud, tracking-etiketten]
+spielraum:
+  palette: akzent
+  schrift: klasse
+  blitzbild_bilder: [2, 4]
+  stottern_wiederholungen: [2, 3]
+  push_in_prozent: [2, 5]
+  wackeln_faktor: [0.3, 0.7]
+  korn: [0.05, 0.08]
+  vignette: [0.3, 0.5]
+  beat_versatz_16tel: [0, 1]
+  textgroesse_prozent: [-10, 10]
+  textlage: regel
+  musik: bausteine
+palettenrolle:
+  grund: grund
+  text: hell
+  akzent: gold
+  dunkel: grund
+  hell: hell
+  licht: hell
 quelle: Eigene Analyse einer öffentlichen Vorschau; nur der Look ist beschrieben, keine Motive, Texte oder Marken übernommen.
 ---
 
@@ -135,3 +161,6 @@ Bauplan für 20 s; gedacht in Sekunden, weil der Schnitt dem Satz folgt (Raster 
 - Das Etikett am Fadenkreuz lief am rechten Rand aus dem Bild. Etiketten, die rechts nicht passen, links vom Punkt setzen.
 - Inhalts-Etiketten (Preise, Daten, Streitfragen) am Handy lesbar: 30 bis 34 px in einem dunklen Kasten mit feinem Rand; die x/y-Etiketten bleiben Textur.
 - Warme Reste neben dem Gold (Blatt, Moos) konkurrieren mit dem einen Gold. Gold nur in einer Ellipse um das Objekt zulassen, außerhalb fast farblos.
+- Koordinaten-Etiketten auf derselben Höhe überdrucken sich → Etiketten gestaffelt (abwechselnd über und unter dem Punkt) auf einer kleinen dunklen Platte statt mit Schattenhof; Inhalts-Etikett im Kasten mit feinem Rand.
+- Die Karte verlangt 8 bis 12 Etiketten je Bild; mit nur gesetzten Punkten wirkt das Netz leer → Raster mit Sperrflächen füllt auf (Motor IndizienVermessung, rasterPunkte).
+- Der Höhepunkt braucht das Objekt am Ziel (Schlüssel im Schloss), nicht nur den Titel.

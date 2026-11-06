@@ -32,12 +32,38 @@ ton: Vier Sekunden dünner, leiser Aufbau ohne Bass, dann ab 4,5 s ein gleichmä
 braucht: [fotos-figur, nur-typo]
 motor_aufwand: klein
 einsatz: [portrait, hook, musikvideo, intro]
+zweck: [musik-lyric, person-vorstellen]
+branchen_passt: [musik-kultur]
+branchen_nie: [werkstatt-auto, handwerk, lebensmittel-feinkost, gastro, gesundheit, immobilien, finanzen, kinder-familie]
 abnahme:
   shot_median_s: [0.32, 0.48]
   schnitte_pro_s: [1.4, 2.1]
   helligkeit: [0.19, 0.28]
   farbigkeit: [0.19, 0.29]
   lufs: [-15.1, -13.1]
+# Würfel-Felder (Etappe 0 Bauplan Würfelstile, 31.10.2026; karten_wuerfelfelder.py, Familien-Standard)
+creator: eingeschraenkt
+creator_ohne: [text-hinter-figur, hud, scan-band]
+spielraum:
+  palette: nachbarn
+  schrift: klasse
+  blitzbild_bilder: [2, 4]
+  stottern_wiederholungen: [2, 3]
+  push_in_prozent: [3, 8]
+  wackeln_faktor: [0.4, 1.0]
+  korn: [0.045, 0.075]
+  vignette: [0.3, 0.5]
+  beat_versatz_16tel: [0, 1]
+  textgroesse_prozent: [-10, 10]
+  textlage: regel
+  musik: bausteine
+palettenrolle:
+  grund: grund
+  text: wort
+  akzent: waerme
+  dunkel: nacht
+  hell: daemmerung
+  licht: daemmerung
 quelle: Eigene Analyse einer öffentlichen Vorschau; nur der Look ist beschrieben, keine Motive, Texte oder Marken übernommen.
 ---
 
@@ -133,3 +159,6 @@ Bauplan für 16 s bei 121 BPM (Sechzehntel = 0,124 s; 129 Sechzehntel, acht Takt
 - Wärmebild-Kipp länger als 0,5 s → wird zum eigenen Look. Kurz halten.
 - Drop zu früh → kein Aufbau. Mindestens drei Sekunden Halt ohne Overlay.
 - Scan-Streifen über die ganze Höhe → Negativbild statt Scan. Höchstens ein Drittel der Höhe.
+- Motor aus Code (ErkennungPortraet, Welle D): Zustände eines flachen Code-Bildes zählt die Schnittmessung kaum (Wortpaar, Daten, Ausschnitt) → der Wärmebild-Kipp muss die Helligkeit kippen (Umgebung dunkel, Figur heiß), die Scan-Streifen hell gegen das Abendblau, und der Zyklus braucht die rund 1,8 s aus dem Text der Karte (16 Sechzehntel), sonst fällt die Schnittrate unter 1,4.
+- Wortflanke im Hochformat: Wörter symmetrisch zur Kopfmitte, jedes endet 13 % der Breite vor der Mitte, Rand 40 px auch nach dem Sprung näher; sonst verschwindet ein kurzes Wort fast ganz hinter dem Kopf oder läuft aus dem Bild.
+- Im Creator-Modus ersetzt ein Sprung näher mit kurzem Wärmebild den Scan-Streifen und ein Sprung näher die Daten; ein reiner Ausschnittsprung zählt die Schnittmessung im flachen Bild nicht. Negativ und Wärmebild färben das Gesicht mit (Kern der Karte), mit echten Figuren entscheidet der Mensch.

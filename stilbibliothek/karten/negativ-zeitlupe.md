@@ -30,12 +30,36 @@ ton: Leise abgemischt (unter −19 LUFS) mit großer Dynamik, tiefe Einschläge 
 braucht: [footage-ort, fotos-figur]
 motor_aufwand: mittel
 einsatz: [trailer, ganzes-kurzvideo, portrait]
+zweck: [event-teaser, person-vorstellen, marke-image]
+branchen_passt: [sport]
+branchen_nie: [lebensmittel-feinkost, gastro, immobilien, finanzen, kinder-familie]
 abnahme:
   shot_median_s: [0.16, 0.25]
   schnitte_pro_s: [3.4, 5.0]
   helligkeit: [0.25, 0.36]
   farbigkeit: [0.00, 0.02]
   lufs: [-20.6, -18.6]
+# Würfel-Felder (Etappe 0 Bauplan Würfelstile, 31.10.2026; karten_wuerfelfelder.py, Familien-Standard)
+creator: ja
+spielraum:
+  palette: akzent
+  schrift: klasse
+  blitzbild_bilder: [2, 4]
+  stottern_wiederholungen: [2, 3]
+  push_in_prozent: [3, 8]
+  wackeln_faktor: [0.4, 1.0]
+  korn: [0.05, 0.08]
+  vignette: [0.3, 0.5]
+  beat_versatz_16tel: [0, 1]
+  textgroesse_prozent: [-10, 10]
+  textlage: regel
+  musik: bausteine
+palettenrolle:
+  grund: grund
+  text: ueberstrahlt
+  dunkel: grund
+  hell: ueberstrahlt
+  licht: licht
 quelle: Eigene Analyse einer öffentlichen Vorschau; nur der Look ist beschrieben, keine Motive, Texte oder Marken übernommen.
 ---
 
@@ -129,3 +153,5 @@ Bauplan für 18 s bei 133 BPM (Sechzehntel = 0,113 s; 160 Sechzehntel, zehn Takt
 - Zeitlupe aus 25-fps-Material per Zwischenbildern → wabert. Echte Hochgeschwindigkeit oder ein Standbild mit Partikeln und Push-in.
 - Stotter-Sequenz mit unterschiedlichen Bildausschnitten → wirkt wie normale Schnitte. Derselbe Ausschnitt, nur die Zeit springt.
 - Das Original ist leise (−19,6 LUFS) und lebt von Sprüngen. Wer für Plattformen auf −14 LUFS hebt, muss die Dynamik behalten und darf nicht komprimieren, bis alles gleich laut ist.
+- Motor (Code-Ersatz): Stotter-Zustände auf dem dunklen Duell erkennt die Schnittmessung nicht (zu wenig Bildänderung bei festem Ausschnitt); die Schnittdichte muss aus der rohen Phase und den Sprungschnitten kommen. Sprungschnitte im Konfetti brauchen Ausschnitt und Lage in drei Stufen (±6 % Lage, 16 % Größe), ±4 % reicht nicht.
+- Motor: Negativ nur auf Szenen ohne Gesicht (Kegel, Sack, Gitter); Gesichter nie umkehren.

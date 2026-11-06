@@ -32,12 +32,38 @@ ton: Zweieinhalb Sekunden dünnes Intro ohne Bass, dann ein gleichmäßiger Beat
 braucht: [fotos-figur, nur-typo, illustrationen]
 motor_aufwand: mittel
 einsatz: [musikvideo, portrait, hook]
+zweck: [musik-lyric, mode-lookbook]
+branchen_passt: [mode-beauty, musik-kultur]
+branchen_nie: [werkstatt-auto, handwerk, technik, finanzen, sport]
 abnahme:
   shot_median_s: [0.08, 0.15]
   schnitte_pro_s: [2.3, 3.5]
   helligkeit: [0.55, 0.72]
   farbigkeit: [0.08, 0.14]
   lufs: [-15, -13]
+# Würfel-Felder (Etappe 0 Bauplan Würfelstile, 31.10.2026; karten_wuerfelfelder.py, Familien-Standard)
+creator: eingeschraenkt
+creator_ohne: [text-hinter-figur, halbton]
+spielraum:
+  palette: nachbarn
+  schrift: klasse
+  blitzbild_bilder: [2, 4]
+  stottern_wiederholungen: [2, 3]
+  push_in_prozent: [3, 8]
+  wackeln_faktor: [0.4, 1.0]
+  korn: [0.045, 0.075]
+  vignette: [0.3, 0.5]
+  beat_versatz_16tel: [0, 1]
+  textgroesse_prozent: [-10, 10]
+  textlage: regel
+  musik: bausteine
+palettenrolle:
+  grund: grund
+  text: tinte
+  akzent: stern
+  dunkel: tinte
+  hell: grund
+  licht: grund
 quelle: Eigene Analyse einer öffentlichen Vorschau; nur der Look ist beschrieben, keine Motive, Texte oder Marken übernommen.
 ---
 
@@ -133,3 +159,8 @@ Bauplan für 15 s bei 110 BPM (Sechzehntel = 0,136 s, Viertel = 0,545 s; 110 Sec
 - Wörter immer vor dem Motiv → flach. Mindestens jedes dritte Wort hinter Mund, Schmuck oder Figur.
 - Stroboskop länger als eine Sekunde ist eine Epilepsie-Gefahr → höchstens neun Bilder je Salve, maximal zwei Salven je 15 s.
 - Beauty-Makros mit harter Struktur und Korn → bricht die Weichheit. Glatt und hell halten.
+- Motor aus Code (TinteAufWeiss, Welle D): Salven aus Silhouette und tintenblauer Titelkarte im Zwei-Bild-Takt brechen die Blitzregel (gemessen bis 9 Wechsel je Sekunde) → Wechselbilder gleich hell bauen (Tierkopf links, ganze Figur rechts, je kleine Tintenfläche auf Weiß), dunkle Titelkarte höchstens einmal je Salve; Salve 2 im Motor ebenfalls Tierkopf und Figur statt Schmuck-Makro.
+- Roter Fünfzackstern hinter dunkler Figur liest sich politisch → vierzackiger Funkelstern aus Halbtonpunkten.
+- Tinte hinter tintenblauer Silhouette verschwindet → Zeile dort in Chrom; Kabel-Linie um das Schlusswort herumführen.
+- Fraktur fehlt im Schriftvorrat; der Motor nimmt Playfair Display kursiv für die Titelkarte.
+- Im Creator-Modus steht das Riesenwort ganz im Bild; angeschnittene Schrift meldet die Creator-Prüfung rot.

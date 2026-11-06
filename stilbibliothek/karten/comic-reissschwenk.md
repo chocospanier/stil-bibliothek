@@ -31,12 +31,38 @@ ton: "Stark komprimierter Song (−10,1 LUFS, Lautheitsspanne nur 1,3 LU), gemes
 braucht: [illustrationen, nur-typo]
 motor_aufwand: mittel
 einsatz: [musikvideo, intro, ganzes-kurzvideo, trailer]
+zweck: [musik-lyric, kinder, event-teaser]
+branchen_passt: [kinder-familie, musik-kultur]
+branchen_nie: [werkstatt-auto, handwerk, lebensmittel-feinkost, gesundheit, immobilien, finanzen]
 abnahme:
   shot_median_s: [1.2, 1.8]
   schnitte_pro_s: [0.3, 0.5]
   helligkeit: [0.43, 0.58]
   farbigkeit: [0.30, 0.45]
   lufs: [-11.1, -9.1]
+# Würfel-Felder (Etappe 0 Bauplan Würfelstile, 31.10.2026; karten_wuerfelfelder.py, Familien-Standard)
+creator: eingeschraenkt
+creator_ohne: [split-screen, comic-panel, halbton]
+spielraum:
+  palette: nachbarn
+  schrift: klasse
+  blitzbild_bilder: [2, 4]
+  stottern_wiederholungen: [2, 3]
+  push_in_prozent: [3, 8]
+  wackeln_faktor: [0.4, 1.0]
+  korn: [0.0, 0.04]
+  vignette: [0.0, 0.3]
+  beat_versatz_16tel: [0, 1]
+  textgroesse_prozent: [-10, 10]
+  textlage: regel
+  musik: bausteine
+palettenrolle:
+  grund: creme
+  text: tusche
+  akzent: gelb
+  dunkel: tusche
+  hell: creme
+  licht: creme
 quelle: Eigene Analyse einer öffentlichen Vorschau; nur der Look ist beschrieben, keine Motive, Texte oder Marken übernommen.
 ---
 
@@ -138,3 +164,8 @@ Bauplan für 19 s in Sekunden (der Stil schneidet nicht auf Sechzehntel, sondern
 - LTX 2.5 macht aus einer hellen Comic-Werkstatt eine dunkle, weich ausgeleuchtete Nachtszene (3D-Licht) → für diesen Stil nur Clips nehmen, die den flachen Strich halten (Bildschirmwand mit Flackern ging), sonst das Standbild mit Drift.
 - Erlebt in der Prüfrunde: CSS `clipPath: circle()` für die Kreismaske zeichnete in Remotion zwei Doppelbilder lang einen Ring auf dem Gesicht, dann einen eckigen Kasten und eine graue Fläche über die volle Breite → Maske als `mask-image: radial-gradient(...)`, Kreis erst ab 300 px Radius, Strich wächst mit (höchstens 29 px), jedes Bild des Übergangs einzeln ansehen.
 - Schlagbild als Standbild (Finger liegt schon auf dem Knopf) trägt nicht → Hand und Schalter getrennt aus dem Bildmodell (Hand auf Weiß per Flutfüllung freigestellt), Hand fährt in vier Bildern an, drückt auf dem Klick-Bild, zieht zurück, damit der umgeklappte Hebel zu sehen ist; Etikett, Hebel und Klick-Ton auf dasselbe Bild.
+- Erlebt beim Motorbau (31.10.2026): Bei doppelten Bildern (30 fps) misst die Schnitterkennung (scdet, Wert = kleiner von Bilddifferenz und Sprung der Bilddifferenz) jedes Wischerbild als Schnitt, weil davor immer ein Nullbild steht → Ausgabe echt mit 15 fps; Reißschwenk mit vier Vorbildern und langsam steigender Unschärfe (Sinus hoch 2 bis zur Mitte), dann zählt er meist nicht.
+- Die Abnahme schwankt um einzelne Schwellenwerte 10 bis 11: ein Wort, das genau auf dem Landebild eines Durchflugs aufschlägt, macht einen Schnitt mehr → den Bildplan mit kurzen harten Paaren (Gelb, Liedzeile, Scheibe) bauen, damit der Median nicht an nur einem Wischer hängt.
+- Ein Haus mit dunklem Grund und goldener Schrift kehrt die Karte um (Creme wird Schwarz, Tusche wird Gold), die Probe sagt Helligkeit 0,70 voraus und fällt zurück → für diese Karte nur Häuser mit hellem Grund und dunkler Schriftfarbe.
+- Neues Bild in der Linse kleiner als 1 skaliert zeigt im Durchflug ein Rechteck mit geraden Kanten → das neue Bild in der Linse von 1,12 auf 1,0 ziehen, nie darunter.
+- Kachelwand mit Rand auf ganzen Kacheln hinterlässt am Bildrand eine schwarze Fuge (Vorprüfung rand_streifen rot) → Raster um eine halbe Kachel versetzen und über den Rand laufen lassen.

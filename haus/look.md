@@ -13,6 +13,10 @@
 - Lauftext und Untertitel: Bebas Neue für Wörter im Bild, Inter für Zeilen
 - Logo: keins (der Beispielkanal zeigt kein Logo im Bild)
 
+## Branche und Zwecke (aus stilbibliothek/ZWECKE.md)
+- branche: bildung
+- zwecke: erklaeren, wissen, zitat
+
 ## Stil-Familien (aus stilbibliothek/FAMILIEN.md)
 - passen: malerei, erklaerstimme, kinetik-typo
 - nie: glitch, kopierer, auto-beat

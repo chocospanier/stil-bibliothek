@@ -33,12 +33,38 @@ ton: Rap-Song mit Stimme, extrem laut gemastert (−7 LUFS, 1,3 LU), 81 % der En
 braucht: [fotos-figur, nur-typo, illustrationen]
 motor_aufwand: mittel
 einsatz: [musikvideo, trailer, hook]
+zweck: [musik-lyric]
+branchen_passt: [musik-kultur]
+branchen_nie: [werkstatt-auto, handwerk, lebensmittel-feinkost, gastro, gesundheit, immobilien, finanzen]
 abnahme:
   shot_median_s: [0.34, 0.50]
   schnitte_pro_s: [1.8, 2.8]
   helligkeit: [0.30, 0.48]
   farbigkeit: [0.09, 0.18]
   lufs: [-9, -7]
+# Würfel-Felder (Etappe 0 Bauplan Würfelstile, 31.10.2026; karten_wuerfelfelder.py, Familien-Standard)
+creator: eingeschraenkt
+creator_ohne: [bild-im-bild, freisteller, ui-attrappe]
+spielraum:
+  palette: nachbarn
+  schrift: klasse
+  blitzbild_bilder: [2, 3]
+  stottern_wiederholungen: [2, 2]
+  push_in_prozent: [3, 8]
+  wackeln_faktor: [0.4, 1.0]
+  korn: [0.045, 0.075]
+  vignette: [0.3, 0.5]
+  beat_versatz_16tel: [0, 1]
+  textgroesse_prozent: [-5, 5]
+  textlage: regel
+  musik: bausteine
+palettenrolle:
+  grund: grund_schwarz
+  text: papierweiss
+  akzent: pflaume
+  dunkel: grund_schwarz
+  hell: papierweiss
+  licht: papierweiss
 quelle: Eigene Analyse einer öffentlichen Vorschau; nur der Look ist beschrieben, keine Motive, Texte oder Marken übernommen.
 ---
 
@@ -132,3 +158,9 @@ Bauplan für 16 s bei 102 BPM (Sechzehntel 0,147 s, 109 Sechzehntel). Wortwechse
 - Über 0 dBFS gemastert → Verzerrung auf Handys. True Peak −1 dBFS.
 - Zu lange schwarze Strecken am Anfang und Ende → verlorene Zuschauer. Vorspann höchstens 0,3 s.
 - Fremde Liedtexte → Urheberrecht. Nur eigene Songs oder lizenzierte Texte.
+- Motor NummernLyrik (Welle D5): Ein Schatten als zweite graue Figur hinter der Person liest sich als Doppelgänger. Fotos ohne Schattenfigur.
+- Collage-Kacheln stark gekippt legen die Figuren waagerecht (Lesart Liegen); höchstens 12 Grad. Schlusszeilen ohne Abschieds-Lesart (kein ENDE), lieber ein Alltagsanker.
+- Archivo Black ist breit: mit rund 0,8 Schriftbreite je Zeichen rechnen, sonst fehlen Randbuchstaben.
+- Drehübergang um die Bildmitte: die Ebene um 60 % überskalieren, sonst entstehen schwarze Ecken.
+- Dichte Folge aus Kapitel, Durchflug, Rahmen und Collage bricht die Blitzregel, wenn helle und dunkle Gründe wechseln. Durchflug- und Collagegründe mittelhell.
+- Wortmuster als Kachel mit einer Zeile setzt die Buchstabenstämme am linken Rand genau übereinander; die Creator-Vorprüfung meldet das als Randstreifen. Zeilen je Kachel versetzen.

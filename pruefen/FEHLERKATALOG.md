@@ -70,6 +70,23 @@
 - Geteilter Arbeitsordner: jede Hilfsdatei mit einem Präfix je Stück.
 - Messbilder und Sperrdateien gehören nicht in einen Cloud-Ordner. `video_schauen.py` legt Videokopie, Taktbilder, Einzelbilder und WAV in einen Cache außerhalb (Umgebungsvariable `VIDEO_SCHAUEN_CACHE`), sobald der Messordner in einem Cloud-Spiegel liegt (Google Drive, OneDrive, Dropbox, iCloud); im Projekt bleiben nur Bericht, Bögen und Zahlen. Prüfbilder des Prüfers liegen im Projekt unter `pruef/`.
 
+## Creator-Programm (TikTok): Kanäle mit `creator_modus: tiktok`
+
+Am 31.10.2026 wurde das erste Maschinen-Video eines Kanals im TikTok-Creator-Programm sofort als „nicht original“ disqualifiziert. TikTok nannte „Wasserzeichen, Logos, Symbole oder zugeschnittene Rahmen“ und KI-generierte Inhalte. Das Video trug den Collage-Look: ausgeschnittene Figuren mit weißem Rand, Bild im Bild, gepunktete Flächen, Karaoke-Text. Die älteren ganzflächigen KI-Videos desselben Kanals liefen ohne Meldung. Fünf Verstöße in 30 Tagen, und der Kanal fliegt aus dem Programm. Darum gilt in diesen Kanälen jeder der fünf Befunde als Blocker:
+
+| Befund | Woran man es sieht | Gemessen von |
+|---|---|---|
+| Sticker-Saum | Freisteller mit hellem Rand (`Figur saum="hart"`) | `creator_pruefung.py` (sticker); der Render bricht im Creator-Modus schon vorher ab |
+| Bild im Bild mit Rand | Fenster, Polaroid, Rahmen um ein zweites Bild (`Maske border`) | `creator_pruefung.py` (fenster-rand); Render bricht ab |
+| zu wenig Vollbild | weniger als 70 % der Bilder ohne Fenster | `creator_pruefung.py` (vollbild) |
+| eingebrannte Abzeichen | Etikett, Ecken, Mess-Grafik oder Stempel auf mehr als 40 % der Bilder | `creator_pruefung.py` (abzeichen) |
+| Dauer-Raster und Blitzgewitter | Druckraster auf mehr als 40 % der Bilder, mehr als zwei Blitzbilder | `creator_pruefung.py` (druckraster, blitze) |
+
+Prüfen: `python -I werkzeuge/vorpruefung.py <video.mp4> --creator` (liest `<video>_text.json` aus dem Render). Gegenprobe: die Komposition `CreatorGegenprobe` im Starter muss mit mindestens drei Blockern stoppen. Was das Werkzeug nicht sieht: Rand oder Logo, das schon im fremden Material steckt (ein Foto mit weißem Rahmen, ein Clip mit Senderlogo); das bleibt der Blick des frischen Prüfers. Gegenmittel: ganzflächige Bewegtszenen, Text im Bild statt auf Platten, Übergänge aus Bewegung, eigene Stimme (`stimme.py --eigene`). Das KI-Label bleibt an, wo KI-Material im Stück ist.
+
+## Wiederholung: zu nah an einem früheren Video
+Ein Kanal, der immer gleich aussieht, fällt als Schablone auf, und ein Video, das einem anderen Kunden gleicht, auch. Das Register (`handy.py` Schritt 4) misst das am fertigen Video. Gelb ist Polish: liefern, der nächste Zug meidet den Grundstil. Rot ist Blocker: nicht hochladen, mit anderem Inhalt neu bauen. Ursache ist fast immer derselbe Text oder dieselbe Bildfolge in derselben Komposition; ein neuer Würfelzug allein ändert Farbe und Schrift, nicht die Helligkeit, und bleibt rot.
+
 ## Checkliste vor dem Rendern (Bauende hakt ab, in STAND.md eintragen)
 - [ ] Jedes generierte Bild angesehen, nichts Heikles, keine Marke, keine Schrift
 - [ ] Avatare nur verschoben, gleichmäßig skaliert und (ohne Schrift, ohne asymmetrische Merkmale) gespiegelt, nichts invertiert, nichts gefiltert, gegen Original verglichen
@@ -81,3 +98,5 @@
 - [ ] Bild-Checkliste aus `stilbibliothek/GRAMMATIK.md` am Storyboard abgehakt (Konstante, eine Farbe eine Bedeutung, Medium am Handy, etwas Neues alle 2 bis 4 s)
 - [ ] Abfolge als Zuschauer gelesen (Abschied, Politik, Marke, Logik)
 - [ ] Handy-Fassung mit Master-Ton, beide −14 LUFS (oder Kartenbereich innerhalb −14 ± 1), höchstens −1 dBTP
+- [ ] Eigener Inhalt, kein Beispieltext einer Komposition; Register nach dem Render grün oder gelb
+- [ ] Creator-Kanal: `vorpruefung.py --creator` ohne roten Befund, kein Programm-Stempel im Upload (`handy.py` reinigt mit `rein.py`)

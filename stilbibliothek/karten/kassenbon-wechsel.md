@@ -35,12 +35,38 @@ ton: Ruhiges Instrumental, erste zwei Sekunden leise (−20 dBFS), dann gleichm�
 braucht: [fotos-figur, nur-typo]
 motor_aufwand: klein
 einsatz: [ganzes-kurzvideo, produkt, hook, portrait]
+zweck: [mode-lookbook, angebot]
+branchen_passt: [mode-beauty, gastro]
+branchen_nie: [werkstatt-auto, handwerk, gesundheit, immobilien, finanzen]
 abnahme:
   shot_median_s: [1.6, 2.4]
   schnitte_pro_s: [0.3, 0.6]
   helligkeit: [0.75, 0.90]
   farbigkeit: [0.13, 0.19]
   lufs: [-16.1, -14.1]
+# Würfel-Felder (Etappe 0 Bauplan Würfelstile, 31.10.2026; karten_wuerfelfelder.py, Familien-Standard)
+creator: nein
+creator_grund: "der Kassenbon ist die Bühne, Figur im Bon ist Bild im Bild"
+spielraum:
+  palette: nachbarn
+  schrift: klasse
+  blitzbild_bilder: [2, 4]
+  stottern_wiederholungen: [2, 3]
+  push_in_prozent: [2, 5]
+  wackeln_faktor: [0.3, 0.7]
+  korn: [0.045, 0.075]
+  vignette: [0.3, 0.5]
+  beat_versatz_16tel: [0, 1]
+  textgroesse_prozent: [-10, 10]
+  textlage: regel
+  musik: bausteine
+palettenrolle:
+  grund: grund
+  text: tinte_navy
+  akzent: akzent_rost
+  dunkel: tinte_navy
+  hell: grund
+  licht: grund
 quelle: Eigene Analyse einer öffentlichen Vorschau; nur der Look ist beschrieben, keine Motive, Texte oder Marken übernommen.
 ---
 
@@ -133,3 +159,5 @@ Bauplan für 13 s in Sekunden, weil der Stil mit Zwei-Sekunden-Blöcken arbeitet
 - Der Witz eines Bons braucht sein Bild: steht „Lavendel“ oder „Eis“ im Bon, muss die Ware vorn genau das groß zeigen (Lavendelstrauß, Eiswaffel), sonst bleibt der Witz eine Behauptung.
 - Alle Witze gleich laut setzen: eine dünne Kursive als erster Witz setzt das Muster zu leise → kräftige Pille oder Band in der Kartenfarbe.
 - Im Fächer überlappen die Bons: halb verdeckte Wörter („ART 2“, „10“, „LA“) lesen sich als Fehler → im Fächer nur die Köpfe zeigen und so staffeln, dass jeder Kopf ganz frei steht (Karten 44 %, Winkel −30/−10/9/28 Grad, Versatz −40/0/2/10 px).
+- Code-Motor (Welle D): Figur in der Karte höchstens 45 % der Bildhöhe, Füße an der Theke, Posen ohne erhobene Arme; sonst verdecken Kopf und Hände die Posten. Fächer am Schluss mit Drehpunkt im oberen Drittel und gestaffelten Köpfen, sonst laufen Köpfe aus dem Bild.
+- Code-Motor: die Basis liegt mit Helligkeit 0,893 knapp unter der Obergrenze; hellere Hausfarben dreht die Probe zurück.

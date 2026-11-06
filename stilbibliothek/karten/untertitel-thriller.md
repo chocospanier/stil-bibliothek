@@ -32,12 +32,38 @@ ton: Dunkle Fläche mit tiefen Drones und Einschlägen, Schwellungen und Senken 
 braucht: [fotos-figur, footage-ort, nur-typo]
 motor_aufwand: klein
 einsatz: [trailer, ganzes-kurzvideo, intro]
+zweck: [geschichte, event-teaser]
+branchen_passt: [musik-kultur, bildung]
+branchen_nie: [lebensmittel-feinkost, gastro, gesundheit, kinder-familie, tourismus]
 abnahme:
   shot_median_s: [1.5, 2.4]
   schnitte_pro_s: [0.5, 0.9]
   helligkeit: [0.13, 0.19]
   farbigkeit: [0.00, 0.02]
   lufs: [-13.5, -11.5]
+# Würfel-Felder (Etappe 0 Bauplan Würfelstile, 31.10.2026; karten_wuerfelfelder.py, Familien-Standard)
+creator: eingeschraenkt
+creator_ohne: [raster-collage]
+spielraum:
+  palette: akzent
+  schrift: klasse
+  blitzbild_bilder: [2, 4]
+  stottern_wiederholungen: [2, 3]
+  push_in_prozent: [2, 5]
+  wackeln_faktor: [0.3, 0.7]
+  korn: [0.05, 0.08]
+  vignette: [0.3, 0.5]
+  beat_versatz_16tel: [0, 1]
+  textgroesse_prozent: [-10, 10]
+  textlage: regel
+  musik: bausteine
+palettenrolle:
+  grund: grund
+  text: nebel
+  akzent: saum_rot
+  dunkel: grund
+  hell: nebel
+  licht: licht
 quelle: Eigene Analyse einer öffentlichen Vorschau; nur der Look ist beschrieben, keine Motive, Texte oder Marken übernommen.
 ---
 
@@ -144,3 +170,7 @@ Bauplan für 20 s in Sekunden, weil der Schnitt dem Satz folgt (Bezugsraster 121
 - Drehung als Überblendung zweier Silhouetten flackert als Doppelfigur → erste Haltung rund 0,6 s halten, dann harter Schnitt auf die zweite (mit kleinem Bildsprung).
 - „Nur eine Laterne“ heißt auch: dieselbe Bauform in jedem Bild; Nahaufnahmen aus derselben Kulisse schneiden statt aus einem zweiten Bild.
 - Lange Untertitel-Zeile reicht im Hochformat unter die Symbolspalte rechts → höchstens 88 % der Breite, sonst zweizeilig; über hellem, nassem Pflaster ein weicher dunkler Verlauf hinter der Zeile.
+- Untertitel bei 74 % laufen über Kopf und Lichtsaum der Figur → Figur seitlich (Kopfmitte bei 25 oder 75 %) oder tiefer, dazu ein dunkles Band hinter der Zeile.
+- Silhouetten aus Code brauchen Merkmale (Hut, Kragen, Mantel, Kopf rund 30 % der Schulterbreite), sonst lesen sie sich als Piktogramm.
+- Die Auflösung braucht ein Bild: was der Antworttitel nennt, ist vor dem Blitz einmal zu sehen.
+- Licht, das erst nach dem Schnitt angeht, lässt den Schnitt aus dem dunklen Titel unter die Messschwelle fallen → das Licht brennt ab Bild 0 der Einstellung.

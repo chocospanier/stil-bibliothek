@@ -31,12 +31,38 @@ ton: Sehr laut gemasterter Beat um 88 BPM (−7,3 LUFS) ohne jede Pause über 30
 braucht: [fotos-figur, nur-typo]
 motor_aufwand: mittel
 einsatz: [musikvideo, portrait, hook, ganzes-kurzvideo]
+zweck: [musik-lyric]
+branchen_passt: [musik-kultur]
+branchen_nie: [werkstatt-auto, handwerk, lebensmittel-feinkost, gastro, gesundheit, immobilien, finanzen, kinder-familie]
 abnahme:
   shot_median_s: [0.37, 0.55]
   schnitte_pro_s: [1.6, 2.4]
   helligkeit: [0.23, 0.35]
   farbigkeit: [0.14, 0.20]
   lufs: [-9, -7]
+# Würfel-Felder (Etappe 0 Bauplan Würfelstile, 31.10.2026; karten_wuerfelfelder.py, Familien-Standard)
+creator: eingeschraenkt
+creator_ohne: [text-hinter-figur, hud, tracking-etiketten]
+spielraum:
+  palette: nachbarn
+  schrift: klasse
+  blitzbild_bilder: [2, 4]
+  stottern_wiederholungen: [2, 3]
+  push_in_prozent: [3, 8]
+  wackeln_faktor: [0.4, 1.0]
+  korn: [0.045, 0.075]
+  vignette: [0.3, 0.5]
+  beat_versatz_16tel: [0, 1]
+  textgroesse_prozent: [-10, 10]
+  textlage: regel
+  musik: bausteine
+palettenrolle:
+  grund: grund
+  text: eis
+  akzent: mint
+  dunkel: grund
+  hell: eis
+  licht: eis
 quelle: Eigene Analyse einer öffentlichen Vorschau; nur der Look ist beschrieben, keine Motive, Texte oder Marken übernommen.
 ---
 
@@ -138,3 +164,8 @@ Bauplan für 20 s bei 88 BPM (Sechzehntel = 0,17 s, Viertel = 0,68 s; 117 Sechze
 - Riesenwort als Vollfläche statt Linien → verdeckt die Figur. Wellenlinien lassen das Bild durchscheinen.
 - Hautfarben durch die Karte rutschen lassen → Blau wird fleckig. Alles durch dieselbe Verlaufskarte.
 - Sehr laute Mischung: −7 LUFS wird auf Plattformen ohnehin heruntergeregelt; Dichte entsteht durch den Beat, nicht durch Clipping. True Peak unter −1 dB halten.
+- Motor BlaulichtTracking (Welle D5): Riesenwörter senkrecht gedreht und mittig von der Figur verdeckt waren am Handy unlesbar. Im Hochformat waagerecht über 94 % der Breite im oberen Bild, die Figur kleiner davor, die verzerrte Spiegelung darunter.
+- Etikett nie an den Kopfpunkt hängen: ein Wort über dem Auge macht das Gesicht einäugig. Der Kopf bekommt nur eine Box ohne Zahl.
+- Figur-Einstellungen in derselben dunklen Raumtotale zählt die Schnittmessung nicht (Score unter 10). Totale und Nahe im Wechsel, Raum gespiegelt; drei lange Figur-Einstellungen sind dafür geteilt.
+- Überstrahlte Strecke mit ausgebreiteten Armen im weißen Oval liest sich als Licht am Ende des Tunnels. Figur stehend, mit Boxen, Ränder nur leicht nach Tiefblau.
+- Code-Figur: Seitenlicht als Verlauf durch die Silhouette (Maske) legen, nie als zweite Kopie in Lichtfarbe; die Kopie bildet versetzte Formen, der Kopf zerfällt.

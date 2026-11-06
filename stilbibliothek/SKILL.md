@@ -1,6 +1,6 @@
 ---
 name: stilbibliothek
-description: Baut ein Kurzvideo in einem von 106 beschriebenen Video-Stilen (Lookbook, Noir, Kopierer, Glitch, Scrapbook, Musikvideo, Kinetik-Typo, Erklärstimme und mehr) mit einem Code-Motor wie Remotion. Nutzen, wenn jemand ein Video „im Stil von …“, einen Trailer, Hook, Intro oder Edit mit bestimmtem Look will, einen passenden Look für ein Thema sucht oder einen fertigen Render gegen einen Stil prüfen will.
+description: Baut ein Kurzvideo in einem von 289 beschriebenen Video-Stilen (Lookbook, Noir, Kopierer, Glitch, Scrapbook, Musikvideo, Kinetik-Typo, Erklärstimme, dazu gezeichnete und gemalte Stile aus Zeichen-Motoren und mehr) mit einem Code-Motor wie Remotion. Nutzen, wenn jemand ein Video „im Stil von …“, einen Trailer, Hook, Intro oder Edit mit bestimmtem Look will, einen passenden Look für ein Thema sucht oder einen fertigen Render gegen einen Stil prüfen will.
 ---
 
 # Stil-Bibliothek benutzen
@@ -8,6 +8,11 @@ description: Baut ein Kurzvideo in einem von 106 beschriebenen Video-Stilen (Loo
 ## 1. Stil wählen
 - Wirkung und Einsatz klären: Was soll das Video tun (Hook, Trailer, ganzes Kurzvideo, Übergang), wie viel Energie (1 ruhig bis 5 rasant), welches Material gibt es (Fotos einer Figur, Illustrationen, Ortsaufnahmen, Produkt, nur Typo, 3D)?
 - In [FAMILIEN.md](FAMILIEN.md) die Familie wählen, dann nach `einsatz`, `energie`, `braucht` und `motor_aufwand` filtern: `python -I ../werkzeuge/bibliothek_index.py --filter braucht=nur-typo motor_aufwand=klein einsatz=hook` (Tabelle; mehrere Werte mit Komma, `energie>=4`; nur mit Code baubar: `nur_code=ja` oder `braucht<=nur-typo,illustrationen`). Höchstens drei Karten vorschlagen, eine empfehlen.
+- Jede Karte nennt `zweck`, `branchen_passt` und `branchen_nie` (Vokabular in [ZWECKE.md](ZWECKE.md)). Filter: `python -I ../werkzeuge/bibliothek_index.py --filter zweck=produktwerbung branchen_nie!=werkstatt-auto`.
+
+**Creator-Modus (seit 31.10.2026):** Steht in `haus/praeferenzen.md` `creator_modus: tiktok`, nimm nur Karten mit `creator: ja` oder `eingeschraenkt`; bei eingeschränkten Karten fallen die Kennungen aus `creator_ohne` weg. Gesperrte Karten und der Grund: `CREATOR_SPERRLISTE.md`. Variieren darf ein Stück nur innerhalb von `spielraum` im Kopfblock; alles andere (Kern, Schnittdichte, Bildtypen, Abnahme) bleibt.
+
+**Zeichen-Motoren (seit 06.11.2026):** Karten mit `bauweg: animskill` (Familien strichzeichnung, malstil, erklaergrammatik, selbstzeichnend; ✎ in INDEX.md) malt ein Zeichen-Motor aus Code, ohne Remotion-Bau und ohne Material. Sie haben Sollwerte statt Messung, keinen Abschnitt Schnittmuster oder Rezept, dafür `animskill` (Motor, Stil-Kennung, Quelle) und die Abschnitte Ton und Bauweg. Gebaut wird mit `starter/werkzeuge/animskill.py` (Bestellung mit `motor_spec`); der Würfel schreibt einen Entwurf dafür in `stil.json`. Filter: `--filter bauweg=animskill zweck=geschichte`.
 
 ## 2. Karte lesen, Kern zuerst
 - Die drei `kern`-Merkmale sind nicht verhandelbar. Alles andere sind Regler.
@@ -18,7 +23,7 @@ description: Baut ein Kurzvideo in einem von 106 beschriebenen Video-Stilen (Loo
 - Bei Stilen mit Sprechstimme: Wortzeiten aus einer Transkription mit Wortstempeln, Schnitte und Wörter auf die Silben.
 
 ## 4. Bauen
-- In Remotion im Starter bauen (`starter/`): die Bausteine aus `starter/BAUSTEINE.md` nehmen, nicht neu erfinden; wie eine Karte zur Komposition wird, steht in `starter/LIESMICH.md`, neun durchgebaute Beispiele liegen in `starter/src/beispiele/`.
+- In Remotion im Starter bauen (`starter/`): die Bausteine aus `starter/BAUSTEINE.md` nehmen, nicht neu erfinden; wie eine Karte zur Komposition wird, steht in `starter/LIESMICH.md`, 114 durchgebaute Beispiele liegen in `starter/src/beispiele/`.
 - Nach `Rezept für einen Code-Motor` bauen: erst Grund und Bildbehandlung als Standbild prüfen, dann Bausteine, dann Bewegung.
 - Teure Filter einmal vorrechnen und cachen, nicht je Frame.
 - Formate: die Hinweise für 9:16 und 16:9 in der Karte befolgen; in 9:16 die unteren 15 % freihalten.

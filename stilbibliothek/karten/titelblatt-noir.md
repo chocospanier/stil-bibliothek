@@ -31,12 +31,38 @@ ton: Eine Sekunde Stille, dann ein tiefer, verzerrter Laufsteg-Beat mit viel Bas
 braucht: [fotos-figur, nur-typo]
 motor_aufwand: mittel
 einsatz: [trailer, intro, ganzes-kurzvideo, portrait]
+zweck: [marke-image, event-teaser, mode-lookbook, zitat]
+branchen_passt: [mode-beauty, musik-kultur]
+branchen_nie: [gesundheit, kinder-familie]
 abnahme:
   shot_median_s: [0.28, 0.42]
   schnitte_pro_s: [2.2, 3.4]
   helligkeit: [0.18, 0.28]
   farbigkeit: [0.13, 0.19]
   lufs: [-14.9, -12.9]
+# Würfel-Felder (Etappe 0 Bauplan Würfelstile, 31.10.2026; karten_wuerfelfelder.py, Familien-Standard)
+creator: nein
+creator_grund: "Titelseiten-Layouts, rote Rahmen und Collage-Kacheln sind zwei der drei Kern-Merkmale"
+spielraum:
+  palette: akzent
+  schrift: klasse
+  blitzbild_bilder: [2, 4]
+  stottern_wiederholungen: [2, 3]
+  push_in_prozent: [3, 8]
+  wackeln_faktor: [0.4, 1.0]
+  korn: [0.05, 0.08]
+  vignette: [0.3, 0.5]
+  beat_versatz_16tel: [0, 1]
+  textgroesse_prozent: [-10, 10]
+  textlage: regel
+  musik: bausteine
+palettenrolle:
+  grund: grund
+  text: papier
+  akzent: rot
+  dunkel: grund
+  hell: papier
+  licht: papier
 quelle: Eigene Analyse einer öffentlichen Vorschau; nur der Look ist beschrieben, keine Motive, Texte oder Marken übernommen.
 ---
 

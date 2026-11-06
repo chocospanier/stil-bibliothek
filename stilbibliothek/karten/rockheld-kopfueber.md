@@ -31,12 +31,37 @@ ton: Treibender Rock-Beat um 94 BPM, laut und gleichmäßig (Lautheitsspanne 2,4
 braucht: [fotos-figur, footage-ort]
 motor_aufwand: mittel
 einsatz: [musikvideo, trailer, hook, portrait]
+zweck: [musik-lyric, person-vorstellen]
+branchen_passt: [musik-kultur, sport]
+branchen_nie: [lebensmittel-feinkost, gastro, gesundheit, immobilien, finanzen, kinder-familie]
 abnahme:
   shot_median_s: [0.30, 0.46]
   schnitte_pro_s: [2.1, 3.1]
   helligkeit: [0.22, 0.32]
   farbigkeit: [0.10, 0.16]
   lufs: [-15.5, -13.5]
+# Würfel-Felder (Etappe 0 Bauplan Würfelstile, 31.10.2026; karten_wuerfelfelder.py, Familien-Standard)
+creator: ja
+spielraum:
+  palette: nachbarn
+  schrift: klasse
+  blitzbild_bilder: [2, 4]
+  stottern_wiederholungen: [2, 3]
+  push_in_prozent: [3, 8]
+  wackeln_faktor: [0.4, 1.0]
+  korn: [0.045, 0.075]
+  vignette: [0.3, 0.5]
+  beat_versatz_16tel: [0, 1]
+  textgroesse_prozent: [-10, 10]
+  textlage: regel
+  musik: bausteine
+palettenrolle:
+  grund: grund
+  text: licht
+  akzent: gegenlicht
+  dunkel: grund
+  hell: licht
+  licht: licht
 quelle: Eigene Analyse einer öffentlichen Vorschau; nur der Look ist beschrieben, keine Motive, Texte oder Marken übernommen.
 ---
 
@@ -132,3 +157,7 @@ Bauplan für 18 s bei 94 BPM (112 Sechzehntel, ein Sechzehntel = 0,16 s).
 - Fisheye in allen Shots → ermüdet. Nur im Hook und für zwei bis drei Schreie.
 - Reißschwenk länger als drei Bilder → Übelkeit. Kurz halten.
 - Schlusspose zu kurz → kein Halt. Mindestens 1,5 s stehen lassen.
+- Motor RockheldKopfueber (Welle D5): Ein Code-Salto als stetiges Trudeln liest sich als Absturz. Bogenbahn mit Absprung, Hocke im Scheitel und Landung.
+- Kopfüber gedrehtes Bild mit ausgebreiteten Armen oder senkrecht liegender Figur liest sich als Hängen. Im gedrehten Bild Sprungpose oder quer liegend.
+- Schlusspose braucht deutliche Bewegung (Push-in unabhängig vom Würfelfaktor, weit wiegende Arme, leichtes Schieben), sonst meldet die Vorprüfung im Creator-Modus ein Standbild über 1 s. Geschobenes Bild mindestens 5 % überskalieren, sonst zeigt der Rand einen dunklen Streifen.
+- Die dunkle Basis liegt knapp an der Untergrenze der Helligkeit (0,22). Vignette leicht halten, sonst fallen gewürfelte Paletten zurück.

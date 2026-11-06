@@ -32,12 +32,38 @@ ton: Sehr gleichmäßig lautes Instrumental (−10,9 LUFS, 1,4 LU), 87 % der Ene
 braucht: [fotos-figur, nur-typo]
 motor_aufwand: mittel
 einsatz: [produkt, trailer, hook, ganzes-kurzvideo]
+zweck: [mode-lookbook, produktwerbung, marke-image]
+branchen_passt: [mode-beauty]
+branchen_nie: [werkstatt-auto, handwerk, lebensmittel-feinkost, gesundheit, immobilien, finanzen]
 abnahme:
   shot_median_s: [0.22, 0.33]
   schnitte_pro_s: [2.5, 3.8]
   helligkeit: [0.58, 0.75]
   farbigkeit: [0.07, 0.12]
   lufs: [-11.9, -9.9]
+# Würfel-Felder (Etappe 0 Bauplan Würfelstile, 31.10.2026; karten_wuerfelfelder.py, Familien-Standard)
+creator: eingeschraenkt
+creator_ohne: [bild-im-bild, klone, freisteller, bauchbinde, halbton, zeilenraster]
+spielraum:
+  palette: nachbarn
+  schrift: klasse
+  blitzbild_bilder: [2, 4]
+  stottern_wiederholungen: [2, 3]
+  push_in_prozent: [3, 8]
+  wackeln_faktor: [0.4, 1.0]
+  korn: [0.045, 0.075]
+  vignette: [0.3, 0.5]
+  beat_versatz_16tel: [0, 1]
+  textgroesse_prozent: [-10, 10]
+  textlage: regel
+  musik: bausteine
+palettenrolle:
+  grund: weiss
+  text: zeilen_blau
+  akzent: rosa
+  dunkel: schwarz
+  hell: weiss
+  licht: weiss
 quelle: Eigene Analyse einer öffentlichen Vorschau; nur der Look ist beschrieben, keine Motive, Texte oder Marken übernommen.
 ---
 
@@ -134,3 +160,6 @@ Bauplan für 14 s im Doppeltempo 126 BPM (Sechzehntel 0,119 s, 118 Sechzehntel),
 - Viele schnelle Weiß-Schwarz-Wechsel → Flimmergefahr. Schwarze Blitze sparsam, nicht mehr als drei je Sekunde.
 - Tonspur kürzer als das Bild wie in der Vorlage → stummes Ende. Musik auf volle Länge bauen.
 - Echte Markennamen im Etikett → Rechtsrisiko. Eigenen Namen setzen.
+- Code-Motor (Welle D): Blitzregel gegen Schnittdichte. Dunkle Blitze (Zeilen auf Schwarz, Punkte auf Pink, Zeilen auf Blau, schwarzer Kreis) höchstens alle 1,1 s; dazwischen die helle Fassung (Figur auf Weiß unter einem Vollbild-Raster), die die Schnitt-Messung zählt, die Helligkeit aber kaum ändert. Halte ab 13 Bildern springen in der Mitte auf die nächste Lage, so bleibt der Median bei 0,23 s.
+- Code-Motor: keine liegende Figur vor einem schwarzen Möbel mit einer stehenden davor (liest sich als Aufbahrung); Schwarzweiß nie als Schwelle über die Haut.
+- Code-Motor (Welle D), Creator-Modus: ohne Raster, Karten und Klone (creator_ohne) fehlen die dunklen Blitzbilder; der Motor wird zu hell und zu ruhig (Schnitte 2,2 statt 2,5) oder bricht mit dunklem Ersatz die Blitzregel. Darum creator: false für den Motor; für Creator-Kanäle von Hand bauen.

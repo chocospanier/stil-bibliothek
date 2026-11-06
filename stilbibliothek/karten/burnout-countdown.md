@@ -31,12 +31,38 @@ ton: Sehr lauter, gepresster Beat um 98 BPM (−10,7 LUFS), Countdown-Schläge a
 braucht: [footage-ort, fotos-figur, nur-typo]
 motor_aufwand: mittel
 einsatz: [hook, trailer, intro, ganzes-kurzvideo]
+zweck: [event-teaser, marke-image, angebot]
+branchen_passt: [werkstatt-auto, sport, musik-kultur]
+branchen_nie: [lebensmittel-feinkost, gesundheit, bildung, immobilien, finanzen, kinder-familie]
 abnahme:
   shot_median_s: [0.37, 0.55]
   schnitte_pro_s: [2.0, 3.1]
   helligkeit: [0.21, 0.31]
   farbigkeit: [0.12, 0.18]
   lufs: [-11.7, -9.7]
+# Würfel-Felder (Etappe 0 Bauplan Würfelstile, 31.10.2026; karten_wuerfelfelder.py, Familien-Standard)
+creator: eingeschraenkt
+creator_ohne: [text-hinter-figur, hud]
+spielraum:
+  palette: nachbarn
+  schrift: klasse
+  blitzbild_bilder: [2, 3]
+  stottern_wiederholungen: [2, 2]
+  push_in_prozent: [3, 8]
+  wackeln_faktor: [0.4, 1.0]
+  korn: [0.045, 0.075]
+  vignette: [0.3, 0.5]
+  beat_versatz_16tel: [0, 1]
+  textgroesse_prozent: [-10, 10]
+  textlage: regel
+  musik: bausteine
+palettenrolle:
+  grund: grund
+  text: text
+  akzent: signal_gelb
+  dunkel: grund
+  hell: text
+  licht: text
 quelle: Eigene Analyse einer öffentlichen Vorschau; nur der Look ist beschrieben, keine Motive, Texte oder Marken übernommen.
 ---
 
@@ -133,3 +159,7 @@ Bauplan für 18 s bei 98 BPM (112 Sechzehntel, ein Sechzehntel = 0,153 s).
 - Countdown nicht auf dem Beat → der Drop verpufft. Musik zuerst messen, Ziffern auf die Schläge legen.
 - Nur Fahrzeuge → das Stück wird eintönig. Mindestens 35 % Menschen.
 - Text in jedem Shot → wird zum Werbespot. Höchstens jeder fünfte Shot trägt ein Wort.
+- Code-Motor, Schnittmessung: scdet zählt nur Sprünge der Bildhelligkeit; zwei Code-Einstellungen gleicher Helligkeit nacheinander gelten als ein Shot → benachbarte Einstellungen in der Belichtung im Wechsel um 15 bis 35 % versetzen (`belichtung()` in `gemeinsam_d6.tsx`), unter 0,2 Sprung bleibt die Blitzregel frei.
+- Code-Motor, Front von vorn: zwei runde Scheinwerfer über einer dunklen Öffnung lesen sich am Handy als Gesicht → flache, kantige Leuchten, breiter tiefer Einlass, Räder und Spiegel sichtbar (`AutoFront` in `gemeinsam_d6.tsx`).
+- Helm mit hellem Querbalken liest sich als Augenbalken, ein Befehlswort wie „GAS.“ allein über einer Menge mit erhobenen Armen als Gewalt-Lesart → Visier dunkel mit schmalem Glanz, Befehlswörter nur über der Maschine („VOLLGAS.“).
+- Verdichtung mit Einzel-Sechzehnteln bricht im Code die Blitzregel → Zweier-Sechzehntel ohne helle Bildtypen (Qualm, Tänzer an heller Wand) in der Schlussphase.

@@ -34,12 +34,38 @@ ton: Ruhiges, dunkles Klangbett um −15 LUFS ohne Stimme; in der Vorschau ist d
 braucht: [footage-ort, fotos-figur, 3d]
 motor_aufwand: gross
 einsatz: [hook, portrait, uebergang, trailer]
+zweck: [stimmung, event-teaser, musik-lyric]
+branchen_passt: [musik-kultur, mode-beauty]
+branchen_nie: [werkstatt-auto, handwerk, lebensmittel-feinkost, gastro, technik, gesundheit, bildung, immobilien, finanzen, sport, kinder-familie, tourismus]
 abnahme:
   shot_median_s: [1.2, 1.9]
   schnitte_pro_s: [0.5, 0.8]
   helligkeit: [0.06, 0.20]
   farbigkeit: [0.05, 0.12]
   lufs: [-16.4, -14.4]
+# Würfel-Felder (Etappe 0 Bauplan Würfelstile, 31.10.2026; karten_wuerfelfelder.py, Familien-Standard)
+creator: eingeschraenkt
+creator_ohne: [querband, klone]
+spielraum:
+  palette: nachbarn
+  schrift: klasse
+  blitzbild_bilder: [2, 4]
+  stottern_wiederholungen: [2, 3]
+  push_in_prozent: [2, 5]
+  wackeln_faktor: [0.3, 0.7]
+  korn: [0.045, 0.075]
+  vignette: [0.3, 0.5]
+  beat_versatz_16tel: [0, 1]
+  textgroesse_prozent: [-10, 10]
+  textlage: regel
+  musik: bausteine
+palettenrolle:
+  grund: schwarz
+  text: fenster_bernstein
+  akzent: fluegel_rot
+  dunkel: schwarz
+  hell: fenster_bernstein
+  licht: fenster_bernstein
 quelle: Eigene Analyse einer öffentlichen Vorschau; nur der Look ist beschrieben, keine Motive, Texte oder Marken übernommen.
 ---
 
@@ -122,3 +148,9 @@ Bauplan für 12 s in Sekunden, sieben Szenen, weil der Stil Szenen nach Wachstum
 - Zu schnelles Wachsen → wirkt wie ein Glitch. Mindestens 0,8 s je Wucherung.
 - Tonspur kürzer als das Bild wie in der Vorlage → stummes Ende. Ton auf volle Länge.
 - Grafik oder Schrift dazu → bricht den Realismus. Weglassen.
+- Harte Schnitte zwischen dunklen Szenen bleiben für die Messung (scdet, Schwelle 10) unsichtbar → Nachbarszenen legen ihr Licht an verschiedene Stellen (Dunst oben gegen unten, Gang mit hellen Wänden gegen Figur mittig), dann tragen die Schnitte auch im Vollbild ohne Breitband.
+- Hand-Fächer an kleiner Figur im Breitband verschwindet als Klumpen → jede Hand dreht um das Handgelenk und rückt dabei ein Stück hinaus, und die Hände liegen vor hellem Grund, nicht vor Schwarz.
+- Ein einzelner gerader Ast vom Scheitel liest sich als Schnur oder Seil → am Kopf nur verzweigte Fächer, nie ein einzelner Stiel.
+- Fenstersprosse und waagerecht gestreckter Arm ergeben ein Kreuz → Fenster ohne Sprossen.
+- Fensterlicht in der Rollenfarbe (licht = fenster_bernstein) → der Würfel tauscht Rollenfarben samt Helligkeit, das Fenster wird dunkel und der Schnitt davor verschwindet in der Messung; Lichtflächen in einem Nachbarton ohne Rolle malen, nur der Titel trägt die Rollenfarbe.
+- Breitband-Szenen im Creator-Vollbild mit derselben Figurengröße → Arm und Fächer laufen aus dem Bild; eigene Lage für das Vollbild (LAGE_VOLL).

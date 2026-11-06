@@ -31,12 +31,37 @@ ton: Getragener Beat um 91 BPM mit großer Dynamik (Lautheitsspanne über 10 LU)
 braucht: [produkt, footage-ort, nur-typo]
 motor_aufwand: klein
 einsatz: [produkt, ganzes-kurzvideo, intro]
+zweck: [produktwerbung, marke-image]
+branchen_passt: [mode-beauty, lebensmittel-feinkost]
+branchen_nie: [werkstatt-auto, handwerk, kinder-familie, bildung, sport]
 abnahme:
   shot_median_s: [0.54, 0.80]
   schnitte_pro_s: [0.7, 1.1]
   helligkeit: [0.05, 0.10]
   farbigkeit: [0.04, 0.08]
   lufs: [-15, -13]
+# Würfel-Felder (Etappe 0 Bauplan Würfelstile, 31.10.2026; karten_wuerfelfelder.py, Familien-Standard)
+creator: ja
+spielraum:
+  palette: akzent
+  schrift: klasse
+  blitzbild_bilder: [2, 4]
+  stottern_wiederholungen: [2, 3]
+  push_in_prozent: [2, 5]
+  wackeln_faktor: [0.3, 0.7]
+  korn: [0.045, 0.075]
+  vignette: [0.3, 0.5]
+  beat_versatz_16tel: [0, 1]
+  textgroesse_prozent: [-10, 10]
+  textlage: regel
+  musik: bausteine
+palettenrolle:
+  grund: grund
+  text: mond
+  akzent: bernstein
+  dunkel: grund
+  hell: mond
+  licht: blitz
 quelle: Eigene Analyse einer öffentlichen Vorschau; nur der Look ist beschrieben, keine Motive, Texte oder Marken übernommen.
 ---
 
@@ -129,3 +154,5 @@ Bauplan für 18 s bei 91 BPM (108 Sechzehntel zu je 0,165 s).
 - (erlebt beim Bau, 16.10.2026) Ein Sechzehntel bei 91 BPM sind 4,95 Bilder bei 30 fps: Blitz fest auf 5 Bilder setzen, sonst wechselt er zwischen 4 und 5.
 - (16.10.2026) Z-Image hält dasselbe Produkt über Bühnen nur ungefähr (Kappe wechselt) und verliert es im Makro ganz; Makro als Ausschnitt aus dem Packshot bauen, für Gleichheit `kontext2` oder Freisteller.
 - (16.10.2026) Bett rund 6 dB unter den Schlägen halten, sonst gehen die Schläge im Master unter; nach −14 LUFS mit Begrenzer bleibt die Lautheitsspanne trotzdem bei rund 3 LU.
+- (Prüfrunde) Bühnen nur über Licht zu unterscheiden reicht am Handy nicht: jede Bühne braucht ein eigenes Element (Bokeh, Regen mit Tropfen auf einer Glasebene, ziehender Nebel, Wasserlinie); Tropfen nie über dem Produkt, sonst lesen sie sich als Löcher.
+- (Prüfrunde) Schlusskarte darf ruhig sein, aber nie stehen: Licht atmet, die Karte fährt langsam heran.

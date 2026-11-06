@@ -34,12 +34,37 @@ ton: Zweieinhalb Sekunden helles Intro ohne Bass, dann ein dichter, lauter Beat 
 braucht: [fotos-figur, footage-ort, illustrationen]
 motor_aufwand: mittel
 einsatz: [ganzes-kurzvideo, hook, trailer, musikvideo]
+zweck: [event-teaser, musik-lyric]
+branchen_passt: [sport, musik-kultur]
+branchen_nie: [lebensmittel-feinkost, gesundheit, immobilien, finanzen]
 abnahme:
   shot_median_s: [0.32, 0.48]
   schnitte_pro_s: [1.8, 2.7]
   helligkeit: [0.23, 0.35]
   farbigkeit: [0.11, 0.17]
   lufs: [-10.2, -8.2]
+# Würfel-Felder (Etappe 0 Bauplan Würfelstile, 31.10.2026; karten_wuerfelfelder.py, Familien-Standard)
+creator: ja
+spielraum:
+  palette: nachbarn
+  schrift: klasse
+  blitzbild_bilder: [2, 4]
+  stottern_wiederholungen: [2, 3]
+  push_in_prozent: [3, 8]
+  wackeln_faktor: [0.4, 1.0]
+  korn: [0.0, 0.04]
+  vignette: [0.0, 0.3]
+  beat_versatz_16tel: [0, 1]
+  textgroesse_prozent: [-10, 10]
+  textlage: regel
+  musik: bausteine
+palettenrolle:
+  grund: kino_tief
+  text: schrift
+  akzent: glut
+  dunkel: kino_tief
+  hell: licht
+  licht: licht
 quelle: Eigene Analyse einer öffentlichen Vorschau; nur der Look ist beschrieben, keine Motive, Texte oder Marken übernommen.
 ---
 
@@ -139,3 +164,6 @@ Bauplan für 20 s bei 140 BPM (Sechzehntel = 0,107 s, Viertel = 0,43 s; 187 Sech
 - Salve länger als eine Sekunde mit Farbwechsel ist eine Epilepsie-Gefahr → höchstens zwölf Bilder am Stück, dann ein ruhiges Viertel.
 - Bekannte Comic- oder Filmhelden nachbauen → Marken- und Urheberrecht. Eigene Figur, eigene Rüstung.
 - Schreibschrift ohne Rand → verschwindet auf unruhigem Grund. Weißer Rand immer.
+- Motorbau (04.11.): Eine dunkle Rüstung fällt im Duoton in dieselbe Fläche wie der dunkle Grund, der Blitz zeigt nur Glut-Kringel → Figur für den Popblitz mit hellem Randlicht zeichnen (Material: Aufnahmen mit Gegenlicht wählen).
+- Motorbau (04.11.): Schreibschrift Wort für Wort in einer Einstellung unter 1 s flackert nur durch → Zeile über zwei Einstellungen stehen lassen, ein Wort alle 0,3 s; die Pointe steht nach dem letzten Wort mindestens 2,3 s.
+- Motorbau (04.11.): Ein getrennt gezeichnetes Visier dreht bei geneigtem Rumpf nicht mit und steht wie eine Zigarette vor dem Helm → Visier in dieselbe Drehung legen wie den Kopf.

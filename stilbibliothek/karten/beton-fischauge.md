@@ -33,12 +33,38 @@ ton: Sehr laut und verdichtet (−10,5 LUFS, 0,7 LU Spanne), harter Beat um 104 
 braucht: [fotos-figur, footage-ort]
 motor_aufwand: mittel
 einsatz: [hook, ganzes-kurzvideo, trailer]
+zweck: [mode-lookbook, event-teaser]
+branchen_passt: [mode-beauty, sport, musik-kultur]
+branchen_nie: [lebensmittel-feinkost, gastro, gesundheit, bildung, immobilien, finanzen, kinder-familie]
 abnahme:
   shot_median_s: [0.24, 0.36]
   schnitte_pro_s: [3.0, 4.6]
   helligkeit: [0.31, 0.47]
   farbigkeit: [0.06, 0.10]
   lufs: [-11.5, -9.5]
+# Würfel-Felder (Etappe 0 Bauplan Würfelstile, 31.10.2026; karten_wuerfelfelder.py, Familien-Standard)
+creator: eingeschraenkt
+creator_ohne: [bild-im-bild, freisteller, halbton]
+spielraum:
+  palette: nachbarn
+  schrift: klasse
+  blitzbild_bilder: [2, 3]
+  stottern_wiederholungen: [2, 2]
+  push_in_prozent: [3, 8]
+  wackeln_faktor: [0.4, 1.0]
+  korn: [0.045, 0.075]
+  vignette: [0.3, 0.5]
+  beat_versatz_16tel: [0, 1]
+  textgroesse_prozent: [-10, 10]
+  textlage: regel
+  musik: bausteine
+palettenrolle:
+  grund: tiefe
+  text: himmel
+  akzent: waerme_orange
+  dunkel: tiefe
+  hell: himmel
+  licht: himmel
 quelle: Eigene Analyse einer öffentlichen Vorschau; nur der Look ist beschrieben, keine Motive, Texte oder Marken übernommen.
 ---
 
@@ -134,3 +160,6 @@ Bauplan für 15 s bei 104 BPM (104 Sechzehntel zu 0,144 s). Ein Look, dann ein k
 - Die Vorlage clippt (Spitzen +3,7 dB) → eigenes Master mit Limiter bei −1 dBTP, −10,5 LUFS bleiben möglich.
 - Datenblatt-Schrift 1,3 % ist auf dem Handy unlesbar → 1,6 % oder größer.
 - Ohne Ortswechsel wird es eintönig → mindestens drei Orte derselben Architektur-Art.
+- Raster, weiße Silhouette und Negativ in derselben Sekunde brechen die Blitzregel → Störbilder mit harten Helligkeitssprüngen höchstens eins je Sekunde, das Raster auf eine ruhige Einstellung legen (Motor BetonFischauge, 04.11.).
+- Korn mit 0,08 Deckung verschwindet im Encoder → feines Korn plus gröberes Rauschen, das je Bild wechselt; gehobene grünliche Schwärzen über eine Lighten-Fläche, die ab 0,4 Deckung die Schnitterkennung schwächt.
+- Kleine Figur vor einem Gittergerüst liest sich als hängend oder hinter Gittern → Figur sichtbar auf einen Träger stellen, Hand im Haar, Himmel dahinter gedämpft.

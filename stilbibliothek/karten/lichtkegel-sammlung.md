@@ -34,12 +34,40 @@ ton: Instrumental um 148 BPM (−15,3 LUFS, 5,2 LU Dynamik), Bass und tiefe Mitt
 braucht: [fotos-figur, illustrationen, nur-typo]
 motor_aufwand: mittel
 einsatz: [ganzes-kurzvideo, hook, produkt, portrait]
+zweck: [mode-lookbook, person-vorstellen]
+branchen_passt: [mode-beauty]
+branchen_nie: [werkstatt-auto, handwerk, lebensmittel-feinkost, gesundheit, immobilien, finanzen]
 abnahme:
-  shot_median_s: [0.05, 0.10]
-  schnitte_pro_s: [0.4, 1.2]
+  # neu vermessen 01.11.2026 am Motor LichtkegelSammlung (Blitze gleicher Helligkeit, Blitzregel sicher): Median 3,13 s, 0,18 Schnitte je s in 10 von 10 Zuegen.
+  # Die Vorlage (Median 0,07, 0,6 je s) ist nur mit Blitzen ueber dem Limit erreichbar, siehe Fallen; messung bleibt der Wert der Vorlage.
+  shot_median_s: [2.0, 4.5]
+  schnitte_pro_s: [0.12, 0.35]
   helligkeit: [0.55, 0.72]
   farbigkeit: [0.11, 0.17]
   lufs: [-16.3, -14.3]
+# Würfel-Felder (Etappe 0 Bauplan Würfelstile, 31.10.2026; karten_wuerfelfelder.py, Familien-Standard)
+creator: eingeschraenkt
+creator_ohne: [freisteller, hud, ui-attrappe, bauchbinde]
+spielraum:
+  palette: nachbarn
+  schrift: klasse
+  blitzbild_bilder: [2, 4]
+  stottern_wiederholungen: [2, 3]
+  push_in_prozent: [3, 8]
+  wackeln_faktor: [0.4, 1.0]
+  korn: [0.045, 0.075]
+  vignette: [0.3, 0.5]
+  beat_versatz_16tel: [0, 1]
+  textgroesse_prozent: [-10, 10]
+  textlage: regel
+  musik: bausteine
+palettenrolle:
+  grund: bogenweiss
+  text: all_schwarz
+  akzent: blitz_oliv
+  dunkel: all_schwarz
+  hell: bogenweiss
+  licht: blitz_oliv
 quelle: Eigene Analyse einer öffentlichen Vorschau; nur der Look ist beschrieben, keine Motive, Texte oder Marken übernommen.
 ---
 
@@ -130,3 +158,6 @@ Bauplan für 16 s bei 120 BPM (ein Takt = 2 s = ein Fundstück, Sechzehntel 0,12
 - (erlebt beim Bau) Gegenstände auf Weiß bringen Schatten mit, weiße Dinge lassen sich ohne Freisteller-Modell kaum lösen → farbige Gegenstände oder Farbgrund bestellen.
 - (erlebt beim Bau) Bauchbinde nicht vom Rand einschieben (Wort am Rand angeschnitten), am Platz einblenden.
 - (erlebt in der Prüfrunde) Freisteller von Weiß haben eingeschlossene weiße Inseln (zwischen Armen und Kopf), Gegenstände ragten mit Schattenresten über die Kegelkante auf den dunklen Himmel: Inseln entfernen und alles samt Schatten auf den Kegel legen. Handy-Fassung mit der Tonspur des Masters bauen (eigene AAC-Kodierung überschritt 0 dBTP).
+- Zielkonflikt Blitze: Die Abnahme-Werte (Median 0,05 bis 0,10 s, 0,4 bis 1,2 Schnitte je s) entstehen nur, wenn jeder Farbblitz als Schnitt zählt; die Messung zählt Helligkeitssprünge. Blitze im Wechsel mit dem hellen Bogen ergeben das, brechen aber die Blitzregel (14 Wechsel in 0,9 s, Prüfrunde Motor 31.10.). Der Motor zeigt die sieben Blitze gleicher linearer Helligkeit direkt hintereinander (sicher), dann misst die Abnahme nur 3 Schnitte. Seit 01.11.2026 stehen Median und Schnittrate in `abnahme` darum auf den Werten des sicheren Motors (Median 2 bis 4,5 s, 0,12 bis 0,35 Schnitte je s).
+- Fundstück groß (gut 40 % der Höhe) mit weichem Versatzschatten; klein im weißen Kegel wirkt es verloren.
+- Pflanzen und alles Zusammengesetzte im Fundstück aus einem Stück zeichnen: Blätter, die über dem Topf enden, lesen sich als abgebrochen.
