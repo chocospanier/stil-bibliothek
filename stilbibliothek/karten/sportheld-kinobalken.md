@@ -3,7 +3,7 @@ id: sportheld-kinobalken
 name: Sportheld mit Kinobalken
 familie: aura-portrait
 kurz: Spielszenen eines Sporthelden in entsättigtem Petrol-Grün mit schwarzen Kinobalken, grobem Korn und winzigen Tracking-Koordinaten, unterbrochen von dunklen Nachtfahrt-Zwischenbildern, ausgebrannten Weißbildern und einem 1-Bit-Moment; am Ende funkeln Sterne im Schwarz.
-kern: [eine Hauptfigur als Held aller Spielszenen, kalter, abgesoffener Kinolook mit Kinobalken und Korn, Wechsel von Aktion und dunklem Zwischenbild als Atem]
+kern: ["eine Hauptfigur als Held aller Spielszenen", "kalter, abgesoffener Kinolook mit Kinobalken und Korn", "Wechsel von Aktion und dunklem Zwischenbild als Atem"]
 energie: 4
 format_quelle: "4:3"
 laenge_s: [12, 18]

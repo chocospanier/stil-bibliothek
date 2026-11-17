@@ -214,15 +214,15 @@ Filtern: `python -I werkzeuge/bibliothek_index.py --filter braucht=nur-typo moto
 |---|---|---:|---|---|
 | [Ich-Erzählfigur](karten/ich-erzaehlfigur.md) ✎ `huashu` | Die Stimme erzählt eine eigene Geschichte, eine einfache Figur springt zwischen Posen und friert, die Pointe sitzt im Schnitt auf das Gesicht. | 4 | klein | ganzes-kurzvideo, hook |
 | [Schlagwortbühne](karten/schlagwortbuehne.md) ✎ `huashu` | Wörter sind die Darsteller: jedes Schlüsselwort schlägt auf eine Betonung ein, groß genug für einen Blick, die anderen steigen aus Schlitzen. | 4 | klein | ganzes-kurzvideo, hook |
-| [Beweistisch](karten/beweistisch.md) ✎ `huashu` | Ein Argument nach Art von Vox: echtes Material liegt auf einem Tisch, die Kamera sucht wie ein Reporter, Stift und Linien ziehen ruckweise. | 3 | klein | ganzes-kurzvideo, hook |
+| [Beweistisch](karten/beweistisch.md) ✎ `huashu` | Ein Argument wie im Erklär-Journalismus: echtes Material liegt auf einem Tisch, die Kamera sucht wie ein Reporter, Stift und Linien ziehen ruckweise. | 3 | klein | ganzes-kurzvideo, hook |
 | [Bühnenoberfläche](karten/buehnenoberflaeche.md) ✎ `huashu` | Eine Produktvorstellung wie auf großer Bühne: ein Ding je Bild, das echte Produkt groß, Namen und Zahlen setzen sich genau auf das Wort. | 3 | klein | ganzes-kurzvideo, hook |
 | [Erklärfigur mit Zahlen](karten/erklaerfigur-zahlen.md) ✎ `huashu` | Eine Erklärfigur führt durch Wirtschaft und Technik, wechselt zwischen Zahl im Vollbild, Vergleich und Reaktion. | 3 | mittel | ganzes-kurzvideo, hook |
 | [Leinwand-Trickfilm](karten/leinwand-trickfilm.md) ✎ `jsanim` | Ein kleiner Trickfilm, ganz aus Code gezeichnet, mit eigener Wendung oder als Erklärstück, Musik im selben Code. | 3 | mittel | ganzes-kurzvideo, hook |
-| [Leuchtende Erklärwelt](karten/leuchtende-erklaerwelt.md) ✎ `huashu` | Wissenschaft nach Art von Kurzgesagt: ein abstrakter Begriff wird ein Ding in einer leuchtenden Welt, die Kamera reist zwischen Größenordnungen. | 3 | klein | ganzes-kurzvideo, hook |
+| [Leuchtende Erklärwelt](karten/leuchtende-erklaerwelt.md) ✎ `huashu` | Wissenschaft als leuchtende Trickwelt: ein abstrakter Begriff wird ein Ding in einer leuchtenden Welt, die Kamera reist zwischen Größenordnungen. | 3 | klein | ganzes-kurzvideo, hook |
 | [Wachsendes Tafelbild](karten/wachsendes-tafelbild.md) ✎ `huashu` | Eine Hand schreibt Satz für Satz auf eine große weiße Tafel, die Kamera folgt, am Ende sieht man das ganze Argument als ein Bild. | 3 | klein | ganzes-kurzvideo, hook |
 | [Zahlen, die wachsen](karten/zahlen-wachsen.md) ✎ `huashu` | Ein Diagramm baut sich auf das Wort: Achsen, dann wachsen Balken oder Linien, zuletzt wird genau eine Sache markiert. | 3 | klein | ganzes-kurzvideo, hook |
-| [Formel-Tafel](karten/formel-tafel.md) ✎ `manim` | Formeln nach Art von 3Blue1Brown, gebaut mit Manim: eine Gleichung schreibt sich Glied für Glied, verwandelt sich, der Graph antwortet in derselben Farbe. | 2 | mittel | ganzes-kurzvideo, hook |
-| [Formwandel im Dunkeln](karten/formwandel-dunkel.md) ✎ `huashu` | Mathematik und Begriffe nach Art von 3Blue1Brown: auf Schwarz steht nur das, wovon gerade die Rede ist, und verwandelt sich ohne Schnitt ins Nächste. | 2 | klein | ganzes-kurzvideo, hook |
+| [Formel-Tafel](karten/formel-tafel.md) ✎ `manim` | Formeln wie in Mathe-Erklärvideos, gebaut mit Manim: eine Gleichung schreibt sich Glied für Glied, verwandelt sich, der Graph antwortet in derselben Farbe. | 2 | mittel | ganzes-kurzvideo, hook |
+| [Formwandel im Dunkeln](karten/formwandel-dunkel.md) ✎ `huashu` | Mathematik und Begriffe wie in Mathe-Erklärvideos: auf Schwarz steht nur das, wovon gerade die Rede ist, und verwandelt sich ohne Schnitt ins Nächste. | 2 | klein | ganzes-kurzvideo, hook |
 
 ## noir (11)
 

@@ -2240,7 +2240,7 @@
    "id": "beweistisch",
    "name": "Beweistisch",
    "familie": "erklaergrammatik",
-   "kurz": "Ein Argument nach Art von Vox: echtes Material liegt auf einem Tisch, die Kamera sucht wie ein Reporter, Stift und Linien ziehen ruckweise.",
+   "kurz": "Ein Argument wie im Erklär-Journalismus: echtes Material liegt auf einem Tisch, die Kamera sucht wie ein Reporter, Stift und Linien ziehen ruckweise.",
    "kern": [
     "echtes Material füllt das Bild, nie als kleines Bild auf Fläche",
     "die Kamera fährt wie ein suchendes Auge über den Tisch",
@@ -5053,14 +5053,9 @@
    "familie": "auto-beat",
    "kurz": "Körniger Nullerjahre-Film über Straßenrennen, Reifenqualm und tanzende Menge, eröffnet mit einem leuchtenden 3-2-1 neben Gesichtern, danach leuchtende Einwortbefehle mit Punkt und eine schmutzige Titelkarte zum Schluss.",
    "kern": [
-    "übersättigter",
-    "körniger Nullerjahre-Filmlook mit tiefem Himmelblau und zugelaufenem Schwarz",
+    "übersättigter, körniger Nullerjahre-Filmlook mit tiefem Himmelblau und zugelaufenem Schwarz",
     "leuchtender Countdown und Einwortbefehle mit Punkt in Weiß mit Glühen",
-    "Wechsel aus Maschine (Auto",
-    "Motorrad",
-    "Qualm) und Menschen (Menge",
-    "Tanz",
-    "Sprung)"
+    "Wechsel aus Maschine (Auto, Motorrad, Qualm) und Menschen (Menge, Tanz, Sprung)"
    ],
    "energie": 5,
    "format_quelle": "3:2",
@@ -5975,8 +5970,7 @@
    "kern": [
     "Gelb und Schwarz als Grundklang mit Rasterpunkten und Strahlenkranz",
     "Übergänge als Reißschwenk oder Zoom-Durchflug mit starker Bewegungsunschärfe",
-    "Standbild-Illustrationen",
-    "die ständig langsam driften"
+    "Standbild-Illustrationen, die ständig langsam driften"
    ],
    "energie": 3,
    "format_quelle": "5:4",
@@ -8488,13 +8482,9 @@
    "familie": "malerei",
    "kurz": "Eine dunkle Sagenwelt aus kantigen Stein- und Papierfacetten in Blaugrau, mit einem einzigen warmen Licht, erzählt in ruhigen Einstellungen von je anderthalb Sekunden genau auf dem Raster, mit einem Akzent im Ton auf jedem Schnitt.",
    "kern": [
-    "facettierte Welt (Scherben",
-    "Keile",
-    "kantige Figuren) wie gefaltetes Papier und gemalter Stein",
+    "facettierte Welt (Scherben, Keile, kantige Figuren) wie gefaltetes Papier und gemalter Stein",
     "kaltes Blaugrau mit einem warmen Lichtakzent",
-    "gleichmäßige Einstellungen von 1",
-    "25 bis 2 s",
-    "Schnitte exakt auf dem Sechzehntel-Raster mit Akzent im Ton auf jedem Schnitt"
+    "gleichmäßige Einstellungen von 1,25 bis 2 s, Schnitte exakt auf dem Sechzehntel-Raster mit Akzent im Ton auf jedem Schnitt"
    ],
    "energie": 2,
    "format_quelle": "16:9",
@@ -10971,9 +10961,7 @@
    "familie": "werbespot",
    "kurz": "Ein einzelnes Produkt in fast völliger Dunkelheit, Bühne für Bühne, jedes Bild länger als das vorige und jedes durch genau einen Weißblitz getrennt; fast die Hälfte der Laufzeit gehört der Schlusskarte.",
    "kern": [
-    "nur das Produkt",
-    "keine Menschen",
-    "in tiefem Schwarz mit einem warmen Leuchten",
+    "nur das Produkt, keine Menschen, in tiefem Schwarz mit einem warmen Leuchten",
     "Puls aus Bild und einem Sechzehntel Weißblitz mit wachsender Bildlänge",
     "lange stille Schlusskarte"
    ],
@@ -11142,7 +11130,7 @@
    "id": "formel-tafel",
    "name": "Formel-Tafel",
    "familie": "erklaergrammatik",
-   "kurz": "Formeln nach Art von 3Blue1Brown, gebaut mit Manim: eine Gleichung schreibt sich Glied für Glied, verwandelt sich, der Graph antwortet in derselben Farbe.",
+   "kurz": "Formeln wie in Mathe-Erklärvideos, gebaut mit Manim: eine Gleichung schreibt sich Glied für Glied, verwandelt sich, der Graph antwortet in derselben Farbe.",
    "kern": [
     "Formeln schreiben sich Glied für Glied und verwandeln sich ineinander",
     "Graph und Formel teilen dieselben Farben",
@@ -11290,7 +11278,7 @@
    "id": "formwandel-dunkel",
    "name": "Formwandel im Dunkeln",
    "familie": "erklaergrammatik",
-   "kurz": "Mathematik und Begriffe nach Art von 3Blue1Brown: auf Schwarz steht nur das, wovon gerade die Rede ist, und verwandelt sich ohne Schnitt ins Nächste.",
+   "kurz": "Mathematik und Begriffe wie in Mathe-Erklärvideos: auf Schwarz steht nur das, wovon gerade die Rede ist, und verwandelt sich ohne Schnitt ins Nächste.",
    "kern": [
     "auf Schwarz steht nur das eine Ding, von dem gerade die Rede ist",
     "ein Begriff verwandelt sich ohne Schnitt in den nächsten",
@@ -12390,10 +12378,7 @@
    "kurz": "Alte Gemälde und Druckgrafiken gleiten langsam durchs Bild, riesige schmale Wörter stehen hinter den gemalten Figuren, jedes Kapitel hat eine eigene Tönung, gerahmt von einer feinen Museums-Beschriftung in den Ecken.",
    "kern": [
     "riesige schmale Versalwörter hinter den gemalten Figuren",
-    "eine Tönung je Kapitel (Sepia",
-    "Rot-Duoton",
-    "Papierweiß",
-    "Grau)",
+    "eine Tönung je Kapitel (Sepia, Rot-Duoton, Papierweiß, Grau)",
     "feine Ecken-Beschriftung mit Werkangaben und Kapitelzähler"
    ],
    "energie": 2,
@@ -12569,8 +12554,7 @@
    "kurz": "Ein Hauptfiguren-Edit ganz in Schwarz und Giftgrün, mit Kontaktstreifen, Fingerabdruck-Silhouetten, Tracking-Linien und Weitwinkel von unten, im Zwei-Frame-Takt bis zum glühenden Titelwort.",
    "kern": [
     "Grün-Duoton von Schwarz bis Blassgrün mit invertierten Blitzen",
-    "Einzelbild-Stakkato um 0",
-    "1 s mit Kontaktstreifen-Ketten",
+    "Einzelbild-Stakkato um 0,1 s mit Kontaktstreifen-Ketten",
     "Titelwort am Ende von grauer Kontur zu Neongrün"
    ],
    "energie": 5,
@@ -13961,8 +13945,7 @@
    "familie": "filmlook",
    "kurz": "Sportfilm im Gegenlicht der goldenen Stunde, Petrol in den Schatten und Gold in den Lichtern, Gesichter starren frontal in die Kamera, dazwischen Kraft-Details, Wassertropfen und einzelne Schwarzweiß-Blitzbilder.",
    "kern": [
-    "Petrol-Gold-Spreizung mit Gegenlicht",
-    "Dunst und Lichtreflexen",
+    "Petrol-Gold-Spreizung mit Gegenlicht, Dunst und Lichtreflexen",
     "frontale Gesichter als Ruhepole zwischen schnellen Kraft-Details",
     "kurze Schwarzweiß-Blitze von zwei bis drei Bildern als Akzent"
    ],
@@ -18116,8 +18099,7 @@
    "kern": [
     "genau ein Wort je Einstellung als Kapitel der Handlung",
     "Farbbogen von kalter Regennacht zu warmem Morgenlicht",
-    "ruhige Einstellungen um 1",
-    "6 s mit langsamem Push"
+    "ruhige Einstellungen um 1,6 s mit langsamem Push"
    ],
    "energie": 3,
    "format_quelle": "16:9",
@@ -18891,11 +18873,7 @@
    "kurz": "Warme, körnige Straßenaufnahmen einer Figur und ihres Viertels, überzeichnet mit weißen Handkritzeln und lila Markerstrichen, dazu Filmstreifen-Raster und Fotos auf zerknittertem Papier.",
    "kern": [
     "warmer Filmlook mit Korn auf echten Stadtaufnahmen",
-    "weiße Kritzel",
-    "die sich auf dem Bild zeichnen (Krone",
-    "Kreis",
-    "Pfeil",
-    "Schallwellen)",
+    "weiße Kritzel, die sich auf dem Bild zeichnen (Krone, Kreis, Pfeil, Schallwellen)",
     "eine Akzentfarbe aus der Kleidung wandert in Marker und Muster"
    ],
    "energie": 3,
@@ -19723,12 +19701,9 @@
    "familie": "bewegung",
    "kurz": "Eine Figur bewegt sich durch ein endloses weißes Studio und lässt bei jeder Bewegung eingefrorene Kopien zurück, bis eine ganze Spur aus Klonen das Bild füllt; dazwischen Nahaufnahmen und ein rauer roter Slogan.",
    "kern": [
-    {
-     "Klon-Spur": "eingefrorene Kopien der Figur bleiben im Takt stehen und zeichnen die Bewegung nach"
-    },
+    "Klon-Spur: eingefrorene Kopien der Figur bleiben im Takt stehen und zeichnen die Bewegung nach",
     "weißes Hohlkehlen-Studio mit spiegelndem Boden",
-    "eine rote Akzentfarbe in Kleidung",
-    "Gegenstand und Schrift"
+    "eine rote Akzentfarbe in Kleidung, Gegenstand und Schrift"
    ],
    "energie": 4,
    "format_quelle": "16:9",
@@ -23021,7 +22996,7 @@
    "id": "leuchtende-erklaerwelt",
    "name": "Leuchtende Erklärwelt",
    "familie": "erklaergrammatik",
-   "kurz": "Wissenschaft nach Art von Kurzgesagt: ein abstrakter Begriff wird ein Ding in einer leuchtenden Welt, die Kamera reist zwischen Größenordnungen.",
+   "kurz": "Wissenschaft als leuchtende Trickwelt: ein abstrakter Begriff wird ein Ding in einer leuchtenden Welt, die Kamera reist zwischen Größenordnungen.",
    "kern": [
     "jeder abstrakte Begriff wird ein konkretes Ding",
     "die Kamera reist zwischen Größenordnungen",
@@ -24468,11 +24443,8 @@
    "familie": "malerei",
    "kurz": "Eine Farbreise von gemalten Szenen in rotem Rauchlicht über flache Vektorfiguren auf Creme zu kontrastreichem Schwarzweiß, verbunden durch ein Schweizer Typo-Raster aus dünnen Linien und Block-Glitches.",
    "kern": [
-    "drei Bildwelten nacheinander (warme Malerei",
-    "flache Illustration auf Papier",
-    "Schwarzweiß-Foto)",
-    "Typo-Raster mit dünnen roten Linien und Wörtern",
-    "die einzeln erscheinen",
+    "drei Bildwelten nacheinander (warme Malerei, flache Illustration auf Papier, Schwarzweiß-Foto)",
+    "Typo-Raster mit dünnen roten Linien und Wörtern, die einzeln erscheinen",
     "ruhiger Anfang mit langen gemalten Einstellungen"
    ],
    "energie": 2,
@@ -25859,12 +25831,7 @@
    "familie": "3d-objekt",
    "kurz": "Ein monumentales Bauwerk aus Steinblöcken, nur in Ausschnitten gezeigt, in Terrakotta und Pflaume vor Creme und Lavendel mit einer leuchtenden blauen Fuge, im gleichmäßigen Sechzehntel-Schnitt; ein Schwarzweiß-Block in der Mitte, Titel am Ende.",
    "kern": [
-    "nur Fragmente eines großen Objekts (Säulen",
-    "Ring",
-    "Schale",
-    "Tor",
-    "Figurteile)",
-    "nie das Ganze",
+    "nur Fragmente eines großen Objekts (Säulen, Ring, Schale, Tor, Figurteile), nie das Ganze",
     "Pastell-Licht mit Terrakotta-Flächen und einer blauen Leuchtfuge",
     "gleichmäßiger Fluss aus Ein- bis Drei-Sechzehntel-Schnitten mit Schwarzweiß-Einschub"
    ],
@@ -26587,10 +26554,7 @@
    "kurz": "Leere Orte einer Stadt bei Nacht in Magenta und Violett, ruhig gefilmt, überlagert von einer feinen Messoberfläche mit Etiketten, Zeigelinien, Zählern und Zeitleiste, als würde eine Maschine die Nacht protokollieren.",
    "kern": [
     "ruhige Nachtbilder in Magenta-Violett mit nassen Spiegelungen",
-    "feine Mess-Oberfläche (Etiketten mit Zeigelinie",
-    "Zählerkasten",
-    "Zeitleiste",
-    "Ecken)",
+    "feine Mess-Oberfläche (Etiketten mit Zeigelinie, Zählerkasten, Zeitleiste, Ecken)",
     "ganz wenig Bewegung und lange Halte gegen Ende"
    ],
    "energie": 2,
@@ -29268,12 +29232,9 @@
    "familie": "musikvideo",
    "kurz": "Weiche Nahaufnahmen einer Sängerin in milchigem Lavendel und Eisblau, umrankt von weißen Linienornamenten (Ranken, Schmetterlinge, Noten, Notenlinien), getrennt von Weißblüten; die zweite Hälfte wiederholt die erste Bildfolge wie eine Schleife.",
    "kern": [
-    "milchiger Pastell-Look ohne echtes Schwarz (Lavendel",
-    "Eisblau",
-    "Rosa)",
+    "milchiger Pastell-Look ohne echtes Schwarz (Lavendel, Eisblau, Rosa)",
     "weiße Linienornamente als Rahmen und Overlay je Shot",
-    "Weißblüte als Übergang und Bildfolge",
-    "die sich als Schleife wiederholt"
+    "Weißblüte als Übergang und Bildfolge, die sich als Schleife wiederholt"
    ],
    "energie": 3,
    "format_quelle": "4:3",
@@ -30186,9 +30147,7 @@
    "kern": [
     "Duoton Petrol bis Milchweiß mit grobem Korn und schwerer Vignette",
     "Bildwechsel im Achtel- bis Sechzehntelbereich über die ganze Länge",
-    "Störbilder als Satzzeichen (Unschärfe",
-    "Streifenmaske",
-    "Negativ in Lachsrosa)"
+    "Störbilder als Satzzeichen (Unschärfe, Streifenmaske, Negativ in Lachsrosa)"
    ],
    "energie": 5,
    "format_quelle": "1:1",
@@ -31193,16 +31152,9 @@
    "familie": "glitch",
    "kurz": "Rasante Drei-Frame-Schnitte aus einfarbig getönten Aufnahmen, Lichtlecks, Flares und kinetischen Wörtern, anfangs im Fenster eines Filmprojektors, mit Messkurven über Gesichtern und einem langen, stillen Ausklang.",
    "kern": [
-    "jede Einstellung in einer anderen Tönung (Türkis",
-    "Rot",
-    "Violett",
-    "Blau",
-    "Sepia) oder invertiert",
+    "jede Einstellung in einer anderen Tönung (Türkis, Rot, Violett, Blau, Sepia) oder invertiert",
     "Drei-Frame-Schnitt auf Worte statt auf den Beat",
-    "Typo als Bildmaterial (Riesenwort",
-    "Pixelschrift",
-    "Zeilenwiederholung",
-    "Glitch-Wort)"
+    "Typo als Bildmaterial (Riesenwort, Pixelschrift, Zeilenwiederholung, Glitch-Wort)"
    ],
    "energie": 5,
    "format_quelle": "16:10",
@@ -32968,10 +32920,7 @@
    "familie": "musikvideo",
    "kurz": "Eine einzige Heldenfigur in gedämpftem Kinolook, eröffnet mit schreienden Fisheye-Nahaufnahmen im Zehntelsekundentakt, dann Silhouetten vor Lichtportalen, Stunts, kopfüber gedrehte Bilder und Reißschwenks bis zur Pose mit erhobenen Armen vor dem Sonnenuntergang.",
    "kern": [
-    "eine Figur in vielen Lagen (Schrei",
-    "Stille",
-    "Stunt",
-    "Silhouette)",
+    "eine Figur in vielen Lagen (Schrei, Stille, Stunt, Silhouette)",
     "gedämpfter Kinolook mit tiefem Schwarz und warmem Gegenlicht",
     "Bilder kopfüber oder gekippt plus Reißschwenks als Rock-Geste"
    ],
@@ -33824,12 +33773,9 @@
    "familie": "glitch",
    "kurz": "Ein Porträt wie eine Laborakte: leuchtende Silhouetten im Bewegungskatalog, eine rote Partikelfigur, ein gescannter Kopf, Produkte auf Weiß und beschriftete Schaubilder, im Wechsel aus Einzelbild-Salven und langen ruhigen Studien.",
    "kern": [
-    "Silhouetten und Scans statt normaler Aufnahmen (Leuchtumriss",
-    "Partikel",
-    "Zeilenscan)",
+    "Silhouetten und Scans statt normaler Aufnahmen (Leuchtumriss, Partikel, Zeilenscan)",
     "Laborgrafik mit Schaubildern und kleiner Beschriftung",
-    "zweigeteilter Rhythmus aus 0",
-    "1-s-Salven und 2-s-Studien"
+    "zweigeteilter Rhythmus aus 0,1-s-Salven und 2-s-Studien"
    ],
    "energie": 4,
    "format_quelle": "16:9",
@@ -36910,8 +36856,7 @@
    "kurz": "Spielszenen eines Sporthelden in entsättigtem Petrol-Grün mit schwarzen Kinobalken, grobem Korn und winzigen Tracking-Koordinaten, unterbrochen von dunklen Nachtfahrt-Zwischenbildern, ausgebrannten Weißbildern und einem 1-Bit-Moment; am Ende funkeln Sterne im Schwarz.",
    "kern": [
     "eine Hauptfigur als Held aller Spielszenen",
-    "kalter",
-    "abgesoffener Kinolook mit Kinobalken und Korn",
+    "kalter, abgesoffener Kinolook mit Kinobalken und Korn",
     "Wechsel von Aktion und dunklem Zwischenbild als Atem"
    ],
    "energie": 4,
@@ -37101,9 +37046,7 @@
    "familie": "bewegung",
    "kurz": "Ein einziges Handyvideo läuft in einem Bildfenster auf Schwarz; das Fenster selbst tanzt im Takt, wird breit, schmal, kippt in die Tiefe und schließt sich zum Schlitz, um am neuen Ort wieder aufzugehen.",
    "kern": [
-    "Bildfenster auf schwarzer Fläche",
-    "das auf jedem Schlag Form",
-    "Breite und Kippung wechselt",
+    "Bildfenster auf schwarzer Fläche, das auf jedem Schlag Form, Breite und Kippung wechselt",
     "Inhalt wird beschnitten statt skaliert (das Fenster ist ein Ausschnitt)",
     "Ortswechsel durch Zuklappen zum Schlitz statt Schnitt"
    ],
@@ -38972,8 +38915,7 @@
    "kurz": "Das ganze Video läuft als graue Tiefenkarte im Nebel (nah dunkel, fern weiß), nur Augen, Lippen und kleine Pixelflecken zeigen sich in rechteckigen Fenstern in echter Farbe; Schnitt exakt auf jedem Viertel eines langsamen Beats.",
    "kern": [
     "Footage als weiche Tiefenkarte in Grau bis Weiß statt als Bild",
-    "rechteckige Farbfenster nur auf Augen",
-    "Lippen und Gesicht",
+    "rechteckige Farbfenster nur auf Augen, Lippen und Gesicht",
     "ein Schnitt auf jedem Viertel ohne Ausnahme"
    ],
    "energie": 3,
@@ -40323,9 +40265,7 @@
    "kurz": "Eine Heldin und ihre Gegner springen von Schnitt zu Schnitt zwischen 3D-Trickfilm, Bleistift-Zeichentrick, Knete und Comic, verbunden durch Kraft-Effekte, Fenster und große Wörter im Gesangstakt.",
    "kern": [
     "jeder Shot ein anderer Animationsstil bei wiederkehrender Hauptfigur",
-    "Kraft-Effekte (Blitz",
-    "Feuer",
-    "Glühen) als roter Faden über die Stilbrüche",
+    "Kraft-Effekte (Blitz, Feuer, Glühen) als roter Faden über die Stilbrüche",
     "Fenster und Diagonalen als Übergänge"
    ],
    "energie": 4,
@@ -41577,14 +41517,8 @@
    "familie": "musikvideo",
    "kurz": "Viele verschiedene Performer in Weitwinkel-Untersicht, jeder in seiner eigenen Farbwelt, gerahmt wie ein 16-mm-Bild mit runden dunklen Ecken; es beginnt mit einem Sechzehntel-Gewitter erhobener Arme und ruht dann auf einzelnen Gesichtern.",
    "kern": [
-    "Weitwinkel von unten",
-    "nah am Körper",
-    "Hände greifen in die Linse",
-    "jede Einstellung eine eigene Farbwelt (Sonnenuntergang",
-    "Petrol",
-    "Rot",
-    "Pink",
-    "Schwarzweiß)",
+    "Weitwinkel von unten, nah am Körper, Hände greifen in die Linse",
+    "jede Einstellung eine eigene Farbwelt (Sonnenuntergang, Petrol, Rot, Pink, Schwarzweiß)",
     "16-mm-Gefühl mit Korn und abgerundeter Vignette"
    ],
    "energie": 4,
@@ -42291,8 +42225,7 @@
    "familie": "malerei",
    "kurz": "Ein einziger Satz steht von Bild 0 bis zum Ende unbewegt in warmem Gelb in der Bildmitte, darunter fließen handgemalte Motive auf Schwarz ohne Schnitt ineinander, jedes verwandelt sich ins nächste.",
    "kern": [
-    "ein Satz fest ab Bild 0 in der Mitte",
-    "ohne Kasten und ohne Animation",
+    "ein Satz fest ab Bild 0 in der Mitte, ohne Kasten und ohne Animation",
     "Verwandlung statt Schnitt alle 1 bis 3 s bei stehender Kamera",
     "gemalte Motive auf fast schwarzem Grund"
    ],
@@ -42445,13 +42378,9 @@
    "familie": "musikvideo",
    "kurz": "Kinetisches Lyric-Video in Violett und Fast-Schwarz: eine freigestellte Sängerin im Duoton, riesige fette Versalwörter hinter ihr, kursive Serifenwörter mit Bewegungsunschärfe, Buchstaben als Fenster ins Video und magentafarbene Kreise statt der Os.",
    "kern": [
-    "zwei Farben plus ein Akzent (Violett",
-    "Fast-Schwarz",
-    "Magenta-Kreis)",
+    "zwei Farben plus ein Akzent (Violett, Fast-Schwarz, Magenta-Kreis)",
     "Schriftpaar aus fetter Versal-Grotesk und kursiver Serife je Zeile",
-    "Figur und Wort verschränkt (Wort hinter der Figur",
-    "Video in den Buchstaben",
-    "Gesicht im O)"
+    "Figur und Wort verschränkt (Wort hinter der Figur, Video in den Buchstaben, Gesicht im O)"
    ],
    "energie": 3,
    "format_quelle": "4:3",
@@ -46321,14 +46250,8 @@
    "familie": "glitch",
    "kurz": "Ein Hochkant-Porträt in hartem Schwarzweiß, das wie eine Zielerfassung abläuft: Punktwolke formt das Gesicht, Terminalzeilen tippen, Augen im Kachelraster, Ziffernwände, Silhouetten-Gitter; nur ein Kleidungsstück ist farbig.",
    "kern": [
-    "Schwarzweiß in vielen Härtegraden (Punktraster",
-    "Graustufe",
-    "Negativ",
-    "1-Bit-Silhouette) im schnellen Wechsel",
-    "Erfassungs-Sprache (tippende Terminalzeile",
-    "Ziffernwand",
-    "Kachelraster",
-    "Silhouetten im Auge)",
+    "Schwarzweiß in vielen Härtegraden (Punktraster, Graustufe, Negativ, 1-Bit-Silhouette) im schnellen Wechsel",
+    "Erfassungs-Sprache (tippende Terminalzeile, Ziffernwand, Kachelraster, Silhouetten im Auge)",
     "genau ein farbiges Kleidungsstück als Auflösung"
    ],
    "energie": 5,

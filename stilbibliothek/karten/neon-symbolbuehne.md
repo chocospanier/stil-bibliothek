@@ -106,7 +106,7 @@ Ein Monolog über eine Frage des Menschen, erzählt wie ein Hörspiel mit Bilder
 - **Schluss (letzte 7 bis 10 s):** Figur im Tunnel, Ansprache an den Zuschauer, das letzte Wort bleibt stehen, Bild läuft ohne Abbinder aus.
 
 ## Schnittmuster
-Bauplan für 30 s in Sekunden, weil der Takt aus der Stimme kommt. Wörter wechseln innerhalb der Bühnen auf den Inhaltswörtern (rund ein Wort je Sekunde). Wachsen dürfen alle Bühnen außer dem Lichtblitz; unter 5 s wird eine Bühne nervös.
+Bauplan für 30 s in Sekunden (die Karte verlangt 45 bis 120 s: für ein fertiges Stück die Bühnen strecken, die wachsen dürfen, bis mindestens 45 s erreicht sind), weil der Takt aus der Stimme kommt. Wörter wechseln innerhalb der Bühnen auf den Inhaltswörtern (rund ein Wort je Sekunde). Wachsen dürfen alle Bühnen außer dem Lichtblitz; unter 5 s wird eine Bühne nervös.
 
 | Slot | Sekunden | Bildtyp | Übergang | Ton |
 |---|---|---|---|---|

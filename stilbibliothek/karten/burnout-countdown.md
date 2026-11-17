@@ -3,7 +3,7 @@ id: burnout-countdown
 name: Burnout-Countdown
 familie: auto-beat
 kurz: Körniger Nullerjahre-Film über Straßenrennen, Reifenqualm und tanzende Menge, eröffnet mit einem leuchtenden 3-2-1 neben Gesichtern, danach leuchtende Einwortbefehle mit Punkt und eine schmutzige Titelkarte zum Schluss.
-kern: [übersättigter, körniger Nullerjahre-Filmlook mit tiefem Himmelblau und zugelaufenem Schwarz, leuchtender Countdown und Einwortbefehle mit Punkt in Weiß mit Glühen, Wechsel aus Maschine (Auto, Motorrad, Qualm) und Menschen (Menge, Tanz, Sprung)]
+kern: ["übersättigter, körniger Nullerjahre-Filmlook mit tiefem Himmelblau und zugelaufenem Schwarz", "leuchtender Countdown und Einwortbefehle mit Punkt in Weiß mit Glühen", "Wechsel aus Maschine (Auto, Motorrad, Qualm) und Menschen (Menge, Tanz, Sprung)"]
 energie: 5
 format_quelle: "3:2"
 laenge_s: [15, 22]

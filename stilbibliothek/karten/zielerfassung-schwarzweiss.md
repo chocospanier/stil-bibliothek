@@ -3,7 +3,7 @@ id: zielerfassung-schwarzweiss
 name: Zielerfassung Schwarzweiß
 familie: glitch
 kurz: "Ein Hochkant-Porträt in hartem Schwarzweiß, das wie eine Zielerfassung abläuft: Punktwolke formt das Gesicht, Terminalzeilen tippen, Augen im Kachelraster, Ziffernwände, Silhouetten-Gitter; nur ein Kleidungsstück ist farbig."
-kern: [Schwarzweiß in vielen Härtegraden (Punktraster, Graustufe, Negativ, 1-Bit-Silhouette) im schnellen Wechsel, Erfassungs-Sprache (tippende Terminalzeile, Ziffernwand, Kachelraster, Silhouetten im Auge), genau ein farbiges Kleidungsstück als Auflösung]
+kern: ["Schwarzweiß in vielen Härtegraden (Punktraster, Graustufe, Negativ, 1-Bit-Silhouette) im schnellen Wechsel", "Erfassungs-Sprache (tippende Terminalzeile, Ziffernwand, Kachelraster, Silhouetten im Auge)", "genau ein farbiges Kleidungsstück als Auflösung"]
 energie: 5
 format_quelle: "9:16"
 laenge_s: [10, 18]

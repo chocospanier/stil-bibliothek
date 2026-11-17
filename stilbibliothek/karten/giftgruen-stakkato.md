@@ -3,7 +3,7 @@ id: giftgruen-stakkato
 name: Giftgrün-Stakkato
 familie: aura-portrait
 kurz: Ein Hauptfiguren-Edit ganz in Schwarz und Giftgrün, mit Kontaktstreifen, Fingerabdruck-Silhouetten, Tracking-Linien und Weitwinkel von unten, im Zwei-Frame-Takt bis zum glühenden Titelwort.
-kern: [Grün-Duoton von Schwarz bis Blassgrün mit invertierten Blitzen, Einzelbild-Stakkato um 0,1 s mit Kontaktstreifen-Ketten, Titelwort am Ende von grauer Kontur zu Neongrün]
+kern: ["Grün-Duoton von Schwarz bis Blassgrün mit invertierten Blitzen", "Einzelbild-Stakkato um 0,1 s mit Kontaktstreifen-Ketten", "Titelwort am Ende von grauer Kontur zu Neongrün"]
 energie: 5
 format_quelle: "4:3"
 laenge_s: [8, 16]

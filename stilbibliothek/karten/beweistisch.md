@@ -2,7 +2,7 @@
 id: beweistisch
 name: "Beweistisch"
 familie: erklaergrammatik
-kurz: "Ein Argument nach Art von Vox: echtes Material liegt auf einem Tisch, die Kamera sucht wie ein Reporter, Stift und Linien ziehen ruckweise."
+kurz: "Ein Argument wie im Erklär-Journalismus: echtes Material liegt auf einem Tisch, die Kamera sucht wie ein Reporter, Stift und Linien ziehen ruckweise."
 kern: ["echtes Material füllt das Bild, nie als kleines Bild auf Fläche", die Kamera fährt wie ein suchendes Auge über den Tisch, "Linien, Kreise und Stift setzen sich ruckweise"]
 energie: 3
 format_quelle: "9:16"
@@ -68,7 +68,7 @@ quelle: Eigene Beschreibung eines offenen Zeichen-Motors (Lizenz im Feld lizenz)
 ---
 # Beweistisch
 
-Ein Argument nach Art von Vox: echtes Material liegt auf einem Tisch, die Kamera sucht wie ein Reporter, Stift und Linien ziehen ruckweise. Die Stimme trägt, das Bild antwortet auf jedes Stichwort und steht dann still; Verständnis ist die Energie.
+Ein Argument wie im Erklär-Journalismus: echtes Material liegt auf einem Tisch, die Kamera sucht wie ein Reporter, Stift und Linien ziehen ruckweise. Die Stimme trägt, das Bild antwortet auf jedes Stichwort und steht dann still; Verständnis ist die Energie.
 
 ## Kern
 - Echtes Material füllt das Bild, nie als kleines Bild auf Fläche.

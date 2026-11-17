@@ -102,7 +102,7 @@ Wie eine Uhren- oder Kopfhörer-Werbung, die sich als Mode-Porträt verkleidet: 
 - **Schluss (29,5 bis 31 s):** Figur geht aus dem Bild, Ausklang in die Stille.
 
 ## Schnittmuster
-Bauplan für 18 s bei gefühlten 90 BPM (Sechzehntel = 0,167 s; die Kopfwerte stehen im gemessenen 179er-Raster und halbieren sich hier). 108 Sechzehntel.
+Bauplan für 18 s bei gefühlten 90 BPM (die Karte verlangt 20 bis 32 s: für ein fertiges Stück um mindestens einen Takt verlängern) (Sechzehntel = 0,167 s; die Kopfwerte stehen im gemessenen 179er-Raster und halbieren sich hier). 108 Sechzehntel.
 
 | Slot | Sechzehntel | Bildtyp | Übergang | Ton |
 |---|---|---|---|---|

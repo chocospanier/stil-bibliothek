@@ -3,7 +3,7 @@ id: rockheld-kopfueber
 name: Rockheld kopfüber
 familie: musikvideo
 kurz: Eine einzige Heldenfigur in gedämpftem Kinolook, eröffnet mit schreienden Fisheye-Nahaufnahmen im Zehntelsekundentakt, dann Silhouetten vor Lichtportalen, Stunts, kopfüber gedrehte Bilder und Reißschwenks bis zur Pose mit erhobenen Armen vor dem Sonnenuntergang.
-kern: [eine Figur in vielen Lagen (Schrei, Stille, Stunt, Silhouette), gedämpfter Kinolook mit tiefem Schwarz und warmem Gegenlicht, Bilder kopfüber oder gekippt plus Reißschwenks als Rock-Geste]
+kern: ["eine Figur in vielen Lagen (Schrei, Stille, Stunt, Silhouette)", "gedämpfter Kinolook mit tiefem Schwarz und warmem Gegenlicht", "Bilder kopfüber oder gekippt plus Reißschwenks als Rock-Geste"]
 energie: 4
 format_quelle: "16:9"
 laenge_s: [15, 25]

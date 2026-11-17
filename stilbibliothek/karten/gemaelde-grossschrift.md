@@ -3,7 +3,7 @@ id: gemaelde-grossschrift
 name: Gemälde-Großschrift
 familie: malerei
 kurz: Alte Gemälde und Druckgrafiken gleiten langsam durchs Bild, riesige schmale Wörter stehen hinter den gemalten Figuren, jedes Kapitel hat eine eigene Tönung, gerahmt von einer feinen Museums-Beschriftung in den Ecken.
-kern: [riesige schmale Versalwörter hinter den gemalten Figuren, eine Tönung je Kapitel (Sepia, Rot-Duoton, Papierweiß, Grau), feine Ecken-Beschriftung mit Werkangaben und Kapitelzähler]
+kern: ["riesige schmale Versalwörter hinter den gemalten Figuren", "eine Tönung je Kapitel (Sepia, Rot-Duoton, Papierweiß, Grau)", "feine Ecken-Beschriftung mit Werkangaben und Kapitelzähler"]
 energie: 2
 format_quelle: "16:9"
 laenge_s: [20, 30]

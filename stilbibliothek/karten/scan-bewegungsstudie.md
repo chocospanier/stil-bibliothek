@@ -3,7 +3,7 @@ id: scan-bewegungsstudie
 name: Scan-Bewegungsstudie
 familie: glitch
 kurz: "Ein Porträt wie eine Laborakte: leuchtende Silhouetten im Bewegungskatalog, eine rote Partikelfigur, ein gescannter Kopf, Produkte auf Weiß und beschriftete Schaubilder, im Wechsel aus Einzelbild-Salven und langen ruhigen Studien."
-kern: [Silhouetten und Scans statt normaler Aufnahmen (Leuchtumriss, Partikel, Zeilenscan), Laborgrafik mit Schaubildern und kleiner Beschriftung, zweigeteilter Rhythmus aus 0,1-s-Salven und 2-s-Studien]
+kern: ["Silhouetten und Scans statt normaler Aufnahmen (Leuchtumriss, Partikel, Zeilenscan)", "Laborgrafik mit Schaubildern und kleiner Beschriftung", "zweigeteilter Rhythmus aus 0,1-s-Salven und 2-s-Studien"]
 energie: 4
 format_quelle: "16:9"
 laenge_s: [15, 25]

@@ -3,7 +3,7 @@ id: monument-fragmente
 name: Monument-Fragmente
 familie: 3d-objekt
 kurz: Ein monumentales Bauwerk aus Steinblöcken, nur in Ausschnitten gezeigt, in Terrakotta und Pflaume vor Creme und Lavendel mit einer leuchtenden blauen Fuge, im gleichmäßigen Sechzehntel-Schnitt; ein Schwarzweiß-Block in der Mitte, Titel am Ende.
-kern: [nur Fragmente eines großen Objekts (Säulen, Ring, Schale, Tor, Figurteile), nie das Ganze, Pastell-Licht mit Terrakotta-Flächen und einer blauen Leuchtfuge, gleichmäßiger Fluss aus Ein- bis Drei-Sechzehntel-Schnitten mit Schwarzweiß-Einschub]
+kern: ["nur Fragmente eines großen Objekts (Säulen, Ring, Schale, Tor, Figurteile), nie das Ganze", "Pastell-Licht mit Terrakotta-Flächen und einer blauen Leuchtfuge", "gleichmäßiger Fluss aus Ein- bis Drei-Sechzehntel-Schnitten mit Schwarzweiß-Einschub"]
 energie: 4
 format_quelle: "16:9"
 laenge_s: [20, 30]

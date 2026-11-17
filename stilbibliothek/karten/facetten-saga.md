@@ -3,7 +3,7 @@ id: facetten-saga
 name: Facetten-Saga
 familie: malerei
 kurz: Eine dunkle Sagenwelt aus kantigen Stein- und Papierfacetten in Blaugrau, mit einem einzigen warmen Licht, erzählt in ruhigen Einstellungen von je anderthalb Sekunden genau auf dem Raster, mit einem Akzent im Ton auf jedem Schnitt.
-kern: [facettierte Welt (Scherben, Keile, kantige Figuren) wie gefaltetes Papier und gemalter Stein, kaltes Blaugrau mit einem warmen Lichtakzent, gleichmäßige Einstellungen von 1,25 bis 2 s, Schnitte exakt auf dem Sechzehntel-Raster mit Akzent im Ton auf jedem Schnitt]
+kern: ["facettierte Welt (Scherben, Keile, kantige Figuren) wie gefaltetes Papier und gemalter Stein", "kaltes Blaugrau mit einem warmen Lichtakzent", "gleichmäßige Einstellungen von 1,25 bis 2 s, Schnitte exakt auf dem Sechzehntel-Raster mit Akzent im Ton auf jedem Schnitt"]
 energie: 2
 format_quelle: "16:9"
 laenge_s: [15, 30]

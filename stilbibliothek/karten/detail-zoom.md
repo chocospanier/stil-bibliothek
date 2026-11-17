@@ -103,6 +103,7 @@ Bei 100 BPM in Sechzehnteln; ohne `takt` ein 0,5-s-Raster. Wachsen dürfen die M
 - **Grund:** wie Produkt-Bühne (Grundfläche, Lichthof aus der Textrolle).
 - **Bildbehandlung:** keine am Foto. Kamera als `translate(a - p·z) scale(z)` auf einer Weltebene; z wird logarithmisch gemischt, Stelle und Anker linear.
 - **Bausteine:** `Buehne`, `Korn`; Ring und Linie als SVG; Infofeld, Preisschild, Schlusskarte aus `gemeinsam_p1.tsx`.
+- **Untertitel:** Die Merkmalszeilen zeigen das Gesprochene schon, darum keine Untertitel von selbst. Sagt die Stimme mehr als die Zeilen: `"untertitel": {"y": 12}` (Mitte in Prozent der Höhe, an einer freien Stelle).
 - **Typografie:** Barlow Condensed 800 (Merkmale, Hook), Inter 500 (Erklärzeile, Webadresse).
 - **Bewegung:** Fahrt 0,75 s (0.65,0,0.35,1), Ring 0,35 s, Linie 0,4 s, Text 0,6 s, Abgang 0,3 s vor der nächsten Fahrt; Push 6 % mit sanfter Kurve.
 - **Formate:** 9:16 Pflicht (`DetailZoom`), 16:9 und 1:1 (`DetailZoom-16x9`, `DetailZoom-1x1`): Stelle links, Infofeld rechts, waagerechte Hinweislinie.

@@ -3,7 +3,7 @@ id: flakon-ruhepuls
 name: Flakon-Ruhepuls
 familie: werbespot
 kurz: Ein einzelnes Produkt in fast völliger Dunkelheit, Bühne für Bühne, jedes Bild länger als das vorige und jedes durch genau einen Weißblitz getrennt; fast die Hälfte der Laufzeit gehört der Schlusskarte.
-kern: [nur das Produkt, keine Menschen, in tiefem Schwarz mit einem warmen Leuchten, Puls aus Bild und einem Sechzehntel Weißblitz mit wachsender Bildlänge, lange stille Schlusskarte]
+kern: ["nur das Produkt, keine Menschen, in tiefem Schwarz mit einem warmen Leuchten", "Puls aus Bild und einem Sechzehntel Weißblitz mit wachsender Bildlänge", "lange stille Schlusskarte"]
 energie: 2
 format_quelle: "16:9"
 laenge_s: [15, 22]

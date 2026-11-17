@@ -105,12 +105,13 @@ Bei 120 BPM in Sechzehnteln (ein Schlag = vier Sechzehntel); ohne `takt` gilt ei
 - **Grund:** Fläche in der Grundrolle, Lichthof als radialer Verlauf aus der Textrolle (Deckkraft über `color-mix`), Boden als ovaler Schein unter dem Produkt; optional ein Hintergrundfoto mit einem Schleier aus der Grundfarbe als eigener Ebene.
 - **Bildbehandlung:** keine am Produkt und am Logo. Schatten zwei radiale Ellipsen in Schwarz; Spiegelung eine gespiegelte Kopie mit Maskenverlauf (20 %); Lichtstreif ein Verlauf im Mischmodus Screen, maskiert mit dem Alpha des Fotos.
 - **Bausteine:** `Buehne`, `Korn`; eigene Teile in `gemeinsam_p1.tsx` (Grund, ProduktBild, Preisschild, Schlusskarte, Fehlerhinweis, Palette, Raster).
+- **Untertitel:** Mit Wortzeiten (`woerter`) zeigt der Motor die Stimme als Häppchen unten über der Schutzzone, bis der Preis kommt; `"untertitel": false` schaltet sie ab.
 - **Typografie:** Barlow Condensed 800/700 (Titel, Würfelklasse schmal), Inter 500/700 (Lauftext, Klasse grotesk). Größen in Prozent der Bildhöhe, Breite gemessen und eingepasst.
 - **Bewegung:** drei Kurven (Auftritt 0.16,1,0.3,1; Abgang 0.7,0,0.84,0; Fahrt 0.65,0,0.35,1), drei Dauern (0,35 / 0,6 / 1,0 s); keine linearen Bewegungen außer dem Lichtstreif (sanfte Kurve).
 - **Formate:** 9:16 Pflicht (`ProduktBuehne`); 16:9 (`ProduktBuehne-16x9`) und 1:1 (`ProduktBuehne-1x1`): Hook links, Produkt rechts, Liste links neben dem Produkt, Schlusskarte mit Produkt links.
 
 ## Material
-- **Bilder:** echtes Produktfoto, freigestellt (PNG mit Alpha, eng beschnitten, mindestens 1000 px hoch). Freistellen mit `werkzeuge/freistellen.py` oder rembg (Modell isnet-general-use). Logo als PNG oder SVG; Logos, die auf dunklem Grund untergehen, mit `logoPlatte: true`.
+- **Bilder:** echtes Produktfoto, freigestellt (PNG mit Alpha, eng beschnitten, mindestens 1000 px hoch). Freistellen mit `starter/werkzeuge/freistellen.py` oder rembg (Modell isnet-general-use). Logo als PNG oder SVG; Logos, die auf dunklem Grund untergehen, mit `logoPlatte: true`.
 - **Musik:** "Confident modern advertising track, 120 BPM, tight punchy kick and clap, muted electric guitar stabs, warm bass, short riser into a clear drop at 2 seconds, steady groove for 12 seconds, small break at 13 seconds, clean ending with a final hit at 17 seconds, instrumental, no vocals"
 - **Geräusche:** ein kurzer Akzent (Klick oder Hit) auf dem Preisschild, leise unter der Musik.
 

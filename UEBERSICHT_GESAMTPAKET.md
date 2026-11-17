@@ -1,5 +1,7 @@
 # Stil-Bibliothek für Kurzvideos aus Code
 
+> **Hinweis zur freien Fassung:** Diese Übersicht beschreibt beide Hälften. `starter/`, `werkzeuge/INSTALL.md`, `pruefen/PRUEFER.md` und die Messwerkzeuge liegen im Werkzeugkasten (content-autopilot.de), nicht in diesem Repo. Links dorthin führen hier ins Leere.
+
 289 Video-Stile in 24 Familien, so beschrieben, dass ein Mensch oder eine KI sie mit einem Code-Motor (Remotion, Canvas, SVG, After Effects, Blender) nachbauen kann. Dazu das Prüf-Wissen aus 26 gebauten Stücken und 24 Prüfberichten, ein frischer Prüfer als Agent-Definition, Mess-Werkzeuge ohne Credits, Vorlagen für eigene Stile und Kanäle und ein Remotion-Starter mit 28 Bausteinen und 114 durchgebauten Beispielen. Stand 17.10.2026.
 
 ## Für wen
@@ -34,7 +36,7 @@ Wer mit einer KI arbeitet (Claude Code, Cursor, ein anderer Agent), gibt ihr [SK
 Eine Karte beschreibt einen Look mit Messzahlen (Shot-Länge, Schnittdichte, Tempo, Lautheit, Helligkeit, Farbigkeit), Schnittmuster in Sechzehnteln, Palette mit Rollen, Rezept, Material-Prompts, Abnahme-Zielwerten und erlebten Fallen. Sie ersetzt keinen Code: Wiederholbar wird ein Stil erst mit den passenden Bausteinen im Motor. Der Starter liefert die 28 Bausteine, die fast alle Karten tragen ([starter/BAUSTEINE.md](starter/BAUSTEINE.md)); der erste Bau eines Stils dauert trotzdem länger als jeder weitere.
 
 ## Herkunft
-Jede Karte beruht auf der Messung eines öffentlich zugänglichen Vorschauvideos (Schnitterkennung, optischer Fluss, dominante Farben, Lautheit, Tempo) und auf dem Ansehen von Kontaktbögen. Beschrieben ist nur der Look: Rhythmus, Bildbehandlung, Komposition, Typografie, Ton. Keine Motive, Figuren, Marken, Texte oder Bilder der Quellen; die Karten enthalten kein fremdes Material. Die Fallen stammen aus 29 selbst gebauten Stücken (alle Familien der gemessenen Karten) und aus 27 Prüfberichten. Die 174 Karten der Zeichen-Motoren (Familien strichzeichnung, malstil, erklaergrammatik, selbstzeichnend, seit 06.11.2026) beruhen nicht auf einer Messung, sondern auf den Stil-Dateien offener Zeichen-Motoren, die jedes Bild aus Code malen; sie tragen Sollwerte statt Messwerten und den Bauweg `animskill` (Vorlage `KARTE_VORLAGE_MOTOR.md`).
+106 Karten beruhen auf der Messung eines öffentlich zugänglichen Vorschauvideos (Schnitterkennung, optischer Fluss, dominante Farben, Lautheit, Tempo) und auf dem Ansehen von Kontaktbögen. Beschrieben ist nur der Look: Rhythmus, Bildbehandlung, Komposition, Typografie, Ton. Keine Motive, Figuren, Marken, Texte oder Bilder der Quellen; die Karten enthalten kein fremdes Material. Die Fallen stammen aus 26 selbst gebauten Stücken und 24 Prüfberichten (ausgewertet im Fehlerkatalog), dazu aus den Fremdtests. 9 Karten sind eigene Entwürfe ohne Vorlage (produktspot, die vier 3D-Kino-Karten, whiteboard-hand). Die 174 Karten der Zeichen-Motoren (Familien strichzeichnung, malstil, erklaergrammatik, selbstzeichnend, seit 06.11.2026) beruhen nicht auf einer Messung, sondern auf den Stil-Dateien offener Zeichen-Motoren, die jedes Bild aus Code malen; sie tragen Sollwerte statt Messwerten und den Bauweg `animskill` (Vorlage `KARTE_VORLAGE_MOTOR.md`).
 
 ## Grenzen
 - Tempo (BPM) ist aus der Tonspur geschätzt und kann halb oder doppelt sein; die Karten sagen, wo.

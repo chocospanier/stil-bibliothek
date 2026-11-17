@@ -3,7 +3,7 @@ id: springender-bildausschnitt
 name: Springender Bildausschnitt
 familie: bewegung
 kurz: Ein einziges Handyvideo läuft in einem Bildfenster auf Schwarz; das Fenster selbst tanzt im Takt, wird breit, schmal, kippt in die Tiefe und schließt sich zum Schlitz, um am neuen Ort wieder aufzugehen.
-kern: [Bildfenster auf schwarzer Fläche, das auf jedem Schlag Form, Breite und Kippung wechselt, Inhalt wird beschnitten statt skaliert (das Fenster ist ein Ausschnitt), Ortswechsel durch Zuklappen zum Schlitz statt Schnitt]
+kern: ["Bildfenster auf schwarzer Fläche, das auf jedem Schlag Form, Breite und Kippung wechselt", "Inhalt wird beschnitten statt skaliert (das Fenster ist ein Ausschnitt)", "Ortswechsel durch Zuklappen zum Schlitz statt Schnitt"]
 energie: 2
 format_quelle: "3:4"
 laenge_s: [10, 20]

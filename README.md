@@ -1,6 +1,6 @@
 # Style Library: 289 short-video styles for code engines
 
-**289 video styles in 24 families, written down precisely enough that a person or an AI agent can rebuild them in code.** Remotion, Canvas, SVG, After Effects, Blender: the cards do not care which engine you use. Version 1.6.3.
+**289 video styles in 24 families, written down precisely enough that a person or an AI agent can rebuild them in code.** Remotion, Canvas, SVG, After Effects, Blender: the cards do not care which engine you use. Version 1.6.4.
 
 Every card tells you what makes a look work, in numbers:
 
@@ -15,7 +15,7 @@ This repository is the **free half** of the library. It is licensed under [CC BY
 
 ## Two kinds of cards
 
-- **115 measured cards** in 20 families (noir, lookbook, music video, glitch, photocopier, kinetic type, product spot and more). Each one comes from measuring a publicly available preview video.
+- **115 code-engine cards** in 20 families (noir, lookbook, music video, glitch, photocopier, kinetic type, product spot and more). 106 of them come from measuring a publicly available preview video. 9 are original designs without a source (product spot, 3D cinema, whiteboard hand).
 - **174 drawing-engine cards** in four families (`strichzeichnung`, `malstil`, `erklaergrammatik`, `selbstzeichnend`): line drawing, painting styles, explainer grammars and pictures that draw themselves. They are written from the style files of open drawing engines that paint every frame in code, so they carry target values instead of measurements.
 
 ## What is in here
@@ -23,7 +23,7 @@ This repository is the **free half** of the library. It is licensed under [CC BY
 | Folder / file | What it is |
 |---|---|
 | [`stilbibliothek/`](stilbibliothek/LIESMICH.md) | 289 style cards (one Markdown file per style, machine-readable front matter), 24 families, an effect vocabulary, `index.json` for filtering, and `SKILL.md`, the instructions for an AI agent |
-| [`stilbibliothek/katalog/KATALOG.html`](stilbibliothek/katalog/KATALOG.html) | A visual catalogue with three stills per card (hook, middle, punch), at the moment for 106 measured cards; stills for the newer cards follow with the next version. Open it in a browser |
+| [`stilbibliothek/katalog/KATALOG.html`](stilbibliothek/katalog/KATALOG.html) | A visual catalogue: up to three stills for 285 of the 289 cards. Measured cards show hook, middle and punch rendered with the starter; drawing-engine cards mostly show frames from their engine's own examples (third-party, see [NOTICE.md](NOTICE.md)). Open it in a browser |
 | [`pruefen/FEHLERKATALOG.md`](pruefen/FEHLERKATALOG.md) | The error catalogue: the root causes behind the mistakes of the pieces built so far, with a checklist to run before every render |
 | [`ABLAUF.md`](ABLAUF.md) | The build process from choosing a style to acceptance |
 | [`GLOSSAR.md`](GLOSSAR.md) | The terms used on the cards (sixteenths, flash rule, safe zone, frame 0, hold, punchline) |
@@ -61,17 +61,17 @@ The paths in `ABLAUF.md` and `CLAUDE.md` (`starter/`, `werkzeuge/vorpruefung.py`
 
 ## Where the styles come from
 
-The measured cards are based on measuring a publicly available preview video (cut detection, optical flow, dominant colours, loudness, tempo) and on reading contact sheets. Only the look is described: rhythm, image treatment, composition, typography, sound. The cards contain no motifs, characters, brands, texts or images from those sources. The drawing-engine cards describe styles of open engines released under MIT or Apache 2.0. The catalogue stills were rendered with the starter; the people in them are AI-generated from each card's own material prompt.
+The measured cards are based on measuring a publicly available preview video (cut detection, optical flow, dominant colours, loudness, tempo) and on reading contact sheets. Only the look is described: rhythm, image treatment, composition, typography, sound. The cards contain no motifs, characters, brands, texts or images from those sources. The drawing-engine cards describe styles of open engines released under MIT or Apache 2.0. The catalogue stills of the code-engine cards were rendered with the starter; the people in them are AI-generated from each card's own material prompt. Most catalogue stills of the drawing-engine cards are frames from the examples that ship with those engines (claude-drawing-skill and huashu-art-motion, MIT; anidoodle, Apache 2.0). They stay under the licence of their engine: see [NOTICE.md](NOTICE.md) and `lizenzen_dritter/`.
 
 ## Licence and credit
 
-Text, cards, catalogue images and the card filter: [Creative Commons Attribution 4.0 International](LICENSE).
+Text, cards, the licensor's own catalogue images and the card filter: [Creative Commons Attribution 4.0 International](LICENSE). Third-party stills are listed in [NOTICE.md](NOTICE.md).
 Credit line: **"Style Library by David Jiménez Pérez, content-autopilot.de, CC BY 4.0"**. The toolkit is not part of this repository and not covered by this licence.
 
 ---
 
 ## Deutsch, kurz
 
-Die **freie Hälfte** der Stil-Bibliothek, Fassung 1.6.3: 289 Stil-Karten in 24 Familien (115 gemessene Karten und 174 Karten der Zeichen-Motoren), Stil-Katalog, Effekt-Vokabular, Kartenfilter, Bauablauf, Glossar, Fehlerkatalog und Vorlagen. Lizenz: Creative Commons Namensnennung 4.0 ([LICENSE](LICENSE), Namensnennung in [NOTICE.md](NOTICE.md), deutsche Fassung in [LIZENZ.md](LIZENZ.md)). Einstieg: `stilbibliothek/katalog/KATALOG.html` oder `stilbibliothek/FAMILIEN.md`, dann eine Karte, dann `ABLAUF.md`. Für KI-Agenten: `stilbibliothek/SKILL.md`. Gesamtübersicht beider Hälften: `UEBERSICHT_GESAMTPAKET.md`.
+Die **freie Hälfte** der Stil-Bibliothek, Fassung 1.6.4: 289 Stil-Karten in 24 Familien (106 gemessene Karten, 9 eigene Entwürfe und 174 Karten der Zeichen-Motoren), Stil-Katalog, Effekt-Vokabular, Kartenfilter, Bauablauf, Glossar, Fehlerkatalog und Vorlagen. Lizenz: Creative Commons Namensnennung 4.0 ([LICENSE](LICENSE), Namensnennung in [NOTICE.md](NOTICE.md), deutsche Fassung in [LIZENZ.md](LIZENZ.md)). Einstieg: `stilbibliothek/katalog/KATALOG.html` oder `stilbibliothek/FAMILIEN.md`, dann eine Karte, dann `ABLAUF.md`. Für KI-Agenten: `stilbibliothek/SKILL.md`. Gesamtübersicht beider Hälften: `UEBERSICHT_GESAMTPAKET.md`.
 
 Der **Werkzeugkasten** (Remotion-Starter mit 28 Bausteinen, zehn Motoren, Prüf-System, Messwerkzeuge) ist ein bezahlter Zusatz und wird mit einem Befehl in diesen Ordner gelegt: https://content-autopilot.de

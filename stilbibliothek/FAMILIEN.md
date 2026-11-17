@@ -97,7 +97,7 @@ Fotokopie: Zweiton oder grobes Grau, Stempel, Kritzel, eine Akzentfarbe, Sechzeh
 ## kinetik-typo
 Das Wort ist das Bild: jedes Schlüsselwort als Typo, synchron zu Stimme oder Lied. **Regler:** Quelle (gesprochener Essay oder Liedzeilen), Schrift (schmale Versalien, 3D-Grotesk), Grund (Kinobild, Farbfelder). **Einsatz:** Zitate, Erklärungen, Weisheit, Lyric-Clips.
 **Creator-Modus:** 1 frei, 2 eingeschränkt (ohne die Kennungen aus `creator_ohne`). **Spielraum (Standard der Familie):** Palette eine der drei Hauspaletten; Schrift Paar innerhalb der Klasse; Blitzbild 2 bis 4 Bilder; Push-in 3 bis 8 %; Korn 0.045 bis 0.075; Vignette 0.3 bis 0.5; Beat-Versatz 0 bis 1 Sechzehntel; Textgröße -5 bis +5 %. Einzelwerte je Karte im Kopfblock `spielraum`.
-[essay-wortbild](karten/essay-wortbild.md) · [nummern-lyrik](karten/nummern-lyrik.md)
+[essay-wortbild](karten/essay-wortbild.md) · [nummern-lyrik](karten/nummern-lyrik.md) · [umkehrwort-monolog](karten/umkehrwort-monolog.md)
 
 ## erklaerstimme
 Eine Stimme erklärt, das Bild illustriert Satz für Satz, Untertitel laufen wortgenau mit. Harte Schnitte sind selten; der Takt kommt aus Bildereignissen auf den Schlüsselwörtern (Symbol springt auf, Wort wechselt, Etikett zeichnet sich) und aus der Stimme selbst. **Regler:** Bühne (feste Erzählerfigur auf Weiß, Symbolbühne je Satz auf Farbwelt, Glaskörper im Dunkeln mit Akten- und Messebene), Wortbild (Häppchen mit Aktivwort in Farbe oder Kasten, einzelnes Wort mittig), Tempo der Stimme (1,9 bis 3,5 Wörter je Sekunde), Bett (keins bis dicht). **Einsatz:** Erklärvideos, Wissens- und Psychologie-Stücke, Ratgeber-Reihen, Fallgeschichten. Baustein dafür: `WortSpur` (Untertitel nach Wortzeiten), dazu `Hinweis` für Zeigelinien.

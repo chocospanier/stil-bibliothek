@@ -3,7 +3,7 @@ id: pastell-ornamentschleife
 name: Pastell-Ornamentschleife
 familie: musikvideo
 kurz: Weiche Nahaufnahmen einer Sängerin in milchigem Lavendel und Eisblau, umrankt von weißen Linienornamenten (Ranken, Schmetterlinge, Noten, Notenlinien), getrennt von Weißblüten; die zweite Hälfte wiederholt die erste Bildfolge wie eine Schleife.
-kern: [milchiger Pastell-Look ohne echtes Schwarz (Lavendel, Eisblau, Rosa), weiße Linienornamente als Rahmen und Overlay je Shot, Weißblüte als Übergang und Bildfolge, die sich als Schleife wiederholt]
+kern: ["milchiger Pastell-Look ohne echtes Schwarz (Lavendel, Eisblau, Rosa)", "weiße Linienornamente als Rahmen und Overlay je Shot", "Weißblüte als Übergang und Bildfolge, die sich als Schleife wiederholt"]
 energie: 3
 format_quelle: "4:3"
 laenge_s: [8, 15]

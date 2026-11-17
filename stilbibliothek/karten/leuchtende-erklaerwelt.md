@@ -2,7 +2,7 @@
 id: leuchtende-erklaerwelt
 name: "Leuchtende Erklärwelt"
 familie: erklaergrammatik
-kurz: "Wissenschaft nach Art von Kurzgesagt: ein abstrakter Begriff wird ein Ding in einer leuchtenden Welt, die Kamera reist zwischen Größenordnungen."
+kurz: "Wissenschaft als leuchtende Trickwelt: ein abstrakter Begriff wird ein Ding in einer leuchtenden Welt, die Kamera reist zwischen Größenordnungen."
 kern: [jeder abstrakte Begriff wird ein konkretes Ding, die Kamera reist zwischen Größenordnungen, "die Umgebung lebt leise, Inhalte springen auf das Wort und stehen"]
 energie: 3
 format_quelle: "9:16"
@@ -68,7 +68,7 @@ quelle: Eigene Beschreibung eines offenen Zeichen-Motors (Lizenz im Feld lizenz)
 ---
 # Leuchtende Erklärwelt
 
-Wissenschaft nach Art von Kurzgesagt: ein abstrakter Begriff wird ein Ding in einer leuchtenden Welt, die Kamera reist zwischen Größenordnungen. Die Stimme trägt, das Bild antwortet auf jedes Stichwort und steht dann still; Verständnis ist die Energie.
+Wissenschaft als leuchtende Trickwelt: ein abstrakter Begriff wird ein Ding in einer leuchtenden Welt, die Kamera reist zwischen Größenordnungen. Die Stimme trägt, das Bild antwortet auf jedes Stichwort und steht dann still; Verständnis ist die Energie.
 
 ## Kern
 - Jeder abstrakte Begriff wird ein konkretes Ding.

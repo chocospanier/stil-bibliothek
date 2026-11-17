@@ -3,7 +3,7 @@ id: trickstil-mixtape
 name: Trickstil-Mixtape
 familie: zeichentrick
 kurz: Eine Heldin und ihre Gegner springen von Schnitt zu Schnitt zwischen 3D-Trickfilm, Bleistift-Zeichentrick, Knete und Comic, verbunden durch Kraft-Effekte, Fenster und große Wörter im Gesangstakt.
-kern: [jeder Shot ein anderer Animationsstil bei wiederkehrender Hauptfigur, Kraft-Effekte (Blitz, Feuer, Glühen) als roter Faden über die Stilbrüche, Fenster und Diagonalen als Übergänge]
+kern: ["jeder Shot ein anderer Animationsstil bei wiederkehrender Hauptfigur", "Kraft-Effekte (Blitz, Feuer, Glühen) als roter Faden über die Stilbrüche", "Fenster und Diagonalen als Übergänge"]
 energie: 4
 format_quelle: "16:9"
 laenge_s: [15, 25]

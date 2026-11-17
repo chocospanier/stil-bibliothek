@@ -3,7 +3,7 @@ id: verwandlungsstrom
 name: Verwandlungsstrom
 familie: malerei
 kurz: Ein einziger Satz steht von Bild 0 bis zum Ende unbewegt in warmem Gelb in der Bildmitte, darunter fließen handgemalte Motive auf Schwarz ohne Schnitt ineinander, jedes verwandelt sich ins nächste.
-kern: [ein Satz fest ab Bild 0 in der Mitte, ohne Kasten und ohne Animation, Verwandlung statt Schnitt alle 1 bis 3 s bei stehender Kamera, gemalte Motive auf fast schwarzem Grund]
+kern: ["ein Satz fest ab Bild 0 in der Mitte, ohne Kasten und ohne Animation", "Verwandlung statt Schnitt alle 1 bis 3 s bei stehender Kamera", "gemalte Motive auf fast schwarzem Grund"]
 energie: 2
 format_quelle: "16:9"
 laenge_s: [15, 22]

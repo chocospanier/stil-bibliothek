@@ -3,7 +3,7 @@ id: kiez-kritzel
 name: Kiez-Kritzel
 familie: scrapbook
 kurz: Warme, körnige Straßenaufnahmen einer Figur und ihres Viertels, überzeichnet mit weißen Handkritzeln und lila Markerstrichen, dazu Filmstreifen-Raster und Fotos auf zerknittertem Papier.
-kern: [warmer Filmlook mit Korn auf echten Stadtaufnahmen, weiße Kritzel, die sich auf dem Bild zeichnen (Krone, Kreis, Pfeil, Schallwellen), eine Akzentfarbe aus der Kleidung wandert in Marker und Muster]
+kern: ["warmer Filmlook mit Korn auf echten Stadtaufnahmen", "weiße Kritzel, die sich auf dem Bild zeichnen (Krone, Kreis, Pfeil, Schallwellen)", "eine Akzentfarbe aus der Kleidung wandert in Marker und Muster"]
 energie: 3
 format_quelle: "4:3"
 laenge_s: [15, 25]

@@ -2,7 +2,7 @@
 id: formwandel-dunkel
 name: "Formwandel im Dunkeln"
 familie: erklaergrammatik
-kurz: "Mathematik und Begriffe nach Art von 3Blue1Brown: auf Schwarz steht nur das, wovon gerade die Rede ist, und verwandelt sich ohne Schnitt ins Nächste."
+kurz: "Mathematik und Begriffe wie in Mathe-Erklärvideos: auf Schwarz steht nur das, wovon gerade die Rede ist, und verwandelt sich ohne Schnitt ins Nächste."
 kern: ["auf Schwarz steht nur das eine Ding, von dem gerade die Rede ist", ein Begriff verwandelt sich ohne Schnitt in den nächsten, "Farbe ist der Name eines Begriffs, höchstens vier Farben"]
 energie: 2
 format_quelle: "9:16"
@@ -68,7 +68,7 @@ quelle: Eigene Beschreibung eines offenen Zeichen-Motors (Lizenz im Feld lizenz)
 ---
 # Formwandel im Dunkeln
 
-Mathematik und Begriffe nach Art von 3Blue1Brown: auf Schwarz steht nur das, wovon gerade die Rede ist, und verwandelt sich ohne Schnitt ins Nächste. Die Stimme trägt, das Bild antwortet auf jedes Stichwort und steht dann still; Verständnis ist die Energie.
+Mathematik und Begriffe wie in Mathe-Erklärvideos: auf Schwarz steht nur das, wovon gerade die Rede ist, und verwandelt sich ohne Schnitt ins Nächste. Die Stimme trägt, das Bild antwortet auf jedes Stichwort und steht dann still; Verständnis ist die Energie.
 
 ## Kern
 - Auf Schwarz steht nur das eine Ding, von dem gerade die Rede ist.

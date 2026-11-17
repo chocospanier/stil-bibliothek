@@ -113,6 +113,7 @@ Bauplan bei 120 BPM (Sechzehntel 0,125 s); die Länge rechnet der Motor aus den 
 - **Grund:** Rollenfarbe grund; Flächen ganzflächig, keine Verläufe außer Licht hinter dem Produkt und Schatten darunter.
 - **Bildbehandlung:** keine Filter auf Produkt oder Logo. Logo auf Platte (`logoPlatte`), wenn der Grund dunkel ist; Plattenfarbe frei (etwa der Grund des Logos).
 - **Bausteine:** `src/beispiele/motoren/gemeinsam_p2.tsx`: MaskenZeilen, Produkt, LogoMarke, Preisschild, Merkmale, Laufband, Schlusskarte, WischEin, Szenenplan `plane()`, Fehlerhinweis.
+- **Untertitel:** Schlagzeilen und Laufband zeigen das Gesprochene schon, darum keine Untertitel von selbst. Sagt die Stimme mehr: `"untertitel": {"y": <Prozent>}` an eine freie Stelle, nie über das Laufband.
 - **Typografie:** Titelschrift schmal und fett, Größe so, dass die längste Zeile 85 % der Breite füllt (höchstens 12 bis 13,5 % der Höhe); Zahl und Einheit bleiben zusammen. Lauftext Grotesk ab 2,8 % der Höhe (54 px).
 - **Bewegung:** Eingänge ease-out-expo (0,16, 1, 0,3, 1), Abgänge ease-in; Wörter 9 Bilder, Wischband 8 Bilder, Landung ein Schlag, Preisschild 5 Bilder; Push-in 2 bis 4 % je Szene.
 - **Formate:** 9:16 (Pflicht), 16:9 (Titel und Name links, Produkt rechts, Preisschild links unten), 1:1 (wie 9:16, Prozentwerte). Kompositionen `AngebotsTicker`, `AngebotsTicker-16x9`, `AngebotsTicker-1x1`.

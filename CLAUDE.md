@@ -1,5 +1,7 @@
 # Stil-Bibliothek: Anleitung für Claude
 
+> **Hinweis zur freien Fassung:** Diese Anleitung beschreibt das ganze Paket. Der Ordner `starter/`, der Prüfer (`pruefen/PRUEFER.md`), die Messwerkzeuge und `npm install` gehören zum Werkzeugkasten und fehlen in dieser freien Hälfte. Hier liegen die Karten, der Ablauf, das Glossar, der Fehlerkatalog und die Vorlagen. Schritte, die den Werkzeugkasten brauchen, gehst du von Hand oder lässt sie aus und sagst das dem Menschen.
+
 > Diese Datei lädt automatisch, wenn Claude Code in diesem Ordner gestartet wird. Sie sagt dir, was hier liegt, in welcher Reihenfolge du liest und nach welchen Regeln du baust. Der Mensch, mit dem du arbeitest, will Kurzvideos in einem bestimmten Look; dieser Ordner ist das Wissen und der Werkzeugkasten dafür.
 
 ## Was hier liegt
@@ -9,7 +11,7 @@
 | `starter/` | Remotion-Projekt mit 28 Bausteinen plus Tonspur, 24 Helfern (darunter `freistellen.py` für Produktfotos und Logos) und 114 fertigen Beispielen. Einstieg `starter/LIESMICH.md`, Bausteine `starter/BAUSTEINE.md` |
 | `pruefen/` | `FEHLERKATALOG.md` (acht Ursachen, Checkliste vor dem Rendern) und `PRUEFER.md` (die Rolle des frischen Prüfers) |
 | `werkzeuge/` | Video vermessen, Vorprüfung, Streifen, Kamerabewegung, Kartenfilter. Einrichtung `werkzeuge/INSTALL.md` |
-| `.claude/skills/` und `starter/werkzeuge/animskills/` | Neun Zeichen-Motoren (Strichzeichnung, Malstil-Rezepte, Erklär-Grammatiken, Whiteboard mit zeichnender Hand, Formeln, selbstzeichnende Bilder, Aquarell-Figur, Canvas mit Web-Audio, Collage über Dienste) hinter einem Einstieg `starter/werkzeuge/animskill.py`; je Motor eine Skill-Hülle. Einrichten einmal mit `python -I starter/werkzeuge/animskills/einrichten.py --pruefen` |
+| `.claude/skills/` und `starter/werkzeuge/animskills/` | Zehn Zeichen-Motoren (Strichzeichnung, Malstil-Rezepte, Erklär-Grammatiken, Whiteboard mit zeichnender Hand, Formeln, selbstzeichnende Bilder, Aquarell-Figur, Canvas mit Web-Audio, Collage über Dienste, 3D-Kino) hinter einem Einstieg `starter/werkzeuge/animskill.py`; je Motor eine Skill-Hülle. Einrichten einmal mit `python -I starter/werkzeuge/animskills/einrichten.py --pruefen` |
 | `ABLAUF.md`, `GLOSSAR.md`, `LIESMICH.md` | der Bauweg, die Begriffe, die Übersicht |
 | `haus/` | Der Betrieb, für den du baust: `look.md` (Farben, Schrift, Stil-Familien), `rubriken.md` (feste Formate mit Länge, Kanal, Familie), `tabus.md` (was nie vorkommt), `fakten.md` (jede Zahl mit Quelle), `themen.md` (Vorrat), `praeferenzen.md` (Weg zum Material, Stimme, Formate). Lies alle sechs bei jeder Bestellung. Fehlen sie, lege sie aus `haus/LIESMICH.md` im Gespräch an, bevor du das erste Video baust |
 | `projekte/` | Ein Unterordner je Video (`JJJJ-MM-TT_<slug>/`): Skript, Storyboard, Prüfbericht, Render, `STAND.md`. Nie etwas darin löschen |

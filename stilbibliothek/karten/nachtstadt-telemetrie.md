@@ -3,7 +3,7 @@ id: nachtstadt-telemetrie
 name: Nachtstadt-Telemetrie
 familie: glitch
 kurz: Leere Orte einer Stadt bei Nacht in Magenta und Violett, ruhig gefilmt, überlagert von einer feinen Messoberfläche mit Etiketten, Zeigelinien, Zählern und Zeitleiste, als würde eine Maschine die Nacht protokollieren.
-kern: [ruhige Nachtbilder in Magenta-Violett mit nassen Spiegelungen, feine Mess-Oberfläche (Etiketten mit Zeigelinie, Zählerkasten, Zeitleiste, Ecken), ganz wenig Bewegung und lange Halte gegen Ende]
+kern: ["ruhige Nachtbilder in Magenta-Violett mit nassen Spiegelungen", "feine Mess-Oberfläche (Etiketten mit Zeigelinie, Zählerkasten, Zeitleiste, Ecken)", "ganz wenig Bewegung und lange Halte gegen Ende"]
 energie: 2
 format_quelle: "16:9"
 laenge_s: [12, 25]

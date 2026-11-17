@@ -105,7 +105,7 @@ Ein Erklärstück, das ermittelt statt erklärt: Behauptung gegen Behauptung, ei
 - **Schluss (letzte 8 %):** Rückkehr in den Versuchsraum, Gegenstände leuchten auf und erlöschen, zweizeilige Frage, Stimme endet mit dem Bild.
 
 ## Schnittmuster
-Bauplan für 30 s in Sekunden (Stimme gibt den Takt). Grafik-Ereignisse je Zeile in der Spalte Übergang. Wachsen dürfen Hook, Erklärung und Schluss; die Versuchs-Shots bleiben kurz (1,3 bis 3 s).
+Bauplan für 30 s in Sekunden (die Karte verlangt 45 bis 120 s: für ein fertiges Stück die Bühnen strecken, die wachsen dürfen, bis mindestens 45 s erreicht sind) (Stimme gibt den Takt). Grafik-Ereignisse je Zeile in der Spalte Übergang. Wachsen dürfen Hook, Erklärung und Schluss; die Versuchs-Shots bleiben kurz (1,3 bis 3 s).
 
 | Slot | Sekunden | Bildtyp | Übergang | Ton |
 |---|---|---|---|---|

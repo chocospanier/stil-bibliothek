@@ -111,6 +111,7 @@ Bauplan bei 120 BPM; die Länge rechnet der Motor aus den Texten (Lesezeit 3,3 W
 ## Rezept für einen Code-Motor
 - **Grund:** Rollenfarbe grund; alte Seite gedeckte Fläche oder Bild mit Verlauf aus dem Grund (82 bis 88 % Deckung unten), nie gefiltert.
 - **Bausteine:** `gemeinsam_p2.tsx` wie beim Angebots-Ticker; eigene Teile in `VorherNachher.tsx`: Etikett, PaarSzene, HeldSzene, Vorhang.
+- **Untertitel:** Die großen Vorher- und Nachher-Zeilen zeigen das Gesprochene schon, darum keine Untertitel von selbst. Sagt die Stimme mehr als die Zeilen: `"untertitel": {"y": <Prozent>}` an eine freie Stelle.
 - **Typografie:** wie Angebots-Ticker; die neue Zeile ist schmaler gesetzt (Platz für das Produkt).
 - **Bewegung:** Standardkurve (0,2, 0, 0, 1) für Teilung und Türen (9 bis 12 Bilder), Masken 9 Bilder, Strich 9 Bilder je Zeile, Preisschild als Feder ohne Überschwingen.
 - **Schlusskarte:** eigene Anordnung (`art: seite`): Logo links oben mit Akzentlinie, Produkt groß rechts, Preis, Zeile, Knopf und Webadresse links darunter.

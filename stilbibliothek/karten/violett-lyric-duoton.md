@@ -3,7 +3,7 @@ id: violett-lyric-duoton
 name: Violett-Lyric im Duoton
 familie: musikvideo
 kurz: "Kinetisches Lyric-Video in Violett und Fast-Schwarz: eine freigestellte Sängerin im Duoton, riesige fette Versalwörter hinter ihr, kursive Serifenwörter mit Bewegungsunschärfe, Buchstaben als Fenster ins Video und magentafarbene Kreise statt der Os."
-kern: [zwei Farben plus ein Akzent (Violett, Fast-Schwarz, Magenta-Kreis), Schriftpaar aus fetter Versal-Grotesk und kursiver Serife je Zeile, Figur und Wort verschränkt (Wort hinter der Figur, Video in den Buchstaben, Gesicht im O)]
+kern: ["zwei Farben plus ein Akzent (Violett, Fast-Schwarz, Magenta-Kreis)", "Schriftpaar aus fetter Versal-Grotesk und kursiver Serife je Zeile", "Figur und Wort verschränkt (Wort hinter der Figur, Video in den Buchstaben, Gesicht im O)"]
 energie: 3
 format_quelle: "4:3"
 laenge_s: [15, 25]

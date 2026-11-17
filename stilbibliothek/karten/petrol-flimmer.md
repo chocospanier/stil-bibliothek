@@ -3,7 +3,7 @@ id: petrol-flimmer
 name: Petrol-Flimmer
 familie: filmlook
 kurz: Quadratisches Porträt-Footage in kaltem Petrol mit milchigen Lichtern und grobem Korn, fünf Bildwechsel je Sekunde, dazwischen Unschärfe-Blitze, Streifenmasken, invertierte Gesichter in Lachsrosa und schräg gelegte Fotostreifen.
-kern: [Duoton Petrol bis Milchweiß mit grobem Korn und schwerer Vignette, Bildwechsel im Achtel- bis Sechzehntelbereich über die ganze Länge, Störbilder als Satzzeichen (Unschärfe, Streifenmaske, Negativ in Lachsrosa)]
+kern: ["Duoton Petrol bis Milchweiß mit grobem Korn und schwerer Vignette", "Bildwechsel im Achtel- bis Sechzehntelbereich über die ganze Länge", "Störbilder als Satzzeichen (Unschärfe, Streifenmaske, Negativ in Lachsrosa)"]
 energie: 5
 format_quelle: "1:1"
 laenge_s: [12, 20]

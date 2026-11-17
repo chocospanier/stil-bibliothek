@@ -3,7 +3,7 @@ id: untersicht-hype-reigen
 name: Untersicht-Hype-Reigen
 familie: musikvideo
 kurz: Viele verschiedene Performer in Weitwinkel-Untersicht, jeder in seiner eigenen Farbwelt, gerahmt wie ein 16-mm-Bild mit runden dunklen Ecken; es beginnt mit einem Sechzehntel-Gewitter erhobener Arme und ruht dann auf einzelnen Gesichtern.
-kern: [Weitwinkel von unten, nah am Körper, Hände greifen in die Linse, jede Einstellung eine eigene Farbwelt (Sonnenuntergang, Petrol, Rot, Pink, Schwarzweiß), 16-mm-Gefühl mit Korn und abgerundeter Vignette]
+kern: ["Weitwinkel von unten, nah am Körper, Hände greifen in die Linse", "jede Einstellung eine eigene Farbwelt (Sonnenuntergang, Petrol, Rot, Pink, Schwarzweiß)", "16-mm-Gefühl mit Korn und abgerundeter Vignette"]
 energie: 4
 format_quelle: "4:3"
 laenge_s: [15, 25]

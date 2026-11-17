@@ -3,7 +3,7 @@ id: klon-spur
 name: Klon-Spur
 familie: bewegung
 kurz: Eine Figur bewegt sich durch ein endloses weißes Studio und lässt bei jeder Bewegung eingefrorene Kopien zurück, bis eine ganze Spur aus Klonen das Bild füllt; dazwischen Nahaufnahmen und ein rauer roter Slogan.
-kern: [Klon-Spur: eingefrorene Kopien der Figur bleiben im Takt stehen und zeichnen die Bewegung nach, weißes Hohlkehlen-Studio mit spiegelndem Boden, eine rote Akzentfarbe in Kleidung, Gegenstand und Schrift]
+kern: ["Klon-Spur: eingefrorene Kopien der Figur bleiben im Takt stehen und zeichnen die Bewegung nach", "weißes Hohlkehlen-Studio mit spiegelndem Boden", "eine rote Akzentfarbe in Kleidung, Gegenstand und Schrift"]
 energie: 4
 format_quelle: "16:9"
 laenge_s: [12, 20]

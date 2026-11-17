@@ -3,7 +3,7 @@ id: tiefenkarte-fenster
 name: Tiefenkarte mit Farbfenstern
 familie: glitch
 kurz: Das ganze Video läuft als graue Tiefenkarte im Nebel (nah dunkel, fern weiß), nur Augen, Lippen und kleine Pixelflecken zeigen sich in rechteckigen Fenstern in echter Farbe; Schnitt exakt auf jedem Viertel eines langsamen Beats.
-kern: [Footage als weiche Tiefenkarte in Grau bis Weiß statt als Bild, rechteckige Farbfenster nur auf Augen, Lippen und Gesicht, ein Schnitt auf jedem Viertel ohne Ausnahme]
+kern: ["Footage als weiche Tiefenkarte in Grau bis Weiß statt als Bild", "rechteckige Farbfenster nur auf Augen, Lippen und Gesicht", "ein Schnitt auf jedem Viertel ohne Ausnahme"]
 energie: 3
 format_quelle: "16:9"
 laenge_s: [12, 20]

@@ -2,7 +2,7 @@
 id: formel-tafel
 name: "Formel-Tafel"
 familie: erklaergrammatik
-kurz: "Formeln nach Art von 3Blue1Brown, gebaut mit Manim: eine Gleichung schreibt sich Glied für Glied, verwandelt sich, der Graph antwortet in derselben Farbe."
+kurz: "Formeln wie in Mathe-Erklärvideos, gebaut mit Manim: eine Gleichung schreibt sich Glied für Glied, verwandelt sich, der Graph antwortet in derselben Farbe."
 kern: [Formeln schreiben sich Glied für Glied und verwandeln sich ineinander, Graph und Formel teilen dieselben Farben, "dunkler Grund, ruhige Kamera, kaum Schnitte"]
 energie: 2
 format_quelle: "9:16"
@@ -68,7 +68,7 @@ quelle: Eigene Beschreibung eines offenen Zeichen-Motors (Lizenz im Feld lizenz)
 ---
 # Formel-Tafel
 
-Formeln nach Art von 3Blue1Brown, gebaut mit Manim: eine Gleichung schreibt sich Glied für Glied, verwandelt sich, der Graph antwortet in derselben Farbe. Die Stimme trägt, das Bild antwortet auf jedes Stichwort und steht dann still; Verständnis ist die Energie.
+Formeln wie in Mathe-Erklärvideos, gebaut mit Manim: eine Gleichung schreibt sich Glied für Glied, verwandelt sich, der Graph antwortet in derselben Farbe. Die Stimme trägt, das Bild antwortet auf jedes Stichwort und steht dann still; Verständnis ist die Energie.
 
 ## Kern
 - Formeln schreiben sich Glied für Glied und verwandeln sich ineinander.

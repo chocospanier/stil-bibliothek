@@ -3,7 +3,7 @@ id: projektor-farbsprung
 name: Projektor-Farbsprung
 familie: glitch
 kurz: Rasante Drei-Frame-Schnitte aus einfarbig getönten Aufnahmen, Lichtlecks, Flares und kinetischen Wörtern, anfangs im Fenster eines Filmprojektors, mit Messkurven über Gesichtern und einem langen, stillen Ausklang.
-kern: [jede Einstellung in einer anderen Tönung (Türkis, Rot, Violett, Blau, Sepia) oder invertiert, Drei-Frame-Schnitt auf Worte statt auf den Beat, Typo als Bildmaterial (Riesenwort, Pixelschrift, Zeilenwiederholung, Glitch-Wort)]
+kern: ["jede Einstellung in einer anderen Tönung (Türkis, Rot, Violett, Blau, Sepia) oder invertiert", "Drei-Frame-Schnitt auf Worte statt auf den Beat", "Typo als Bildmaterial (Riesenwort, Pixelschrift, Zeilenwiederholung, Glitch-Wort)"]
 energie: 5
 format_quelle: "16:10"
 laenge_s: [12, 20]

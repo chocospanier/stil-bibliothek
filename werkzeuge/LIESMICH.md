@@ -1,6 +1,6 @@
 # Werkzeuge in der freien Hälfte
 
-Hier liegt nur der **Kartenfilter** `bibliothek_index.py`. Er prüft die Karten (Pflichtfelder, Effekt-Kennungen), baut `index.json`, `INDEX.md` und `EFFEKTE.md` neu und filtert die 106 Karten nach deinen Bedingungen.
+Hier liegt nur der **Kartenfilter** `bibliothek_index.py`. Er prüft die Karten (Pflichtfelder, Effekt-Kennungen), baut `index.json`, `INDEX.md` und `EFFEKTE.md` neu und filtert alle Karten nach deinen Bedingungen.
 
 ```bash
 pip install PyYAML

@@ -3,7 +3,7 @@ id: kapitelwort-kino
 name: Kapitelwort-Kino
 familie: filmlook
 kurz: Eine Figur durchläuft eine Nacht im Regen bis zum Morgen über den Wolken; jede Einstellung trägt genau ein Verb in der Bildmitte, das mit einem kurzen Farbversatz-Glitch erscheint.
-kern: [genau ein Wort je Einstellung als Kapitel der Handlung, Farbbogen von kalter Regennacht zu warmem Morgenlicht, ruhige Einstellungen um 1,6 s mit langsamem Push]
+kern: ["genau ein Wort je Einstellung als Kapitel der Handlung", "Farbbogen von kalter Regennacht zu warmem Morgenlicht", "ruhige Einstellungen um 1,6 s mit langsamem Push"]
 energie: 3
 format_quelle: "16:9"
 laenge_s: [15, 25]

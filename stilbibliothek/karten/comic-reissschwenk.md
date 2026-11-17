@@ -3,7 +3,7 @@ id: comic-reissschwenk
 name: Comic-Reißschwenk
 familie: zeichentrick
 kurz: Ein Ensemble aus Pop-Manga-Figuren in Gelb, Orange und Schwarz mit Rasterpunkten und Strahlenkränzen, verbunden durch verwischte Reißschwenks und Durchflüge statt Schnitte.
-kern: [Gelb und Schwarz als Grundklang mit Rasterpunkten und Strahlenkranz, Übergänge als Reißschwenk oder Zoom-Durchflug mit starker Bewegungsunschärfe, Standbild-Illustrationen, die ständig langsam driften]
+kern: ["Gelb und Schwarz als Grundklang mit Rasterpunkten und Strahlenkranz", "Übergänge als Reißschwenk oder Zoom-Durchflug mit starker Bewegungsunschärfe", "Standbild-Illustrationen, die ständig langsam driften"]
 energie: 3
 format_quelle: "5:4"
 laenge_s: [20, 40]

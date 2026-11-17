@@ -3,7 +3,7 @@ id: malerei-raster
 name: Malerei-Raster
 familie: malerei
 kurz: Eine Farbreise von gemalten Szenen in rotem Rauchlicht über flache Vektorfiguren auf Creme zu kontrastreichem Schwarzweiß, verbunden durch ein Schweizer Typo-Raster aus dünnen Linien und Block-Glitches.
-kern: [drei Bildwelten nacheinander (warme Malerei, flache Illustration auf Papier, Schwarzweiß-Foto), Typo-Raster mit dünnen roten Linien und Wörtern, die einzeln erscheinen, ruhiger Anfang mit langen gemalten Einstellungen]
+kern: ["drei Bildwelten nacheinander (warme Malerei, flache Illustration auf Papier, Schwarzweiß-Foto)", "Typo-Raster mit dünnen roten Linien und Wörtern, die einzeln erscheinen", "ruhiger Anfang mit langen gemalten Einstellungen"]
 energie: 2
 format_quelle: "16:9"
 laenge_s: [12, 20]

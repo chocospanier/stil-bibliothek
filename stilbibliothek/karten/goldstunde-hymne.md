@@ -3,7 +3,7 @@ id: goldstunde-hymne
 name: Goldstunden-Hymne
 familie: filmlook
 kurz: Sportfilm im Gegenlicht der goldenen Stunde, Petrol in den Schatten und Gold in den Lichtern, Gesichter starren frontal in die Kamera, dazwischen Kraft-Details, Wassertropfen und einzelne Schwarzweiß-Blitzbilder.
-kern: [Petrol-Gold-Spreizung mit Gegenlicht, Dunst und Lichtreflexen, frontale Gesichter als Ruhepole zwischen schnellen Kraft-Details, kurze Schwarzweiß-Blitze von zwei bis drei Bildern als Akzent]
+kern: ["Petrol-Gold-Spreizung mit Gegenlicht, Dunst und Lichtreflexen", "frontale Gesichter als Ruhepole zwischen schnellen Kraft-Details", "kurze Schwarzweiß-Blitze von zwei bis drei Bildern als Akzent"]
 energie: 4
 format_quelle: "16:9"
 laenge_s: [15, 25]

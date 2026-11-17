@@ -244,6 +244,8 @@ def pruefe(p, kopf, text, vok, leck):
                 probleme.append(f"animskill.{f} fehlt")
     elif kopf.get("bauweg") not in (None, "motor", "handbau"):
         probleme.append(f"bauweg unbekannt: {kopf.get('bauweg')}")
+    if isinstance(kopf.get("kern"), list) and len(kopf["kern"]) != 3:
+        probleme.append(f"kern hat {len(kopf['kern'])} statt 3 Merkmalen (Merkmale mit Komma in Anführungszeichen setzen)")
     if kopf.get("id") and kopf["id"] != p.stem:
         probleme.append(f"id '{kopf['id']}' passt nicht zum Dateinamen")
     for a in (ABSCHNITTE_MOTOR if motor_karte else ABSCHNITTE):
@@ -317,7 +319,7 @@ def zahlen_zaehlen(paket: Path, karten: list, familien: int) -> dict:
         for k in re.findall(r"component=\{(\w+)\}", t):
             if k in aus_beispielen and k not in ("Bausteinprobe", "Schriftmuster", "CreatorGegenprobe"):
                 beispiele.add(k)
-    helfer = sorted(p.name for p in (st / "werkzeuge").glob("*") if p.suffix in (".py", ".mjs") and p.name != "py.mjs") if (st / "werkzeuge").exists() else []
+    helfer = sorted(p.name for p in (st / "werkzeuge").glob("*") if p.suffix in (".py", ".mjs") and p.name != "py.mjs" and not p.name.startswith("test_")) if (st / "werkzeuge").exists() else []
     return {"karten": len(karten), "familien": familien, "bausteine": bausteine, "beispiele": len(beispiele),
             "beispiel_namen": sorted(beispiele), "helfer": len(helfer), "helfer_namen": helfer}
 
