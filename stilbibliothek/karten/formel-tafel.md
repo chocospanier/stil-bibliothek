@@ -102,7 +102,7 @@ Tempo der Stimme (2 bis 3,5 Wörter je Sekunde), Begriffe je Minute, Hauspalette
 - Formelsatz (MathTex) braucht das TinyTeX, das `einrichten.py` neben den Motor legt; fehlt es, bricht der Render mit Hinweis ab.
 - Mehr als zwei Aussagen gleichzeitig machen aus der Grammatik eine Folienschau: Begriff für Begriff, der vorige wird Bild oder verschwindet.
 - Jede Zahl braucht eine Quelle in `haus/fakten.md`; Beispieldaten der Motoren nie im Stück lassen.
-- Die Gleichung verwandelt sich weiter, bevor das neue Glied gelesen ist → nach jedem Umformen eine kurze Pause im Bild; das hervorgehobene Glied bleibt farbig, bis der Graph antwortet.
+- Die Gleichung verwandelt sich weiter, bevor das neue Glied gelesen ist → nach jedem Umformen steht die Formel ihre Lesezeit (ein Glied als Schlagwort mindestens 0,5 s, eine ganze Zeile 0,8 s plus 0,2 s je Wort oder Glied); dauert das länger als 1 s, lebt das Bild leise weiter (der Graph wächst, die Kamera schiebt), die Formel selbst bleibt still; das hervorgehobene Glied bleibt farbig, bis der Graph antwortet.
 
 ## Ton
 Dieser Motor liefert keinen Ton: das Bett kommt aus `musik.py` oder als Code-Musik eines anderen Motors, die Geräusche aus `taktbauer.py --nur-schlaege` oder eigenen Aufnahmen. Code-Musik ist erlaubt, das Bett liegt leise (allein um −24 LUFS) und schweigt im Atem vor der Pointe. Geräusche: kurzer Klick oder Plopp auf jedes erscheinende Element, ein Wisch auf jeder Verwandlung. Jedes Stück mit Text bekommt eine Stimme (Wortzeiten aus der Aufnahme, Szenen auf Wortanfänge). Gesamt −14 LUFS, True Peak −1 dBTP; kein dumpfer Schlag am Ende, der Schluss klingt hell (Glocke, Akkord, Glanz). Gemischt wird mit `ton_standard.py`.

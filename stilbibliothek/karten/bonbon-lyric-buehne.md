@@ -159,4 +159,4 @@ Bauplan für 16 s bei 91 BPM (96 Sechzehntel zu je 0,165 s).
 - Geteilte Einstellung (Totale, dann Nahe derselben Szene): das Wort baut sich in der zweiten Hälfte nicht neu auf, sonst liest es sich als Fehler.
 - Strobo im Sechzehntel nur mit Farben gleicher Helligkeit (Blitzregel: harte Wechsel über 0,20 und WCAG messen); ohne das auf Achtel verlangsamen.
 - Die Basis lag bei Farbigkeit 0,26 knapp über der Untergrenze 0,24; blassere Würfelpaletten fielen heraus. Sättigung über dem ganzen Bild leicht anheben.
-- Springt die Figur mitten durch ein Bonbonwort, ist es halb verdeckt, solange man liest → das Wort zuerst frei zeigen, die Figur erst danach davor springen lassen.
+- Springt die Figur mitten durch ein Bonbonwort, ist es halb verdeckt, solange man liest → im Sprung-Bild baut sich das Wort nicht auf, es steht ab Bild 0 fertig und frei; die Figur springt erst nach 3 Sechzehnteln (rund 0,5 s) davor, der Sprung füllt die übrigen zwei. Reicht der Slot nicht, springt die Figur hinter dem Wort.

@@ -160,4 +160,4 @@ Bauplan für 18 s bei 98 BPM (117 Sechzehntel zu 0,153 s). Der Webseiten-Teil we
 - Code-Motor, Schnittmessung: scdet zählt nur Sprünge der Bildhelligkeit; zwei Code-Einstellungen gleicher Helligkeit nacheinander gelten als ein Shot → benachbarte Einstellungen in der Belichtung im Wechsel um 15 bis 35 % versetzen (`belichtung()` in `gemeinsam_d6.tsx`), unter 0,2 Sprung bleibt die Blitzregel frei.
 - Kahle Köpfe mit Sonnenbrille lesen sich als Bodyguards oder Puppen → Gesicht mit Augen und Lächeln, langes Haar, Körper in Kleidungsfarbe.
 - Blitzfoto-Teil auf hellem Grund hebt die Helligkeit über das Fenster der Karte → dunkler, farbiger Raum, nur Gesichter hell angeblitzt.
-- Der Klick in die Webseite als Zoom-Durchflug zieht die kleine Rosé-Typo mit → die Typo erst einblenden, wenn das Bild steht.
+- Der Zoom aus der App-Karte ins Gruppenfoto zieht jede Schrift mit, die schon darauf steht → im Zoom nur der Bedientext der Karte; der Rosé-Titel kommt erst mit dem harten Schnitt aufs Titelblatt und macht Push-in und Drehung des Fotos nicht mit.

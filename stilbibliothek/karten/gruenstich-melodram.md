@@ -138,7 +138,7 @@ Bauplan für 19 s bei 106 BPM (128 Sechzehntel, ein Sechzehntel = 0,142 s). Der 
 - Reigen: sechs bis zwölf Shots, immer auf Vierteln, mit einem bis zwei Akzenten länger.
 - Figur: eine auffällige Person ist Pflicht. Ohne prägnante Erscheinung wird der Reigen beliebig.
 - Tempo: 90 bis 120 BPM.
-- Kamera: Bogen um die Figur in der langen Eröffnung oder eine gerade, langsame Rückfahrt durch den grünen Raum; die gerade Fahrt betont das Melodram, der Bogen das Porträt.
+- Kamera in der langen Eröffnung: die Rückfahrt von der Untersicht zur Totalen bleibt immer; sie läuft gerade zurück durch den grünen Raum oder zieht dabei einen leichten Bogen um die Figur (der Bogen nur mit echtem Clip, das Standbild mit Kamerafahrt kann nur gerade zurück). Die gerade Fahrt betont das Melodram, der Bogen das Porträt.
 
 ## Abnahme
 - Render mit `video_schauen.py` messen: Werte aus `abnahme` treffen, `schnitt_auf_beat` über 0,8.

@@ -149,7 +149,7 @@ Bauplan für 15,75 s bei 80 BPM (84 Sechzehntel, 21 Viertel). Ein Sechzehntel is
 - Tempo: 70 bis 90 BPM; schneller verliert es die Ruhe.
 - Split-Screen: ein- bis zweimal je Stück, immer ungleich geteilt.
 - Ein Ortswechsel mit neuer Farbe (Herbstlaub, Schnee, Meer) im letzten Drittel als Aufschlag.
-- Kamera: Luftbild im Bogen um die Kehre oder gerade Verfolgung hinter dem Fahrzeug; die gerade Fahrt passt zum langsamen Groove, der Bogen zeigt die Landschaft.
+- Kamera: beide Bahnen gehören ins Stück; das Luftbild gleitet gerade über die Straße (senkrecht von oben oder schräg), die Verfolgung läuft gerade hinter dem Fahrzeug, ein langsamer Bogen nur um das stehende oder rollende Fahrzeug. Geregelt wird der Anteil: mehr gerade Fahrten passen zum langsamen Groove, mehr Bogen zeigt die Landschaft.
 
 ## Abnahme
 - Render mit `video_schauen.py` messen: Werte aus `abnahme` treffen, Lautheitsspanne unter 3 LU.

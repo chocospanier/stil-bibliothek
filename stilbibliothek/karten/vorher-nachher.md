@@ -72,7 +72,7 @@ Die älteste Verkaufsform der Welt, sauber gesetzt: Was du heute machst, was du 
 
 ## Kern
 - **Geteiltes Bild:** 9:16 oben alt (gedeckte Fläche: Grund mit 11 % Text; oder ein Bild aus `inhalt.alt`, mit Verlauf aus dem Grund für die Schrift), unten neu auf dem Grund; Linie in Akzentfarbe bei 47 % der Höhe, Etiketten über und unter der Linie (alt auf Grund, neu auf Akzentfläche). 16:9 links und rechts.
-- **Zeilenpaare:** alte Zeile steigt aus der Maske, auf dem nächsten Schlag streicht ein Balken in Akzentfarbe jede Zeile durch, sechs Bilder später steigt die neue Zeile mit einem senkrechten Akzentbalken davor. Bis 3 Zeilen, Schrift bis 11,5 % der Höhe.
+- **Zeilenpaare:** alte Zeile steigt aus der Maske, auf dem ersten Schlag nach ihrer Lesezeit streicht ein Balken in Akzentfarbe jede Zeile durch, sechs Bilder später steigt die neue Zeile mit einem senkrechten Akzentbalken davor. Bis 3 Zeilen, Schrift bis 11,5 % der Höhe.
 - **Produkt als Held:** das freigestellte Foto steht während der Paare klein rechts auf der neuen Seite (Konstante), dann schiebt die Teilung das Alte nach oben hinaus, das Produkt steigt groß in die Mitte, Name und Merkmale darüber, Preisschild gleitet herein, Schlusskarte.
 
 ## Erkennung
@@ -150,4 +150,4 @@ Gemessen an der eigenen Basis (`wuerfeln.py motor`, Beispiel-Props, stumm, 9:16,
 - (Prüfrunde 1) Die Türen schnitten das Titelprodukt sichtbar in einen Streifen und das Produkt der neuen Seite fuhr unter den Türen ins Bild; Türen 6 Bilder, das Produkt kommt erst danach und nur innerhalb der neuen Seite (Maske über den unteren 15 %).
 - (Prüfrunde 1) Der Vorhang zur Schlusskarte deckte nie ganz, dahinter sprang der Inhalt; jetzt läuft eine volle Fläche durch, der Wechsel liegt verdeckt.
 - (Prüfrunde 1) Drei Paare im selben Aufbau lesen sich wie Folien; je Paar ein Akzent (Produkt rückt beim Erscheinen der neuen Zeile um 4,5 % an), Halt 0,4 s.
-- Die alte Zeile wird durchgestrichen, bevor sie gelesen ist → sie steht erst ruhig; reicht ein Schlag nicht für ihre Lesezeit, die Zeile kürzen oder den Strich einen Schlag später setzen.
+- Die alte Zeile wird durchgestrichen, bevor sie gelesen ist → sie steht erst ruhig, der Strich fällt auf den ersten Schlag nach ihrer Lesezeit (gerechnet ab Stillstand: ab drei Wörtern 0,8 s plus 0,2 s je Wort, ein Schlagwort bis zwei Wörter als Ziel 0,5 s; eine Zeile aus drei Wörtern bei 120 BPM also auf den vierten Schlag nach dem Einsteigen); passt das mit der neuen Zeile nicht mehr in das Paar, die Zeile kürzen, statt den Strich vorzuziehen.

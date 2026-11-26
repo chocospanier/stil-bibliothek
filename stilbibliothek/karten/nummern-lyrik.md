@@ -150,14 +150,14 @@ Bauplan für 16 s bei 102 BPM (Sechzehntel 0,147 s, 109 Sechzehntel). Wortwechse
 - Ohne Gesang: Statt Liedzeilen tragen Schlagwörter eines Themas die Typo (Nachrichten, Fakten), Kapitel werden Punkte einer Liste.
 
 ## Abnahme
-- Render mit `video_schauen.py` messen, Zielwerte aus `abnahme`. Spitzen nicht wie die Vorlage über 0 dBFS treiben; Master auf −14 LUFS mit True Peak höchstens −1 dBTP, laut wirkt der Beat durch Dichte.
+- Render mit `video_schauen.py` messen, Zielwerte aus `abnahme`: Lautheit im Band −15 bis −13 LUFS, True Peak höchstens −1 dBTP (Mastern siehe Fallen).
 - Standbild: ein Wort groß lesbar, ein Foto, höchstens eine Kapitelfarbe.
 - 12-fps-Streifen: Wörter wechseln auf Silben, jede Drehung hat Unschärfe, Kapitelfolge in der richtigen Reihenfolge.
 
 ## Fallen
 - Bildschirmaufnahme statt Render → Unschärfe und sichtbare Taskleisten wie in der Vorlage. Immer direkt aus dem Motor rendern.
 - Wörter zu früh oder zu spät → Lyric-Videos leben von der Silbe. Wortzeiten aus Whisper oder dem eigenen Song-Skript übernehmen.
-- Über 0 dBFS gemastert → Verzerrung auf Handys. True Peak höchstens −1 dBTP.
+- Spitzen wie die Vorlage über 0 dBFS gemastert → Verzerrung auf Handys. Master auf −14 LUFS, True Peak höchstens −1 dBTP; laut wirkt der Beat durch Dichte, nicht durch Pegel.
 - Zu lange schwarze Strecken am Anfang und Ende → verlorene Zuschauer. Vorspann höchstens 0,3 s.
 - Fremde Liedtexte → Urheberrecht. Nur eigene Songs oder lizenzierte Texte.
 - Motor NummernLyrik (Welle D5): Ein Schatten als zweite graue Figur hinter der Person liest sich als Doppelgänger. Fotos ohne Schattenfigur.

@@ -102,7 +102,7 @@ Tempo der Hand (ein Durchgang 2 bis 8 s), Dichte der Striche, Anteil Entstehen g
 - Toter Raum fällt im Prüfschritt des Motors durch: in jeder Sekunde ändert sich sichtbar etwas, ein fertiges Bild atmet (Wind, Licht, Kamera).
 - Der Motor rechnet streng gleich bei jedem Lauf und kennt keine nachträglichen Filter: Unschärfe, Korn und Farbe gehören in den Stil, nicht als Filter auf das fertige Video.
 - Ein fremder Farbtausch macht aus dem Stil nur seinen Nachbarstil in falschen Farben: der Zug tauscht Akzent und Licht, Medium und Grund bleiben.
-- Die helle Schrift misst auf der getönten Leinwand 3,9 zu 1 → Wörter auf einer Platte im Dunkelton `#2B231C` (knapp 13 zu 1) oder mit Kreide auf einer dunkel angelegten Fläche des Bildes.
+- Die helle Schrift misst auf der getönten Leinwand 3,9 zu 1 → vor den Wörtern eine Fläche im Dunkelton `#2B231C` mit dem Pinsel anlegen (knapp 13 zu 1) und die Wörter darauf malen, oder mit Kreide auf eine dunkel angelegte Fläche des Bildes; nie eine fertige Platte einblenden.
 
 ## Ton
 Der Motor liefert Musik und Geräusche aus Code als getrennte Stems. Code-Musik ist erlaubt, das Bett liegt leise (allein um −24 LUFS) und schweigt im Atem vor der Pointe. Geräusche: Stift, Pinsel, Kreide, Schere oder Nadel auf dem Material, leise und im Takt der Striche. Jedes Stück mit Text bekommt eine Stimme (Wortzeiten aus der Aufnahme, Szenen auf Wortanfänge). Gesamt −14 LUFS, True Peak −1 dBTP; kein dumpfer Schlag am Ende, der Schluss klingt hell (Glocke, Akkord, Glanz). Gemischt wird mit `ton_standard.py`, aus den ungemasterten Stems des Motors.

@@ -1,6 +1,6 @@
 # Style Library: 289 short-video styles for code engines
 
-**289 video styles in 24 families, written down precisely enough that a person or an AI agent can rebuild them in code.** Remotion, Canvas, SVG, After Effects, Blender: the cards do not care which engine you use. Version 1.7.0.
+**289 video styles in 24 families, written down precisely enough that a person or an AI agent can rebuild them in code.** Remotion, Canvas, SVG, After Effects, Blender: the cards do not care which engine you use. Version 1.7.1.
 
 Every card tells you what makes a look work, in numbers:
 
@@ -23,7 +23,7 @@ This repository is the **free half** of the library. It is licensed under [CC BY
 | Folder / file | What it is |
 |---|---|
 | [`stilbibliothek/`](stilbibliothek/LIESMICH.md) | 289 style cards (one Markdown file per style, machine-readable front matter), 24 families, an effect vocabulary, `index.json` for filtering, and `SKILL.md`, the instructions for an AI agent |
-| [`stilbibliothek/katalog/KATALOG.html`](stilbibliothek/katalog/KATALOG.html) | A visual catalogue: up to three stills for 285 of the 289 cards. Measured cards show hook, middle and punch rendered with the starter; drawing-engine cards mostly show frames from their engine's own examples (third-party, see [NOTICE.md](NOTICE.md)). Open it in a browser |
+| [`stilbibliothek/katalog/KATALOG.html`](stilbibliothek/katalog/KATALOG.html) | A visual catalogue for all 289 cards: up to three stills and a silent four-second clip per card (the four product-spot cards have only the clip). Measured cards show hook, middle and punch rendered with the starter, the clip shows the same three frames in motion; drawing-engine cards mostly show frames and excerpts from their engine's own examples (third-party, see [NOTICE.md](NOTICE.md)). Open it in a browser, no server needed |
 | [`pruefen/FEHLERKATALOG.md`](pruefen/FEHLERKATALOG.md) | The error catalogue: the root causes behind the mistakes of the pieces built so far, with a checklist to run before every render |
 | [`ABLAUF.md`](ABLAUF.md) | The build process from choosing a style to acceptance |
 | [`GLOSSAR.md`](GLOSSAR.md) | The terms used on the cards (sixteenths, flash rule, safe zone, frame 0, hold, punchline) |
@@ -72,6 +72,6 @@ Credit line: **"Style Library by David Jiménez Pérez, content-autopilot.de, CC
 
 ## Deutsch, kurz
 
-Die **freie Hälfte** der Stil-Bibliothek, Fassung 1.7.0: 289 Stil-Karten in 24 Familien (106 gemessene Karten, 9 eigene Entwürfe und 174 Karten der Zeichen-Motoren), Stil-Katalog, Effekt-Vokabular, Kartenfilter, Bauablauf, Glossar, Fehlerkatalog und Vorlagen. Lizenz: Creative Commons Namensnennung 4.0 ([LICENSE](LICENSE), Namensnennung in [NOTICE.md](NOTICE.md), deutsche Fassung in [LIZENZ.md](LIZENZ.md)). Einstieg: `stilbibliothek/katalog/KATALOG.html` oder `stilbibliothek/FAMILIEN.md`, dann eine Karte, dann `ABLAUF.md`. Für KI-Agenten: `stilbibliothek/SKILL.md`. Gesamtübersicht beider Hälften: `UEBERSICHT_GESAMTPAKET.md`.
+Die **freie Hälfte** der Stil-Bibliothek, Fassung 1.7.1: 289 Stil-Karten in 24 Familien (106 gemessene Karten, 9 eigene Entwürfe und 174 Karten der Zeichen-Motoren), Stil-Katalog, Effekt-Vokabular, Kartenfilter, Bauablauf, Glossar, Fehlerkatalog und Vorlagen. Lizenz: Creative Commons Namensnennung 4.0 ([LICENSE](LICENSE), Namensnennung in [NOTICE.md](NOTICE.md), deutsche Fassung in [LIZENZ.md](LIZENZ.md)). Einstieg: `stilbibliothek/katalog/KATALOG.html` oder `stilbibliothek/FAMILIEN.md`, dann eine Karte, dann `ABLAUF.md`. Für KI-Agenten: `stilbibliothek/SKILL.md`. Gesamtübersicht beider Hälften: `UEBERSICHT_GESAMTPAKET.md`.
 
 Der **Werkzeugkasten** (Remotion-Starter mit 29 Bausteinen, zehn Motoren, Prüf-System, Messwerkzeuge) ist ein bezahlter Zusatz und wird mit einem Befehl in diesen Ordner gelegt: https://content-autopilot.de

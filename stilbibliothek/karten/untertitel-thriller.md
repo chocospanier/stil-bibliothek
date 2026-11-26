@@ -134,7 +134,7 @@ Bauplan für 20 s in Sekunden, weil der Schnitt dem Satz folgt (Bezugsraster 121
   - Fotowand: Raster aus 20 × 8 kleinen Porträts (dasselbe Foto), Fugen 0,3 %, leicht unscharf.
   - Papiere: 20 bis 30 helle Rechtecke, 3 bis 6 % der Höhe, drehen und fallen mit Bewegungsunschärfe.
 - **Typografie:** Untertitel in neutraler Grotesk (frei lizenziert zum Beispiel Inter 400), 2 % der Bildhöhe. Titel in fetter, leicht schmaler Grotesk (zum Beispiel Roboto Condensed 700 oder Barlow Condensed 700), Versalien, 7 % der Höhe, Satzzeichen mitsetzen.
-- **Bewegung:** jede Einstellung mit Push-in oder Pull-out von 2 bis 4 % über die ganze Dauer; Schnitt nach dem Ende des Untertitels plus 0,5 s.
+- **Bewegung:** jede Einstellung mit Push-in oder Pull-out von 2 bis 4 % über die ganze Dauer; Schnitt erst, wenn die fertige Untertitel-Zeile ihre Lesezeit gestanden hat (siehe letzte Falle).
 - **Formate:** 16:9 ist das Original. In 9:16 Figuren mittig, Gesichter auf 50 % der Höhe; Untertitel bei 75 % der Höhe (über den App-Bedienelementen) mit 2,5 % der Höhe; Titel zweizeilig mit 6 % der Höhe.
 
 ## Material
@@ -176,4 +176,4 @@ Bauplan für 20 s in Sekunden, weil der Schnitt dem Satz folgt (Bezugsraster 121
 - Silhouetten aus Code brauchen Merkmale (Hut, Kragen, Mantel, Kopf rund 30 % der Schulterbreite), sonst lesen sie sich als Piktogramm.
 - Die Auflösung braucht ein Bild: was der Antworttitel nennt, ist vor dem Blitz einmal zu sehen.
 - Licht, das erst nach dem Schnitt angeht, lässt den Schnitt aus dem dunklen Titel unter die Messschwelle fallen → das Licht brennt ab Bild 0 der Einstellung.
-- Die getippte Zeile verschwindet mit dem letzten Buchstaben im nächsten Schnitt → nach dem letzten Zeichen die ganze Zeile stehen lassen, so lange man sie in Ruhe liest, dann schneiden.
+- Die getippte Zeile verschwindet mit dem letzten Buchstaben im nächsten Schnitt → nach dem letzten Zeichen steht die ganze Zeile 0,8 s plus 0,2 s je Wort, dann der Schnitt. Untertitel darum kurz halten (drei bis sechs Wörter, rund 35 Zeichen): Tippen und Stand passen dann in 3,5 s; der Hook wächst dafür auf rund 2 s.

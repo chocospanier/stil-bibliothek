@@ -147,7 +147,7 @@ Bauplan für 18 s bei 94 BPM (112 Sechzehntel, ein Sechzehntel = 0,16 s).
 - Farbwärme: von kühlem Stahlgrau bis zum warmen Sonnenuntergang; immer gedämpft.
 - Stunts: optional; ohne Stunts tragen Silhouetten und Porträts allein.
 - Tempo: 85 bis 110 BPM.
-- Kamera um die Silhouette: Bogen vor dem Lichtportal oder gerade Fahrt seitlich vorbei; gerade wirkt schwerer und heldenhafter, der Bogen eher wie ein Musikvideo.
+- Kamera um die Silhouette: Bogen vor dem Lichtportal oder gerade Fahrt seitlich vorbei; gerade wirkt schwerer und heldenhafter, der Bogen leichter und verspielter (langsam wie in den Porträts, 2 bis 4° je Sekunde).
 
 ## Abnahme
 - Render mit `video_schauen.py` messen: Werte aus `abnahme` treffen, Dichte im ersten Drittel höher als im letzten.
