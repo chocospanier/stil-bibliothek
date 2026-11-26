@@ -19,6 +19,8 @@ messung:
   farbigkeit: 0.38
   woerter_pro_s: 4.0
   schnitt_auf_wortanfang: 0.94   # Anteil der Schnitte höchstens 0,1 s neben einem Wortanfang
+sollwerte:        # Ziel für den eigenen Render; messung beschreibt die Vorlage
+  lufs: -14
 schnittmuster_16tel: [15, 35, 25, 24, 35, 53, 20, 92, 24, 55, 57, 78, 26, 28, 30, 48, 69, 55]   # bei 167 BPM, nur Umrechnung der Sekunden
 palette:
   nachtviolett: "#1F1951"
@@ -141,3 +143,4 @@ Zielwerte aus `abnahme` mit `video_schauen.py` und `--whisper` messen; zusätzli
 - Erstes Wort im Ton angeschnitten → Stimme am gemessenen Einsatz der Aufnahme schneiden, nie an der Zeichenzeit des Dienstes; sonst fehlt der Anlaut und jeder Neustart knackt.
 - Schluss zu lang (mehrere Sekunden ohne Stimme hinter dem Namen) → letztes Wort 2,5 s halten, Name und Herkunft 2,8 s, dann Ende. Eine Herkunftszeile unter 0,45 der Wortgröße ist am Handy nicht lesbar.
 - Ein schäumender, türkiser Bach in der Bildmitte liegt im Mittelton und lässt einzelne Buchstaben der Differenzschrift verschwinden (gemessen 20 bis 27 % schwache Pixel); Wasser in die Ränder, die Mitte als tiefen Schatten oder hellen Himmel.
+- Kurze Füllwörter einer schnellen Stimme stehen nur Bruchteile einer Sekunde → jedes Wort bleibt bis zum nächsten Wortanfang allein stehen, nie gebündelt; wird es zu knapp, das Sprechtempo senken.

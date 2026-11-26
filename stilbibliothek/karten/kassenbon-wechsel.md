@@ -17,6 +17,8 @@ messung:
   helligkeit: 0.85
   kontrast: 0.23
   farbigkeit: 0.16
+sollwerte:        # Ziel für den eigenen Render; messung beschreibt die Vorlage
+  lufs: -14
 schnittmuster_16tel: [43, 50]
 palette:
   grund: "#FEFFFD"
@@ -43,7 +45,7 @@ abnahme:
   schnitte_pro_s: [0.3, 0.6]
   helligkeit: [0.75, 0.90]
   farbigkeit: [0.13, 0.19]
-  lufs: [-16.1, -14.1]
+  lufs: [-15, -13]   # Hausnorm −14 LUFS; den Wert der Vorlage nennt messung
 # Würfel-Felder (Etappe 0 Bauplan Würfelstile, 31.10.2026; karten_wuerfelfelder.py, Familien-Standard)
 creator: nein
 creator_grund: "der Kassenbon ist die Bühne, Figur im Bon ist Bild im Bild"
@@ -161,3 +163,4 @@ Bauplan für 13 s in Sekunden, weil der Stil mit Zwei-Sekunden-Blöcken arbeitet
 - Im Fächer überlappen die Bons: halb verdeckte Wörter („ART 2“, „10“, „LA“) lesen sich als Fehler → im Fächer nur die Köpfe zeigen und so staffeln, dass jeder Kopf ganz frei steht (Karten 44 %, Winkel −30/−10/9/28 Grad, Versatz −40/0/2/10 px).
 - Code-Motor (Welle D): Figur in der Karte höchstens 45 % der Bildhöhe, Füße an der Theke, Posen ohne erhobene Arme; sonst verdecken Kopf und Hände die Posten. Fächer am Schluss mit Drehpunkt im oberen Drittel und gestaffelten Köpfen, sonst laufen Köpfe aus dem Bild.
 - Code-Motor: die Basis liegt mit Helligkeit 0,893 knapp unter der Obergrenze; hellere Hausfarben dreht die Probe zurück.
+- Der senkrechte Wisch beginnt, während die Summe als Zahl-Walze noch rollt → die Summe steht, bevor der Wisch beginnt.

@@ -17,6 +17,8 @@ messung:
   helligkeit: 0.12
   kontrast: 0.14
   farbigkeit: 0.07
+sollwerte:        # Ziel für den eigenen Render; messung beschreibt die Vorlage
+  lufs: -14
 schnittmuster_16tel: [45, 16, 4, 4, 4, 4, 12, 4, 4, 4, 4, 11, 22]
 palette:
   grund: "#030403"
@@ -136,6 +138,7 @@ Bauplan für 19 s bei 106 BPM (128 Sechzehntel, ein Sechzehntel = 0,142 s). Der 
 - Reigen: sechs bis zwölf Shots, immer auf Vierteln, mit einem bis zwei Akzenten länger.
 - Figur: eine auffällige Person ist Pflicht. Ohne prägnante Erscheinung wird der Reigen beliebig.
 - Tempo: 90 bis 120 BPM.
+- Kamera: Bogen um die Figur in der langen Eröffnung oder eine gerade, langsame Rückfahrt durch den grünen Raum; die gerade Fahrt betont das Melodram, der Bogen das Porträt.
 
 ## Abnahme
 - Render mit `video_schauen.py` messen: Werte aus `abnahme` treffen, `schnitt_auf_beat` über 0,8.

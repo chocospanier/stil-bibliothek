@@ -5,6 +5,7 @@ familie: <strichzeichnung | malstil | erklaergrammatik | selbstzeichnend | ander
 kurz: <ein Satz: was man sieht und wie es wirkt>
 kern: [<Merkmal 1>, <Merkmal 2>, <Merkmal 3>]   # ohne diese drei ist es nicht der Stil
 energie: <1 ruhig bis 5 rasant>
+bewegung: <ruhig | verspielt | sachlich>   # freiwillig: Bewegungs-Charakter (starter/BAUSTEINE.md); fehlt das Feld, gilt keiner
 format_quelle: "9:16"          # der Motor rendert jedes Format; die Sollwerte gelten formatfest
 laenge_s: [<von>, <bis>]
 bauweg: animskill               # ein Zeichen-Motor malt das Bild aus Code; kein Remotion-Bau, kein Handbau
@@ -66,6 +67,16 @@ Die drei Merkmale aus `kern`, je ein Satz. Wer nur diese drei trifft, ist zu 80 
 ## Regler
 <was sich ändern darf, ohne dass der Stil kippt; was der Zug an Farbe tauscht>
 
+## Handwerk
+Was diese Karte für den Bau mit dem Motor festlegt, je eine kurze Zeile; fehlt eine Angabe, gilt der Standard des Starters.
+- **Lesezeit:** wie lange Untertitel und gezeichnete Schrift stehen, gezählt ab dem Bild, in dem die Schrift fertig steht (bei Strich für Strich: nach dem letzten Strich): Schlagwörter (ein oder zwei Wörter) mindestens 0,25 s, Ziel 0,5 s; Zeilen ab drei Wörtern Grundzeit und Zeit je Wort (Startwerte 0,8 s und 0,2 s). Mit `bewegung: ruhig` rechnet jeder Text wie eine Zeile.
+- **Schrift bewegt oder gelesen:** wo der Motor Schrift entstehen oder wandeln lässt und wo sie steht; fährt die Kamera, steht die Schrift still oder kommt erst nach der Fahrt.
+- **Blitze:** welche Übergänge und Effekte des Motors harte Hell-Dunkel-Wechsel erzeugen; zusammen höchstens drei je Sekunde.
+- **Bewegungs-Charakter:** ruhig, verspielt oder sachlich. Kamera und ganzes Bild federn nicht nach, nur kleine Teile dürfen spielen.
+- **Nachbearbeitung:** was der Motor selbst darüberlegt (Papier, Korn, Vignette), Korn zuletzt und in jedem Bild neu.
+- **Graue Probe:** ein Standbild je Bildtyp, entsättigt bei Handybreite (390 px); Held und Schrift lösen sich allein über Helligkeit vom Grund.
+- **Bei 3D:** Kanten mit Fase, Rauheit nie gleichmäßig über große Flächen, Licht hinter dem Helden, damit er sich vom Grund löst.
+
 ## Fallen
 - <aus der Quelle des Motors und aus eigenen Proben; je Falle die Lösung>
 
@@ -81,6 +92,6 @@ Sollwerte statt Messung, Prüfung mit `starter/werkzeuge/abnahme.py <video> <kar
 <!--
 Was gegenüber KARTE_VORLAGE.md wegfällt: messung (es gibt keine gemessene Vorlage), schnittmuster_16tel und die Abschnitte
 Dramaturgie, Schnittmuster, Rezept und Material (die macht der Motor). Neu: bauweg, animskill, lizenz, sollwerte und die
-Abschnitte Ton und Bauweg. bibliothek_index.py prüft beides: Pflichtfelder und Abschnitte je nach bauweg.
+Abschnitte Ton und Bauweg. Der Abschnitt Handwerk steht in beiden Vorlagen gleich aufgebaut. bibliothek_index.py prüft beides: Pflichtfelder und Abschnitte je nach bauweg.
 Erste Karten dieser Form (06.11.2026) erzeugt aus den Stil-Dateien der Motoren und stichprobenartig von Hand gelesen.
 -->

@@ -17,6 +17,8 @@ messung:
   helligkeit: 0.16
   kontrast: 0.20
   farbigkeit: 0.02
+sollwerte:        # Ziel für den eigenen Render; messung beschreibt die Vorlage
+  lufs: -14
 schnittmuster_16tel: [6, 1, 2, 3, 2, 3, 4, 5, 1, 2, 2, 1, 4, 3, 6, 37, 9, 5, 4, 5, 4, 18, 1, 6, 2, 20, 8, 8, 2, 3, 10, 2, 8, 19, 5, 12, 5, 2, 1, 16]
 palette:
   grund: "#030303"
@@ -39,7 +41,7 @@ abnahme:
   schnitte_pro_s: [1.4, 2.2]
   helligkeit: [0.13, 0.20]
   farbigkeit: [0.01, 0.05]
-  lufs: [-14.7, -12.7]
+  lufs: [-15, -13]   # Hausnorm −14 LUFS; den Wert der Vorlage nennt messung
 # Würfel-Felder (Etappe 0 Bauplan Würfelstile, 31.10.2026; karten_wuerfelfelder.py, Familien-Standard)
 creator: ja
 spielraum:
@@ -159,3 +161,4 @@ Bauplan für 18 s bei gefühlten 90 BPM (die Karte verlangt 20 bis 32 s: für ei
 - Stille am Anfang zu lang (über 1 s) → Absprung. Eine halbe bis eine Sekunde reicht.
 - Papierblitze in Folge über einer Sekunde sind eine Epilepsie-Gefahr → höchstens drei je Sekunde.
 - Motor (Code-Ersatz): Makros zwischen zwei dunklen Code-Bildern mit gleichem Aufbau erkennt die Schnittmessung nicht → je Einstellung Ausschnitt oder Lichtlage ändern, sonst fällt die Schnittdichte unter das Abnahme-Fenster.
+- Zeilenriss und Papierblitz direkt hintereinander zählen als zwei harte Wechsel → zwischen Riss und Blitz mindestens ein Makro oder Detail legen; das lange Bild nach dem Blitz bleibt ohne Riss.

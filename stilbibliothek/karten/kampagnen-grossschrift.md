@@ -17,6 +17,8 @@ messung:
   helligkeit: 0.52
   kontrast: 0.27
   farbigkeit: 0.29
+sollwerte:        # Ziel für den eigenen Render; messung beschreibt die Vorlage
+  lufs: -14
 schnittmuster_16tel: [4, 5, 8, 2, 11, 6, 3, 10, 3, 6, 9, 7, 8, 6, 4, 1, 2, 5, 16, 6, 1, 24]
 palette:
   zitrone: "#EFE933"
@@ -39,7 +41,7 @@ abnahme:
   schnitte_pro_s: [1.2, 1.8]
   helligkeit: [0.44, 0.60]
   farbigkeit: [0.23, 0.35]
-  lufs: [-17.5, -15.5]
+  lufs: [-15, -13]   # Hausnorm −14 LUFS; den Wert der Vorlage nennt messung
 # Würfel-Felder (Etappe 0 Bauplan Würfelstile, 31.10.2026; karten_wuerfelfelder.py, Familien-Standard)
 creator: nein
 creator_grund: "Freisteller mit weißem Stickerrand ist Kern-Merkmal"
@@ -160,3 +162,4 @@ Bauplan für 15 s bei 148 BPM (Sechzehntel 0,101 s, 148 Sechzehntel). Raster am 
 - Echte Markenlogos auf Produkten → Rechtsrisiko. Logos entfernen oder eigene Produkte zeigen.
 - Code-Motor (Welle D): das Fischauge als Studio mit gebogenen Kanten zeichnen, nie konzentrische Ringe um eine Figur mit erhobenen Armen; das liest sich als Zielscheibe und „Hände hoch“.
 - Code-Motor: das Produkt im Slogan-Bild klein in eine Ecke setzen (24 % der Höhe), es verdeckt sonst die Wörter des Slogans.
+- Der Schluss-Slogan erscheint hart hinter dem Riss und wird gleich vom nächsten Farbsprung überholt → er steht nach dem Riss so lange, wie er zum Lesen braucht, erst dann springt die Hintergrundfarbe.

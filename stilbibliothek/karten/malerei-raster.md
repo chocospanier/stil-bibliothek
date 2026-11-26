@@ -17,6 +17,8 @@ messung:
   helligkeit: 0.32
   kontrast: 0.19
   farbigkeit: 0.11
+sollwerte:        # Ziel für den eigenen Render; messung beschreibt die Vorlage
+  lufs: -14
 schnittmuster_16tel: [8, 8, 9, 0, 0, 6, 0, 0, 3, 4, 4, 1, 2, 4, 2, 2, 0, 7, 7]
 palette:
   rauch_dunkel: "#1E070B"
@@ -41,7 +43,7 @@ abnahme:
   schnitte_pro_s: [1.0, 1.5]
   helligkeit: [0.26, 0.39]
   farbigkeit: [0.08, 0.13]
-  lufs: [-15.2, -13.2]
+  lufs: [-15, -13]   # Hausnorm −14 LUFS; den Wert der Vorlage nennt messung
 # Würfel-Felder (Etappe 0 Bauplan Würfelstile, 31.10.2026; karten_wuerfelfelder.py, Familien-Standard)
 creator: eingeschraenkt
 creator_ohne: [text-hinter-figur, typo-raster]
@@ -164,3 +166,4 @@ Bauplan für 18 s bei 63 BPM (76 Sechzehntel zu 0,238 s, knapp fünf Takte). Hie
 - Raster-Wörter im Sechzehntel-Abstand bis zum Ende der Einstellung → das letzte Wort steht kürzer als 0,5 s; Wörter gleichmäßig über die Einstellung verteilen.
 - Ruhige Einzelfiguren unter großem Licht mit Wörtern wie Stille oder Bleiben → Abschieds-Lesart; Wörter aus dem Musikabend wählen.
 - Plakat-Zeile nur nach der Breite skaliert → kurze Wörter wachsen über den Rand oder in die Nachbarzeile, bei getauschten Schriften erst recht; Größe zusätzlich an die Zeilenhöhe binden.
+- Raster-Wort auf dem Schlag, während am Übergang zweier Bildwelten noch Maske oder Block-Glitch laufen → das Wort erst setzen, wenn das neue Bild steht, und bis zum nächsten Wechsel nicht mehr bewegen.

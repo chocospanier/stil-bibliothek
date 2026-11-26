@@ -17,6 +17,8 @@ messung:
   helligkeit: 0.27
   kontrast: 0.20
   farbigkeit: 0.13
+sollwerte:        # Ziel für den eigenen Render; messung beschreibt die Vorlage
+  lufs: -14
 schnittmuster_16tel: [1, 1, 1, 1, 1, 1, 1, 1, 1, 5, 1, 2, 5, 3, 5, 2, 3, 3, 2, 7, 1, 3, 3, 4, 2, 2, 3, 2, 3, 3, 3, 7, 3, 2, 2, 1, 1, 4, 2, 3]
 palette:
   grund: "#121415"
@@ -39,7 +41,7 @@ abnahme:
   schnitte_pro_s: [2.1, 3.1]
   helligkeit: [0.22, 0.32]
   farbigkeit: [0.10, 0.16]
-  lufs: [-15.5, -13.5]
+  lufs: [-15, -13]   # Hausnorm −14 LUFS; den Wert der Vorlage nennt messung
 # Würfel-Felder (Etappe 0 Bauplan Würfelstile, 31.10.2026; karten_wuerfelfelder.py, Familien-Standard)
 creator: ja
 spielraum:
@@ -145,6 +147,7 @@ Bauplan für 18 s bei 94 BPM (112 Sechzehntel, ein Sechzehntel = 0,16 s).
 - Farbwärme: von kühlem Stahlgrau bis zum warmen Sonnenuntergang; immer gedämpft.
 - Stunts: optional; ohne Stunts tragen Silhouetten und Porträts allein.
 - Tempo: 85 bis 110 BPM.
+- Kamera um die Silhouette: Bogen vor dem Lichtportal oder gerade Fahrt seitlich vorbei; gerade wirkt schwerer und heldenhafter, der Bogen eher wie ein Musikvideo.
 
 ## Abnahme
 - Render mit `video_schauen.py` messen: Werte aus `abnahme` treffen, Dichte im ersten Drittel höher als im letzten.

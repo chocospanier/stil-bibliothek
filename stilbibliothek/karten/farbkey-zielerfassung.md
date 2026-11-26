@@ -17,6 +17,8 @@ messung:
   helligkeit: 0.27
   kontrast: 0.24
   farbigkeit: 0.06
+sollwerte:        # Ziel für den eigenen Render; messung beschreibt die Vorlage
+  lufs: -14
 schnittmuster_16tel: [2, 8, 1, 4, 5, 7, 5, 7, 6, 11, 10, 10, 10, 1, 6, 1, 10, 6, 6, 1, 8, 7, 1, 3, 1, 5, 7, 6, 12]
 palette:
   grund: "#080708"
@@ -40,7 +42,7 @@ abnahme:
   schnitte_pro_s: [1.9, 2.9]
   helligkeit: [0.22, 0.33]
   farbigkeit: [0.04, 0.08]
-  lufs: [-15.2, -13.2]
+  lufs: [-15, -13]   # Hausnorm −14 LUFS; den Wert der Vorlage nennt messung
 # Würfel-Felder (Etappe 0 Bauplan Würfelstile, 31.10.2026; karten_wuerfelfelder.py, Familien-Standard)
 creator: eingeschraenkt
 creator_ohne: [hud]
@@ -145,6 +147,7 @@ Bauplan für 16 s bei 140 BPM (149 Sechzehntel). Ein Sechzehntel ist 0,107 s, al
 - Schräglage: 10 bis 30 Grad; ohne Schräglage wird es sachlich und ruhiger.
 - Studio-Anteil: 30 bis 60 %; die Rückkehr ins Studio am Ende hält das Stück zusammen.
 - Statt Fahrzeug funktioniert jedes Objekt mit klarer Farbe (Sneaker, Gerät, Flasche).
+- Kamera: Bogen um das Fahrzeug oder gerade Bahn am Lack entlang, das Bild bleibt dabei 15 bis 30 Grad gekippt; bei der geraden Bahn bleiben Messlinien und Zielrahmen leichter am Fahrzeug haften.
 
 ## Abnahme
 - Render mit `video_schauen.py` messen: Werte aus `abnahme` treffen; Farbigkeit unter 0,08 beweist, dass der Key sauber ist.

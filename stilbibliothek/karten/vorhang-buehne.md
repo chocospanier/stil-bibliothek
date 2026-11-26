@@ -17,6 +17,8 @@ messung:
   helligkeit: 0.79
   kontrast: 0.17
   farbigkeit: 0.11
+sollwerte:        # Ziel für den eigenen Render; messung beschreibt die Vorlage
+  lufs: -14
 schnittmuster_16tel: [102, 5, 38]
 palette:
   papier: "#E8E5DB"
@@ -29,7 +31,7 @@ palette:
   tinte: "#2A2626"
 effekte: [masken-wechsel, bild-im-bild, ausschnitt-kante, klebeband-sticker, papier, pastell, freisteller, kamera-steht, zoom-schlag, handschrift, titelkarte, vorhang, stop-motion]
 kamera: Steht fast immer; Bewegung entsteht durch Vorhänge, ploppende Sticker und einen einzigen Zoom-Schlag auf ein Großporträt.
-ton: Lautes, bassschweres Instrumental um 140 BPM, −11 LUFS bei nur 0,9 LU Spanne, eine halbe Sekunde leiser Auftakt, keine Stimme, Ende mit dem letzten Vorhang.
+ton: Lautes, bassschweres Instrumental um 140 BPM, −11 LUFS bei nur 0,9 LU Spanne, eine halbe Sekunde leiser Auftakt, keine Stimme, Ende mit dem letzten Vorhang. Eigenes Master bei −14 LUFS; laut wirkt der Stil durch Dichte und kurzen Abstand der Schläge, die Lautheit der Vorlage steht unter messung.
 braucht: [fotos-figur, illustrationen]
 motor_aufwand: mittel
 einsatz: [intro, trailer, portrait, ganzes-kurzvideo]
@@ -41,7 +43,7 @@ abnahme:
   schnitte_pro_s: [0.08, 0.2]
   helligkeit: [0.70, 0.85]
   farbigkeit: [0.09, 0.14]
-  lufs: [-12, -10]
+  lufs: [-15, -13]
 # Würfel-Felder (Etappe 0 Bauplan Würfelstile, 31.10.2026; karten_wuerfelfelder.py, Familien-Standard)
 creator: nein
 creator_grund: "Familie scrapbook: Handarbeit über Material: Papierränder, Sticker, Klebeband, Collage\
@@ -151,7 +153,7 @@ Bauplan für 17,5 s in Sekunden, weil der Stil Ereignisse statt Schnitte setzt. 
 - Vorhang als flache Farbfläche → wirkt billig. Fotografierten oder gemalten Samt mit Falten nehmen.
 - Vorhang öffnet linear → mechanisch. Mit Ease-out raffen und am Ende 2 bis 3 Bilder nachschwingen lassen.
 - Sticker auf Einsern animiert → glatt und digital. Auf Zweiern oder Dreiern halten.
-- Zu laut gemischte Geräusche über einem ohnehin lauten Bett → matschig. Bett bei −11 LUFS lassen, Geräusche klein.
+- Zu laut gemischte Geräusche über einem ohnehin lauten Bett → matschig. Master auf −14 LUFS, Geräusche klein; laut wirkt das Bett durch den dichten Bass.
 - Fenster zu groß → der Theater-Effekt geht verloren. Höchstens 60 % der Bildbreite.
 - Tagebuch oder neue Bühne ohne die gerafften Vorhänge eingesetzt → die Vorhänge verschwinden in einem Bild, ein versteckter dritter Schnitt bricht den Kern. Vorhänge stehen lassen und die neue Seite darüber schieben (erlebt beim Motorbau, 04.11.2026).
 - Sticker, Blasen und Theaterzettel über dem Vorhang statt darunter → sie schweben auf dem zugezogenen Samt. Overlays gehören zur Szene, der Vorhang liegt immer obenauf, die Blase ploppt vor dem Zuziehen weg (erlebt beim Motorbau, 04.11.2026).

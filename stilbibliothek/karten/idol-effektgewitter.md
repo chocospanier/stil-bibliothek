@@ -17,6 +17,8 @@ messung:
   helligkeit: 0.31
   kontrast: 0.21
   farbigkeit: 0.17
+sollwerte:        # Ziel für den eigenen Render; messung beschreibt die Vorlage
+  lufs: -14
 schnittmuster_16tel: [4, 25, 8, 2, 5, 1, 1, 6, 4, 5, 2, 4, 2, 4, 4, 1, 3, 5, 3, 11, 6, 4, 6, 2, 8, 1, 1, 10]
 palette:
   grund: "#130F15"
@@ -40,7 +42,7 @@ abnahme:
   schnitte_pro_s: [2.2, 3.3]
   helligkeit: [0.25, 0.37]
   farbigkeit: [0.13, 0.21]
-  lufs: [-13.5, -11.5]
+  lufs: [-15, -13]   # Hausnorm −14 LUFS; den Wert der Vorlage nennt messung
 # Würfel-Felder (Etappe 0 Bauplan Würfelstile, 31.10.2026; karten_wuerfelfelder.py, Familien-Standard)
 creator: eingeschraenkt
 creator_ohne: [hud]
@@ -164,3 +166,4 @@ Bauplan für 15 s bei 90 BPM gezählt (88 Sechzehntel zu je 0,167 s; die Vorlage
 - Stottern und Zoom-Explosion zeigen fast dasselbe Bild und zählen in der Schnittmessung kaum. Zustände in Größe und Grund deutlich trennen, Zoom-Kopien stärker gestaffelt.
 - Schlagbild Strahlenkranz: das Bühnenrund mindestens 30 % der Bildhöhe, sonst ist das Schlagbild das kleinste Motiv des Stücks.
 - Gedrehte Einzelbuchstaben ohne Abstand überlappen mit der Ersatzschrift des Hauses (Creator-Vorprüfung rot). 0,05 em Abstand je Seite.
+- Helle Behandlungen (Schwellwert, Strahlenkranz) in zwei benachbarten Shots unter 0,5 s summieren sich zu mehr als drei harten Helligkeitssprüngen je Sekunde → zwischen zwei hellen Behandlungen ein dunkler oder mittelheller Shot; Effekt und Schnitt bleiben gekoppelt.

@@ -19,6 +19,8 @@ messung:
   farbigkeit: 0.13
   ereignisse_pro_s: 1.06        # Bildereignisse im Mittelband (Symbol, Mundform), Median-Abstand 0,9 s
   woerter_pro_s: 3.5
+sollwerte:        # Ziel für den eigenen Render; messung beschreibt die Vorlage
+  lufs: -14
 schnittmuster_16tel: [502, 147, 20, 84]
 palette:
   grund: "#FEFEFE"
@@ -166,3 +168,5 @@ Bauplan für 30 s in Sekunden, weil der Takt aus der Stimme kommt. Jede Zeile is
 - Kontur über `-webkit-text-stroke` → bei 8 bis 14 % der Schriftgröße eckige Platten und Stummel an den Wortenden. `WortSpur` setzt die Kontur als Ring aus Textschatten; Breite um 8 %, nicht mehr.
 - Arme springen jede Sekunde zwischen Posen → ruckt. Höchstens ein Posenwechsel alle 2 s, mit Mischung über 6 Bilder.
 - Stummer Nachlauf am Ende → die Stimme endet mit dem Bild (Nachlauf um 0,5 s).
+- Weiß als Schriftfarbe misst auf dem weißen Grund 1,0 zu 1 und trägt nur über die schwarze Kontur → Kontur nie weglassen und nie dünner als 8 % der Schriftgröße.
+- Das ganze Häppchen springt, wenn das Aktivwort wechselt → das Häppchen bleibt stehen, nur die rote Farbe wandert von Wort zu Wort.

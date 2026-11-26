@@ -17,6 +17,8 @@ messung:
   helligkeit: 0.11
   kontrast: 0.15
   farbigkeit: 0.16
+sollwerte:        # Ziel für den eigenen Render; messung beschreibt die Vorlage
+  lufs: -14
 schnittmuster_16tel: [3, 4, 5, 3, 3, 7, 6, 7, 2, 2, 1, 2, 27, 3, 4, 20]
 palette:
   nacht: "#0E0012"
@@ -158,3 +160,4 @@ Bauplan für 18 s bei 94 BPM (112 Sechzehntel zu 0,16 s). Ruhiger Stil: Einstell
 - Motor (Welle D, 05.11.): Dunkle, glatte Code-Nachtbilder bleiben unter der Schnittschwelle (etwa 10 % mittlere Bilddifferenz) → Nachbar-Einstellungen in Fläche und Farbton wechseln (Schein oben gegen Schein unten), Korn je Einstellung stehen lassen.
 - Motor: Die langen Halte wirken als Standbild, wenn nur feiner Regen arbeitet → Push-in von 8 bis 10 %, kräftigerer Regen und zitternde Spiegelung in der Pfütze.
 - Motor: Titelwort und Etikett kreuzen sich in der Titel-Einstellung → dort keine Etiketten, Titel gleitet in den letzten acht Bildern zur Kopfzeile und blendet aus.
+- Zähler, die ständig weiterlaufen, sind Textur; der eine Wert, um den es geht, muss stehen → ihn anhalten und hervorheben, die übrigen dürfen zählen.

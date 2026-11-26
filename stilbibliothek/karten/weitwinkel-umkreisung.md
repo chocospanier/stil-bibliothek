@@ -17,6 +17,8 @@ messung:
   helligkeit: 0.20
   kontrast: 0.30
   farbigkeit: 0.17
+sollwerte:        # Ziel für den eigenen Render; messung beschreibt die Vorlage
+  lufs: -14
 schnittmuster_16tel: []
 palette:
   grund: "#080403"
@@ -40,7 +42,7 @@ abnahme:
   schnitte_pro_s: [0.0, 0.1]
   helligkeit: [0.16, 0.24]
   farbigkeit: [0.14, 0.21]
-  lufs: []
+  lufs: [-15, -13]   # Hausnorm −14 LUFS; den Wert der Vorlage nennt messung
 # Würfel-Felder (Etappe 0 Bauplan Würfelstile, 31.10.2026; karten_wuerfelfelder.py, Familien-Standard)
 creator: eingeschraenkt
 creator_ohne: [klebeband-sticker]
@@ -129,6 +131,7 @@ Kein Schnitt; der Bauplan ist eine Kamerakurve für 6 s. Wird Musik untergelegt,
 - Länge: 4 bis 8 s; länger wird es zur Produktdemo.
 - Kantenlichter: zwei Farben; eine Farbe wirkt edler, ruhiger.
 - Als Übergang: Zug heraus endet auf Schwarz, dort setzt das nächste Bild an.
+- Fahrt: Anfahrt oder Rückzug am Ende als gerade Strecke an der Länge des Objekts entlang, die Umkreisung dazwischen bleibt; die gerade Strecke gibt dem Kreis einen ruhigen Rahmen.
 
 ## Abnahme
 - Render mit `video_schauen.py` messen: Werte aus `abnahme` treffen; kein erkannter Schnitt.

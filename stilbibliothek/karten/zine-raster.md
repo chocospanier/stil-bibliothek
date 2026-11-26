@@ -17,6 +17,8 @@ messung:
   helligkeit: 0.42
   kontrast: 0.23
   farbigkeit: 0.18
+sollwerte:        # Ziel für den eigenen Render; messung beschreibt die Vorlage
+  lufs: -14
 schnittmuster_16tel: [4, 4, 4, 4, 7, 3, 1, 3, 16, 1, 3, 0, 4, 4, 4, 8, 3, 20]
 palette:
   papier: "#E7E0D7"
@@ -42,7 +44,7 @@ abnahme:
   schnitte_pro_s: [1.1, 1.8]
   helligkeit: [0.42, 0.58]
   farbigkeit: [0.15, 0.22]
-  lufs: [-16.6, -14.6]
+  lufs: [-15, -13]   # Hausnorm −14 LUFS; den Wert der Vorlage nennt messung
 # Würfel-Felder (Etappe 0 Bauplan Würfelstile, 31.10.2026; karten_wuerfelfelder.py, Familien-Standard)
 creator: nein
 creator_grund: "Familie scrapbook: Handarbeit über Material: Papierränder, Sticker, Klebeband, Collage\
@@ -161,3 +163,4 @@ Bauplan für 16 s bei 69 BPM (Sechzehntel 0,217 s, 74 Sechzehntel). Seiten im Vi
 - Volle Druckfarben auf ganzer Fläche (Vollbild-Magenta, Kobalt, Balkenseiten) → Farbigkeit über 0,25. Farben als Bänder und Felder auf Papier und leicht ausgeblichen (Sättigung 0,84) drucken (erlebt beim Motorbau, 04.11.2026).
 - Schreibschrift-Initiale nur nach der Feldhöhe gesetzt → der Kursiv-Überhang läuft in die Fuge. Größe auch nach 70 % der Feldbreite begrenzen (erlebt beim Motorbau, 04.11.2026).
 - Freisteller-Seiten mit derselben Dreiergruppe hintereinander → Diashow aus Clipart. Höchstens zwei Freisteller-Seiten, je Seite Pose, Größe und Spiegelung neu, Etikett nie auf Kopfhöhe (erlebt beim Motorbau, 04.11.2026).
+- Ein Mosaik-Übergang über eine Doppelseite mit großen schwarzen und weißen Feldern zählt als Blitz → Mosaik nur zwischen Seiten ähnlicher Helligkeit.

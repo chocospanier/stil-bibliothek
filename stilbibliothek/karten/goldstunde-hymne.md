@@ -17,6 +17,8 @@ messung:
   helligkeit: 0.36
   kontrast: 0.23
   farbigkeit: 0.17
+sollwerte:        # Ziel für den eigenen Render; messung beschreibt die Vorlage
+  lufs: -14
 schnittmuster_16tel: [10, 1, 2, 1, 3, 1, 3, 3, 1, 3, 1, 3, 3, 1, 3, 4, 3, 1, 3, 1, 3, 5, 1, 1, 1, 1, 1, 1, 1, 1, 3, 1, 3, 1, 3, 3, 1, 4, 3, 1]
 palette:
   schatten_petrol: "#151D1C"

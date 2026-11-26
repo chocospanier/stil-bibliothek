@@ -5,6 +5,7 @@ familie: <Familien-Kennung, siehe FAMILIEN.md>
 kurz: <ein Satz: was man sieht und wie es wirkt>
 kern: [<Merkmal 1>, <Merkmal 2>, <Merkmal 3>]   # ohne diese drei ist es nicht der Stil
 energie: <1 ruhig bis 5 rasant>
+bewegung: <ruhig | verspielt | sachlich>   # freiwillig: Bewegungs-Charakter (starter/BAUSTEINE.md); fehlt das Feld, gilt keiner
 format_quelle: "<9:16 | 16:9 | 4:3 | 1:1>"
 laenge_s: [<von>, <bis>]
 messung:
@@ -17,6 +18,8 @@ messung:
   helligkeit: <0..1>
   kontrast: <0..1>
   farbigkeit: <0..1>
+sollwerte:                # Ziel für den eigenen Render; messung beschreibt die Vorlage
+  lufs: -14
 schnittmuster_16tel: [<Shot-Längen in Sechzehnteln, erste 24 bis 40 Werte aus messung.json>]
 palette:
   <rolle>: "<#HEX>"        # Rollen: grund, zeichnung, akzent, licht, haut, text ...
@@ -31,7 +34,7 @@ abnahme:                  # Zielwerte für den eigenen Render im Format der Quel
   schnitte_pro_s: [<min>, <max>]    # formatfest
   helligkeit: [<min>, <max>]        # formatabhängig
   farbigkeit: [<min>, <max>]        # formatabhängig
-  lufs: [<min>, <max>]              # formatfest
+  lufs: [-15, -13]                  # formatfest; anderes Band nur mit Begründung unter Fallen
 abnahme_9x16:             # optional: eigene Werte fürs Hochformat, wenn format_quelle nicht 9:16 ist; fehlt der Block, gilt abnahme mit +0,03 auf die obere Grenze von Helligkeit und Farbigkeit
   helligkeit: [<min>, <max>]
   farbigkeit: [<min>, <max>]
@@ -110,6 +113,16 @@ Ein Bauplan für ein eigenes Stück von 15 bis 20 s, abgeleitet aus dem gemessen
 ## Abnahme
 <Wie man den eigenen Render prüft: Zielwerte aus `abnahme` plus zwei, drei Augen-Prüfungen am Standbild.>
 Formatfest sind Schnitte je Sekunde, Shot-Median und LUFS. Helligkeit und Farbigkeit hängen vom Format ab: Im Hochformat decken Motive anteilig weniger Fläche; ohne Block `abnahme_9x16` gilt dort die obere Grenze +0,03.
+
+## Handwerk
+Was diese Karte für den eigenen Bau festlegt, je eine kurze Zeile; fehlt eine Angabe, gilt der Standard des Starters.
+- **Lesezeit:** wie lange die Schrift dieses Stils steht, gezählt ab dem Bild, in dem sie stillsteht: Schlagwörter (ein oder zwei Wörter) mindestens 0,25 s, Ziel 0,5 s; Zeilen ab drei Wörtern Grundzeit und Zeit je Wort (Startwerte 0,8 s und 0,2 s). Mit `bewegung: ruhig` rechnet jeder Text wie eine Zeile.
+- **Schrift bewegt oder gelesen:** wo Schrift tanzt und wo sie steht; beides zugleich gibt es nicht. Bebt das Bild, liegt die Zeile auf einer ruhigen Ebene darüber.
+- **Blitze:** welche Effekte harte Hell-Dunkel-Wechsel erzeugen; zusammen höchstens drei je Sekunde, über alle Effekte gezählt und nicht je Effekt.
+- **Bewegungs-Charakter:** ruhig, verspielt oder sachlich. Großes (Kamera, ganzes Bild, Titel) landet ohne Nachfedern, nur kleine Teile dürfen spielen.
+- **Nachbearbeitung:** die Reihenfolge der Schritte, Korn immer zuletzt und in jedem Bild neu.
+- **Graue Probe:** ein Standbild je Bildtyp, entsättigt bei Handybreite (390 px); Held und Schrift lösen sich allein über Helligkeit vom Grund.
+- **Bei 3D:** Kanten mit Fase, Rauheit nie gleichmäßig über große Flächen, Licht hinter dem Helden, damit er sich vom Grund löst.
 
 ## Fallen
 - <Falle → Lösung>

@@ -17,6 +17,8 @@ messung:
   helligkeit: 0.29
   kontrast: 0.20
   farbigkeit: 0.09
+sollwerte:        # Ziel für den eigenen Render; messung beschreibt die Vorlage
+  lufs: -14
 schnittmuster_16tel: [30, 11, 7, 17, 2, 1, 2, 0, 1, 2, 2, 2, 1, 0, 3, 2, 1, 3, 2, 2, 1, 1, 1, 2, 2, 2, 1, 3, 2, 1, 1, 0, 1, 0, 2, 2, 1, 3, 2, 2]
 palette:
   tiefe: "#131010"
@@ -40,7 +42,7 @@ abnahme:
   schnitte_pro_s: [1.1, 1.7]
   helligkeit: [0.23, 0.35]
   farbigkeit: [0.07, 0.11]
-  lufs: [-20.7, -18.7]
+  lufs: [-15, -13]   # Hausnorm −14 LUFS; den Wert der Vorlage nennt messung
 # Würfel-Felder (Etappe 0 Bauplan Würfelstile, 31.10.2026; karten_wuerfelfelder.py, Familien-Standard)
 creator: eingeschraenkt
 creator_ohne: [text-hinter-figur]
@@ -159,3 +161,4 @@ Bauplan für 20 s. Monolog in Sekunden, Montage im Raster von 126 BPM (Sechzehnt
 - Über die Schulter: Figur so groß setzen, dass der Rumpf unter den Bildrand läuft; Großwort auf die Figur mittig, damit die Vordergrund-Schulter nur den Rand des Worts deckt.
 - Totale und Schlusskarte bewegen sich (Push-in, Schlusswort wächst); zusammen 2,4 s Stillstand meldet die Creator-Prüfung als Standbild rot.
 - Die lange erste Monolog-Einstellung braucht sichtbare Bewegung: Push-in 8 %, sanftes Driften der Kamera (rund 1,4 %), leichte Kopfbewegung und eine Handgeste im Takt von rund 0,8 s; ein sprechender Mund und ein ruhiger Push-in gelten der Creator-Prüfung als Standbild.
+- Das Glasschrift-Wort spiegelt weiter, während man liest → Glanz einmal beim Erscheinen, danach steht das Wort; die Untertitel Wort für Wort bleiben in einem festen Band.

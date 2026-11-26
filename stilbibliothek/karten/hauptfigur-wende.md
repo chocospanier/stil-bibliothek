@@ -17,6 +17,8 @@ messung:
   helligkeit: 0.39
   kontrast: 0.25
   farbigkeit: 0.13
+sollwerte:        # Ziel für den eigenen Render; messung beschreibt die Vorlage
+  lufs: -14
 schnittmuster_16tel: [5, 4, 8, 7, 8, 16, 8, 8, 8, 5, 2, 4, 4, 4, 4, 4, 8, 4, 8, 4, 4, 3, 1, 4, 4, 4, 13]
 palette:
   himmel: "#CDC8BD"
@@ -40,7 +42,7 @@ abnahme:
   schnitte_pro_s: [1.3, 2.0]
   helligkeit: [0.31, 0.47]
   farbigkeit: [0.10, 0.16]
-  lufs: [-16.5, -14.5]
+  lufs: [-15, -13]   # Hausnorm −14 LUFS; den Wert der Vorlage nennt messung
 # Würfel-Felder (Etappe 0 Bauplan Würfelstile, 31.10.2026; karten_wuerfelfelder.py, Familien-Standard)
 creator: eingeschraenkt
 creator_ohne: [bild-im-bild, freisteller]
@@ -151,6 +153,7 @@ Bauplan für 16 s bei 140 BPM (Sechzehntel = 0,107 s, Viertel = 0,43 s, Halbe = 
 - Text: eigene Untertreibung und eigene Behauptung; die Frage ist der Gelenkpunkt und bleibt.
 - Einschübe: Polaroid, Freisteller und Dreifach-Bild sind einzeln weglassbar.
 - Länge des Vorlaufs: 5 bis 9 s.
+- Kamera: gerade Fahrt auf die Figur zu als ruhige Fassung; ein Bogen nur in der Kulisse, die Figur bleibt dabei flach zur Kamera und dreht nie mit (siehe Fallen zur Froschperspektive). Die gerade Fahrt hält das Titelwort ruhig.
 
 ## Abnahme
 - Render mit `video_schauen.py` messen: Werte aus `abnahme` treffen.

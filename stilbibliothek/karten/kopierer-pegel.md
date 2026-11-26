@@ -17,6 +17,8 @@ messung:
   helligkeit: 0.36
   kontrast: 0.29
   farbigkeit: 0.12
+sollwerte:        # Ziel für den eigenen Render; messung beschreibt die Vorlage
+  lufs: -14
 schnittmuster_16tel: [2, 1, 1, 0, 0, 3, 1, 2, 1, 2, 1, 0, 0, 3, 1, 2, 1, 1, 3, 1, 3, 1, 1, 2, 1, 1, 1, 1, 1, 3, 1, 0, 0, 3, 1, 1, 1, 1, 0, 0]
 palette:
   grund: "#E9E2DA"
@@ -37,7 +39,7 @@ abnahme:
   schnitte_pro_s: [3.0, 4.6]
   helligkeit: [0.29, 0.43]
   farbigkeit: [0.09, 0.15]
-  lufs: [-15.2, -13.2]
+  lufs: [-15, -13]   # Hausnorm −14 LUFS; den Wert der Vorlage nennt messung
 # Würfel-Felder (Etappe 0 Bauplan Würfelstile, 31.10.2026; karten_wuerfelfelder.py, Familien-Standard)
 creator: nein
 creator_grund: "Familie kopierer: Zweiton mit Raster und Stempel über die ganze Fläche: Dauer-Raster\
@@ -168,3 +170,4 @@ Bauplan für 20 s auf dem gemessenen Raster von 0,25 s (80 Sechzehntel bei 60 BP
 - Eine Figur mit offenem Mund auf einem gesprochenen Wort wirkt, als spräche sie → offene Münder nur in Sprechpausen, sonst geschlossener Mund oder Hände vor dem Mund.
 - Generierte Kalender, Schilder und Etiketten tragen Fantasie-Schrift → Schrift im Ausgangsbild wegschließen (helles Max-/Min-Filter über der Fläche) oder einen Ausschnitt ohne Schrift wählen.
 - Mit Erzählerstimme: der Stempel schlägt auf dem gesprochenen Zahlwort ein (Wortzeit, nicht Raster), das Bild darunter wechselt weiter im Raster. Eine Erklärgrafik (Kurve) läuft als Stottern zwischen anderen Bildern und zeichnet sich über die Wiederholungen hinweg weiter, so bleibt kein Shot über 0,8 s.
+- Die steigende Zahl im Stempel ist nur Bewegung, solange sie zählt → jede Stufe ruhig im Stempel stehen lassen; die höchste Zahl kommt erst mit dem Magenta-Vollbild, nie schon davor.

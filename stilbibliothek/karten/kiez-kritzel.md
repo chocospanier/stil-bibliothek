@@ -17,6 +17,8 @@ messung:
   helligkeit: 0.32
   kontrast: 0.19
   farbigkeit: 0.10
+sollwerte:        # Ziel für den eigenen Render; messung beschreibt die Vorlage
+  lufs: -14
 schnittmuster_16tel: [16, 2, 11, 2, 0, 0, 1, 2, 1, 1, 1, 0, 1, 2, 1, 5, 5, 3, 2, 5, 6, 6, 5, 1, 1, 1, 1, 7]
 palette:
   schatten: "#221410"
@@ -40,7 +42,7 @@ abnahme:
   schnitte_pro_s: [1.3, 1.9]
   helligkeit: [0.26, 0.38]
   farbigkeit: [0.08, 0.12]
-  lufs: [-12.4, -10.4]
+  lufs: [-15, -13]   # Hausnorm −14 LUFS; den Wert der Vorlage nennt messung
 # Würfel-Felder (Etappe 0 Bauplan Würfelstile, 31.10.2026; karten_wuerfelfelder.py, Familien-Standard)
 creator: nein
 creator_grund: "Familie scrapbook: Handarbeit über Material: Papierränder, Sticker, Klebeband, Collage\
@@ -164,3 +166,4 @@ Bauplan für 18,2 s bei 69 BPM (84 Sechzehntel zu 0,217 s). Inhalt austauschbar,
 - Eine schräge dunkle Linie über einer Treppe, die an Hals oder Schulter der Figur endet → wird im Schlussbild als Strick oder Spieß gelesen. Geländer nur parallel zur Stufenkante unter Hüfthöhe oder ganz weglassen (erlebt beim Motorbau, 04.11.2026).
 - Eine Menge im Gegenlicht von oben, die nur ins Licht schaut → Jenseits-Lesart. Licht seitlich setzen, Figuren tanzen lassen (Arme wechselnd hoch, versetztes Wippen), Funken schräg statt schwebend (erlebt beim Motorbau, 04.11.2026).
 - Ein Stern-Kritzel in einem Zug mit Kreuzungen allein auf Papier → liest sich als Pentagramm. Fünfzack als Umriss ohne innere Kreuzung in Weiß zeichnen (erlebt beim Motorbau, 04.11.2026).
+- Schalten die weißen Kritzel bei jedem Stottersprung an und aus, flackert das Bild → Kritzel bleiben über das ganze Stottern stehen, nur das Footage springt.

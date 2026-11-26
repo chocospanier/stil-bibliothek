@@ -17,6 +17,8 @@ messung:
   helligkeit: 0.18
   kontrast: 0.18
   farbigkeit: 0.12
+sollwerte:        # Ziel für den eigenen Render; messung beschreibt die Vorlage
+  lufs: -14
 schnittmuster_16tel: [15, 4, 8, 4, 8, 4, 8, 4, 7, 4, 27, 20, 8, 12, 4, 4, 37]
 palette:
   nacht: "#090C0D"
@@ -41,7 +43,7 @@ abnahme:
   schnitte_pro_s: [0.45, 0.70]
   helligkeit: [0.15, 0.22]
   farbigkeit: [0.10, 0.15]
-  lufs: [-8.5, -6.5]
+  lufs: [-15, -13]   # Hausnorm −14 LUFS; den Wert der Vorlage nennt messung
 # Würfel-Felder (Etappe 0 Bauplan Würfelstile, 31.10.2026; karten_wuerfelfelder.py, Familien-Standard)
 creator: nein
 creator_grund: "die Klone der Figur sind ausgeschnittene Kopien, ohne sie bleibt nur ein Nachtporträt"

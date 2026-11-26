@@ -17,6 +17,8 @@ messung:
   helligkeit: 0.29
   kontrast: 0.19
   farbigkeit: 0.14
+sollwerte:        # Ziel für den eigenen Render; messung beschreibt die Vorlage
+  lufs: -14
 schnittmuster_16tel: [5, 23, 1, 1, 1, 1, 4, 1, 1, 1, 1, 1, 1, 1, 6, 4, 4, 2, 4, 3, 7, 4, 4, 4, 1, 4, 7, 1, 4, 1, 3, 6, 6, 2, 4, 2, 2, 4, 3, 7]
 palette:
   kino_tief: "#2A291F"
@@ -42,7 +44,7 @@ abnahme:
   schnitte_pro_s: [1.8, 2.7]
   helligkeit: [0.23, 0.35]
   farbigkeit: [0.11, 0.17]
-  lufs: [-10.2, -8.2]
+  lufs: [-15, -13]   # Hausnorm −14 LUFS; den Wert der Vorlage nennt messung
 # Würfel-Felder (Etappe 0 Bauplan Würfelstile, 31.10.2026; karten_wuerfelfelder.py, Familien-Standard)
 creator: ja
 spielraum:

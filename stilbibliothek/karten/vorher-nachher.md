@@ -17,6 +17,8 @@ messung:
   helligkeit: 0.171
   kontrast: 0.217
   farbigkeit: 0.149
+sollwerte:        # Ziel für den eigenen Render; messung beschreibt die Vorlage
+  lufs: -14
 schnittmuster_16tel: [16, 24, 24, 24, 24, 20, 32]
 palette:
   grund: "#111111"
@@ -148,3 +150,4 @@ Gemessen an der eigenen Basis (`wuerfeln.py motor`, Beispiel-Props, stumm, 9:16,
 - (Prüfrunde 1) Die Türen schnitten das Titelprodukt sichtbar in einen Streifen und das Produkt der neuen Seite fuhr unter den Türen ins Bild; Türen 6 Bilder, das Produkt kommt erst danach und nur innerhalb der neuen Seite (Maske über den unteren 15 %).
 - (Prüfrunde 1) Der Vorhang zur Schlusskarte deckte nie ganz, dahinter sprang der Inhalt; jetzt läuft eine volle Fläche durch, der Wechsel liegt verdeckt.
 - (Prüfrunde 1) Drei Paare im selben Aufbau lesen sich wie Folien; je Paar ein Akzent (Produkt rückt beim Erscheinen der neuen Zeile um 4,5 % an), Halt 0,4 s.
+- Die alte Zeile wird durchgestrichen, bevor sie gelesen ist → sie steht erst ruhig; reicht ein Schlag nicht für ihre Lesezeit, die Zeile kürzen oder den Strich einen Schlag später setzen.

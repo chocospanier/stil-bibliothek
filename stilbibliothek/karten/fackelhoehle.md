@@ -101,6 +101,7 @@ Zahl der Stufen (5 bis 10), Länge der Fahrt, Details im Ausschnitt, Akzent und 
 - Ein Bild braucht je nach Stil 0,1 bis 30 s Rechenzeit: Stufenbilder einmal rechnen und zwischenspeichern, nie je Videobild neu malen.
 - Große Verläufe zeigen nach starker Kompression Farbstufen: das leichte Raster oder Korn des Motors drinlassen.
 - Das Beispielmotiv einer Malweise im Motor ist nur ein Stichwort: das eigene Thema in derselben Malweise neu komponieren, Motive und Texte der Beispiele nie übernehmen.
+- Die helle Schrift misst auf dem Ocker 4,2 zu 1, knapp unter der Grenze → Untertitel auf einem Band in Ruß (etwa `#3A2418`, rund 10 zu 1); im Feuerschein selbst keine Schrift.
 
 ## Ton
 Dieser Motor liefert keinen Ton: das Bett kommt aus `musik.py` oder als Code-Musik eines anderen Motors, die Geräusche aus `taktbauer.py --nur-schlaege` oder eigenen Aufnahmen. Code-Musik ist erlaubt, das Bett liegt leise (allein um −24 LUFS) und schweigt im Atem vor der Pointe. Geräusche: das Werkzeug des Mediums je Stufe (Pinsel, Stift, Schere, Nadel, Tastatur), sehr leise. Jedes Stück mit Text bekommt eine Stimme (Wortzeiten aus der Aufnahme, Szenen auf Wortanfänge). Gesamt −14 LUFS, True Peak −1 dBTP; kein dumpfer Schlag am Ende, der Schluss klingt hell (Glocke, Akkord, Glanz). Gemischt wird mit `ton_standard.py`.

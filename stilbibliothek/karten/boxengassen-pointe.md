@@ -17,6 +17,8 @@ messung:
   helligkeit: 0.36
   kontrast: 0.24
   farbigkeit: 0.12
+sollwerte:        # Ziel für den eigenen Render; messung beschreibt die Vorlage
+  lufs: -14
 schnittmuster_16tel: [8, 7, 13, 11, 2, 1, 1, 1, 1, 1, 1, 4, 1, 2, 1, 4, 3, 1, 0, 3, 1, 4, 1, 2, 1, 3, 2, 3, 3, 1, 6]
 palette:
   tiefe: "#1A1915"
@@ -41,7 +43,7 @@ abnahme:
   schnitte_pro_s: [1.6, 2.4]
   helligkeit: [0.29, 0.43]
   farbigkeit: [0.09, 0.14]
-  lufs: [-11.8, -9.8]
+  lufs: [-15, -13]   # Hausnorm −14 LUFS; den Wert der Vorlage nennt messung
 # Würfel-Felder (Etappe 0 Bauplan Würfelstile, 31.10.2026; karten_wuerfelfelder.py, Familien-Standard)
 creator: ja
 spielraum:
@@ -168,3 +170,4 @@ Bauplan für 17 s. Dialog in Sekunden, Rennteil bei 88 BPM (Sechzehntel 0,17 s).
 - (Motorbau) Gegenschuss in derselben Einstellung wie der nächste Satz derselben Figur ist kein Schnitt → Hörer nah mit unscharfem, dunklerem Grund.
 - (Motorbau) Übergänge, die in vier Bildern ins alte Bild fallen, erkennt die Schnittmessung nicht mehr → Band und Fenster in zwei Bildern.
 - (Prüfrunde) Jedes rote Wort mindestens 0,8 s ganz stehen lassen, die Pointe vor der Ampel mindestens 2,3 s; Nachtstart mit Wagen in derselben Richtung, nie Heck an Heck.
+- Stottern und weißes Rechteck dicht hintereinander → zusammen höchstens drei harte Hell-Dunkel-Wechsel je Sekunde; normale Schnitte auf Sechzehnteln zählen nicht mit.

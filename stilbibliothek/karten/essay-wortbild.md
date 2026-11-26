@@ -17,6 +17,8 @@ messung:
   helligkeit: 0.28
   kontrast: 0.20
   farbigkeit: 0.21
+sollwerte:        # Ziel für den eigenen Render; messung beschreibt die Vorlage
+  lufs: -14
 schnittmuster_16tel: [12, 24, 18, 6, 4, 5, 14, 21, 32, 9, 13, 19, 22, 6, 7, 7, 9, 16]
 palette:
   nachtschwarz: "#161518"
@@ -41,7 +43,7 @@ abnahme:
   schnitte_pro_s: [0.45, 0.75]
   helligkeit: [0.24, 0.36]
   farbigkeit: [0.17, 0.25]
-  lufs: [-12.5, -10.5]
+  lufs: [-15, -13]   # Hausnorm −14 LUFS; den Wert der Vorlage nennt messung
 # Würfel-Felder (Etappe 0 Bauplan Würfelstile, 31.10.2026; karten_wuerfelfelder.py, Familien-Standard)
 creator: eingeschraenkt
 creator_ohne: [text-hinter-figur]
@@ -165,3 +167,4 @@ Bauplan für 30 s in Sekunden, weil der Schnitt den Sätzen folgt. Je Satz eine 
 - Eine stehende Nahaufnahme mit offenem Mund unter einer Off-Stimme wirkt wie eingefrorene Lippen. Für Off-Text Bilder mit geschlossenem Mund oder abgewandtem Gesicht nehmen.
 - Helle Studio-Gründe über lange Strecken heben die Helligkeit über das Fenster und drücken die Farbigkeit; kühles Tuch ist arm an Farbe → warme und kühle Gründe gesättigt (Motor: saturate 1,45 und 2,3), helles Studio sparsam.
 - Zwei Einstellungen mit demselben Grund hintereinander zählt die Schnitt-Messung nicht; die Gründe abwechseln (warm, kalt, schwarz). Ein Reißschwenk verschmiert den Schnitt über vier Bilder und fällt dann aus der Zählung.
+- Typo, die das Zittern der Handkamera mitmacht, ist am Handy schwer zu lesen → das Schlüsselwort folgt nur der ruhigen Fahrt (Parallaxe wie im Rezept), das Zittern wird nicht auf die Schrift übertragen.

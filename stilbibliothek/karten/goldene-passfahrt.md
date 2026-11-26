@@ -17,6 +17,8 @@ messung:
   helligkeit: 0.27
   kontrast: 0.18
   farbigkeit: 0.13
+sollwerte:        # Ziel für den eigenen Render; messung beschreibt die Vorlage
+  lufs: -14
 schnittmuster_16tel: [4, 0, 4, 1, 13, 1, 2, 4, 1, 4, 2, 4, 1, 4, 1, 4, 4, 4, 2, 3, 1, 2, 4, 5, 7]
 palette:
   erde: "#3F3529"
@@ -40,7 +42,7 @@ abnahme:
   schnitte_pro_s: [1.4, 2.0]
   helligkeit: [0.21, 0.32]
   farbigkeit: [0.10, 0.16]
-  lufs: [-16.5, -14.5]
+  lufs: [-15, -13]   # Hausnorm −14 LUFS; den Wert der Vorlage nennt messung
 # Würfel-Felder (Etappe 0 Bauplan Würfelstile, 31.10.2026; karten_wuerfelfelder.py, Familien-Standard)
 creator: eingeschraenkt
 creator_ohne: [split-screen]
@@ -147,6 +149,7 @@ Bauplan für 15,75 s bei 80 BPM (84 Sechzehntel, 21 Viertel). Ein Sechzehntel is
 - Tempo: 70 bis 90 BPM; schneller verliert es die Ruhe.
 - Split-Screen: ein- bis zweimal je Stück, immer ungleich geteilt.
 - Ein Ortswechsel mit neuer Farbe (Herbstlaub, Schnee, Meer) im letzten Drittel als Aufschlag.
+- Kamera: Luftbild im Bogen um die Kehre oder gerade Verfolgung hinter dem Fahrzeug; die gerade Fahrt passt zum langsamen Groove, der Bogen zeigt die Landschaft.
 
 ## Abnahme
 - Render mit `video_schauen.py` messen: Werte aus `abnahme` treffen, Lautheitsspanne unter 3 LU.

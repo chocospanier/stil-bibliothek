@@ -9,7 +9,7 @@ Liest  <bib>/karten/*.md  (Kopfblock YAML + Text) und schreibt:
                        Beispiele und Helfer des Pakets; die eine Quelle für jede Zahl in den Texten
 Zahlen: Das Skript zählt Karten und Familien (karten/), Bausteine (starter/src/bausteine/index.ts, nummerierte Exporte),
 Beispiele (Kompositionen aus starter/src/beispiele/ in den Root-Dateien) und Helfer (starter/werkzeuge, ohne py.mjs) und
-sucht in allen Texten des Pakets Stellen wie „289 Stil-Karten“, „28 Bausteine“, „<n> Beispiele“. Weicht eine ab, steht sie
+sucht in allen Texten des Pakets Stellen wie „289 Stil-Karten“, „29 Bausteine“, „<n> Beispiele“. Weicht eine ab, steht sie
 unter "zahlen_widerspruch"; --zahlen-setzen schreibt die gezählten Werte hinein (Karten selbst, INDEX.md und Bauberichte
 bleiben unberührt).
   <bib>/INDEX.md       Uebersicht je Familie

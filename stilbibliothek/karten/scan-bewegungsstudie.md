@@ -17,6 +17,8 @@ messung:
   helligkeit: 0.16
   kontrast: 0.19
   farbigkeit: 0.08
+sollwerte:        # Ziel für den eigenen Render; messung beschreibt die Vorlage
+  lufs: -14
 schnittmuster_16tel: [1, 1, 1, 1, 4, 1, 1, 1, 0, 0, 0, 0, 1, 0, 0, 0, 1, 20, 1, 14, 2, 1, 6, 13, 13, 1, 1, 1, 1, 1, 1, 1, 1, 3, 3, 4, 1, 1, 10, 2]
 palette:
   schwarz: "#050303"
@@ -40,7 +42,7 @@ abnahme:
   schnitte_pro_s: [1.9, 2.9]
   helligkeit: [0.13, 0.20]
   farbigkeit: [0.06, 0.10]
-  lufs: [-12.3, -10.3]
+  lufs: [-15, -13]   # Hausnorm −14 LUFS; den Wert der Vorlage nennt messung
 # Würfel-Felder (Etappe 0 Bauplan Würfelstile, 31.10.2026; karten_wuerfelfelder.py, Familien-Standard)
 creator: eingeschraenkt
 creator_ohne: [split-screen, wireframe-scan, hud, schaubild]
@@ -167,3 +169,4 @@ Bauplan für 19,3 s bei 106 BPM (136 Sechzehntel zu 0,142 s). Inhalt austauschba
 - Motor: Der Scan-Kopf wirkt bei dünnem Zeilenraster fast schwarz und steht → Zeilen decken etwa zwei Drittel, Kopf mittelgrau, Drehung als schmaler werdender Kopf mit wandernder Scanlinie.
 - Motor: Namenskarte über 2 s gilt als Standbild → ganzes Bild mit 12 % Push, Lichtstreif und wandernder Schein.
 - Motor (Creator-Modus): Ohne Schaubild und HUD hebt ein Produkt auf Weiß die Helligkeit über die Abnahme; als dunkles Produkt zählen die Salven nicht mehr als Schnitte (1,83 je Sekunde) → Motor creator: false, im Creator-Modus nur als Handbau.
+- Blitzbild, Stottern und invertierter Scan zählen zusammen, nicht je Effekt → in der Laborakte höchstens drei harte Helligkeitswechsel je Sekunde über alle drei.

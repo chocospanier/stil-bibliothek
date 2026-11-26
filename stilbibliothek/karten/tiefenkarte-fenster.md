@@ -17,6 +17,8 @@ messung:
   helligkeit: 0.59
   kontrast: 0.22
   farbigkeit: 0.05
+sollwerte:        # Ziel für den eigenen Render; messung beschreibt die Vorlage
+  lufs: -14
 schnittmuster_16tel: [8, 4, 4, 4, 4, 4, 0, 4, 4, 8, 4, 4, 4, 4, 4, 4, 4, 8]
 palette:
   nebel: "#E5E2E1"
@@ -28,7 +30,7 @@ palette:
   fenster_auge: "#6C8FB0"
 effekte: [harter-schnitt, silhouette, augen-makro, tanz, beat-getrieben, push-in, ton-stopp, tiefenkarte, farbfenster]
 kamera: Übernimmt die langsamen Fahrten des Ausgangsmaterials (meist leichter Push-in); in der Tiefenkarte wirken sie wie Schweben im Nebel.
-ton: Langsamer, sehr lauter Beat um 66 BPM (−7,3 LUFS, fast ohne Dynamik), jeder Schlag ein Schnitt, am Ende harter Stopp auf Schwarz.
+ton: Langsamer, sehr lauter Beat um 66 BPM (−7,3 LUFS, fast ohne Dynamik), jeder Schlag ein Schnitt, am Ende harter Stopp auf Schwarz. Eigenes Master bei −14 LUFS; laut wirkt der Stil durch den schweren, gleichmäßigen Schlag auf jedem Viertel, die Lautheit der Vorlage steht unter messung.
 braucht: [fotos-figur, footage-ort]
 motor_aufwand: mittel
 einsatz: [musikvideo, hook, uebergang, portrait]
@@ -40,7 +42,7 @@ abnahme:
   schnitte_pro_s: [0.85, 1.2]
   helligkeit: [0.50, 0.68]
   farbigkeit: [0.03, 0.08]
-  lufs: [-9, -7]
+  lufs: [-15, -13]
 # Würfel-Felder (Etappe 0 Bauplan Würfelstile, 31.10.2026; karten_wuerfelfelder.py, Familien-Standard)
 creator: eingeschraenkt
 creator_ohne: [farbfenster]
@@ -154,7 +156,7 @@ Bauplan für 16 s bei 66 BPM (68 Sechzehntel zu je 0,227 s, 17 Viertel), dann ei
 - Fenster ohne Tracking → rutschen vom Gesicht. Gesichtsdetektor je Frame.
 - Nah und fern vertauscht (nah weiß) → die Figur verschwindet im Nebel. Nah ist dunkel.
 - Zu viele Pixelflecken → wirkt wie Fehler statt Gestaltung. Höchstens acht je Shot.
-- Lautheit nachgemacht ohne Begrenzer → verzerrt. Für unsere Kanäle eher −10 LUFS anpeilen und die Abnahme dann anpassen.
+- Lautheit nachgemacht ohne Begrenzer → verzerrt. Eigenes Master auf −14 LUFS mit Begrenzer bei −1 dBTP; schwer wirkt der Beat durch den massiven Bass auf jedem Viertel.
 - Motor (Welle D, 05.11.): Ohne echte Tiefenkarte zeichnet der Code die Tiefe aus Ebenen (nah dunkel, fern hell); eine echte Tiefenkarte kommt über tiefeSrc je Szene.
 - Motor: Fenster müssen aus den Kopf-Koordinaten der Figur gerechnet werden (Gesicht, Augen), sonst sitzen sie auf dem Haarknoten oder zwischen den Augen; Farbflecken nur oben im Bild, im Schritt lesen sie sich als Zensurbalken.
 - Motor: Einstellungen von acht Sechzehnteln ohne Bewegung lesen sich als Standbild → auf jedem Viertel schneiden.

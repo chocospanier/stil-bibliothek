@@ -17,6 +17,8 @@ messung:
   helligkeit: 0.16
   kontrast: 0.17
   farbigkeit: 0.07
+sollwerte:        # Ziel für den eigenen Render; messung beschreibt die Vorlage
+  lufs: -14
 schnittmuster_16tel: [9, 5, 22, 9, 5, 3, 10, 8, 9, 6, 12, 5, 1]
 palette:
   nacht: "#050809"
@@ -41,7 +43,7 @@ abnahme:
   schnitte_pro_s: [0.5, 0.7]
   helligkeit: [0.13, 0.20]
   farbigkeit: [0.05, 0.09]
-  lufs: [-12.2, -10.2]
+  lufs: [-15, -13]   # Hausnorm −14 LUFS; den Wert der Vorlage nennt messung
 # Würfel-Felder (Etappe 0 Bauplan Würfelstile, 31.10.2026; karten_wuerfelfelder.py, Familien-Standard)
 creator: eingeschraenkt
 creator_ohne: [hud, sucher-ecken]
@@ -162,3 +164,4 @@ Bauplan für 20 s in Sekunden (ruhiger Stil, Wechsel auf Taktanfänge bei 78 BPM
 - Dunkle Nachtszenen aus Code liegen in der Schnitt-Messung nah beieinander (Werte 7 bis 10 bei Schwelle 10) → benachbarte Einstellungen in der Fläche gegeneinander setzen (hell oben gegen hell unten, Fenster gegen Fläche), nicht nur im Motiv (Motor KapitelwortKino, 31.10.).
 - Rollen text und licht teilen sich #E2DDD6; würfelt der Zug licht dunkel, werden alle Lichter mit dieser Farbe dunkel und knappe Schnitte fallen weg → Lichter im Motor in einem eigenen hellen Ton außerhalb der Rollen zeichnen (Motor: hell #EDE8E0).
 - Treppe ins Licht, Stillstand im Dunkel, dann Licht und ATMEN liest sich als Jenseits → Treppenhaus mit Fenster und Etage, der Stillstand draußen mit Boden, der Morgen mit Geländer oder Becher am selben Ort (Prüfrunde Motor, 31.10.).
+- Das Verb in der Bildmitte glitcht und wird gleich danach geschnitten → nach dem Glitch das Wort ruhig stehen lassen, so lange man ein Wort liest, dann die nächste Einstellung.

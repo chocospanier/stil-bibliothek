@@ -17,6 +17,8 @@ messung:
   helligkeit: 0.45
   kontrast: 0.22
   farbigkeit: 0.20
+sollwerte:        # Ziel für den eigenen Render; messung beschreibt die Vorlage
+  lufs: -14
 schnittmuster_16tel: [10, 4, 1, 1, 1, 5, 1, 1, 1, 1, 1, 1, 3, 1, 6, 1, 1, 1, 4, 1, 1, 4, 1, 1, 1, 1, 1, 1, 1, 3, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1]
 palette:
   koralle: "#D27B65"
@@ -41,7 +43,7 @@ abnahme:
   schnitte_pro_s: [3.3, 4.9]
   helligkeit: [0.38, 0.54]
   farbigkeit: [0.16, 0.24]
-  lufs: [-13.1, -11.1]
+  lufs: [-15, -13]   # Hausnorm −14 LUFS; den Wert der Vorlage nennt messung
 # Würfel-Felder (Etappe 0 Bauplan Würfelstile, 31.10.2026; karten_wuerfelfelder.py, Familien-Standard)
 creator: nein
 creator_grund: "Familie scrapbook: Handarbeit über Material: Papierränder, Sticker, Klebeband, Collage\
@@ -170,3 +172,4 @@ Bauplan für 15 s bei 115 BPM (Sechzehntel 0,13 s, 115 Sechzehntel). Innerhalb j
 - Erpresserbuchstaben in fester Größe → der Titel läuft im Hochformat aus dem Bild, und Bild 0 zeigt ein halbes Wort. Größe aus der längsten Zeile rechnen, Bild 0 mit ganzem Titel, ab Bild 1 neu legen (erlebt beim Motorbau, 04.11.2026).
 - Rotoskop als von Hand gezeichnetes Strichmännchen → wirkt kaputt (kein Hals, Doppelbeine). Linien per Kantenfilter aus der Figur ableiten und die Außenkontur dazunehmen (erlebt beim Motorbau, 04.11.2026).
 - Schlusszeile, die sich langsam schreibt → steht weniger als 2,3 s. In 0,3 s schreiben, Schlusskarte auf 18 Sechzehntel strecken (erlebt beim Motorbau, 04.11.2026).
+- Ein Strahlenkranz aus Kritzeln, der auf Zweiern neu wackelt, flimmert auf großer heller Fläche → den Kranz klein halten oder auf Dreiern kochen lassen (8 Zustände je Sekunde).

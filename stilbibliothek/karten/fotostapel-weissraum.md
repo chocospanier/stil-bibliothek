@@ -17,6 +17,8 @@ messung:
   helligkeit: 0.77
   kontrast: 0.32
   farbigkeit: 0.08
+sollwerte:        # Ziel für den eigenen Render; messung beschreibt die Vorlage
+  lufs: -14
 schnittmuster_16tel: [28, 4, 4, 4, 4, 5, 11, 10, 6, 4, 4, 8, 10, 6]
 palette:
   grund: "#FDFDFB"
@@ -38,7 +40,7 @@ abnahme:
   schnitte_pro_s: [0.55, 0.9]
   helligkeit: [0.65, 0.85]
   farbigkeit: [0.05, 0.12]
-  lufs: [-13.5, -11.5]
+  lufs: [-15, -13]   # Hausnorm −14 LUFS; den Wert der Vorlage nennt messung
 # Würfel-Felder (Etappe 0 Bauplan Würfelstile, 31.10.2026; karten_wuerfelfelder.py, Familien-Standard)
 creator: nein
 creator_grund: "Familie scrapbook: Handarbeit über Material: Papierränder, Sticker, Klebeband, Collage\
@@ -163,3 +165,4 @@ Bauplan für 18,5 s bei 91 BPM (112 Sechzehntel, ein Sechzehntel = 0,165 s). Mus
 - Fotos, die auf leeres Weiß landen, zählt die Schnittmessung erst ab rund 12 % Bildfläche mit dunklem Inhalt; Fächerfotos über ihren Vorgängern und ein Einzelfoto nach dem anderen bleiben unter Schwelle 10 → der Median wird zu lang. Im Motor halten Schritte von 6 Sechzehnteln den Median bei 1,0 s, die Fächerfotos 2 bis 4 dürfen unerkannt bleiben (erlebt beim Motorbau, 04.11.2026).
 - Nachtfotos als leere dunkle Räume mit einer Einzelfigur und eine Zeile in der Vergangenheit → das Stück liest sich wie die Erinnerung an einen Toten. Lichterkette, Gruppen, harter Blitzschatten an der Wand und eine Zeile über Feste (erlebt beim Motorbau, 04.11.2026).
 - Bild im Bild mittig im Scanfoto deckt dessen Figur → nur Schuhe schauen heraus. Die Figur des großen Fotos an den Rand legen (erlebt beim Motorbau, 04.11.2026).
+- Die gelbe Zeile misst auf leerem Weiß nur 1,6 zu 1 → das Gelb für die ganze Laufzeit eine Stufe tiefer wählen (Senfocker etwa `#8A6A10`, knapp 5 zu 1 auf Weiß); die Zeile wechselt nie die Farbe, und ihre Mitte liegt über Fotos dann eher auf hellen Bildteilen oder auf Weiß.

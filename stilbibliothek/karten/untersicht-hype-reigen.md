@@ -17,6 +17,8 @@ messung:
   helligkeit: 0.33
   kontrast: 0.22
   farbigkeit: 0.14
+sollwerte:        # Ziel für den eigenen Render; messung beschreibt die Vorlage
+  lufs: -14
 schnittmuster_16tel: [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 3, 1, 3, 1, 1, 1, 11, 50, 5, 1, 1, 1, 1, 1, 4, 1, 3, 6, 17, 11, 3, 15, 3, 4, 2, 1, 1, 1, 1]
 palette:
   licht_creme: "#ADA596"
@@ -40,7 +42,7 @@ abnahme:
   schnitte_pro_s: [1.8, 2.8]
   helligkeit: [0.27, 0.39]
   farbigkeit: [0.11, 0.17]
-  lufs: [-14.7, -12.7]
+  lufs: [-15, -13]   # Hausnorm −14 LUFS; den Wert der Vorlage nennt messung
 # Würfel-Felder (Etappe 0 Bauplan Würfelstile, 31.10.2026; karten_wuerfelfelder.py, Familien-Standard)
 creator: ja
 spielraum:
@@ -158,3 +160,4 @@ Bauplan für 20 s bei 64 BPM gefühlt, gezählt in Sechzehnteln von 127 BPM (0,1
 - Eröffnung mit zwölf verschiedenen Personen (Kleidung, Haut, Haar oder Mütze, Armhaltung); umgefärbte Klone sind die Falle der Karte. Kleidung in mittleren Helligkeiten, sonst brechen zwölf Wechsel in 1,4 s die Blitzregel.
 - Tunnel mit Licht am Ende und Porträt im runden Rahmen lesen sich als Jenseits und Grabbild. Eckige Unterführung ohne helles Ende, Gesicht über dem Rand der Röhre.
 - Lange Einstellungen (Fischauge, Stadt, Tunnel, Porträt, Röhre) in Weit und Nah teilen, sonst zählt die Schnittmessung zu wenige Schnitte; die lange Strophe bleibt eine Einstellung.
+- Ein Blitzbild zwischen zwei Performern in sehr verschiedenen Farbwelten macht aus einem Sprung zwei → Blitz nur zwischen Farbwelten ähnlicher Helligkeit.

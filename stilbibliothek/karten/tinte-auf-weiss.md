@@ -17,6 +17,8 @@ messung:
   helligkeit: 0.63
   kontrast: 0.31
   farbigkeit: 0.11
+sollwerte:        # Ziel für den eigenen Render; messung beschreibt die Vorlage
+  lufs: -14
 schnittmuster_16tel: [13, 0, 0, 1, 0, 1, 0, 1, 0, 0, 1, 4, 4, 4, 4, 4, 5, 3, 6, 1, 0, 1, 0, 1, 0, 1, 0, 3, 3, 3, 14]
 palette:
   grund: "#F0E8EF"
@@ -164,3 +166,4 @@ Bauplan für 15 s bei 110 BPM (Sechzehntel = 0,136 s, Viertel = 0,545 s; 110 Sec
 - Tinte hinter tintenblauer Silhouette verschwindet → Zeile dort in Chrom; Kabel-Linie um das Schlusswort herumführen.
 - Fraktur fehlt im Schriftvorrat; der Motor nimmt Playfair Display kursiv für die Titelkarte.
 - Im Creator-Modus steht das Riesenwort ganz im Bild; angeschnittene Schrift meldet die Creator-Prüfung rot.
+- Der Glanz des Chrom-Verlaufs wandert über die Buchstaben, während man liest → einmal beim Einschlag durchziehen, danach steht die Schrift.

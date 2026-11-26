@@ -17,6 +17,8 @@ messung:
   helligkeit: 0.18
   kontrast: 0.17
   farbigkeit: 0.06
+sollwerte:        # Ziel für den eigenen Render; messung beschreibt die Vorlage
+  lufs: -14
 schnittmuster_16tel: [10, 14, 10, 12, 15, 14, 11, 7, 9, 11, 7, 10, 1, 0, 0, 0, 0, 1, 0, 1, 2]   # nachgemessen bei 102 BPM; messung.json: [46, 15, 14, 18, 9, 28, 1, 1, 1, 3]
 palette:
   grund: "#050505"
@@ -39,7 +41,7 @@ abnahme:
   schnitte_pro_s: [0.8, 1.2]
   helligkeit: [0.14, 0.22]
   farbigkeit: [0.04, 0.08]
-  lufs: [-15.2, -13.2]
+  lufs: [-15, -13]   # Hausnorm −14 LUFS; den Wert der Vorlage nennt messung
 # Würfel-Felder (Etappe 0 Bauplan Würfelstile, 31.10.2026; karten_wuerfelfelder.py, Familien-Standard)
 creator: eingeschraenkt
 creator_ohne: [bild-im-bild, rahmen-rund, hud, tracking-etiketten]
@@ -164,3 +166,4 @@ Bauplan für 20 s; gedacht in Sekunden, weil der Schnitt dem Satz folgt (Raster 
 - Koordinaten-Etiketten auf derselben Höhe überdrucken sich → Etiketten gestaffelt (abwechselnd über und unter dem Punkt) auf einer kleinen dunklen Platte statt mit Schattenhof; Inhalts-Etikett im Kasten mit feinem Rand.
 - Die Karte verlangt 8 bis 12 Etiketten je Bild; mit nur gesetzten Punkten wirkt das Netz leer → Raster mit Sperrflächen füllt auf (Motor IndizienVermessung, rasterPunkte).
 - Der Höhepunkt braucht das Objekt am Ziel (Schlüssel im Schloss), nicht nur den Titel.
+- Gestrichelte Messlinien zeichnen sich noch, während der Satzfetzen daneben einblendet → die Linien der Einstellung zuerst fertig zeichnen, dann den Satzfetzen; er steht still bis zum Schnitt.

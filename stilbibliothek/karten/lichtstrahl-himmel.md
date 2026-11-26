@@ -101,6 +101,7 @@ Stärke der Leitmotiv-Bewegung, Länge je Szene, Anteil Nahaufnahme, Akzent und 
 - Ein Grund aus Blau und Violett über ein Drittel der Bilder fällt im `film_gate.py` durch; nur wenn der Stil es selbst verlangt, mit Begründung freigeben.
 - Die Musterszenen des Motors zeigen alle dasselbe Zimmer (Fenster oben links, Katze unten, Figur mit Tasse): Pinselführung, Farblogik und Leitmotiv mitnehmen, Raum, Möbel und Figuren neu bauen.
 - Motive bekannter Gemälde nie nachstellen: Malweise, Farblogik und Bewegung des Leitmotivs mitnehmen, den Bildinhalt für das eigene Thema neu komponieren.
+- Weiß misst auf dem Himmelblau 3,3 zu 1, im Lichtstrahl fast nichts → Untertitel auf einem Band im Dunkelton `#6A4632` (8 zu 1) oder unten im Schatten des Raums, nie im Strahl.
 
 ## Ton
 Der Motor liefert Musik und Geräusche aus Code als getrennte Stems. Code-Musik ist erlaubt, das Bett liegt leise (allein um −24 LUFS) und schweigt im Atem vor der Pointe. Geräusche: leiser Raumklang der Szene (Wind, Wasser, Feuer, Stadt), ein Pinselwisch auf jedem Übergang. Jedes Stück mit Text bekommt eine Stimme (Wortzeiten aus der Aufnahme, Szenen auf Wortanfänge). Gesamt −14 LUFS, True Peak −1 dBTP; kein dumpfer Schlag am Ende, der Schluss klingt hell (Glocke, Akkord, Glanz). Gemischt wird mit `ton_standard.py`, aus den ungemasterten Stems des Motors.

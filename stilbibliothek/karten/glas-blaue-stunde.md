@@ -51,7 +51,7 @@ spielraum:
   stottern_wiederholungen: [2, 3]
   push_in_prozent: [2, 5]
   wackeln_faktor: [0.3, 0.7]
-  korn: [0.0, 0.04]
+  korn: [0.0, 0.025]
   vignette: [0.3, 0.5]
   beat_versatz_16tel: [0, 1]
   textgroesse_prozent: [-10, 10]
@@ -73,7 +73,7 @@ Ein Ding steht vor einem großen Fenster, draußen ist es blau und die Lichter d
 ## Kern
 - Kühles Fensterlicht von hinten (Stärke 1,5) und ein warmes Kantenlicht (60 cd, nah) zeichnen den Helden.
 - Stadtlichter als Bokeh hinter dem Helden, der Hintergrund bleibt weich.
-- Glas oder eine klare Form mit echter Brechung (Dicke, Absorption, Farbsäume).
+- Glas oder eine klare Form mit echter Brechung (Dicke, Absorption, Farbsäume), dazu Licht von hinten: das Gegenlicht (`licht.gegenlicht`, ein Strahler hinter dem Helden, an seine Lage gebunden) gibt dem Glas helle Ränder, auch wo das Fenster es nicht trifft.
 
 Wer diese drei trifft, ist zu 80 % da; alles andere sind Regler.
 
@@ -93,14 +93,16 @@ Wer diese drei trifft, ist zu 80 % da; alles andere sind Regler.
 | Wort im Raum | 10 % | ein 3D-Wort vor dem Helden, mindestens 1,2 s sichtbar | 1,2 bis 3 s |
 
 ## Regler
-Heldenfigur (Sanduhr, Wasserglas oder eigene Form), Fensterseite, Stärke des Kantenlichts, Zahl der Stadtlichter über `licht.himmel`, Kamerarezepte, Wörter. Fest bleiben die Spreizung kühl außen, warm an der Kante, und das Bokeh. Der Zug darf Tischfarbe und Akzent der Untertitel setzen; das Licht bleibt das des Rezepts.
+Heldenfigur (Sanduhr, Wasserglas oder eigene Form), Fensterseite, Stärke des Kantenlichts, Gegenlicht (`"licht": {"rezept": "blaue_stunde", "gegenlicht": {"farbe": "#c4d4ff", "staerke": 2.5, "pos": [0, 0.02, -0.75], "ziel": [0, 0.04, 0.05], "winkel": 9, "halbschatten": 0.8}}`, Lage relativ zum Helden), Zahl der Stadtlichter über `licht.himmel`, Kamerarezepte, Wörter. Fest bleiben die Spreizung kühl außen, warm an der Kante, und das Bokeh. Der Zug darf Tischfarbe und Akzent der Untertitel setzen; das Licht bleibt das des Rezepts.
 
 ## Fallen
 - Blick ins Fensterlicht mit starkem Volumen und Vorwärtsstreuung gibt Milchglas: Volumen 0,12, g 0,2, Kantenlicht 60 cd nah (so im Rezept), nicht hochdrehen.
 - Glas wirft keinen Schatten und steht nicht im Volumen; wer einen Schatten will, braucht eine undurchsichtige Fassung (Sanduhr mit Gestell).
+- Glas ohne Licht von hinten verschwindet vor dunklem Grund. Probe: `"motor_spec": {"aus": ["hauptlicht"]}` schaltet Sonne, Lampe und Hauptlicht ab; das Glas muss mit Gegenlicht und Kante allein lesbar bleiben. Das Gegenlicht wirft keinen Schatten und scheint durch Gestell und Fuß: flach in Höhe der Glasmitte, eng und schwach setzen (in der Probe machten 4 cd schräg von oben den Säulenfuß der Sanduhr grell, 2,5 cd flach nicht).
+- Korn liegt im Anzeigeraum und bleibt unter 0,025 (`"licht": {"rezept": "…", "post": {"korn": 0.02}}`); höhere Werte rauschen in den Schatten.
 - Sand braucht eine ebene Füllung an der Wand unter dem Kegel, sonst schwebt der Kegel; der Strahl braucht Körner, sonst ist er ein Stab (Requisit `sanduhr` macht beides).
 - Detail-Einstellungen lassen keinen Platz für 3D-Wörter: Wörter in Halbtotalen legen.
-- Die Beispielszene ist für 9:16 gebaut; im Querformat überlappen Wörter leichter den Rahmen des Helden (Probe 16:9: „IMMER GLEICH“ lag an der Oberkante der Sanduhr). Layout-Check und ein Standbild je Format.
+- Querformat: eigener Kamerablock `kamera_quer` in der Szene (fehlt er, gilt `kamera`) und je Wort `platz_quer`; Wortzone, Untertitelband und Vignette richten sich nach dem Seitenverhältnis. Layout-Check mit dem Format (`layout.mjs <szene.json> 1.777778`) und ein Standbild je Format. Im Querformat überlappen Wörter leichter den Rahmen des Helden (Probe 16:9: „IMMER GLEICH“ lag an der Oberkante der Sanduhr).
 
 ## Ton
 Code-Musik ist erlaubt, das Bett liegt leise (allein um −24 LUFS), Geräusche und Stimme tragen; gesamt −14 LUFS, True Peak −1 dBTP; kein dumpfer Schlag am Ende, der Schluss klingt hell. Gemischt wird mit `ton_standard.py`, der Motor liefert nur getrennte Stems. In der Szene: `"ton": {"bett": {"stimmung": "kuehl"}, "atmo": "stadt_abend", "schluss": "glocke_leise", "ereignisse": [{"t": "w3", "typ": "sand", "staerke": 0.5, "dauer": 2.0}]}`.
@@ -120,4 +122,4 @@ python -I starter/werkzeuge/animskill.py <projekt>/bestellung.json
 ```
 
 ## Abnahme
-Sollwerte, keine Messung einer Vorlage: Shot-Median 5 bis 60 s, Schnitte je Sekunde 0,0 bis 0,3, Helligkeit 0,25 bis 0,55, Farbigkeit 0,08 bis 0,28, LUFS −15 bis −13 (`python -I starter/werkzeuge/abnahme.py <video> <karte.md>`). Helligkeit und Farbigkeit stammen aus einem Probe-Standbild. Vor dem Vollrender: Layout-Check ohne blocker, drei Standbilder zeigen alle drei Kern-Merkmale, Bildmitte nie milchig.
+Sollwerte, keine Messung einer Vorlage: Shot-Median 5 bis 60 s, Schnitte je Sekunde 0,0 bis 0,3, Helligkeit 0,25 bis 0,55, Farbigkeit 0,08 bis 0,28, LUFS −15 bis −13 (`python -I starter/werkzeuge/abnahme.py <video> <karte.md>`). Helligkeit und Farbigkeit stammen aus einem Probe-Standbild. Vor dem Vollrender: Layout-Check ohne blocker, drei Standbilder zeigen alle drei Kern-Merkmale, Bildmitte nie milchig, ein Standbild mit `aus: hauptlicht` zeigt das Glas noch lesbar. Der Layout-Check meldet außerdem (Stufe polish) zu kurze Lesezeit eines 3D-Worts (Grundzeit 0,5 s plus 0,3 s je Wort, ab Ende des Einflugs) und einen Helden unter 12 % oder über 85 % der Bildhöhe, als blocker Körper, die ineinander stecken, und eine Kamera, die durch einen Körper oder unter die Tischplatte fährt.

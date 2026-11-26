@@ -17,6 +17,8 @@ messung:
   helligkeit: 0.14
   kontrast: 0.20
   farbigkeit: 0.0
+sollwerte:        # Ziel für den eigenen Render; messung beschreibt die Vorlage
+  lufs: -14
 schnittmuster_16tel: [1, 1, 3, 1, 13, 13, 5, 22, 4, 2, 1, 30]
 palette:
   grund: "#000000"
@@ -38,7 +40,7 @@ abnahme:
   schnitte_pro_s: [0.45, 0.75]
   helligkeit: [0.10, 0.18]
   farbigkeit: [0.0, 0.03]
-  lufs: [-17, -15]
+  lufs: [-15, -13]   # Hausnorm −14 LUFS; den Wert der Vorlage nennt messung
 # Würfel-Felder (Etappe 0 Bauplan Würfelstile, 31.10.2026; karten_wuerfelfelder.py, Familien-Standard)
 creator: ja
 spielraum:
@@ -149,3 +151,4 @@ Bauplan für 18 s bei 73 BPM (88 Sechzehntel, ein Sechzehntel = 0,205 s), danach
 - Weitwinkel nur als Zoom → ohne Krümmung fehlt die Nähe. Barrel-Verzerrung oder echtes Fisheye-Material.
 - Motor (Code-Annäherung): Echtes Datamoshing einer Videodatei geht in Remotion nicht; der Motor verschiebt Blöcke aus einem früheren Bild über das neue (Blockverschiebung). Trägt den Kern sichtbar, ist aber kein Codec-Fehler.
 - Motor (Code-Ersatz): Der Schnitt vom Tunnel ins Streiflicht wird auf zwei dunklen Bildern nicht gemessen → das erste Streiflicht deutlich heller und breiter setzen, sonst liegt die Schnittdichte bei 0,44 statt 0,45.
+- Ein ausgebranntes Weißbild oder ein helles Gesicht direkt nach einem abgesoffenen Bild ist ein Vollbild-Blitz, auch ohne Blitzbild-Baustein → im Hook diese Sprünge mitzählen; die übrigen Weißbilder liegen nach einer Mosh-Strecke, nie zwei kurz hintereinander.

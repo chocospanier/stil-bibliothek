@@ -19,6 +19,8 @@ messung:
   farbigkeit: 0.07
   ereignisse_pro_s: 0.54    # Grafik-Ereignisse im oberen und unteren Band je, Median-Abstand 0,9 bis 1,2 s
   woerter_pro_s: 2.85
+sollwerte:        # Ziel für den eigenen Render; messung beschreibt die Vorlage
+  lufs: -14
 schnittmuster_16tel: [27, 23, 43, 9, 53, 5, 6, 9, 12, 83, 48, 84, 43]
 palette:
   grund: "#03050F"
@@ -149,6 +151,7 @@ Bauplan für 30 s in Sekunden (die Karte verlangt 45 bis 120 s: für ein fertige
 - Motiv: Glaskörper (Medizin, Technik, Gegenstände) oder Draufsicht-Szenen; Papier bleibt die einzige helle Fläche.
 - Riesenwort: 0 bis 3 je Stück.
 - Länge der Einstellungen 1,3 bis 20 s; mindestens ein Abschnitt mit schnelleren Schnitten.
+- Kamerabahn um den Röntgenkörper: Bogen wie in der Vorlage oder eine gerade, langsame Seitenfahrt; die gerade Fahrt hält die Akten-Etiketten ruhiger, der Bogen zeigt mehr vom Glas.
 
 ## Abnahme
 - `python -I starter/werkzeuge/abnahme.py <render.mp4> stilbibliothek/karten/glasroentgen-akte.md`.

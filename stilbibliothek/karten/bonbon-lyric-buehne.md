@@ -17,6 +17,8 @@ messung:
   helligkeit: 0.40
   kontrast: 0.25
   farbigkeit: 0.30
+sollwerte:        # Ziel für den eigenen Render; messung beschreibt die Vorlage
+  lufs: -14
 schnittmuster_16tel: [10, 5, 3, 3, 3, 5, 5, 0, 0, 0, 5, 1, 3, 10, 1, 1, 1, 1, 1, 1, 1, 0, 1, 1, 0, 1, 0, 1, 0, 5, 5, 0, 0, 4, 4, 1]
 palette:
   grund_all: "#1B1A3C"
@@ -40,7 +42,7 @@ abnahme:
   schnitte_pro_s: [2.6, 4.0]
   helligkeit: [0.34, 0.46]
   farbigkeit: [0.24, 0.36]
-  lufs: [-16, -14]
+  lufs: [-15, -13]   # Hausnorm −14 LUFS; den Wert der Vorlage nennt messung
 # Würfel-Felder (Etappe 0 Bauplan Würfelstile, 31.10.2026; karten_wuerfelfelder.py, Familien-Standard)
 creator: eingeschraenkt
 creator_ohne: [freisteller, text-hinter-figur]
@@ -157,3 +159,4 @@ Bauplan für 16 s bei 91 BPM (96 Sechzehntel zu je 0,165 s).
 - Geteilte Einstellung (Totale, dann Nahe derselben Szene): das Wort baut sich in der zweiten Hälfte nicht neu auf, sonst liest es sich als Fehler.
 - Strobo im Sechzehntel nur mit Farben gleicher Helligkeit (Blitzregel: harte Wechsel über 0,20 und WCAG messen); ohne das auf Achtel verlangsamen.
 - Die Basis lag bei Farbigkeit 0,26 knapp über der Untergrenze 0,24; blassere Würfelpaletten fielen heraus. Sättigung über dem ganzen Bild leicht anheben.
+- Springt die Figur mitten durch ein Bonbonwort, ist es halb verdeckt, solange man liest → das Wort zuerst frei zeigen, die Figur erst danach davor springen lassen.

@@ -17,6 +17,8 @@ messung:
   helligkeit: 0.24
   kontrast: 0.18
   farbigkeit: 0.24
+sollwerte:        # Ziel für den eigenen Render; messung beschreibt die Vorlage
+  lufs: -14
 schnittmuster_16tel: [1, 1, 2, 36, 5, 1, 1, 4, 3, 9, 5, 1, 1, 4, 3, 10, 5, 1, 1, 4, 3, 7]
 palette:
   grund: "#142C3C"
@@ -40,7 +42,7 @@ abnahme:
   schnitte_pro_s: [1.4, 2.1]
   helligkeit: [0.19, 0.28]
   farbigkeit: [0.19, 0.29]
-  lufs: [-15.1, -13.1]
+  lufs: [-15, -13]   # Hausnorm −14 LUFS; den Wert der Vorlage nennt messung
 # Würfel-Felder (Etappe 0 Bauplan Würfelstile, 31.10.2026; karten_wuerfelfelder.py, Familien-Standard)
 creator: eingeschraenkt
 creator_ohne: [text-hinter-figur, hud, scan-band]
@@ -162,3 +164,4 @@ Bauplan für 16 s bei 121 BPM (Sechzehntel = 0,124 s; 129 Sechzehntel, acht Takt
 - Motor aus Code (ErkennungPortraet, Welle D): Zustände eines flachen Code-Bildes zählt die Schnittmessung kaum (Wortpaar, Daten, Ausschnitt) → der Wärmebild-Kipp muss die Helligkeit kippen (Umgebung dunkel, Figur heiß), die Scan-Streifen hell gegen das Abendblau, und der Zyklus braucht die rund 1,8 s aus dem Text der Karte (16 Sechzehntel), sonst fällt die Schnittrate unter 1,4.
 - Wortflanke im Hochformat: Wörter symmetrisch zur Kopfmitte, jedes endet 13 % der Breite vor der Mitte, Rand 40 px auch nach dem Sprung näher; sonst verschwindet ein kurzes Wort fast ganz hinter dem Kopf oder läuft aus dem Bild.
 - Im Creator-Modus ersetzt ein Sprung näher mit kurzem Wärmebild den Scan-Streifen und ein Sprung näher die Daten; ein reiner Ausschnittsprung zählt die Schnittmessung im flachen Bild nicht. Negativ und Wärmebild färben das Gesicht mit (Kern der Karte), mit echten Figuren entscheidet der Mensch.
+- Die Suchmeldung springt mit jedem Zyklus an eine andere Stelle im Negativ-Streifen → Meldung immer an derselben Stelle im Streifen und mit demselben Wortlaut; so wird sie über mehrere Zyklen lesbar, obwohl jeder Streifen nur zwei bis vier Frames steht.

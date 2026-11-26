@@ -17,6 +17,8 @@ messung:
   helligkeit: 0.41
   kontrast: 0.39
   farbigkeit: 0.0
+sollwerte:        # Ziel für den eigenen Render; messung beschreibt die Vorlage
+  lufs: -14
 schnittmuster_16tel: [8, 4, 8, 1, 3, 4, 1, 1, 1, 1, 1, 1, 2, 2, 2, 2, 4, 4, 2, 2, 4, 1, 1, 1, 1, 4, 2, 2, 2, 2, 1, 3, 4, 2, 2, 2, 2, 1, 1, 1, 1, 3, 1, 1, 4]
 palette:
   tusche: "#010101"
@@ -25,7 +27,7 @@ palette:
   korn_dunkel: "#585858"
 effekte: [harter-schnitt, blitzbild, stottern, wiederholung, zoom-schlag, push-in, pull-out, schwellwert, invertieren, schwarzweiss, filmkorn, anime-zeichnung, beat-getrieben, ton-stopp, schwellwert-puls, dither, streifenversatz]
 kamera: Keine echte Kamera; jedes Bild bekommt einen schnellen Digitalzoom von wenigen Prozent hinein oder heraus, dazu ein, zwei Zoom-Schläge auf den Höhepunkten.
-ton: Sehr laut gemischt (−9,5 LUFS), Beat um 115 BPM, Spitzen an 0 dBFS; Stimme in den Bildern nicht erkennbar, harter Schluss auf Schwarz.
+ton: Sehr laut gemischt (−9,5 LUFS), Beat um 115 BPM, Spitzen an 0 dBFS; Stimme in den Bildern nicht erkennbar, harter Schluss auf Schwarz. Eigenes Master bei −14 LUFS; laut wirkt der Stil durch Dichte und kurzen Abstand der Schläge, die Lautheit der Vorlage steht unter messung.
 braucht: [illustrationen]
 motor_aufwand: klein
 einsatz: [hook, intro, musikvideo, portrait, uebergang]
@@ -37,7 +39,7 @@ abnahme:
   schnitte_pro_s: [4.6, 7.0]
   helligkeit: [0.33, 0.49]
   farbigkeit: [0.00, 0.02]
-  lufs: [-10.5, -8.5]
+  lufs: [-15, -13]
 # Würfel-Felder (Etappe 0 Bauplan Würfelstile, 31.10.2026; karten_wuerfelfelder.py, Familien-Standard)
 creator: eingeschraenkt
 creator_ohne: [dither]
@@ -154,7 +156,7 @@ Bauplan für 16,7 s bei 115 BPM (128 Sechzehntel zu 0,13 s, acht Takte). Inhalt 
 - Gesichter versinken bei hoher Schwelle im Schwarz → für Gesichter höchstens 60 %, Augen müssen bleiben.
 - Leerbilder in Weiß und Schwarz im schnellen Wechsel sind eine Epilepsie-Gefahr → höchstens drei harte Wechsel je Sekunde außerhalb des Schlusses, Schlussfolge kürzer als eine Sekunde.
 - Zu viele verschiedene Zeichnungen → wirkt wie ein Bilderdurchlauf; die Wiederkehr ist der Stil.
-- Die Lautheit der Vorlage (−9,5 LUFS) übersteuert auf manchen Plattformen → Master auf −11 bis −10 LUFS mit höchstens −1 dBTP.
+- Die Lautheit der Vorlage (−9,5 LUFS) nachgemacht verzerrt an den Spitzen → Master auf −14 LUFS mit höchstens −1 dBTP; Druck kommt aus dem dichten Beat, nicht aus dem Pegel.
 - Eigene Figur ganz ins Schwarz gezogen (nur Augen und Lichter weiß) wirkt wie eine gefüllte Maske → Gesichter nie invertieren, dunkle Gesichtsflächen nur als Halbschatten (eine Hälfte); Schwelle auf Gesichtern höchstens 55 % (Erfahrung 16.10.2026)
 - Halbschatten aus einem waagerechten Verlauf zieht eine Lineal-Kante über glatte Flächen → Kante mit der weichgezeichneten Helligkeit verschieben
 - Dither in 1-px-Körnern wird am Handy grau → Körner um 2 px

@@ -17,6 +17,8 @@ messung:
   helligkeit: 0.50
   kontrast: 0.22
   farbigkeit: 0.19
+sollwerte:        # Ziel für den eigenen Render; messung beschreibt die Vorlage
+  lufs: -14
 schnittmuster_16tel: [3, 4, 0, 2, 1, 2, 3, 5, 2, 1, 0, 3, 1, 3, 1, 1, 2, 2, 1, 0, 1, 2, 3, 4, 3, 4, 7, 2, 6, 2, 4, 4, 2, 7, 4, 8, 0, 4, 9]
 palette:
   kalk: "#F2F1EE"
@@ -41,7 +43,7 @@ abnahme:
   schnitte_pro_s: [1.4, 2.0]
   helligkeit: [0.42, 0.60]
   farbigkeit: [0.15, 0.23]
-  lufs: [-14.9, -12.9]
+  lufs: [-15, -13]   # Hausnorm −14 LUFS; den Wert der Vorlage nennt messung
 # Würfel-Felder (Etappe 0 Bauplan Würfelstile, 31.10.2026; karten_wuerfelfelder.py, Familien-Standard)
 creator: ja
 spielraum:
@@ -159,3 +161,4 @@ Bauplan für 18 s bei 75 BPM (90 Sechzehntel zu 0,2 s).
 - Kunstobjekt-Bilder mit KI-Fehlern im Muster → als Standbild prüfen, Gesicht darf nicht driften.
 - Code-Motor (Welle D): die Satzfarbe hängt am Grund unter der Satzzeile; Kobaltflächen (Laden, Kachel, Büste) enden über ihr oder der Satz steht weiß. Figuren und Häuser nie im offenen Meer, immer auf Mauer oder Hang.
 - Code-Motor: Schluss immer hell im Licht; Glitzer auf dem Meer als kurze scharfe Striche, weiche runde Punkte auf dunklem Wasser lesen sich als Schnee bei Nacht und kippen den Ton in Abschied.
+- Kobaltblaue Blitzbilder zwischen weißem Kalk sind große Helligkeitssprünge → nicht mehr als drei je Sekunde, und das Wort auf dem Schlag nie auf ein Blitzbild legen, sondern auf das Bild danach.

@@ -17,6 +17,8 @@ messung:
   helligkeit: 0.24
   kontrast: 0.21
   farbigkeit: 0.24
+sollwerte:        # Ziel für den eigenen Render; messung beschreibt die Vorlage
+  lufs: -14
 schnittmuster_16tel: [5, 3, 3, 5, 4, 18, 4, 6, 2, 1, 1, 1, 1, 2, 1, 1, 0, 1, 1, 5, 7, 8, 0, 0]
 palette:
   grund_dunkel: "#0D0516"
@@ -157,3 +159,4 @@ Bauplan für 18 s bei 120 BPM mit Halbtempo-Gefühl (144 Sechzehntel zu je 0,125
 - Wörter, die kürzer als 0,5 s stehen, nicht zeigen; diese Einstellungen tragen nur Figur und Kreis.
 - Linienfigur, die sich durch waagerechtes Stauchen dreht, mit waagerechten Armen und Heiligenschein liest sich als Kreuz. Bewegung aus der Pose, nie gestaucht.
 - Grund je Schnitt im Wechsel Violett und Fast-Schwarz; sonst zählt die Schnittmessung die Wechsel nicht.
+- Stottern auf der Sängerin, während ein Versalwort hinter ihr steht → nur die Figur stottert, das Wort bleibt stehen; sonst flackert die Zeile mit.

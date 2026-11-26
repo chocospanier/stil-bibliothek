@@ -17,6 +17,8 @@ messung:
   helligkeit: 0.49
   kontrast: 0.27
   farbigkeit: 0.15
+sollwerte:        # Ziel für den eigenen Render; messung beschreibt die Vorlage
+  lufs: -14
 schnittmuster_16tel: [16, 19, 34, 15, 12, 8, 29]
 palette:
   studio: "#E2DCD4"
@@ -41,7 +43,7 @@ abnahme:
   schnitte_pro_s: [0.55, 0.85]
   helligkeit: [0.40, 0.58]
   farbigkeit: [0.12, 0.18]
-  lufs: [-14.8, -12.8]
+  lufs: [-15, -13]   # Hausnorm −14 LUFS; den Wert der Vorlage nennt messung
 # Würfel-Felder (Etappe 0 Bauplan Würfelstile, 31.10.2026; karten_wuerfelfelder.py, Familien-Standard)
 creator: nein
 creator_grund: "Sticker-Klone neben der Figur und Orte, die durch die Silhouette wechseln, sind Kern-Merkmale"
@@ -159,3 +161,4 @@ Bauplan für 15 s bei 170 BPM (Achtel 0,18 s). Wegen der weichen Wechsel in Acht
 - Echte Silhouetten-Masken zählt die Schnittmessung nicht, ohne genug harte Momente fallen die Schnitte unter 0,55 je Sekunde → Wechsel mischen: kurze Maske (drei Bilder in der Silhouette, dann voll), Geister-Blende und der Sprung bei der Wahl zählen, lange Masken und Überblendungen nicht; so bleibt der Median über einer Sekunde.
 - Sticker-Klone mit den Füßen am Bildrand kreuzen die Mono-Zeilen unten → Klone weiter hinten stellen, Füße über den Mono-Zeilen.
 - Hand an der Brille in einer engen Reihe ragt in die Nachbarfigur, ein schwarzer Brillenbalken liest sich als Augenbalken → in der Reihe nur stehende Posen, Code-Figur ohne Brille.
+- Ein Ortswechsel mitten im Tippen reißt die Schlagzeile mit → die Schlagzeile tippt ungestört über den Ortswechseln weiter und steht nach dem letzten Buchstaben, bis der nächste Gedanke kommt.

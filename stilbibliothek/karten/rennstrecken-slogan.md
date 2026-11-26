@@ -17,6 +17,8 @@ messung:
   helligkeit: 0.25
   kontrast: 0.19
   farbigkeit: 0.14
+sollwerte:        # Ziel für den eigenen Render; messung beschreibt die Vorlage
+  lufs: -14
 schnittmuster_16tel: [2, 18, 21, 17, 19, 17, 6, 7, 6, 6, 10, 1, 7, 5, 16, 4, 1, 2, 1, 2, 1, 1, 6, 6, 5, 1, 26, 7, 1, 25]
 palette:
   gold: "#DBD8C0"
@@ -42,7 +44,7 @@ abnahme:
   schnitte_pro_s: [1.3, 1.9]
   helligkeit: [0.20, 0.29]
   farbigkeit: [0.11, 0.17]
-  lufs: [-15.1, -13.1]
+  lufs: [-15, -13]   # Hausnorm −14 LUFS; den Wert der Vorlage nennt messung
 # Würfel-Felder (Etappe 0 Bauplan Würfelstile, 31.10.2026; karten_wuerfelfelder.py, Familien-Standard)
 creator: eingeschraenkt
 creator_ohne: [text-hinter-figur]
@@ -168,3 +170,4 @@ Bauplan für 19,6 s bei 116 BPM in Vierteln (0,52 s). Ein Wort je Slot im Auftak
 - Ton (05.11.): Der Drop der Musik aus musik.py lag bei 8,3 s, der Drop des Motors (50 Sechzehntel) bei 6,76 s → die Musik vorn um ganze Sechzehntel kürzen (hier 12, also 1,55 s), dann liegen Raster und Drop gleich. takt.py mit Band voll maß 128 statt 116 BPM (10 %) → `--band hoch`.
 - Ton (05.11.): Die Schlusskarte steht im Motor still (`STEHT`); der ganze Satz als Stimme nach dem Treffer braucht über 3 s Karte, die Vorprüfung meldet dann Standbild rot → den Satz vor dem Atem sprechen lassen, nach dem Treffer nur die kurze dritte Zeile, Karte rund 2,35 s.
 - Prüfer (05.11.): Bild 0 im Kartenbauplan (Figur klein vor der Tribüne hinter dem Zaun, erstes Wort 6 % hoch) ist kein Titelbild und liest sich als Käfig → `folge` mit „gegenlicht“ beginnen (große Figur, Wort darüber).
+- Fischauge und Slogan im selben Bild: die Wölbung zieht die Buchstaben am Rand krumm → im Fischauge-Kreis kein Wort; das Wort sitzt davor oder danach im Raum.

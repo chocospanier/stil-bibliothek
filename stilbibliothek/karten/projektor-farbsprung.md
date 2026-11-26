@@ -17,6 +17,8 @@ messung:
   helligkeit: 0.24
   kontrast: 0.22
   farbigkeit: 0.11
+sollwerte:        # Ziel für den eigenen Render; messung beschreibt die Vorlage
+  lufs: -14
 schnittmuster_16tel: [2, 0, 0, 2, 2, 3, 0, 0, 1, 2, 0, 0, 0, 0, 1, 0, 2, 3, 1, 2, 0, 0, 0, 1, 0, 3, 0, 1, 1, 2, 1, 1, 0, 0, 1, 0, 1, 4, 0, 2]
 palette:
   schwarz: "#070607"
@@ -41,7 +43,7 @@ abnahme:
   schnitte_pro_s: [3.9, 5.9]
   helligkeit: [0.19, 0.29]
   farbigkeit: [0.09, 0.14]
-  lufs: [-8.9, -6.9]
+  lufs: [-15, -13]   # Hausnorm −14 LUFS; den Wert der Vorlage nennt messung
 # Würfel-Felder (Etappe 0 Bauplan Würfelstile, 31.10.2026; karten_wuerfelfelder.py, Familien-Standard)
 creator: nein
 creator_grund: "5 Kennungen aus rahmen und sticker: bild-im-bild, rahmen-rund, freisteller, ausschnitt-kante,\
@@ -163,3 +165,4 @@ Bauplan für 15 s in Sekunden, weil der Stil auf Worte schneidet: Wortanfänge d
 - Motor: Publikum aus abgerundeten Stäben liest sich als Patronen oder Grabsteine → runder Kopf auf breiter Schulterkuppe.
 - Motor: Die kleine Schlusszeile verschwindet im hellen Rauch → Rauch oben und unten halten und vom Zeilenband wegdriften lassen, Zeile mit dunklem Schein.
 - Motor (Würfelzüge): Blassere Nachbarpaletten drücken die Farbigkeit unter 0,09, ein Haus mit warmem Gelb als Textfarbe hebt sie über 0,17 (Rückfall) → Tönung mit saturate 1,18, Mischung mit gedeckter Hausfarbe (Kaltweiß, Graupetrol) würfeln. Hellere Mitteltöne heben die Farbigkeit kaum, verletzen aber die Blitzregel im Hook.
+- Kinetische Wörter auf Drei-Frame-Schnitten stehen 0,1 s und sind nur Textur → das Wort, das gelesen werden soll, über mehrere Schnitte an derselben Stelle stehen lassen; die übrigen dürfen Textur bleiben.

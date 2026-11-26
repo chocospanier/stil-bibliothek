@@ -17,6 +17,8 @@ messung:
   helligkeit: 0.51
   kontrast: 0.37
   farbigkeit: 0.10
+sollwerte:        # Ziel für den eigenen Render; messung beschreibt die Vorlage
+  lufs: -14
 schnittmuster_16tel: [35, 12, 16, 10, 7, 35]
 palette:
   grund: "#DCE6E7"
@@ -41,7 +43,7 @@ abnahme:
   schnitte_pro_s: [0.25, 0.45]
   helligkeit: [0.45, 0.60]
   farbigkeit: [0.08, 0.13]
-  lufs: [-16.2, -14.2]
+  lufs: [-15, -13]   # Hausnorm −14 LUFS; den Wert der Vorlage nennt messung
 # Würfel-Felder (Etappe 0 Bauplan Würfelstile, 31.10.2026; karten_wuerfelfelder.py, Familien-Standard)
 creator: eingeschraenkt
 creator_ohne: [bild-im-bild, raster-collage, ausschnitt-kante, ui-attrappe]
@@ -158,3 +160,4 @@ Bauplan für 18 s bei 98 BPM (117 Sechzehntel zu 0,153 s). Der Webseiten-Teil we
 - Code-Motor, Schnittmessung: scdet zählt nur Sprünge der Bildhelligkeit; zwei Code-Einstellungen gleicher Helligkeit nacheinander gelten als ein Shot → benachbarte Einstellungen in der Belichtung im Wechsel um 15 bis 35 % versetzen (`belichtung()` in `gemeinsam_d6.tsx`), unter 0,2 Sprung bleibt die Blitzregel frei.
 - Kahle Köpfe mit Sonnenbrille lesen sich als Bodyguards oder Puppen → Gesicht mit Augen und Lächeln, langes Haar, Körper in Kleidungsfarbe.
 - Blitzfoto-Teil auf hellem Grund hebt die Helligkeit über das Fenster der Karte → dunkler, farbiger Raum, nur Gesichter hell angeblitzt.
+- Der Klick in die Webseite als Zoom-Durchflug zieht die kleine Rosé-Typo mit → die Typo erst einblenden, wenn das Bild steht.

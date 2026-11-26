@@ -17,6 +17,8 @@ messung:
   helligkeit: 0.10
   kontrast: 0.12
   farbigkeit: 0.08
+sollwerte:        # Ziel für den eigenen Render; messung beschreibt die Vorlage
+  lufs: -14
 schnittmuster_16tel: [5, 4, 4, 3, 2, 3, 4, 4, 0, 0, 1, 0, 6, 4, 4, 4, 4, 1, 2, 5, 4, 4, 1, 21]
 palette:
   grund: "#060505"
@@ -39,7 +41,7 @@ abnahme:
   schnitte_pro_s: [1.4, 2.1]
   helligkeit: [0.07, 0.13]
   farbigkeit: [0.06, 0.10]
-  lufs: [-18.2, -16.2]
+  lufs: [-15, -13]   # Hausnorm −14 LUFS; den Wert der Vorlage nennt messung
 # Würfel-Felder (Etappe 0 Bauplan Würfelstile, 31.10.2026; karten_wuerfelfelder.py, Familien-Standard)
 creator: ja
 spielraum:
@@ -167,3 +169,4 @@ Bauplan für 15 s bei 88 BPM (Sechzehntel = 0,17 s, Viertel = 0,68 s; 88 Sechzeh
 - Bei kartentreuer Helligkeit (0,07 bis 0,13) erkennt die Schnitt-Messung mit Schwelle 10 in Code-Szenen nur rund die Hälfte der Schnitte; mit Schwelle 5 alle (Motor NeonoirSteckbrief: 11 gegen 24 Schnitte). Für Code-Motoren dieser Karte gilt die Gegenprobe abnahme.py --schwelle 5; nie aufhellen, um die Messung zu treffen (helle Bernstein-Flächen wirkten im Prüfer wie Werbung).
 - Namenskarte an die Breite binden: lange Namen liefen mit fester Schriftgröße links und rechts aus dem Bild.
 - Steckbrief-Zeile in Mono braucht mindestens 2,6 % der Höhe und muss als ganze Zeile in 86 % der Breite passen; die Pointe nicht größer, sondern schneller tippen.
+- Der Weißblitz auf sehr dunklem Petrol ist ein großer Sprung, schon zwei kurz hintereinander reichen an die Grenze → ein einziger Blitz vor der Enthüllung, die Einstellung davor halten.

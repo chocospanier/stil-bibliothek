@@ -17,6 +17,8 @@ messung:
   helligkeit: 0.19
   kontrast: 0.20
   farbigkeit: 0.00
+sollwerte:        # Ziel für den eigenen Render; messung beschreibt die Vorlage
+  lufs: -14
 schnittmuster_16tel: [0, 1, 0, 1, 0, 0, 0, 2, 0, 3, 1, 4, 1, 3, 5, 1, 0, 3, 0, 3, 4, 0, 6, 1, 8, 2, 6, 2, 2, 3, 2, 2, 1, 1, 0, 0]
 palette:
   grund: "#060606"
@@ -165,3 +167,4 @@ Bauplan für 16 s bei 60 BPM (Sechzehntel = 0,25 s, vier Takte, 64 Sechzehntel).
 - Zu helles Grading → Schwarzbilder verschwinden im Bild. Ruhebilder dunkel halten, damit Schwarz wie ein Punkt wirkt.
 - Bei 20 fps sind zwei Frames 0,1 s; bei 30 fps entsprechen drei Frames demselben Gewicht. Frames nicht stur übernehmen, sondern auf Zeit umrechnen.
 - Motor (Code-Ersatz): Korn, das in jedem Bild wechselt, verdeckt Schnitte in der Messung → Korn jedes zweite Bild wechseln.
+- Ein geschwärztes oder ausgebranntes Störbild ist ein Hin- und ein Rücksprung → höchstens eins je Sekunde, dann bleibt die Ruhe; den dichten Hook trotzdem messen, dort liegen mehrere Sprünge nah beieinander.

@@ -103,6 +103,7 @@ Zahl der Stufen (5 bis 10), Länge der Fahrt, Details im Ausschnitt, Akzent und 
 - Große Verläufe zeigen nach starker Kompression Farbstufen: das leichte Raster oder Korn des Motors drinlassen.
 - Das Beispielmotiv einer Malweise im Motor ist nur ein Stichwort: das eigene Thema in derselben Malweise neu komponieren, Motive und Texte der Beispiele nie übernehmen.
 - Creator-Modus: ohne `stempel` bauen; geht der Stil dann nicht mehr, eine andere Karte würfeln.
+- Die dunkle Schriftfarbe `#1E1E2E` misst auf dem grünen Filz nur 2,2 zu 1 → sie steht nur auf dem Antwortbogen; Schrift auf dem Filz in Papierweiß `#F6F2E6` (6,7 zu 1).
 
 ## Ton
 Dieser Motor liefert keinen Ton: das Bett kommt aus `musik.py` oder als Code-Musik eines anderen Motors, die Geräusche aus `taktbauer.py --nur-schlaege` oder eigenen Aufnahmen. Code-Musik ist erlaubt, das Bett liegt leise (allein um −24 LUFS) und schweigt im Atem vor der Pointe. Geräusche: das Werkzeug des Mediums je Stufe (Pinsel, Stift, Schere, Nadel, Tastatur), sehr leise. Jedes Stück mit Text bekommt eine Stimme (Wortzeiten aus der Aufnahme, Szenen auf Wortanfänge). Gesamt −14 LUFS, True Peak −1 dBTP; kein dumpfer Schlag am Ende, der Schluss klingt hell (Glocke, Akkord, Glanz). Gemischt wird mit `ton_standard.py`.

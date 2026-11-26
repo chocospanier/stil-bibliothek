@@ -17,6 +17,8 @@ messung:
   helligkeit: 0.23
   kontrast: 0.25
   farbigkeit: 0.16
+sollwerte:        # Ziel für den eigenen Render; messung beschreibt die Vorlage
+  lufs: -14
 schnittmuster_16tel: [5, 4, 0, 3, 1, 3, 1, 3, 3, 1, 2, 1, 3, 7, 3, 1, 3, 8, 1, 9, 1, 0, 4, 3, 3, 2, 4, 2, 2, 2, 1, 1, 4, 3, 2, 2, 2, 2, 1, 0]
 palette:
   grund: "#0B0908"
@@ -39,7 +41,7 @@ abnahme:
   schnitte_pro_s: [2.2, 3.4]
   helligkeit: [0.18, 0.28]
   farbigkeit: [0.13, 0.19]
-  lufs: [-14.9, -12.9]
+  lufs: [-15, -13]   # Hausnorm −14 LUFS; den Wert der Vorlage nennt messung
 # Würfel-Felder (Etappe 0 Bauplan Würfelstile, 31.10.2026; karten_wuerfelfelder.py, Familien-Standard)
 creator: nein
 creator_grund: "Titelseiten-Layouts, rote Rahmen und Collage-Kacheln sind zwei der drei Kern-Merkmale"
@@ -179,3 +181,4 @@ Bauplan für 18 s bei 106 BPM (Sechzehntel = 0,142 s, Achtel = 0,283 s; 127 Sech
 - Glitch direkt vor dem Weißblitz ergibt vier harte Hell-Dunkel-Sprünge in 0,4 s (Flackern) → vor dem Blitz das letzte Bild halten; Glitch-Streifen ohne weiße Platten und mit so kleinem Versatz, dass Schrift 40 px vom Rand bleibt.
 - Pointe-Stempel mit dem Pointe-Bild setzen und das Bild mindestens 0,7 s halten; roter Stempel nie auf roter Rahmenlinie (weiße Platte darunter).
 - Musik aus einem Modell folgt einem Sekundenplan nur grob (keine Stille, kein Sweep, kein Schlussschlag), liefert aber Stufen und oft einen harten Stopp → den Take je Achtel messen (Tief, Mitte, Hoch) und die Dramaturgie auf seine Stufen legen; der Stopp wird die Pointe.
+- Das Riesenwort hinter der gehenden Figur rutscht mit dem Layout weiter, während man es liest → erst rutschen, dann stehen, bis es einmal gelesen ist (mindestens 0,25 s Stand, sonst den Slot verlängern); das Wortecho bewegt sich nach dem Einrasten nicht mehr.

@@ -104,6 +104,7 @@ Tempo der Hand (ein Durchgang 2 bis 8 s), Dichte der Striche, Anteil Entstehen g
 - Der Motor rechnet streng gleich bei jedem Lauf und kennt keine nachträglichen Filter: Unschärfe, Korn und Farbe gehören in den Stil, nicht als Filter auf das fertige Video.
 - Ein fremder Farbtausch macht aus dem Stil nur seinen Nachbarstil in falschen Farben: der Zug tauscht Akzent und Licht, Medium und Grund bleiben.
 - Im TikTok-Creator-Modus gesperrt: Kern nennt klebeband; dazu papierriss, klebeband-sticker, erpresserbrief.
+- Schreibmaschinentext und Stempel im selben Moment: der Stempel zieht den Blick, der Text bleibt ungelesen → der Stempel kommt erst, wenn die Zeile steht.
 
 ## Ton
 Der Motor liefert Musik und Geräusche aus Code als getrennte Stems. Code-Musik ist erlaubt, das Bett liegt leise (allein um −24 LUFS) und schweigt im Atem vor der Pointe. Geräusche: Stift, Pinsel, Kreide, Schere oder Nadel auf dem Material, leise und im Takt der Striche. Jedes Stück mit Text bekommt eine Stimme (Wortzeiten aus der Aufnahme, Szenen auf Wortanfänge). Gesamt −14 LUFS, True Peak −1 dBTP; kein dumpfer Schlag am Ende, der Schluss klingt hell (Glocke, Akkord, Glanz). Gemischt wird mit `ton_standard.py`, aus den ungemasterten Stems des Motors.

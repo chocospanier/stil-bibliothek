@@ -17,6 +17,8 @@ messung:
   helligkeit: 0.46
   kontrast: 0.25
   farbigkeit: 0.19
+sollwerte:        # Ziel für den eigenen Render; messung beschreibt die Vorlage
+  lufs: -14
 schnittmuster_16tel: [3, 1, 1, 1, 2, 2, 1, 1, 2, 3, 2, 1, 1, 2, 2, 1, 1, 2, 2, 1, 1, 2, 1, 2, 1, 1, 3, 1, 2, 2, 1, 1, 1, 2, 1, 1, 3, 1, 2, 2]
 palette:
   creme: "#FEEAD9"
@@ -144,6 +146,7 @@ Bauplan für 20 s bei 94 BPM (125 Sechzehntel zu 0,16 s). Inhalt austauschbar, R
 - Fugenfarbe: Blau, Grün oder Weiß; immer nur eine.
 - Für Produkte: das Produkt als Monument aus Blöcken, nur Fragmente zeigen, Titel ist der Produktname.
 - Tempo: 85 bis 110 BPM.
+- Kamerabahn: kleiner Bogen um das Fragment (Orbit 3°) oder gerade Seitenfahrt an den Säulen entlang; die gerade Fahrt lässt das Bauwerk schwerer wirken, der Bogen zeigt seine Tiefe.
 
 ## Abnahme
 - Render mit `video_schauen.py` messen: Werte aus `abnahme` treffen.

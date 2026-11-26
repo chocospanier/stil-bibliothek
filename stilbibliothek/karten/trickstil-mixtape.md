@@ -17,6 +17,8 @@ messung:
   helligkeit: 0.34
   kontrast: 0.19
   farbigkeit: 0.20
+sollwerte:        # Ziel für den eigenen Render; messung beschreibt die Vorlage
+  lufs: -14
 schnittmuster_16tel: [8, 24, 2, 6, 2, 2, 2, 3, 3, 3, 4, 4, 6, 2, 2, 2, 4, 4, 3, 2, 6, 8, 1, 1, 1, 4, 4, 3, 8, 3, 4, 2, 1, 1, 4, 4, 3, 1, 14]
 palette:
   grund_dunkel: "#22161E"
@@ -28,7 +30,7 @@ palette:
   tuerkis: "#15C5B4"
 effekte: [harter-schnitt, blende, stottern, bild-im-bild, masken-wechsel, push-in, anime-zeichnung, 3d-render, kontur-glow, glow, partikel, strahlenkranz, vignette, wort-auf-beat, text-hinter-figur, sprechstimme, behandlungs-wechsel, mehrfachkontur]
 kamera: Meist langsamer Push hinein oder leichtes Steigen in den Clips selbst; im Schnitt keine eigene Kamerabewegung, die Energie kommt aus den Figuren und Effekten.
-ton: Sehr laut gemischter Song (−8,9 LUFS, Spitzen über 0 dBFS) um 127 BPM; die eingeblendeten Einzelwörter deuten auf Gesang (Vermutung), Schnitte folgen eher den Worten als dem Beat.
+ton: Sehr laut gemischter Song (−8,9 LUFS, Spitzen über 0 dBFS) um 127 BPM; die eingeblendeten Einzelwörter deuten auf Gesang (Vermutung), Schnitte folgen eher den Worten als dem Beat. Eigenes Master bei −14 LUFS; laut wirkt der Stil durch Dichte und kurzen Abstand der Schläge, die Lautheit der Vorlage steht unter messung.
 braucht: [illustrationen, 3d]
 motor_aufwand: mittel
 einsatz: [musikvideo, trailer, hook, ganzes-kurzvideo]
@@ -40,7 +42,7 @@ abnahme:
   schnitte_pro_s: [2.1, 3.1]
   helligkeit: [0.27, 0.41]
   farbigkeit: [0.16, 0.24]
-  lufs: [-9.9, -7.9]
+  lufs: [-15, -13]
 # Würfel-Felder (Etappe 0 Bauplan Würfelstile, 31.10.2026; karten_wuerfelfelder.py, Familien-Standard)
 creator: eingeschraenkt
 creator_ohne: [bild-im-bild, text-hinter-figur]
@@ -157,7 +159,7 @@ Bauplan für 18 s bei 127 BPM (153 Sechzehntel zu 0,118 s). Weil der Schnitt den
 - Stile zu ähnlich (nur verschiedene 3D-Looks) → mindestens ein flacher Zeichenstil und ein Bleistift-Look dazwischen.
 - Bekannte Filmfiguren oder Studio-Looks nachbauen → Markenrisiko; nur allgemeine Stilbeschreibungen in den Prompts.
 - Schnitte aufs starre Raster zwingen → wirkt mechanisch; hier entscheiden Worte.
-- Lautheit der Vorlage übernehmen → Master auf −11 bis −9 LUFS und höchstens −1 dBTP.
+- Lautheit der Vorlage übernehmen → Master auf −14 LUFS und höchstens −1 dBTP; laut wirkt der Song durch Dichte und kurzen Abstand der Schläge.
 - Zu viele Wörter → Karaoke statt Akzent; ein Wort alle ein bis zwei Sekunden.
 - Motorbau (04.11.): Eine Weißblende, die in Schritten von 0,3 zurückgeht, zählt als drei harte Wechsel und bricht mit dem nächsten Schnitt die Blitzregel → in Schritten von 0,15 zurückgehen.
 - Motorbau (04.11.): Ein großes Gesicht, das um die Mitte der Figur gedreht wird, schiebt die glühenden Augen neben den Kopf → Drehpunkt auf Augenhöhe, Leuchten aus denselben Koordinaten wie die Pupillen.
@@ -166,3 +168,4 @@ Bauplan für 18 s bei 127 BPM (153 Sechzehntel zu 0,118 s). Weil der Schnitt den
 - Motorbau (04.11.): Die Faust als vergrößerte Ganzfigur ist ein unlesbares Rohr → eigene Großaufnahme der Faust (45 % der Bildhöhe), Lichtstern auf den Knöcheln, Haar angeschnitten als Wiedererkennung.
 - Motorbau (04.11.): Zwei Trickstile mit ähnlich dunklem Grund hintereinander zählt die Schnittmessung kaum (Wert unter 10) → helle und dunkle Stile abwechseln, aber höchstens drei harte Wechsel je Sekunde; nach jeder Umstellung die Blitzregel am Render messen.
 - Würfel (04.11.): Im Creator-Modus wird das Fenster zum Diagonal-Split; mit anderen Bildern als im Fenster ändert sich die Helligkeit, und mit den folgenden Schnitten entstehen vier harte Wechsel in einer Sekunde → der Split zeigt dieselben zwei Bilder wie das Fenster (Kraftpose, Kampf), Creator-Züge mit Blitzmessung prüfen.
+- Liedwort und Stilwechsel im selben Shot: der neue Trickstil zieht das Auge, das Wort geht unter → der Stilwechsel kommt mit dem Wortanfang, und das Wort steht danach ruhig bis zum nächsten Schnitt; Wort und Silbe bleiben zusammen.

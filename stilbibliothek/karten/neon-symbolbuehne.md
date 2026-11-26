@@ -19,6 +19,8 @@ messung:
   farbigkeit: 0.39
   buehne_median_s: 7.4
   woerter_pro_s: 1.9
+sollwerte:        # Ziel für den eigenen Render; messung beschreibt die Vorlage
+  lufs: -14
 schnittmuster_16tel: [321, 454]
 palette:
   nachtblau: "#161237"

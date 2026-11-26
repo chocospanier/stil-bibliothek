@@ -17,6 +17,8 @@ messung:
   helligkeit: 0.29
   kontrast: 0.28
   farbigkeit: 0.17
+sollwerte:        # Ziel für den eigenen Render; messung beschreibt die Vorlage
+  lufs: -14
 schnittmuster_16tel: [15, 8, 0, 9, 4, 3, 5, 0, 3, 5, 4, 5, 2, 0, 0, 3, 1, 4, 1, 3, 0, 2, 3, 1, 5, 3, 3, 1, 7, 7, 1, 4, 7, 2, 1, 0, 0, 1, 1, 0]
 palette:
   grund: "#070E25"
@@ -39,7 +41,7 @@ abnahme:
   schnitte_pro_s: [1.6, 2.4]
   helligkeit: [0.23, 0.35]
   farbigkeit: [0.14, 0.20]
-  lufs: [-9, -7]
+  lufs: [-15, -13]   # Hausnorm −14 LUFS; den Wert der Vorlage nennt messung
 # Würfel-Felder (Etappe 0 Bauplan Würfelstile, 31.10.2026; karten_wuerfelfelder.py, Familien-Standard)
 creator: eingeschraenkt
 creator_ohne: [text-hinter-figur, hud, tracking-etiketten]
@@ -169,3 +171,4 @@ Bauplan für 20 s bei 88 BPM (Sechzehntel = 0,17 s, Viertel = 0,68 s; 117 Sechze
 - Figur-Einstellungen in derselben dunklen Raumtotale zählt die Schnittmessung nicht (Score unter 10). Totale und Nahe im Wechsel, Raum gespiegelt; drei lange Figur-Einstellungen sind dafür geteilt.
 - Überstrahlte Strecke mit ausgebreiteten Armen im weißen Oval liest sich als Licht am Ende des Tunnels. Figur stehend, mit Boxen, Ränder nur leicht nach Tiefblau.
 - Code-Figur: Seitenlicht als Verlauf durch die Silhouette (Maske) legen, nie als zweite Kopie in Lichtfarbe; die Kopie bildet versetzte Formen, der Kopf zerfällt.
+- Etiketten, die mit ihrer Box auf jedem Achtel weiterspringen, sind nicht lesbar → das Etikett mit dem Liedwort bleibt an seinem Körperpunkt (Hand, Kette, nie Kopf), bis das nächste Wort gesungen wird; nur die leeren Boxen springen weiter.

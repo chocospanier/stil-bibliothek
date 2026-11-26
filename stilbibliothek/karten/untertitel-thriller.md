@@ -17,6 +17,8 @@ messung:
   helligkeit: 0.16
   kontrast: 0.19
   farbigkeit: 0.01
+sollwerte:        # Ziel für den eigenen Render; messung beschreibt die Vorlage
+  lufs: -14
 schnittmuster_16tel: [28, 16, 11, 12, 16, 20, 8, 15, 1, 24]   # 10 erkannte Shots; ein Schnitt bei 1.5 s fehlt, im Text in Sekunden
 palette:
   grund: "#050505"
@@ -40,7 +42,7 @@ abnahme:
   schnitte_pro_s: [0.5, 0.9]
   helligkeit: [0.13, 0.19]
   farbigkeit: [0.00, 0.02]
-  lufs: [-13.5, -11.5]
+  lufs: [-15, -13]   # Hausnorm −14 LUFS; den Wert der Vorlage nennt messung
 # Würfel-Felder (Etappe 0 Bauplan Würfelstile, 31.10.2026; karten_wuerfelfelder.py, Familien-Standard)
 creator: eingeschraenkt
 creator_ohne: [raster-collage]
@@ -174,3 +176,4 @@ Bauplan für 20 s in Sekunden, weil der Schnitt dem Satz folgt (Bezugsraster 121
 - Silhouetten aus Code brauchen Merkmale (Hut, Kragen, Mantel, Kopf rund 30 % der Schulterbreite), sonst lesen sie sich als Piktogramm.
 - Die Auflösung braucht ein Bild: was der Antworttitel nennt, ist vor dem Blitz einmal zu sehen.
 - Licht, das erst nach dem Schnitt angeht, lässt den Schnitt aus dem dunklen Titel unter die Messschwelle fallen → das Licht brennt ab Bild 0 der Einstellung.
+- Die getippte Zeile verschwindet mit dem letzten Buchstaben im nächsten Schnitt → nach dem letzten Zeichen die ganze Zeile stehen lassen, so lange man sie in Ruhe liest, dann schneiden.

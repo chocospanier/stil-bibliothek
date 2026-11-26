@@ -17,6 +17,8 @@ messung:
   helligkeit: 0.16
   kontrast: 0.22
   farbigkeit: 0.06
+sollwerte:        # Ziel für den eigenen Render; messung beschreibt die Vorlage
+  lufs: -14
 schnittmuster_16tel: [16, 8, 4, 4, 6, 3, 7, 4, 4, 5, 2, 4, 4, 2, 2, 2, 3, 4, 4, 3, 5, 4, 4, 2, 2, 4, 8, 4, 3, 5, 7, 5, 8, 1, 3, 4, 13]
 palette:
   grund: "#020304"
@@ -40,7 +42,7 @@ abnahme:
   schnitte_pro_s: [1.1, 1.7]
   helligkeit: [0.13, 0.19]
   farbigkeit: [0.04, 0.09]
-  lufs: [-14.5, -12.5]
+  lufs: [-15, -13]   # Hausnorm −14 LUFS; den Wert der Vorlage nennt messung
 # Würfel-Felder (Etappe 0 Bauplan Würfelstile, 31.10.2026; karten_wuerfelfelder.py, Familien-Standard)
 creator: eingeschraenkt
 creator_ohne: [split-screen, kinobalken, text-hinter-figur]
@@ -172,3 +174,4 @@ Erlebt beim Bau (16.10.2026):
 - Farbschlüssel der Sonne als runde Fläche über der grauen Szene, nie als Ausschnitt mit Schatten (das gab ein orange getöntes Rechteck).
 - Die Farbigkeit liegt nah an der Untergrenze 0,04; mit nur vier getönten Shots hielt die Würfelprobe den Abstand nicht (Rückfall). Sechs getönte Shots (Kobalt, Glut) geben Luft.
 - Creator-Modus ohne Kinobalken: es fehlen rund 36 % Schwarz, die Helligkeit steigt über das Fenster (0,25); Abdunkeln (Schwarz oder Kobalt) senkt dann Farbigkeit und Schnittmessung unter die Abnahme. Der Motor SiegerMantra steht darum mit creator: false in motoren.json; eine Creator-Fassung dieser Karte ist ein Handbau ohne Balken mit eigener Messung.
+- Die kursive Zeile kommt zwischen zwei Schlägen und muss dort ganz gelesen sein → sie steht von kurz nach einem Schlag bis kurz vor dem nächsten und geht vor dem Schlagwort; ist sie dafür zu lang, wird sie gekürzt, nie über den Schlag gezogen.

@@ -17,6 +17,8 @@ messung:
   helligkeit: 0.16
   kontrast: 0.21
   farbigkeit: 0.07
+sollwerte:        # Ziel für den eigenen Render; messung beschreibt die Vorlage
+  lufs: -14
 schnittmuster_16tel: [30, 8, 8, 14, 5, 1, 4, 1, 8, 2, 2, 1, 2, 1, 1, 8, 8, 14, 1, 1, 4, 5, 1, 8, 2, 1, 4, 4, 1, 33]
 palette:
   balken: "#040406"
@@ -39,7 +41,7 @@ abnahme:
   schnitte_pro_s: [1.6, 2.4]
   helligkeit: [0.12, 0.20]
   farbigkeit: [0.05, 0.10]
-  lufs: [-15.2, -13.2]
+  lufs: [-15, -13]   # Hausnorm −14 LUFS; den Wert der Vorlage nennt messung
 # Würfel-Felder (Etappe 0 Bauplan Würfelstile, 31.10.2026; karten_wuerfelfelder.py, Familien-Standard)
 creator: eingeschraenkt
 creator_ohne: [kinobalken, hud]
@@ -164,3 +166,4 @@ Bauplan für 16 s bei 90 BPM (96 Sechzehntel zu je 0,167 s; die Vorlage zählt d
 - Code-Spielszenen mit demselben Rasen zählt die Schnittmessung nicht → Kamerastandort je Einstellung wechseln (Horizont, Winkel, Streifenbreite), Jubel abwechselnd vor Flutlicht und dunkler Kurve.
 - Hochformat: Kinobalken 4 % je Seite; im Creator-Modus ohne Balken und ohne Koordinaten.
 - Das Porträt am Anfang steht 2,5 s; ohne sichtbaren Push-in (rund 9 %) und leichtes Atmen meldet die Creator-Prüfung ohne Balken ein Standbild rot.
+- Tracking-Koordinaten und Liedwörter laufen beide mit dem Bild mit → Koordinaten dürfen an den Körpern wandern, die Liedwörter stehen fest auf Mundhöhe, auch während des Push-in.

@@ -17,6 +17,8 @@ messung:
   helligkeit: 0.45
   kontrast: 0.26
   farbigkeit: 0.27
+sollwerte:        # Ziel für den eigenen Render; messung beschreibt die Vorlage
+  lufs: -14
 schnittmuster_16tel: [8, 2, 2, 4, 4, 6, 1, 7, 4, 8, 4, 4, 4, 4, 4, 4, 5, 3, 3, 1, 6, 2, 8, 4, 4, 4, 3, 4, 4, 1, 3, 8, 4, 8, 8, 24]
 palette:
   lippenrot: "#FA3A40"
@@ -42,7 +44,7 @@ abnahme:
   schnitte_pro_s: [1.7, 2.5]
   helligkeit: [0.38, 0.54]
   farbigkeit: [0.22, 0.32]
-  lufs: [-11.9, -9.9]
+  lufs: [-15, -13]   # Hausnorm −14 LUFS; den Wert der Vorlage nennt messung
 # Würfel-Felder (Etappe 0 Bauplan Würfelstile, 31.10.2026; karten_wuerfelfelder.py, Familien-Standard)
 creator: nein
 creator_grund: "7 Kennungen aus rahmen und sticker: raster-collage, split-screen, zeitungsdruck,\
@@ -169,3 +171,4 @@ Bauplan für 18 s bei 127 BPM (Sechzehntel 0,118 s, 152 Sechzehntel). Wechsel au
 - Motor (Welle D, 05.11.): Code-Flächen in voller Palette sind gesättigter als gedruckte Collage (Farbigkeit 0,40 statt höchstens 0,35) → Einstellungen leicht entsättigt (saturate 0,82), warmer Grade schwach.
 - Motor: Im Tunnel-Durchflug zeigt ein dunkler Grund zwischen den Ringen am Rand dunkle Streifen → Papier als Grund.
 - Motor: Code-Figuren in Kreis- und Spiegelfenstern rechnen in Video-Prozent, nicht in Fenster-Prozent → Lage umrechnen, sonst fehlt der Kopf.
+- Kaleidoskop und Strahlenkranz flackern auf großen hellen Flächen, wenn helle und dunkle Keile schneller als dreimal je Sekunde wechseln → die Keile stehend zeigen; die Energie kommt aus dem Trickwechsel im Viertel, nicht aus flackernden Flächen.

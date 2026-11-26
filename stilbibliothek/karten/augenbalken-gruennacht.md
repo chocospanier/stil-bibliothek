@@ -17,6 +17,8 @@ messung:
   helligkeit: 0.23
   kontrast: 0.19
   farbigkeit: 0.08
+sollwerte:        # Ziel für den eigenen Render; messung beschreibt die Vorlage
+  lufs: -14
 schnittmuster_16tel: [2, 3, 10, 10, 4, 2, 2, 7, 9, 9, 4, 10, 9, 6, 4, 4, 7]
 palette:
   grund: "#0E1313"
@@ -39,7 +41,7 @@ abnahme:
   schnitte_pro_s: [1.2, 1.9]
   helligkeit: [0.18, 0.28]
   farbigkeit: [0.06, 0.10]
-  lufs: [-15.1, -13.1]
+  lufs: [-15, -13]   # Hausnorm −14 LUFS; den Wert der Vorlage nennt messung
 # Würfel-Felder (Etappe 0 Bauplan Würfelstile, 31.10.2026; karten_wuerfelfelder.py, Familien-Standard)
 creator: eingeschraenkt
 creator_ohne: [kreisfenster]
@@ -162,3 +164,4 @@ Bauplan für 13 s bei 140 BPM (Sechzehntel = 0,107 s, Viertel = 0,43 s; 120 Sech
 - Standardwörter wie NICHT HIER NICHT JETZT mit einsamer Figur vor heller Tür lesen sich als Jenseits → neutrale Wörter, Tür nicht reinweiß, letztes Wort mindestens 1,3 s stehen lassen.
 - Negativ und 1-Bit kehren Gesichter um (Kern der Karte, Fehlerkatalog verbietet es für Avatare); mit echten Figuren aus den Props entscheidet der Mensch.
 - Im Creator-Modus ersetzt die Figur im Gegenlicht der Laternen das Schlüsselloch; ein Push-in auf denselben Rücken zählt die Schnittmessung nicht (Schnittrate fiel auf 1,08).
+- Handkamera und Wort auf dem Schlag zusammen: das Wort zittert mit dem Bild und ist am Handy weg, bevor es ankommt → das Wackeln nur auf das Bild legen, das Wort steht still darüber.

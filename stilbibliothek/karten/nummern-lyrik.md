@@ -17,6 +17,8 @@ messung:
   helligkeit: 0.29
   kontrast: 0.19
   farbigkeit: 0.11
+sollwerte:        # Ziel für den eigenen Render; messung beschreibt die Vorlage
+  lufs: -14
 schnittmuster_16tel: [9, 5, 3, 1, 2, 2, 3, 5, 1, 5, 5, 6, 2, 1, 2, 1, 3, 1, 1, 2, 1, 3, 1, 5, 1, 10, 5, 7, 3, 3, 1, 21]
 palette:
   grund_schwarz: "#070607"
@@ -29,7 +31,7 @@ palette:
   rosa_foto: "#C890A0"
 effekte: [harter-schnitt, wischer, zoom-durchflug, masken-wechsel, bild-im-bild, freisteller, bewegungsunschaerfe, wort-auf-beat, zahl-walze, kritzel, ebenen-parallaxe, beat-getrieben, sprechstimme, ui-attrappe, 3d-schrift]
 kamera: Virtuelle Kamera fliegt durch flache Ebenen mit Drehungen um die Bildmitte, schnellen Schwenks mit Unschärfe und Durchflug in 3D-Buchstaben; Fotos selbst stehen.
-ton: Rap-Song mit Stimme, extrem laut gemastert (−7 LUFS, 1,3 LU), 81 % der Energie unter 80 Hz, harter Abbruch bei 16,5 s.
+ton: Rap-Song mit Stimme, extrem laut gemastert (−7 LUFS, 1,3 LU), 81 % der Energie unter 80 Hz, harter Abbruch bei 16,5 s. Eigenes Master bei −14 LUFS; laut wirkt der Stil durch Dichte und kurzen Abstand der Schläge, die Lautheit der Vorlage steht unter messung.
 braucht: [fotos-figur, nur-typo, illustrationen]
 motor_aufwand: mittel
 einsatz: [musikvideo, trailer, hook]
@@ -41,7 +43,7 @@ abnahme:
   schnitte_pro_s: [1.8, 2.8]
   helligkeit: [0.30, 0.48]
   farbigkeit: [0.09, 0.18]
-  lufs: [-9, -7]
+  lufs: [-15, -13]
 # Würfel-Felder (Etappe 0 Bauplan Würfelstile, 31.10.2026; karten_wuerfelfelder.py, Familien-Standard)
 creator: eingeschraenkt
 creator_ohne: [bild-im-bild, freisteller, ui-attrappe]
@@ -148,14 +150,14 @@ Bauplan für 16 s bei 102 BPM (Sechzehntel 0,147 s, 109 Sechzehntel). Wortwechse
 - Ohne Gesang: Statt Liedzeilen tragen Schlagwörter eines Themas die Typo (Nachrichten, Fakten), Kapitel werden Punkte einer Liste.
 
 ## Abnahme
-- Render mit `video_schauen.py` messen, Zielwerte aus `abnahme`. Lautheit nicht wie die Vorlage über 0 dBFS treiben; −8 LUFS mit True Peak −1 dBFS reicht.
+- Render mit `video_schauen.py` messen, Zielwerte aus `abnahme`. Spitzen nicht wie die Vorlage über 0 dBFS treiben; Master auf −14 LUFS mit True Peak höchstens −1 dBTP, laut wirkt der Beat durch Dichte.
 - Standbild: ein Wort groß lesbar, ein Foto, höchstens eine Kapitelfarbe.
 - 12-fps-Streifen: Wörter wechseln auf Silben, jede Drehung hat Unschärfe, Kapitelfolge in der richtigen Reihenfolge.
 
 ## Fallen
 - Bildschirmaufnahme statt Render → Unschärfe und sichtbare Taskleisten wie in der Vorlage. Immer direkt aus dem Motor rendern.
 - Wörter zu früh oder zu spät → Lyric-Videos leben von der Silbe. Wortzeiten aus Whisper oder dem eigenen Song-Skript übernehmen.
-- Über 0 dBFS gemastert → Verzerrung auf Handys. True Peak −1 dBFS.
+- Über 0 dBFS gemastert → Verzerrung auf Handys. True Peak höchstens −1 dBTP.
 - Zu lange schwarze Strecken am Anfang und Ende → verlorene Zuschauer. Vorspann höchstens 0,3 s.
 - Fremde Liedtexte → Urheberrecht. Nur eigene Songs oder lizenzierte Texte.
 - Motor NummernLyrik (Welle D5): Ein Schatten als zweite graue Figur hinter der Person liest sich als Doppelgänger. Fotos ohne Schattenfigur.
@@ -164,3 +166,4 @@ Bauplan für 16 s bei 102 BPM (Sechzehntel 0,147 s, 109 Sechzehntel). Wortwechse
 - Drehübergang um die Bildmitte: die Ebene um 60 % überskalieren, sonst entstehen schwarze Ecken.
 - Dichte Folge aus Kapitel, Durchflug, Rahmen und Collage bricht die Blitzregel, wenn helle und dunkle Gründe wechseln. Durchflug- und Collagegründe mittelhell.
 - Wortmuster als Kachel mit einer Zeile setzt die Buchstabenstämme am linken Rand genau übereinander; die Creator-Vorprüfung meldet das als Randstreifen. Zeilen je Kachel versetzen.
+- Durchflug durch eine Liedzeile, bevor sie gelesen ist → die Zeile erst stehen lassen, dann hindurchfliegen; nur Kapitelnummern dürfen schon im Anflug sein.

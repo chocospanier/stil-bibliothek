@@ -1,6 +1,6 @@
 # Style Library: 289 short-video styles for code engines
 
-**289 video styles in 24 families, written down precisely enough that a person or an AI agent can rebuild them in code.** Remotion, Canvas, SVG, After Effects, Blender: the cards do not care which engine you use. Version 1.6.4.
+**289 video styles in 24 families, written down precisely enough that a person or an AI agent can rebuild them in code.** Remotion, Canvas, SVG, After Effects, Blender: the cards do not care which engine you use. Version 1.7.0.
 
 Every card tells you what makes a look work, in numbers:
 
@@ -50,7 +50,7 @@ Working with an AI agent? Hand it `stilbibliothek/SKILL.md` and `CLAUDE.md` as i
 
 A card describes a look; it does not build one. The first build of a style is the slow one, because you invent the flash frame, the stutter and the wipe from scratch. The **toolkit** removes that step:
 
-- a **Remotion starter** with 28 building blocks plus a sound-track block, 24 helpers (beat grid from audio, storyboard, acceptance check, phone version, music and voice, house sound standard) and 114 worked examples in 9:16 and 16:9
+- a **Remotion starter** with 29 building blocks plus a sound-track block, 24 helpers (beat grid from audio, storyboard, acceptance check, phone version, music and voice, house sound standard) and 114 worked examples in 9:16 and 16:9
 - **ten engines** behind one entry point: eight draw every frame in code (painting styles, pen strokes, a whiteboard with a drawing hand, formulas, a watercolour character, canvas scenes, a picture that paints itself, 3D cinema), plus a recipe for image and video services and a set of motion rules
 - the **checker system**: a fresh-reviewer role for a second model, an automatic pre-check of every frame, acceptance measurement against the card
 - **measurement tools** for cuts, contact sheets, loudness and tempo
@@ -72,6 +72,6 @@ Credit line: **"Style Library by David Jiménez Pérez, content-autopilot.de, CC
 
 ## Deutsch, kurz
 
-Die **freie Hälfte** der Stil-Bibliothek, Fassung 1.6.4: 289 Stil-Karten in 24 Familien (106 gemessene Karten, 9 eigene Entwürfe und 174 Karten der Zeichen-Motoren), Stil-Katalog, Effekt-Vokabular, Kartenfilter, Bauablauf, Glossar, Fehlerkatalog und Vorlagen. Lizenz: Creative Commons Namensnennung 4.0 ([LICENSE](LICENSE), Namensnennung in [NOTICE.md](NOTICE.md), deutsche Fassung in [LIZENZ.md](LIZENZ.md)). Einstieg: `stilbibliothek/katalog/KATALOG.html` oder `stilbibliothek/FAMILIEN.md`, dann eine Karte, dann `ABLAUF.md`. Für KI-Agenten: `stilbibliothek/SKILL.md`. Gesamtübersicht beider Hälften: `UEBERSICHT_GESAMTPAKET.md`.
+Die **freie Hälfte** der Stil-Bibliothek, Fassung 1.7.0: 289 Stil-Karten in 24 Familien (106 gemessene Karten, 9 eigene Entwürfe und 174 Karten der Zeichen-Motoren), Stil-Katalog, Effekt-Vokabular, Kartenfilter, Bauablauf, Glossar, Fehlerkatalog und Vorlagen. Lizenz: Creative Commons Namensnennung 4.0 ([LICENSE](LICENSE), Namensnennung in [NOTICE.md](NOTICE.md), deutsche Fassung in [LIZENZ.md](LIZENZ.md)). Einstieg: `stilbibliothek/katalog/KATALOG.html` oder `stilbibliothek/FAMILIEN.md`, dann eine Karte, dann `ABLAUF.md`. Für KI-Agenten: `stilbibliothek/SKILL.md`. Gesamtübersicht beider Hälften: `UEBERSICHT_GESAMTPAKET.md`.
 
-Der **Werkzeugkasten** (Remotion-Starter mit 28 Bausteinen, zehn Motoren, Prüf-System, Messwerkzeuge) ist ein bezahlter Zusatz und wird mit einem Befehl in diesen Ordner gelegt: https://content-autopilot.de
+Der **Werkzeugkasten** (Remotion-Starter mit 29 Bausteinen, zehn Motoren, Prüf-System, Messwerkzeuge) ist ein bezahlter Zusatz und wird mit einem Befehl in diesen Ordner gelegt: https://content-autopilot.de

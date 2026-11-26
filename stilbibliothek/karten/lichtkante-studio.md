@@ -17,6 +17,8 @@ messung:
   helligkeit: 0.08
   kontrast: 0.12
   farbigkeit: 0.08
+sollwerte:        # Ziel für den eigenen Render; messung beschreibt die Vorlage
+  lufs: -14
 schnittmuster_16tel: [8, 4, 1, 34, 1, 1, 2, 1, 11, 2, 3, 6, 3, 1, 6, 2, 1, 5, 1, 2, 12, 1, 2, 5, 1, 1, 1, 8]
 palette:
   grund: "#060505"
@@ -27,7 +29,7 @@ palette:
   markierung: "#2C2F86"
 effekte: [harter-schnitt, blitzbild, stottern, wischer, push-in, pull-out, ein-akzent, glow, vignette, bewegungsunschaerfe, chroma-versatz, papier, titelkarte, beat-getrieben, atem-vor-schlag, ton-stopp, lichtstreifen, lichtmalerei]
 kamera: Langsames Hineinfahren oder Herausziehen an Details, Räder und Nadeln drehen im Bild, nie Handkamera.
-ton: Sehr laut gemasterter elektronischer Beat um 128 BPM, ohne Stimme; in der Titelpause fällt der Pegel um rund 8 dB und steigt dann voll ein.
+ton: Sehr laut gemasterter elektronischer Beat um 128 BPM, ohne Stimme; in der Titelpause fällt der Pegel um rund 8 dB und steigt dann voll ein. Eigenes Master bei −14 LUFS; laut wirkt der Stil durch Dichte und kurzen Abstand der Schläge, die Lautheit der Vorlage steht unter messung.
 braucht: [produkt, 3d, nur-typo]
 motor_aufwand: mittel
 einsatz: [hook, intro, produkt, trailer]
@@ -39,7 +41,7 @@ abnahme:
   schnitte_pro_s: [1.5, 2.3]
   helligkeit: [0.06, 0.10]
   farbigkeit: [0.06, 0.11]
-  lufs: [-9, -7]
+  lufs: [-15, -13]
 # Würfel-Felder (Etappe 0 Bauplan Würfelstile, 31.10.2026; karten_wuerfelfelder.py, Familien-Standard)
 creator: ja
 spielraum:
@@ -154,7 +156,7 @@ Bauplan für 15 s bei 128 BPM (128 Sechzehntel, acht Takte). Musik-Raster immer 
 
 ## Fallen
 - Schwarz mit Grauschleier sieht nach Handyfoto aus → Schwarzpunkt hart setzen, Bodenreflexion sehr schwach halten.
-- Die Vorlage clippt (Spitzen über 0 dB) → eigenes Master auf −8 LUFS mit Limiter bei −1 dBTP.
+- Die Vorlage clippt (Spitzen über 0 dB) → eigenes Master auf −14 LUFS mit Limiter bei −1 dBTP; die Wucht kommt aus dem Sprung von der leisen Titelpause in den vollen Beat.
 - Titel 3 % hoch verschwindet auf dem Handy → in 9:16 mindestens 4 % der Bildhöhe.
 - Lichtkante als harter Balken wirkt wie ein Ladebalken → Kanten weich, nur innerhalb der Karosserie-Maske sichtbar.
 - Zu viele Totale verwandeln es in einen Autohaus-Clip → höchstens zwei Bilder, die das ganze Fahrzeug zeigen.

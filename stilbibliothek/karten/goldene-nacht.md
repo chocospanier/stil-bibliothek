@@ -17,6 +17,8 @@ messung:
   helligkeit: 0.14
   kontrast: 0.13
   farbigkeit: 0.10
+sollwerte:        # Ziel für den eigenen Render; messung beschreibt die Vorlage
+  lufs: -14
 schnittmuster_16tel: [6, 11, 1, 1, 12, 3, 6, 6, 3, 5, 1, 0, 1, 5, 1, 1, 5, 3, 5, 1, 12]
 palette:
   nacht: "#0A0A12"
@@ -40,7 +42,7 @@ abnahme:
   schnitte_pro_s: [1.1, 1.7]
   helligkeit: [0.11, 0.17]
   farbigkeit: [0.08, 0.12]
-  lufs: [-15.3, -13.3]
+  lufs: [-15, -13]   # Hausnorm −14 LUFS; den Wert der Vorlage nennt messung
 # Würfel-Felder (Etappe 0 Bauplan Würfelstile, 31.10.2026; karten_wuerfelfelder.py, Familien-Standard)
 creator: eingeschraenkt
 creator_ohne: [bild-im-bild]
@@ -159,3 +161,4 @@ Bauplan für 16 s bei 88 BPM (94 Sechzehntel zu 0,17 s).
 - Liedzeilen in der Bildmitte liegen auf Kopf und Arm → Zeilen bei 19 % der Höhe über den Köpfen, Standzeit mindestens 1,5 s (Motor GoldeneNacht, 04.11.).
 - Kuppel mit einzelner Spitze liest sich als Sakralbau → erfundene Skyline aus mehreren Türmen und einer Brücke.
 - Code-Nahaufnahme von Kinn und Fliege: ohne Hals im Hautton hinter dem Kinn und ohne Unterarm an den Händen wirkt die Figur zusammengesetzt → beides zeichnen oder enger schneiden.
+- Ein Blitzbild beim Wechsel zwischen Nachtblau und goldenem Saal kommt zum Farbsprung dazu → Blitze nur auf der Ankunft wie im Schnittmuster, an den übrigen Wechseln keine.

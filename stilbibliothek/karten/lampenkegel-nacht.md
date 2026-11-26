@@ -51,7 +51,7 @@ spielraum:
   stottern_wiederholungen: [2, 3]
   push_in_prozent: [2, 5]
   wackeln_faktor: [0.3, 0.7]
-  korn: [0.0, 0.04]
+  korn: [0.0, 0.025]
   vignette: [0.3, 0.5]
   beat_versatz_16tel: [0, 1]
   textgroesse_prozent: [-10, 10]
@@ -102,6 +102,9 @@ Heldenfigur und Beiwerk (Landkarte, Notiz, Stift, Bücher), Lage der Lampe, Kege
 - Ein Deckel braucht ein Scharnier, sonst wirkt er wie eine lose Scheibe.
 - Wörter werfen keine Schatten (ein Wortschatten auf dem Zifferblatt sah aus wie ein dritter Zeiger); so lassen.
 - Wörter hinter dem Helden werden verdeckt: der Motor stellt Wörter immer vor den Helden, die Schärfe nimmt sie weich mit.
+- Dunkle Szenen zeigen jedes Korn: das Rezept setzt 0,018 im Anzeigeraum, in tiefem Schwarz nimmt es weich ab. Nicht über 0,025 drehen; in der Probe rauschten die Schatten bei 0,03 im linearen Raum mit rund 13 Stufen von 255, jetzt mit einer.
+- Der Kompassdeckel innen ist poliert, aber mit Rauheitskarte (Messing, zwei Maßstäbe), damit er nicht wie ein Spiegel aus einem Guss wirkt; eigene polierte Flächen ebenso über `material()`.
+- Querformat: eigener Kamerablock `kamera_quer` in der Szene (fehlt er, gilt `kamera`) und je Wort `platz_quer`; Wortzone, Untertitelband und Vignette richten sich nach dem Seitenverhältnis. Layout-Check mit dem Format (`layout.mjs <szene.json> 1.777778`) und ein Standbild je Format.
 
 ## Ton
 Code-Musik ist erlaubt, das Bett liegt leise (allein um −24 LUFS), Geräusche und Stimme tragen; gesamt −14 LUFS, True Peak −1 dBTP; kein dumpfer Schlag am Ende, der Schluss klingt hell. Gemischt wird mit `ton_standard.py`, der Motor liefert nur getrennte Stems. In der Szene: `"ton": {"bett": {"stimmung": "nacht"}, "atmo": "nacht_zimmer", "schluss": "glocke_leise", "ereignisse": [{"t": "w6", "typ": "nadel", "staerke": 0.6, "dauer": 2.0}]}`.
@@ -121,4 +124,4 @@ python -I starter/werkzeuge/animskill.py <projekt>/bestellung.json
 ```
 
 ## Abnahme
-Sollwerte, keine Messung einer Vorlage: Shot-Median 5 bis 60 s, Schnitte je Sekunde 0,0 bis 0,3, Helligkeit 0,22 bis 0,55, Farbigkeit 0,1 bis 0,3, LUFS −15 bis −13 (`python -I starter/werkzeuge/abnahme.py <video> <karte.md>`). Helligkeit und Farbigkeit stammen aus einem Probe-Standbild. Vor dem Vollrender: Layout-Check ohne blocker, drei Standbilder zeigen alle drei Kern-Merkmale, nichts im Kegel ist ausgefressen.
+Sollwerte, keine Messung einer Vorlage: Shot-Median 5 bis 60 s, Schnitte je Sekunde 0,0 bis 0,3, Helligkeit 0,22 bis 0,55, Farbigkeit 0,1 bis 0,3, LUFS −15 bis −13 (`python -I starter/werkzeuge/abnahme.py <video> <karte.md>`). Helligkeit und Farbigkeit stammen aus einem Probe-Standbild. Vor dem Vollrender: Layout-Check ohne blocker, drei Standbilder zeigen alle drei Kern-Merkmale, nichts im Kegel ist ausgefressen, ein Standbild in voller Größe zeigt in den Schatten kein Rauschen. Der Layout-Check meldet außerdem (Stufe polish) zu kurze Lesezeit eines 3D-Worts (Grundzeit 0,5 s plus 0,3 s je Wort, ab Ende des Einflugs) und einen Helden unter 12 % oder über 85 % der Bildhöhe, als blocker Körper, die ineinander stecken, und eine Kamera, die durch einen Körper oder unter die Tischplatte fährt.

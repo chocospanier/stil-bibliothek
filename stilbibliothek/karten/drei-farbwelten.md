@@ -17,6 +17,8 @@ messung:
   helligkeit: 0.42
   kontrast: 0.26
   farbigkeit: 0.19
+sollwerte:        # Ziel für den eigenen Render; messung beschreibt die Vorlage
+  lufs: -14
 schnittmuster_16tel: [16, 15, 16, 15, 4, 12, 4, 12, 4, 12, 1, 3, 4, 4, 4]
 palette:
   tiefe: "#221C21"
@@ -42,7 +44,7 @@ abnahme:
   schnitte_pro_s: [0.9, 1.3]
   helligkeit: [0.34, 0.50]
   farbigkeit: [0.15, 0.23]
-  lufs: [-9, -7]
+  lufs: [-15, -13]   # Hausnorm −14 LUFS; den Wert der Vorlage nennt messung
 # Würfel-Felder (Etappe 0 Bauplan Würfelstile, 31.10.2026; karten_wuerfelfelder.py, Familien-Standard)
 creator: eingeschraenkt
 creator_ohne: [bild-im-bild, raster-collage, pixelschrift]
@@ -161,3 +163,4 @@ Bauplan für 16,7 s bei 115 BPM (128 Sechzehntel zu 0,13 s).
 - Geschlossene Augen in allen Porträts und Wörter wie Nacht, Stille, Höher lesen sich als Jenseits → Augen offen, Lachen mit offenem Mund, Etiketten neutral (Farbe und Ort).
 - Eck-Kacheln in 9:16 decken den Kopf → Kacheln 34 % der Breite, Figur im Gang auf 58 % der Höhe.
 - Im Creator-Modus fehlen die Kacheln, und der Sprung näher allein zählt nicht sicher als Schnitt (Median fiel auf 1,03 s) → dort springt das Bild gespiegelt näher.
+- Beim Wechsel aus dem blauen Tunnel in den weißen Raum ist der Farbsprung schon ein harter Hell-Dunkel-Wechsel → dort kein zusätzliches Blitzbild; das schwarze Blitzbild bleibt vor dem Lachen im Blau.

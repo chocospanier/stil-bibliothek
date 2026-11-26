@@ -17,6 +17,8 @@ messung:
   helligkeit: 0.174
   kontrast: 0.201
   farbigkeit: 0.279
+sollwerte:        # Ziel für den eigenen Render; messung beschreibt die Vorlage
+  lufs: -14
 schnittmuster_16tel: [8, 12, 8, 10, 8, 12, 14]
 palette:
   grund: "#111111"

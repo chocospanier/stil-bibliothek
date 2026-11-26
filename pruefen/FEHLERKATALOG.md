@@ -53,7 +53,7 @@
 
 **6. Halt und Dauer**
 - Kein Standbild über 1 s (Regel „keine Freezes“): Halt lebt mit Heranfahren, Glanzlicht, Lidschlag. Die Vorprüfung meldet Gelb an Shots von knapp über 1 s mit langsamer Bewegung; bei ruhigen Grafikstilen (große Einfarbflächen, 1 bis 2 % Drift je Sekunde) ist das normal und kein Befund. Rot über 2 s ist ein echter Halt ohne Leben. Ruhige Fahrten auf dunklen, kontrastarmen Bildern misst die Vorprüfung zusätzlich per Phasenkorrelation (Zoom und Versatz) und meldet sie grün; bleibt an einer ruhigen Fahrt trotzdem Rot stehen, entscheidet der Prüfer mit den Augen (Streifen ansehen).
-- Pointen und Pflichtzeilen mindestens 2,3 s vollständig lesbar; einzelne Wörter mindestens 0,5 s.
+- Pointen und Pflichtzeilen mindestens 2,3 s vollständig lesbar. Jeder andere Text steht ab Stillstand seine Lesezeit (`starter/src/bausteine/lesezeit.ts`, gemessen am Video von `handwerk_pruefung.py`): ein Schlagwort (ein oder zwei Wörter, hart auf den Schlag) mindestens 0,25 s (darunter Meldung), Ziel 0,5 s; eine Zeile ab drei Wörtern 0,8 s plus 0,2 s je Wort. Im Bewegungs-Charakter `ruhig` gilt die Zeilen-Rechnung für jeden Text. Wiederkehrender Text zählt in der Handwerk-Prüfung mit seinem längsten Stand und ist dort höchstens gelb. Die Schlagwort-Werte sind an abgenommenen eigenen Stücken geeicht (Schlagwörter auf den Schlag stehen dort 8 bis 13 Bilder bei 30 fps, 0,27 bis 0,43 s, und sind Stil).
 - Vor dem Treffer kein leerer oder weicher Rahmen; Höhepunkt wird heller und größer, nicht dunkler.
 
 **7. Prüfen früher und am Handy**
@@ -61,7 +61,16 @@
 - **Seit Runde 4 des Werkzeugkastens** misst die Vorprüfung auch: Schrift abgeschnitten, überlappend oder unter 50 px bei 1080 Breite (aus dem Text-Protokoll des Renders), den Höhepunkt nach der Stille, das Sprechtempo, ob der Held an seinem Platz bleibt, und ob die Bausteinprobe nach einer Änderung noch gleich aussieht (`werkzeuge/framehash.py`).
 - Reihenfolge: Material-Abnahme → Look-Check (zwei bis vier Standbilder) → Storyboard in voller Größe → Selbstprüfung mit dieser Liste → `pruefer` auf das Storyboard und die Streifen → erst dann Vollrender → `pruefer` kurz auf den Render.
 - Jedes Prüfbild auch auf 390 px Breite ansehen (so sieht der Zuschauer es auf dem Handy).
+- **Graue Probe bei Handybreite:** je Bildtyp ein Standbild auf 390 px Breite verkleinern und entsättigen. Held, Schrift und Pointe müssen sich allein über Helligkeit vom Grund lösen; was nur über die Farbe trennt, verschwimmt am Handy in der Sonne und für farbschwache Augen. Die Bilder dazu legt `python -I werkzeuge/handwerk_pruefung.py` für den ganzen Film in einem Lauf ab (das Urteil fällt das Auge), zusammen mit Lesezeit, Schrift in Bewegung, Blitzen über alle Effekte, Lautheit und den Bildpaaren an jedem Schnitt; Ergebnis ist `handwerk_bericht.html` mit Bildern und einem Rückgabewert (0 grün, 1 gelb, 2 rot). Aufruf im Starter: `npm run handwerk -- <video.mp4> [--woerter <woerter.json>]`; mitgesprochene Untertitel immer mit `--woerter`, sonst misst die Prüfung sie nach der Lese-Regel. Die graue Probe misst das Werkzeug nur als Hinweis (Kontrast Bildmitte gegen Rand), sie zählt nicht zur Ampel. Weitere Optionen im Kopf des Werkzeugs.
 - Messung ist kein Urteil: Auge und Ohr des Auftraggebers entscheiden; Ton hört nur ein Mensch.
+- **Meldungen der Bausteine (seit 1.7.0)**, im Studio rot oben im Bild, beim Rendern in der Konsole; jede meldet, keine bricht ab:
+  - „Kamera: … schwingt … über das Ziel“ und „Figur: Feder … schwingt …“: großer Inhalt federt nach. Die Bausteine fahren dann mit smooth; für kleinen Inhalt an der Kamera `groesse` angeben.
+  - „Wackeln: läuft ohne Abklingen länger als 1 s“: Dauerwackeln macht Schrift unlesbar; `decay` setzen oder die Schrift in `<Schriftebene>` legen.
+  - „Blitzregel: … (beteiligt: …)“: mehr als drei harte Wechsel in einer gleitenden Sekunde, über alle Effekte gezählt; die Meldung nennt die Beteiligten.
+  - „Blitzzähler: … gekappt“: mit `<Buehne blitze="kappen">` wurde ein überzähliger Blitz weggelassen.
+  - „Partikel: Flackern bis … Hz“: Flackern über 3 Hz auf großen hellen Flächen zählt zur Blitzregel.
+  - „… im Charakter ruhig; dort erscheint nichts schneller als 8 Bilder“: im Bewegungs-Charakter `ruhig` ist ein Auftritt zu schnell.
+  - Lesezeit und Kontrast: ein Text steht ab Stillstand kürzer als seine Lesezeit (Schlagwort unter 0,25 s, Zeile ab drei Wörtern unter 0,8 s plus 0,2 s je Wort), oder Schrift hat gegen die Fläche darunter weniger als 3:1 (kleine Zeilen 4,5:1).
 
 **8. Ablauf**
 - Lokale Bildmaschine: Videomodelle nur einzeln laufen lassen, vorher den Grafikspeicher leeren; ein Wächter meldet nach 10 min ohne Fortschritt. Viele Helfer gleichzeitig: GPU-Aufträge früh bündeln.
@@ -92,7 +101,8 @@ Ein Kanal, der immer gleich aussieht, fällt als Schablone auf, und ein Video, d
 - [ ] Avatare nur verschoben, gleichmäßig skaliert und (ohne Schrift, ohne asymmetrische Merkmale) gespiegelt, nichts invertiert, nichts gefiltert, gegen Original verglichen
 - [ ] Extremwerte aller Bewegungen: kein Wort am Rand, keine Randstreifen
 - [ ] Unten 15 % frei von Schrift und Bedeutungsträgern, Bild 0 ist Titelbild
-- [ ] Blitze höchstens 3 je Sekunde
+- [ ] Blitze höchstens 3 je Sekunde, über alle Effekte zusammen gezählt
+- [ ] Graue Probe bei 390 px: Held, Schrift und Pointe lösen sich ohne Farbe vom Grund (Bilder aus `werkzeuge/handwerk_pruefung.py`, Urteil mit dem Auge)
 - [ ] Kein Standbild über 1 s, Pointe mindestens 2,3 s, Tonpause davor
 - [ ] Treffer der Pointe in der Sprechpause, nie unter Sprache; Sprechtempo höchstens 3,5 Wörter je Sekunde (`vorpruefung.py --woerter --treffer`)
 - [ ] Bild-Checkliste aus `stilbibliothek/GRAMMATIK.md` am Storyboard abgehakt (Konstante, eine Farbe eine Bedeutung, Medium am Handy, etwas Neues alle 2 bis 4 s)

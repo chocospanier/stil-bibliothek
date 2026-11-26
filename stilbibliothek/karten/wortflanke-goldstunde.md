@@ -17,6 +17,8 @@ messung:
   helligkeit: 0.38
   kontrast: 0.21
   farbigkeit: 0.28
+sollwerte:        # Ziel für den eigenen Render; messung beschreibt die Vorlage
+  lufs: -14
 schnittmuster_16tel: [1, 2, 36, 5, 1, 6, 3, 14, 1, 6, 3, 14, 1, 6, 3, 7]
 palette:
   schatten: "#382A34"
@@ -40,7 +42,7 @@ abnahme:
   schnitte_pro_s: [0.9, 1.4]
   helligkeit: [0.30, 0.45]
   farbigkeit: [0.22, 0.34]
-  lufs: [-15.1, -13.1]
+  lufs: [-15, -13]   # Hausnorm −14 LUFS; den Wert der Vorlage nennt messung
 # Würfel-Felder (Etappe 0 Bauplan Würfelstile, 31.10.2026; karten_wuerfelfelder.py, Familien-Standard)
 creator: eingeschraenkt
 creator_ohne: [text-hinter-figur, hud, scan-band]
@@ -154,3 +156,4 @@ Bauplan für 16 s bei 121 BPM (Sechzehntel = 0,124 s; 129 Sechzehntel). Ein Bild
 - Der kalte Scan-Streifen zählt im hellen Gold nur, wenn er dunkel ist (Negativ zieht Gold fast nach Schwarz), zwei Bilder lang oben und unten, und über dem Scheitel endet.
 - Wortpaar im Hochformat als zwei Zeilen über dem Kopf, der Kopf liegt über der unteren Zeile; Halt im Motor 30 Sechzehntel (3,7 s) statt 36, mit 36 fällt die Schnittrate unter 0,9.
 - Die Drehung des Würfels hält die Helligkeit in OKLab, nicht die Luma der Schnittmessung: im Goldbild fiel die Schnittrate in einem Zug von 1,14 auf 0,86 → Zyklus im Motor 18 Sechzehntel (Wortpaar 4, Scan 1+1, Daten 4, Glutkipp 4, Wortpaar 4), Basis deutlich über 0,9 halten.
+- Die Kamera driftet zurück und zieht die Liedzeilen mit → die Zeilen stehen fest im Bild, Figur und Landschaft driften darunter; das Wortpaar so breit setzen, dass der Kopf über die ganze Drift die Wortmitte deckt; Negativ und Glitch auf Schnitte zwischen zwei Zeilen, nie unter eine, die gerade gelesen wird.

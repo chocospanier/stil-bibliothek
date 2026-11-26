@@ -17,6 +17,8 @@ messung:
   helligkeit: 0.46
   kontrast: 0.26
   farbigkeit: 0.18
+sollwerte:        # Ziel für den eigenen Render; messung beschreibt die Vorlage
+  lufs: -14
 schnittmuster_16tel: [24, 4, 23, 10, 5, 2, 1, 2, 1, 1, 2, 1, 1, 2, 5, 9, 21, 2, 4, 1, 13, 21, 9, 9, 8, 8, 5, 1, 20, 25, 2, 25]
 palette:
   marker_rot: "#E83820"
@@ -41,7 +43,7 @@ abnahme:
   schnitte_pro_s: [0.9, 1.5]
   helligkeit: [0.40, 0.55]
   farbigkeit: [0.15, 0.22]
-  lufs: [-17.5, -15.5]
+  lufs: [-15, -13]   # Hausnorm −14 LUFS; den Wert der Vorlage nennt messung
 # Würfel-Felder (Etappe 0 Bauplan Würfelstile, 31.10.2026; karten_wuerfelfelder.py, Familien-Standard)
 creator: nein
 creator_grund: "Familie scrapbook: Handarbeit über Material: Papierränder, Sticker, Klebeband, Collage\

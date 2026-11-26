@@ -17,6 +17,8 @@ messung:
   helligkeit: 0.21
   kontrast: 0.18
   farbigkeit: 0.30
+sollwerte:        # Ziel für den eigenen Render; messung beschreibt die Vorlage
+  lufs: -14
 schnittmuster_16tel: [25, 66]
 palette:
   grund: "#160315"
@@ -38,7 +40,7 @@ abnahme:
   schnitte_pro_s: [0.05, 0.4]
   helligkeit: [0.16, 0.26]
   farbigkeit: [0.24, 0.36]
-  lufs: [-15.2, -13.2]
+  lufs: [-15, -13]   # Hausnorm −14 LUFS; den Wert der Vorlage nennt messung
 # Würfel-Felder (Etappe 0 Bauplan Würfelstile, 31.10.2026; karten_wuerfelfelder.py, Familien-Standard)
 creator: ja
 spielraum:
@@ -141,3 +143,4 @@ Kein Beat-Schnitt: in Sekunden denken. Bauplan für 18 s, sechs Einstellungen, W
 - Reines Schwarz in den Schatten → wirkt digital. Schwarz auf einen dunklen Violettton anheben.
 - Einblendung schon auf der ersten Einstellung → Bild 0 ist schwarz und das Titelbild leer (Motor RotlichtCamcorder, 31.10.). Erste Einstellung steht ab Bild 0 voll.
 - Textlage je Einstellung (Nahaufnahme tiefer) mitten in einer stehenden Zeile gewechselt → die Zeile springt um ein Sechstel der Höhe. Lage gilt je Zeile ab ihrem Beginn, die Zeile wächst von links aus der Breite der fertigen Zeile.
+- Die getippte Liedzeile wackelt mit dem Camcorder → Zeile als ruhige Ebene über das Bild, nur das Bild verwischt; Wort für Wort tippen, dann stehen lassen.

@@ -17,6 +17,8 @@ messung:
   helligkeit: 0.51
   kontrast: 0.31
   farbigkeit: 0.38
+sollwerte:        # Ziel für den eigenen Render; messung beschreibt die Vorlage
+  lufs: -14
 schnittmuster_16tel: [14, 43, 80, 24, 43, 3, 16, 2, 57, 44, 44, 18, 17, 7, 14]
 palette:
   gelb: "#EAD41C"
@@ -39,7 +41,7 @@ abnahme:
   schnitte_pro_s: [0.3, 0.5]
   helligkeit: [0.43, 0.58]
   farbigkeit: [0.30, 0.45]
-  lufs: [-11.1, -9.1]
+  lufs: [-15, -13]   # Hausnorm −14 LUFS; den Wert der Vorlage nennt messung
 # Würfel-Felder (Etappe 0 Bauplan Würfelstile, 31.10.2026; karten_wuerfelfelder.py, Familien-Standard)
 creator: eingeschraenkt
 creator_ohne: [split-screen, comic-panel, halbton]
@@ -169,3 +171,4 @@ Bauplan für 19 s in Sekunden (der Stil schneidet nicht auf Sechzehntel, sondern
 - Ein Haus mit dunklem Grund und goldener Schrift kehrt die Karte um (Creme wird Schwarz, Tusche wird Gold), die Probe sagt Helligkeit 0,70 voraus und fällt zurück → für diese Karte nur Häuser mit hellem Grund und dunkler Schriftfarbe.
 - Neues Bild in der Linse kleiner als 1 skaliert zeigt im Durchflug ein Rechteck mit geraden Kanten → das neue Bild in der Linse von 1,12 auf 1,0 ziehen, nie darunter.
 - Kachelwand mit Rand auf ganzen Kacheln hinterlässt am Bildrand eine schwarze Fuge (Vorprüfung rand_streifen rot) → Raster um eine halbe Kachel versetzen und über den Rand laufen lassen.
+- Ein Strahlenkranz hinter dem Wort dreht weiter, während man liest → der Kranz dreht langsam (6° je Sekunde) und pulst nie, das Wort davor steht still.

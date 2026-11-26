@@ -51,7 +51,7 @@ spielraum:
   stottern_wiederholungen: [2, 3]
   push_in_prozent: [2, 5]
   wackeln_faktor: [0.3, 0.7]
-  korn: [0.0, 0.04]
+  korn: [0.0, 0.025]
   vignette: [0.3, 0.5]
   beat_versatz_16tel: [0, 1]
   textgroesse_prozent: [-10, 10]
@@ -93,16 +93,19 @@ Wer diese drei trifft, ist zu 80 % da; alles andere sind Regler.
 | Wort im Raum | 10 % | ein 3D-Wort vor dem Helden, obere Bildhälfte, mindestens 1,2 s sichtbar | 1,2 bis 3 s |
 
 ## Regler
-Heldenfigur und Beiwerk, Fensterseite (links oder hinten), Lamellenwinkel, Tischfarbe (`set.tisch`), Kamerarezepte und ihre Längen, Zahl der 3D-Wörter (zwei bis vier), einzelne Lichtwerte über `licht` in der Szene (etwa `"sonne": {"az": -60}`). Fest bleiben Licht durch Lamellen, Volumen und die warme Grundstimmung. Der Zug darf die Tischfarbe und die Farbe der Untertitel-Akzente setzen; das Licht bleibt das des Rezepts.
+Heldenfigur und Beiwerk, Fensterseite (links oder hinten), Lamellenwinkel, Tischfarbe (`set.tisch`), Fase der Kanne (`"fase": 0.0007` in Metern, 0 = scharfe Kanten), Kamerarezepte und ihre Längen, Zahl der 3D-Wörter (zwei bis vier), einzelne Lichtwerte über `licht` in der Szene (etwa `"sonne": {"az": -60}`). Fest bleiben Licht durch Lamellen, Volumen und die warme Grundstimmung. Der Zug darf die Tischfarbe und die Farbe der Untertitel-Akzente setzen; das Licht bleibt das des Rezepts.
 
 ## Fallen
 - Wände dürfen nicht über die Zimmerecke hinausragen, sonst schatten sie das Fenster ab und die Sonne kommt nicht herein.
 - Sonne quer zur Blickachse macht kaum sichtbare Schächte, Gegenlicht macht Schächte, aber der Held zeigt die Schattenseite: im Rezept steht der Kompromiss (Seitenlicht von vorn, g 0,35, Dunst mit Rauschen 0,85), nicht verstellen.
 - Glattes Metall zeigt keine Lamellenstreifen: `metall: 1`, Rauheit um 0,3 bis 0,4, sonst wirkt eine Kanne wie Gips oder spiegelt nur.
+- Ein Vieleck ohne Fase springt in der Nahfahrt hart von Fläche zu Fläche: die Kanne hat gerundete senkrechte Kanten (`kantenDrehkoerper`), Tischbeine, Fensterleisten und Jalousie-Schiene sind gerundet. Eigene eckige Helden genauso bauen.
+- Große glatte Flächen mit festem Rauheitswert glänzen wie Gips aus einem Guss: Lamellen nehmen eine Rauheitskarte in zwei Maßstäben (Material `lack` in `textur.ts`), eigene Flächen ebenso über `material()`.
+- Korn liegt im Anzeigeraum und bleibt unter 0,025 (`"licht": {"rezept": "…", "post": {"korn": 0.02}}`); höhere Werte rauschen in den Schatten.
 - Detail-Einstellungen lassen keinen Platz für 3D-Wörter: Wörter in Halbtotalen legen, der Layout-Check (`zeitplan`) meldet es.
 - Dampf als Flächen wirkt wie Regen auf Glas; der Motor nimmt weiche Schwaden als Punkt-Sprites, `dampf` mit `ab`, `voll` und `hoehe` setzen.
 - Untertitel auf hellem Grund sind unlesbar: die Kino-Untertitel des Motors weichen dem Helden aus (dafür `"untertitel": {"an": false}` in der Bestellung), sonst setzt die Brücke sie unten.
-- Die Beispielszenen sind für 9:16 gebaut; im Querformat Wortplätze und Abstände neu prüfen (Layout-Check und ein Standbild).
+- Querformat: eigener Kamerablock `kamera_quer` in der Szene (fehlt er, gilt `kamera`) und je Wort `platz_quer`; Wortzone, Untertitelband und Vignette richten sich nach dem Seitenverhältnis. Layout-Check mit dem Format (`layout.mjs <szene.json> 1.777778`) und ein Standbild je Format.
 
 ## Ton
 Code-Musik ist erlaubt, das Bett liegt leise (allein um −24 LUFS), Geräusche und Stimme tragen; gesamt −14 LUFS, True Peak −1 dBTP; kein dumpfer Schlag am Ende, der Schluss klingt hell. Gemischt wird mit `ton_standard.py`, der Motor liefert nur getrennte Stems. In der Szene: `"ton": {"bett": {"stimmung": "warm"}, "atmo": "kueche", "schluss": "glocke_leise", "sfx_lufs": -23.5, "ereignisse": [{"t": "w1", "typ": "zisch", "staerke": 0.55, "dauer": 1.1}]}`; Ereignisse auf Wortanfänge (`"w5"`).
@@ -124,4 +127,4 @@ python -I starter/werkzeuge/animskill.py <projekt>/bestellung.json
 ```
 
 ## Abnahme
-Sollwerte, keine Messung einer Vorlage: Shot-Median 5 bis 60 s (die Kamera schneidet nicht, sie fährt), Schnitte je Sekunde 0,0 bis 0,3, Helligkeit 0,2 bis 0,48, Farbigkeit 0,08 bis 0,28, LUFS −15 bis −13 (`python -I starter/werkzeuge/abnahme.py <video> <karte.md>`). Helligkeit und Farbigkeit stammen aus einem Probe-Standbild. Vor dem Vollrender: Layout-Check ohne Meldung der Stufe blocker, drei Standbilder zeigen alle drei Kern-Merkmale, die Bildprüfung des Motors (`kino3d_bildpruefung.json`) meldet kein schwarzes und kein ausgewaschenes Bild.
+Sollwerte, keine Messung einer Vorlage: Shot-Median 5 bis 60 s (die Kamera schneidet nicht, sie fährt), Schnitte je Sekunde 0,0 bis 0,3, Helligkeit 0,2 bis 0,48, Farbigkeit 0,08 bis 0,28, LUFS −15 bis −13 (`python -I starter/werkzeuge/abnahme.py <video> <karte.md>`). Helligkeit und Farbigkeit stammen aus einem Probe-Standbild. Vor dem Vollrender: Layout-Check ohne Meldung der Stufe blocker, drei Standbilder zeigen alle drei Kern-Merkmale, die Bildprüfung des Motors (`kino3d_bildpruefung.json`) meldet kein schwarzes und kein ausgewaschenes Bild. Der Layout-Check meldet außerdem (Stufe polish) zu kurze Lesezeit eines 3D-Worts (Grundzeit 0,5 s plus 0,3 s je Wort, ab Ende des Einflugs) und einen Helden unter 12 % oder über 85 % der Bildhöhe, als blocker Körper, die ineinander stecken, und eine Kamera, die durch einen Körper oder unter die Tischplatte fährt.

@@ -17,6 +17,8 @@ messung:
   helligkeit: 0.26
   kontrast: 0.23
   farbigkeit: 0.15
+sollwerte:        # Ziel für den eigenen Render; messung beschreibt die Vorlage
+  lufs: -14
 schnittmuster_16tel: [5, 6, 3, 4, 3, 2, 3, 4, 4, 4, 2, 5, 2, 2, 4, 7, 1, 6, 4, 4, 2, 4, 3, 8, 2, 1, 5, 2, 1, 2, 4, 1, 1, 1, 1, 4, 7, 1, 1, 2]
 palette:
   grund: "#0E0B09"
@@ -27,7 +29,7 @@ palette:
   text: "#FFFFFF"
 effekte: [harter-schnitt, blitzbild, invertieren, filmkorn, vignette, glow, hud, mono-zeile, wort-auf-beat, text-hinter-figur, titelkarte, zahl-walze, tanz, bewegungsunschaerfe, beat-getrieben, drop]
 kamera: Viel Untersicht und Draufsicht, Handkamera am Rand der Strecke, Motive rasen durchs Bild; die Kamera selbst macht wenig, die Motive bewegen sich.
-ton: Sehr lauter, gepresster Beat um 98 BPM (−10,7 LUFS), Countdown-Schläge am Anfang, Drop nach der Eins; vermutlich Motorengeräusche darunter.
+ton: Sehr lauter, gepresster Beat um 98 BPM (−10,7 LUFS), Countdown-Schläge am Anfang, Drop nach der Eins; vermutlich Motorengeräusche darunter. Eigenes Master bei −14 LUFS; laut wirkt der Stil durch Dichte und kurzen Abstand der Schläge, die Lautheit der Vorlage steht unter messung.
 braucht: [footage-ort, fotos-figur, nur-typo]
 motor_aufwand: mittel
 einsatz: [hook, trailer, intro, ganzes-kurzvideo]
@@ -39,7 +41,7 @@ abnahme:
   schnitte_pro_s: [2.0, 3.1]
   helligkeit: [0.21, 0.31]
   farbigkeit: [0.12, 0.18]
-  lufs: [-11.7, -9.7]
+  lufs: [-15, -13]
 # Würfel-Felder (Etappe 0 Bauplan Würfelstile, 31.10.2026; karten_wuerfelfelder.py, Familien-Standard)
 creator: eingeschraenkt
 creator_ohne: [text-hinter-figur, hud]
@@ -149,7 +151,7 @@ Bauplan für 18 s bei 98 BPM (112 Sechzehntel, ein Sechzehntel = 0,153 s).
 - Tempo: 90 bis 110 BPM.
 
 ## Abnahme
-- Render mit `video_schauen.py` messen: Werte aus `abnahme` treffen, Lautheit wirklich um −11 LUFS.
+- Render mit `video_schauen.py` messen: Werte aus `abnahme` treffen, Lautheit um −14 LUFS; laut wirkt es durch den gepressten, dichten Beat, nicht durch den Pegel.
 - Standbild an drei Stellen: Korn sichtbar, Schwarz zugelaufen, Himmel tiefblau, Schrift glüht.
 - Streifen bei 12 fps: Countdown genau auf drei aufeinanderfolgenden Schlägen, Weißblitz direkt nach der Eins.
 
@@ -163,3 +165,4 @@ Bauplan für 18 s bei 98 BPM (112 Sechzehntel, ein Sechzehntel = 0,153 s).
 - Code-Motor, Front von vorn: zwei runde Scheinwerfer über einer dunklen Öffnung lesen sich am Handy als Gesicht → flache, kantige Leuchten, breiter tiefer Einlass, Räder und Spiegel sichtbar (`AutoFront` in `gemeinsam_d6.tsx`).
 - Helm mit hellem Querbalken liest sich als Augenbalken, ein Befehlswort wie „GAS.“ allein über einer Menge mit erhobenen Armen als Gewalt-Lesart → Visier dunkel mit schmalem Glanz, Befehlswörter nur über der Maschine („VOLLGAS.“).
 - Verdichtung mit Einzel-Sechzehnteln bricht im Code die Blitzregel → Zweier-Sechzehntel ohne helle Bildtypen (Qualm, Tänzer an heller Wand) in der Schlussphase.
+- Die Eins steht ihre drei Sechzehntel ganz, der Weißblitz kommt erst danach und nie über der Ziffer.
