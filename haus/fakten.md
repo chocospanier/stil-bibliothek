@@ -1,6 +1,6 @@
 # Fakten
 
-> **BEISPIEL.** Vorbelegt für den erfundenen Kanal „Kleine Fragen“ (kurze Erklärstücke und Zitate, Bilder aus Code, mit Vorlesestimme und Musik über ElevenLabs), damit ein erster Durchlauf ohne Gespräch geht. Vor dem ersten echten Video im Gespräch ersetzen (leere Vorlagen in `_vorlagen/`). Solange diese Zeile hier steht, sagt Claude bei jeder Bestellung in einem Satz, dass noch Beispielwerte gelten.
+> **BEISPIEL.** Vorbelegt für den erfundenen Kanal „Kleine Fragen“ (kurze Erklärstücke und Zitate, Bilder aus Code, mit Vorlesestimme und Musik), damit ein erster Durchlauf ohne Gespräch geht. Vor dem ersten echten Video im Gespräch ersetzen (leere Vorlagen in `_vorlagen/`). Solange diese Zeile hier steht, sagt Claude bei jeder Bestellung in einem Satz, dass noch Beispielwerte gelten.
 
 Jede Zahl und jede Behauptung, die ein Video nennen darf. Was hier nicht steht, sagt kein Video. Je Zeile: Aussage, Quelle, Datum. Die Beispielzeilen sind aus dem Gedächtnis belegt und vor einer Veröffentlichung gegen das Original zu prüfen.
 

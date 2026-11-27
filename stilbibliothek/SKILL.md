@@ -19,7 +19,7 @@ description: Baut ein Kurzvideo in einem von 289 beschriebenen Video-Stilen (Loo
 - `Bildtypen` sagen, welche Einstellungen es gibt und wie groß das Motiv ist; `Schnittmuster` ist der Bauplan.
 
 ## 3. Raster vom echten Ton
-- Musik zuerst fertig machen (Prompt aus `Material` über `starter/werkzeuge/musik.py`, ElevenLabs Music, oder eigene, lizenzierte Musik; der Taktbauer setzt nur einzelne Schläge darüber), jedes Stück mit Text mit Vorlesestimme (`stimme.py`), dann Tempo und ersten Schlag am fertigen Ton messen (`starter/werkzeuge/takt.py`). Die Sechzehntel des Schnittmusters auf dieses gemessene Raster umrechnen, nie auf die Zahl im Prompt.
+- Musik zuerst fertig machen (Prompt aus `Material` über `starter/werkzeuge/musik.py`: Musik aus Code, ACE-Step oder ElevenLabs Music, oder eigene, lizenzierte Musik; der Taktbauer setzt nur einzelne Schläge darüber), jedes Stück mit Text mit Vorlesestimme (`stimme.py`), dann Tempo und ersten Schlag am fertigen Ton messen (`starter/werkzeuge/takt.py`). Die Sechzehntel des Schnittmusters auf dieses gemessene Raster umrechnen, nie auf die Zahl im Prompt.
 - Bei Stilen mit Sprechstimme: Wortzeiten aus einer Transkription mit Wortstempeln, Schnitte und Wörter auf die Silben.
 
 ## 4. Bauen

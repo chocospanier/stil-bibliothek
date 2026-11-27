@@ -9,7 +9,8 @@ Einmal im Gespräch gefüllt, bei jeder Bestellung gelesen. Hier steht, auf welc
 - Kostenrahmen je Video: [Betrag oder „keine Kosten“]; Kosten vorher schätzen und nachher nennen
 
 ## Stimme
-- Weg: [eigene Aufnahme | Sprachdienst | keine Stimme, nur Schrift]
+- Weg: [Qwen3-TTS auf dem eigenen Rechner | ElevenLabs | eigene Aufnahme | keine Stimme, nur Schrift]
+- Ton-Motor Stimme: [auto | qwen | elevenlabs] (`stimme.py` hält sich daran)
 - Gewählte Stimme: [Name oder Kennung], ausgewählt am [Datum] aus drei Hörproben mit demselben Satz
 - Auswahl, wenn noch keine gewählt ist: drei Stimmen, die zur Marke passen, je dieselbe Zeile aus dem ersten Skript, der Mensch hört und wählt eine. Nie eine Stimme ohne Einverständnis der Person klonen.
 - Sprechtempo höchstens 3,5 Wörter je Sekunde; Zahlen und Namen so ins Skript schreiben, wie sie gesprochen werden
@@ -19,7 +20,8 @@ Einmal im Gespräch gefüllt, bei jeder Bestellung gelesen. Hier steht, auf welc
 - Weitere Formate je Video: [Liste]; jedes Format wird eigens angeordnet, nie beschnitten (Schutzzonen in `starter/BAUSTEINE.md`)
 
 ## Musik
-- Weg: [ElevenLabs Music über `musik.py` | freie Musik mit geprüfter Lizenz | eigene Musik]; der Taktbauer setzt nur Schläge, kein Bett
+- Weg: [Musik aus Code | ACE-Step auf dem eigenen Rechner | ElevenLabs Music] über `musik.py`, oder [freie Musik mit geprüfter Lizenz | eigene Musik] als Datei; der Taktbauer setzt nur Schläge, kein Bett
+- Ton-Motor Musik: [auto | code | acestep | elevenlabs] (`musik.py` hält sich daran)
 - Lautheit: −14 LUFS, True Peak höchstens −1 dBTP
 
 ## Freigaben

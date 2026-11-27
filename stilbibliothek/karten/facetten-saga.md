@@ -138,7 +138,7 @@ Inserts zählen in Kopfblock und Tabelle gleich: als 1 Sechzehntel (0,25 s). Dav
 ## Material
 - **Bilder (Welt):** `dark faceted geometric landscape with [subject], angular stone shards like folded paper, painterly flat facets with brush texture, cold blue-gray palette, a single warm amber light source, epic scale, tiny figure for scale, cinematic wide shot`
 - **Bilder (Figur):** `colossal faceted stone figure of [subject], low-poly sculpted planes, hard side light, cold slate tones with one warm ochre highlight, painterly, dark background`
-- **Musik:** `musik.py --karte facetten-saga.md` (ElevenLabs Music) oder eigene Musik, Raster mit `takt.py` am fertigen Bett; Akzente auf den Schnitten und der Schlag nach dem Atem als eigene Spur aus `taktbauer.py --nur-schlaege --schlag <n> --akzent <jeder Schnitt>` (die Musik im Atem stumm). Der Taktbauer ist keine Musikquelle mehr (18.10.2026).
+- **Musik:** `musik.py --karte facetten-saga.md` (Musik aus Code, ACE-Step oder ElevenLabs Music) oder eigene Musik, Raster mit `takt.py` am fertigen Bett; Akzente auf den Schnitten und der Schlag nach dem Atem als eigene Spur aus `taktbauer.py --nur-schlaege --schlag <n> --akzent <jeder Schnitt>` (die Musik im Atem stumm). Der Taktbauer ist keine Musikquelle mehr (18.10.2026).
 - **Musik:** `Slow epic ambient score, 60 BPM, deep taiko hit on every second beat, low cello drone, distant choir pad, stone scraping textures, rising swell from fifteen seconds, final low hit at seventeen seconds, instrumental, no vocals`
 - **Geräusche:** Steinschaben, Staubrieseln, Funkenknistern beim Riss, Wind in der Schlucht; 12 bis 18 dB unter der Musik.
 
