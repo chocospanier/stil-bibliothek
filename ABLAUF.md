@@ -149,7 +149,7 @@ Für die Familien `strichzeichnung`, `malstil`, `erklaergrammatik`, `selbstzeich
 | `anidoodle` | 32 Strich-Stile, zeichnet in Handreihenfolge, Federschrift mit Umlauten | 3,5 s | Musik und Geräusche |
 | `handzeichnung` | Whiteboard, eine Hand zeichnet vor (Remotion `WhiteboardHand`, würfelbar) | siehe Karte | Geräusche |
 | `manim` | Formeln, Geometrie, Graphen | 1,4 s | nein |
-| `zeichnen` | 77 Malstile, ein Bild malt sich selbst | 11 s | nein |
+| `zeichnen` | 83 Malstile, ein Bild malt sich selbst | 11 s | nein |
 | `pinsel` | Aquarell-Figur mit Stimmungen (Startfigur Klecks) | 25 s | nein |
 | `jsanim` | Canvas-Szene mit Web-Audio in einer HTML-Datei | 2,7 s | Musik und Geräusche |
 | `bilddienst` | Papiercollage aus Bild- und Videodienst (Credits, Handweg) | Dienst | nein |
@@ -167,3 +167,24 @@ Für die Familien `strichzeichnung`, `malstil`, `erklaergrammatik`, `selbstzeich
 **Akzent und Kontrast:** Zieht der Würfel einen hellen Akzent auf hellem Grund (unter 3:1), Zahlen und Schlagwörter in Tinte setzen und den Akzent nur für Flächen und Linien nehmen; Abweichung in `STAND.md` notieren.
 
 **Fallen, die schon passiert sind:** Malstil-Szenen bewegen sich zu wenig (das Bewegungs-Tor von `huashu` meldet rot; je Szene eine schnelle Bewegung einplanen). Titel, die Buchstabe für Buchstabe erscheinen, zeigen halbe Wörter (bei `anidoodle` Option `wortweise`). Dünne Linien verschwinden am Handy (Mindeststrich setzen). Ein dumpfer Schlag am Ende stört (Endprüfung des Mischers). Bild 0 darf kein leeres Papier sein: bei `zeichnen` und `anidoodle` das Titelbild vorzeichnen oder die erste Szene mit stehendem Titel beginnen.
+
+## Motion Graphics als eine HTML-Datei (`starter/werkzeuge/bang/bang.mjs`, seit 1.8)
+
+Für Opener, Intro, Bumper, Logo-Sting, Kinetic Typography, ein Zitat als einmaliges Typo-Stück und Bauchbinden. Grundlage ist Bang Motion (Bang Tutorial, MIT), deutsche Arbeitsfassung in `.claude/skills/bang-motion/SKILL.md`. Ein Stück ist eine `index.html` mit CSS und GSAP; `bang.mjs` legt GSAP, three.js und Schriften lokal ab, damit nichts vom Netz kommt, und rendert jedes Bild einzeln (keine verlorenen Bilder, 30 fps, bt709).
+
+1. Einmal je Rechner: `node starter/werkzeuge/bang/bang.mjs einrichten` (holt das Repo auf festem Stand und die Bibliotheken; braucht Node, git, Chrome; Pfade über `ANIMSKILLS`, `CHROME`, `FFMPEG`).
+2. Stil-Blatt vor dem Code (Konzept aus dem Menü, Palette aus `haus/look.md`, eine Bewegungs-Signatur, ein besonderer Moment), Ablauftabelle in `projekte/<slug>/REGIE.md`.
+3. `node starter/werkzeuge/bang/bang.mjs neu projekte/<slug>/stueck --starter opener|kartun|jurnalismus|katalog|skizze|aktion|buehne --format 9:16`.
+4. Stimme zuerst (`stimme.py`), Szenen auf Wortanfänge, Musik mit `musik.py`, Mischung mit `ton_standard.py`.
+5. `bang.mjs pruefen <index.html>` (Folienstapel, Zufall, Uhr, Netz, Schrift unter 30 px), dann `bang.mjs snap <index.html> <ordner> <sek> …` und die Bilder ansehen.
+6. `bang.mjs render <index.html> projekte/<slug>/render/<name>.mp4 --fps 30 --ton <ton.wav>`; rund 14 s Rechenzeit je Filmsekunde bei 1080 × 1920.
+7. Frischer Prüfer, dann `handy.py` wie bei jedem Stück (Register, Reinigung).
+Wann nicht: Serien im Takt mit Würfelstilen bleiben Remotion (`zitat.py`, Karten); Gemaltes bleibt bei den Zeichen-Motoren.
+
+## Animationen aus der Material-Bibliothek (`starter/werkzeuge/animation.py`, seit 1.8)
+
+Für Übergänge, Akzente auf einem Wort oder Treffer, bewegte Gründe unter Text und Bauchbinden. Die Bibliothek liefert sie fertig als WebM mit Alphakanal; weiße Animationen tönt das Werkzeug in die Hausfarbe.
+1. Nach dem Würfeln: `python -I starter/werkzeuge/animation.py waehlen projekte/<slug> --bibliothek <Material-Bibliothek> --haus haus --toenen [--szene "wörter der szene"]`. Ergebnis `projekte/<slug>/animationen.json` (je Art die beste, mit Begründung und Alternativen) und getönte Dateien in `projekte/<slug>/animationen/`.
+2. Einbauen in Remotion mit `<OffthreadVideo src={…} transparent />` als eigene Ebene, oder ohne Remotion: `animation.py legen <video.mp4> <animation.webm> --bei <s> --aus <ziel.mp4>`. Übergänge auf den Schnitt legen (`schnitt_s` in `animationen.json`), Akzente auf den Wortanfang aus den Wortzeiten.
+3. Bauchbinde oder Titel: `animation.py fuellen <id> --bibliothek <…> --text "…" --text2 "…" --farbe <hex> --akzent <hex> --schrift "<Hausschrift>" --format hoch --aus projekte/<slug>/animationen/<name>.webm`.
+4. Die IDs gehören beim Register-Eintrag in `--material`, damit der nächste Kanal andere bekommt.

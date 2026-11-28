@@ -12,7 +12,10 @@
 | `pruefen/` | `FEHLERKATALOG.md` (acht Ursachen, Checkliste vor dem Rendern) und `PRUEFER.md` (die Rolle des frischen Prüfers) |
 | `werkzeuge/` | Video vermessen, Vorprüfung, Handwerk-Prüfung mit Berichtsseite, Streifen, Kamerabewegung, Kartenfilter. Einrichtung `werkzeuge/INSTALL.md` |
 | `.claude/skills/` und `starter/werkzeuge/animskills/` | Zehn Zeichen-Motoren (Strichzeichnung, Malstil-Rezepte, Erklär-Grammatiken, Whiteboard mit zeichnender Hand, Formeln, selbstzeichnende Bilder, Aquarell-Figur, Canvas mit Web-Audio, Collage über Dienste, 3D-Kino) hinter einem Einstieg `starter/werkzeuge/animskill.py`; je Motor eine Skill-Hülle. Einrichten einmal mit `python -I starter/werkzeuge/animskills/einrichten.py --pruefen` |
+| `starter/werkzeuge/bang/` und `.claude/skills/bang-motion/` | Motion Graphics als eine HTML-Datei (Bang Motion, MIT): Opener, Intro, Bumper, Kinetic Typography, Zitat als Typo-Stück; lokal gerendert mit `bang.mjs` (Abschnitt in `ABLAUF.md`) |
+| `starter/werkzeuge/animation.py` | Animationen aus der Material-Bibliothek wählen (aus `stil.json`), tönen, Text-Vorlagen füllen, über ein Video legen (Abschnitt in `ABLAUF.md`) |
 | `ABLAUF.md`, `GLOSSAR.md`, `LIESMICH.md` | der Bauweg, die Begriffe, die Übersicht |
+| `REGIE_VORSTUFE.md` | läuft vor `ABLAUF.md` §0 bei jeder Bestellung, die nur ein Thema nennt („mach mal ein Video für …“): deuten, recherchieren, drei Richtungen, eine entscheiden, Stil-Bibel, Skript, Auflösung, Kritik; Ergebnis `REGIE.md` im Projektordner |
 | `haus/` | Der Betrieb, für den du baust: `look.md` (Farben, Schrift, Stil-Familien), `rubriken.md` (feste Formate mit Länge, Kanal, Familie), `tabus.md` (was nie vorkommt), `fakten.md` (jede Zahl mit Quelle), `themen.md` (Vorrat), `praeferenzen.md` (Weg zum Material, Stimme, Formate). Lies alle sechs bei jeder Bestellung. Fehlen sie, lege sie aus `haus/LIESMICH.md` im Gespräch an, bevor du das erste Video baust |
 | `projekte/` | Ein Unterordner je Video (`JJJJ-MM-TT_<slug>/`): Skript, Storyboard, Prüfbericht, Render, `STAND.md`. Nie etwas darin löschen |
 
